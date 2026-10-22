@@ -1,0 +1,904 @@
+代发 wailian999
+
+TS:   process.cwd()
+来源：http://www.ydjk.org.cn/Article/details/gt2braoyhni.html
+
+Java: Path.of("").toAbsolutePath()
+来源：http://www.ydjk.org.cn/Article/details/gt2rvfszycm.html
+
+Go:   os.Getwd()
+来源：http://www.52xcode.cn/Article/details/gt2hpfqeyod.html
+
+Ruby: Dir.pwd
+来源：http://www.ydjk.org.cn/Article/details/gt2artpmdqm.html
+
+C#:   Directory.GetCurrentDirectory()
+来源：http://www.ydjk.org.cn/Article/details/gt2yybqjmkr.html
+
+[M05] 设置退出码
+来源：http://www.52xcode.cn/Article/details/gt2rsourpwf.html
+
+Py:   sys.exit(1)
+来源：http://www.52xcode.cn/Article/details/gt2oilnbxwn.html
+
+PHP:  exit(1);
+来源：http://www.52xcode.cn/Article/details/gt2pybcpwjq.html
+
+JS:   process.exit(1)
+来源：http://www.52xcode.cn/Article/details/gt2ijemmuzt.html
+
+TS:   process.exit(1)
+来源：http://www.ydjk.org.cn/Article/details/gt2nerrsuyq.html
+
+Java: System.exit(1)
+来源：http://www.52xcode.cn/Article/details/gt2brvbjcmy.html
+
+Go:   os.Exit(1)
+来源：http://www.ydjk.org.cn/Article/details/gt2zqiftccp.html
+
+Ruby: exit 1
+来源：http://www.52xcode.cn/Article/details/gt2qxsyupiq.html
+
+C#:   Environment.Exit(1);  // 或 Main 返回 int
+来源：http://www.52xcode.cn/Article/details/gt2hebkizft.html
+
+[M06] 向标准错误输出
+来源：http://www.ydjk.org.cn/Article/details/gt2trvqegyk.html
+
+Py:   print("err", file=sys.stderr)
+来源：http://www.52xcode.cn/Article/details/gt2eogusonf.html
+
+PHP:  fwrite(STDERR, "err\n");
+来源：http://www.ydjk.org.cn/Article/details/gt2mdebnlnr.html
+
+JS:   console.error("err")
+来源：http://www.ydjk.org.cn/Article/details/gt2vhkovemd.html
+
+TS:   console.error("err")
+来源：http://www.52xcode.cn/Article/details/gt2bxsiqsuy.html
+
+Java: System.err.println("err")
+来源：http://www.52xcode.cn/Article/details/gt2odxzavmw.html
+
+Go:   fmt.Fprintln(os.Stderr, "err")
+来源：http://www.52xcode.cn/Article/details/gt2jryjmnbx.html
+
+Ruby: warn "err"
+来源：http://www.52xcode.cn/Article/details/gt2iaejotqs.html
+
+C#:   Console.Error.WriteLine("err")
+来源：http://www.52xcode.cn/Article/details/gt2mkeihpld.html
+
+[M07] 判断是否为主入口
+来源：http://www.52xcode.cn/Article/details/gt2hysxdvdq.html
+
+Py:   if __name__ == "__main__":
+来源：http://www.52xcode.cn/Article/details/gt2vkysalsa.html
+
+PHP:  // 无直接写法：用 debug_backtrace 或定义常量判断
+来源：http://www.52xcode.cn/Article/details/gt2rjtupoot.html
+
+JS:   require.main === module
+来源：http://www.52xcode.cn/Article/details/gt2ifftxjki.html
+
+TS:   require.main === module
+来源：http://www.52xcode.cn/Article/details/gt2rxqssxaf.html
+
+Java: public static void main(String[] args)
+来源：http://www.ydjk.org.cn/Article/details/gt2ybjstilk.html
+
+Go:   func main()
+来源：http://www.52xcode.cn/Article/details/gt2xvvvdioe.html
+
+Ruby: if __FILE__ == $PROGRAM_NAME
+来源：http://www.52xcode.cn/Article/details/gt2lmxytqpi.html
+
+C#:   static void Main(string[] args)
+来源：http://www.ydjk.org.cn/Article/details/gt2nghilmjg.html
+
+[M08] 获取系统与运行时信息
+来源：http://www.52xcode.cn/Article/details/gt2musmwczm.html
+
+Py:   platform.system();  platform.python_version()
+来源：http://www.52xcode.cn/Article/details/gt2goaqwkes.html
+
+PHP:  PHP_OS;  phpversion();
+来源：http://www.ydjk.org.cn/Article/details/gt2aqdtsfuk.html
+
+JS:   process.platform;  process.version
+来源：http://www.ydjk.org.cn/Article/details/gt2eouwzdwo.html
+
+TS:   process.platform;  process.version
+来源：http://www.ydjk.org.cn/Article/details/gt2udtriulq.html
+
+Java: System.getProperty("os.name");  System.getProperty("java.version")
+来源：http://www.ydjk.org.cn/Article/details/gt2rfatqquk.html
+
+Go:   runtime.GOOS;  runtime.Version()
+来源：http://www.ydjk.org.cn/Article/details/gt2hudtccqa.html
+
+Ruby: RUBY_PLATFORM;  RUBY_VERSION
+来源：http://www.52xcode.cn/Article/details/gt2btlqhuhu.html
+
+C#:   Environment.OSVersion;  Environment.Version
+来源：http://www.ydjk.org.cn/Article/details/gt2pudklhnq.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2kqladmav.html
+
+N. 数据结构与算法
+来源：http://www.52xcode.cn/Article/details/gt2dpzrffqc.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2smfzoelh.html
+
+[N01] 二分查找（有序数组）
+来源：http://www.52xcode.cn/Article/details/gt2quzhzsdp.html
+
+Py:   bisect.bisect_left(arr, x)
+来源：http://www.ydjk.org.cn/Article/details/gt2wvonbkrg.html
+
+PHP:  // 手写：$lo=0; $hi=count($a)-1; while ($lo <= $hi) { $mid = ($lo+$hi)>>1; ... }
+来源：http://www.ydjk.org.cn/Article/details/gt2zocxlhtq.html
+
+JS:   // 手写：while (lo <= hi) { const mid = (lo + hi) >> 1; ... }
+来源：http://www.52xcode.cn/Article/details/gt2kjqgweac.html
+
+TS:   // 手写：while (lo <= hi) { const mid = (lo + hi) >> 1; ... }
+来源：http://www.ydjk.org.cn/Article/details/gt2ikzrcqxl.html
+
+Java: Arrays.binarySearch(arr, x)
+来源：http://www.ydjk.org.cn/Article/details/gt2pqiwmvih.html
+
+Go:   sort.SearchInts(arr, x)
+来源：http://www.ydjk.org.cn/Article/details/gt2oslexzgq.html
+
+Ruby: arr.bsearch { |e| e >= x }
+来源：http://www.52xcode.cn/Article/details/gt2ccjwbtug.html
+
+C#:   Array.BinarySearch(arr, x)
+来源：http://www.52xcode.cn/Article/details/gt2rspqprmb.html
+
+[N02] 排序（工程实践用内置实现）
+来源：http://www.52xcode.cn/Article/details/gt2afiwpdey.html
+
+Py:   sorted(arr);  arr.sort()
+来源：http://www.ydjk.org.cn/Article/details/gt2ztdngmds.html
+
+PHP:  sort($arr);  usort($arr, $cmp);
+来源：http://www.ydjk.org.cn/Article/details/gt2ifmlkzbh.html
+
+JS:   [...arr].sort((a, b) => a - b)
+来源：http://www.ydjk.org.cn/Article/details/gt2xvrltzad.html
+
+TS:   [...arr].sort((a, b) => a - b)
+来源：http://www.ydjk.org.cn/Article/details/gt2fmrduyjl.html
+
+Java: Arrays.sort(arr);  Collections.sort(list)
+来源：http://www.52xcode.cn/Article/details/gt2cpctmkkg.html
+
+Go:   slices.Sort(arr)
+来源：http://www.52xcode.cn/Article/details/gt2ebwxxraa.html
+
+Ruby: arr.sort
+来源：http://www.52xcode.cn/Article/details/gt2rhcixmuf.html
+
+C#:   Array.Sort(arr);  list.Sort()
+来源：http://www.52xcode.cn/Article/details/gt2midahled.html
+
+[N03] 快速排序（分治示例）
+来源：http://www.52xcode.cn/Article/details/gt2dazhmocm.html
+
+Py:   def qs(a): return a if len(a) <= 1 else qs([x for x in a[1:] if x < a[0]]) + [a[0]] + qs([x for x in a[1:] if x >= a[0]])
+来源：http://www.52xcode.cn/Article/details/gt2ywgjbyli.html
+
+PHP:  // 递归实现，或用 usort
+来源：http://www.ydjk.org.cn/Article/details/gt2lntlyjll.html
+
+JS:   const qs = a => a.length <= 1 ? a : [...qs(a.slice(1).filter(x => x < a[0])), a[0], ...qs(a.slice(1).filter(x => x >= a[0]))];
+来源：http://www.52xcode.cn/Article/details/gt2birqbaun.html
+
+TS:   const qs = (a: number[]): number[] => a.length <= 1 ? a : [...qs(a.slice(1).filter(x => x < a[0])), a[0], ...qs(a.slice(1).filter(x => x >= a[0]))];
+来源：http://www.52xcode.cn/Article/details/gt2dgejlfaa.html
+
+Java: // 手写递归，或直接用 Arrays.sort
+来源：http://www.52xcode.cn/Article/details/gt2eiyucsnb.html
+
+Go:   slices.Sort(arr)      // 手写快排需递归实现
+来源：http://www.52xcode.cn/Article/details/gt2gduprldn.html
+
+Ruby: def qs(a) = a.size <= 1 ? a : qs(a[1..].select { |x| x < a[0] }) + [a[0]] + qs(a[1..].select { |x| x >= a[0] })
+来源：http://www.ydjk.org.cn/Article/details/gt2inlkezut.html
+
+C#:   // 手写递归，或 Array.Sort
+来源：http://www.52xcode.cn/Article/details/gt2kqtzucuk.html
+
+[N04] 斐波那契数列
+来源：http://www.52xcode.cn/Article/details/gt2qxbwqtzp.html
+
+Py:   def fib(n): return n if n < 2 else fib(n - 1) + fib(n - 2)
+来源：http://www.ydjk.org.cn/Article/details/gt2kgcfmarj.html
+
+PHP:  function fib($n) { return $n < 2 ? $n : fib($n - 1) + fib($n - 2); }
+来源：http://www.52xcode.cn/Article/details/gt2jmhcymsx.html
+
+JS:   const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2);
+来源：http://www.ydjk.org.cn/Article/details/gt2cpoljjgm.html
+
+TS:   const fib = (n: number): number => n < 2 ? n : fib(n - 1) + fib(n - 2);
+来源：http://www.ydjk.org.cn/Article/details/gt2hfcysyhw.html
+
+Java: static int fib(int n) { return n < 2 ? n : fib(n - 1) + fib(n - 2); }
+来源：http://www.52xcode.cn/Article/details/gt2bwtwlthn.html
+
+Go:   func fib(n int) int { if n < 2 { return n }; return fib(n-1) + fib(n-2) }
+来源：http://www.52xcode.cn/Article/details/gt2cqyzzigv.html
+
+Ruby: def fib(n) = n < 2 ? n : fib(n - 1) + fib(n - 2)
+来源：http://www.ydjk.org.cn/Article/details/gt2nrskrokt.html
+
+C#:   static int Fib(int n) => n < 2 ? n : Fib(n - 1) + Fib(n - 2);
+来源：http://www.ydjk.org.cn/Article/details/gt2syulsazo.html
+
+[N05] 最大公约数
+来源：http://www.ydjk.org.cn/Article/details/gt2bmjvidtj.html
+
+Py:   math.gcd(a, b)
+来源：http://www.ydjk.org.cn/Article/details/gt2tlhkzlvw.html
+
+PHP:  // 手写：while ($b) { [$a, $b] = [$b, $a % $b]; }
+来源：http://www.52xcode.cn/Article/details/gt2uzdzrorr.html
+
+JS:   // 手写：while (b) { [a, b] = [b, a % b]; }
+来源：http://www.ydjk.org.cn/Article/details/gt2rvlpkjdw.html
+
+TS:   // 手写：while (b) { [a, b] = [b, a % b]; }
+来源：http://www.52xcode.cn/Article/details/gt2yibkxdoi.html
+
+Java: BigInteger.valueOf(a).gcd(BigInteger.valueOf(b))
+来源：http://www.52xcode.cn/Article/details/gt2kszgmteg.html
+
+Go:   // 手写：for b != 0 { a, b = b, a%b }
+来源：http://www.ydjk.org.cn/Article/details/gt2pxirmsjz.html
+
+Ruby: a.gcd(b)
+来源：http://www.52xcode.cn/Article/details/gt2wgsenwwu.html
+
+C#:   // 手写：while (b != 0) { (a, b) = (b, a % b); }
+来源：http://www.ydjk.org.cn/Article/details/gt2zgplgxxi.html
+
+[N06] 判断回文字符串
+来源：http://www.52xcode.cn/Article/details/gt2qjdshboj.html
+
+Py:   s == s[::-1]
+来源：http://www.52xcode.cn/Article/details/gt2mxqffxtl.html
+
+PHP:  $s === strrev($s);
+来源：http://www.ydjk.org.cn/Article/details/gt2urswtwlx.html
+
+JS:   s === [...s].reverse().join("")
+来源：http://www.ydjk.org.cn/Article/details/gt2xtwlgqsz.html
+
+TS:   s === [...s].reverse().join("")
+来源：http://www.52xcode.cn/Article/details/gt2mzylgcge.html
+
+Java: s.equals(new StringBuilder(s).reverse().toString())
+来源：http://www.ydjk.org.cn/Article/details/gt2gqwqdojj.html
+
+Go:   // 双指针从两端比较
+来源：http://www.52xcode.cn/Article/details/gt2hshnbloj.html
+
+Ruby: s == s.reverse
+来源：http://www.ydjk.org.cn/Article/details/gt2jcshlmtt.html
+
+C#:   s == new string(s.Reverse().ToArray())
+来源：http://www.52xcode.cn/Article/details/gt2omuqrshn.html
+
+[N07] 两数之和（返回下标）
+来源：http://www.ydjk.org.cn/Article/details/gt2sasawkqb.html
+
+Py:   idx = {v: i for i, v in enumerate(nums)}      # 再逐个查 target - v 是否在表内
+来源：http://www.ydjk.org.cn/Article/details/gt2xnduowlc.html
+
+PHP:  // 手写哈希表：$map[$v] = $i
+来源：http://www.ydjk.org.cn/Article/details/gt2pwgtbgtv.html
+
+JS:   // 手写 Map：map.set(v, i)
+来源：http://www.ydjk.org.cn/Article/details/gt2tkkzdqtn.html
+
+TS:   // 手写 Map<string, number>
+来源：http://www.ydjk.org.cn/Article/details/gt2igyzoilq.html
+
+Java: // 手写 HashMap
+来源：http://www.52xcode.cn/Article/details/gt2trhikfqs.html
+
+Go:   // 手写 map[int]int
+来源：http://www.ydjk.org.cn/Article/details/gt2tbebihbj.html
+
+Ruby: // 手写 Hash
+来源：http://www.52xcode.cn/Article/details/gt2yimgjqof.html
+
+C#:   // 手写 Dictionary<int, int>
+来源：http://www.52xcode.cn/Article/details/gt2masutqdg.html
+
+[N08] 生成全排列
+来源：http://www.52xcode.cn/Article/details/gt2wkxkotlu.html
+
+Py:   itertools.permutations(arr)
+来源：http://www.52xcode.cn/Article/details/gt2nebxbpnr.html
+
+PHP:  // 手写递归交换
+来源：http://www.52xcode.cn/Article/details/gt2uabpunwq.html
+
+JS:   // 手写回溯递归
+来源：http://www.52xcode.cn/Article/details/gt2hxeqehjw.html
+
+TS:   // 手写回溯递归
+来源：http://www.52xcode.cn/Article/details/gt2cxoqmjkh.html
+
+Java: // 手写回溯递归
+来源：http://www.ydjk.org.cn/Article/details/gt2ccekrmtr.html
+
+Go:   // 手写回溯递归
+来源：http://www.ydjk.org.cn/Article/details/gt2gpjeohng.html
+
+Ruby: arr.permutation.to_a
+来源：http://www.52xcode.cn/Article/details/gt2vqupgjmk.html
+
+C#:   // 手写回溯递归
+来源：http://www.ydjk.org.cn/Article/details/gt2hojzntyx.html
+
+[N09] 栈与队列
+来源：http://www.ydjk.org.cn/Article/details/gt2dvsaglfq.html
+
+Py:   stack.append(x) / stack.pop()；deque.popleft() 作队列
+来源：http://www.52xcode.cn/Article/details/gt2dtxsbiep.html
+
+PHP:  array_push/array_pop 作栈；array_shift 作队列
+来源：http://www.52xcode.cn/Article/details/gt2wfcksoui.html
+
+JS:   arr.push(x) / arr.pop() 作栈；arr.push / arr.shift 作队列
+来源：http://www.ydjk.org.cn/Article/details/gt2vczvdqoy.html
+
+TS:   arr.push(x) / arr.pop() 作栈
+来源：http://www.52xcode.cn/Article/details/gt2xqqnqnky.html
+
+Java: new ArrayDeque<>() 同时支持栈与队列
+来源：http://www.52xcode.cn/Article/details/gt2qegsewxs.html
+
+Go:   append(s, x) 与 s[len(s)-1] 出栈
+来源：http://www.ydjk.org.cn/Article/details/gt2qrxfstmf.html
+
+Ruby: arr.push / arr.pop 作栈；arr.shift 作队列
+来源：http://www.52xcode.cn/Article/details/gt2cvkyidjh.html
+
+C#:   new Stack<T>() 与 new Queue<T>()
+来源：http://www.ydjk.org.cn/Article/details/gt2lkvrmfdc.html
+
+[N10] 链表节点定义
+来源：http://www.ydjk.org.cn/Article/details/gt2zizpppjv.html
+
+Py:   class Node:⏎    def __init__(self, v, nxt=None): self.v, self.next = v, nxt
+来源：http://www.ydjk.org.cn/Article/details/gt2sjpteojo.html
+
+PHP:  class Node { public $v; public $next = null; }
+来源：http://www.ydjk.org.cn/Article/details/gt2evmrtazy.html
+
+JS:   class Node { constructor(v) { this.v = v; this.next = null; } }
+来源：http://www.52xcode.cn/Article/details/gt2wftedjjb.html
+
+TS:   class Node { constructor(public v: number, public next: Node | null = null) {} }
+来源：http://www.52xcode.cn/Article/details/gt2gpaldhjk.html
+
+Java: class Node { int v; Node next; }
+来源：http://www.ydjk.org.cn/Article/details/gt2yadtlqlg.html
+
+Go:   type Node struct { V int; Next *Node }
+来源：http://www.52xcode.cn/Article/details/gt2vnyovzff.html
+
+Ruby: Node = Struct.new(:v, :next)
+来源：http://www.52xcode.cn/Article/details/gt2vrjyqwoo.html
+
+C#:   class Node { public int V; public Node? Next; }
+来源：http://www.ydjk.org.cn/Article/details/gt2wiqcxjbx.html
+
+[N11] 二叉树中序遍历
+来源：http://www.ydjk.org.cn/Article/details/gt2zorgqbow.html
+
+Py:   def inorder(n): return inorder(n.left) + [n.val] + inorder(n.right) if n else []
+来源：http://www.52xcode.cn/Article/details/gt2fopqbtvn.html
+
+PHP:  // 手写递归函数
+来源：http://www.52xcode.cn/Article/details/gt2lcokoiyb.html
+
+JS:   const inorder = n => n ? [...inorder(n.left), n.val, ...inorder(n.right)] : [];
+来源：http://www.52xcode.cn/Article/details/gt2boqfrynz.html
+
+TS:   const inorder = (n: T | null): number[] => n ? [...inorder(n.left), n.val, ...inorder(n.right)] : [];
+来源：http://www.52xcode.cn/Article/details/gt2hjhzimpj.html
+
+Java: // 手写递归
+来源：http://www.52xcode.cn/Article/details/gt2jigrmgzm.html
+
+Go:   // 手写递归
+来源：http://www.ydjk.org.cn/Article/details/gt2nduvknvu.html
+
+Ruby: def inorder(n) = n ? inorder(n.left) + [n.val] + inorder(n.right) : []
+来源：http://www.ydjk.org.cn/Article/details/gt2uszgxfqe.html
+
+C#:   // 手写递归
+来源：http://www.ydjk.org.cn/Article/details/gt2xyhbumdy.html
+
+[N12] 动态规划：爬楼梯（每次 1 或 2 级）
+来源：http://www.52xcode.cn/Article/details/gt2rzirmqid.html
+
+Py:   from functools import reduce;  climb = lambda n: reduce(lambda p, _: (p[1], p[0] + p[1]), range(n), (1, 1))[0]
+来源：http://www.52xcode.cn/Article/details/gt2cfhsnxzv.html
+
+PHP:  // 递推：$a=1;$b=1;for(...){[$a,$b]=[$b,$a+$b];}
+来源：http://www.52xcode.cn/Article/details/gt2adxuncvu.html
+
+JS:   // 递推：let [a, b] = [1, 1]; for (let i = 0; i < n; i++) [a, b] = [b, a + b];
+来源：http://www.ydjk.org.cn/Article/details/gt2zmcwmedh.html
+
+TS:   let [a, b] = [1, 1]; for (let i = 0; i < n; i++) [a, b] = [b, a + b];
+来源：http://www.52xcode.cn/Article/details/gt2zfygrcmz.html
+
+Java: // 递推：int a = 1, b = 1; 循环更新
+来源：http://www.52xcode.cn/Article/details/gt2qeddnbbo.html
+
+Go:   // 递推：a, b := 1, 1; for i := 0; i < n; i++ { a, b = b, a+b }
+来源：http://www.52xcode.cn/Article/details/gt2hqckdudi.html
+
+Ruby: a, b = 1, 1;  n.times { a, b = b, a + b }
+来源：http://www.52xcode.cn/Article/details/gt2ogqrqgff.html
+
+C#:   // 递推：int a = 1, b = 1; 循环更新
+来源：http://www.ydjk.org.cn/Article/details/gt2vxxxxgng.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt2bouvnyjh.html
+
+O. 并发与异步
+来源：http://www.ydjk.org.cn/Article/details/gt2fnoqtixk.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2iozynjme.html
+
+[O01] 启动一个线程
+来源：http://www.ydjk.org.cn/Article/details/gt2zojpftlp.html
+
+Py:   threading.Thread(target=f, args=(1,)).start()
+来源：http://www.52xcode.cn/Article/details/gt2pxsbltle.html
+
+PHP:  // 无原生线程：用 pcntl_fork 或消息队列
+来源：http://www.52xcode.cn/Article/details/gt2isqnhngp.html
+
+JS:   // 单线程事件循环：CPU 密集用 worker_threads
+来源：http://www.52xcode.cn/Article/details/gt2yqoxsyol.html
+
+TS:   // 同 JS
+来源：http://www.ydjk.org.cn/Article/details/gt2zkdkxcyg.html
+
+Java: new Thread(() -> f()).start()
+来源：http://www.ydjk.org.cn/Article/details/gt2fwdovqts.html
+
+Go:   go f()
+来源：http://www.ydjk.org.cn/Article/details/gt2gpkjvtnw.html
+
+Ruby: Thread.new { f }
+来源：http://www.52xcode.cn/Article/details/gt2ctswuwsb.html
+
+C#:   Task.Run(() => F());
+来源：http://www.52xcode.cn/Article/details/gt2gvgjarxe.html
+
+[O02] 使用线程池
+来源：http://www.52xcode.cn/Article/details/gt2bjoyvczb.html
+
+Py:   concurrent.futures.ThreadPoolExecutor(max_workers=4)
+来源：http://www.52xcode.cn/Article/details/gt2mnsgdwnj.html
+
+PHP:  // 用 Swoole / ReactPHP 等扩展实现
+来源：http://www.52xcode.cn/Article/details/gt2fqcajsqb.html
+
+JS:   // worker_threads 线程池
+来源：http://www.52xcode.cn/Article/details/gt2axpvltrq.html
+
+TS:   // worker_threads 线程池
+来源：http://www.52xcode.cn/Article/details/gt2ttrssuci.html
+
+Java: Executors.newFixedThreadPool(4)
+来源：http://www.52xcode.cn/Article/details/gt2jvnkwguw.html
+
+Go:   // 协程轻量，无需池；限并发用带缓冲 channel 当信号量
+来源：http://www.52xcode.cn/Article/details/gt2cggwmqcp.html
+
+Ruby: // 用 concurrent-ruby 的 ThreadPool
+来源：http://www.52xcode.cn/Article/details/gt2xsvrjnmd.html
+
+C#:   Task.WhenAll(...)  或 Parallel.ForEach
+来源：http://www.ydjk.org.cn/Article/details/gt2nzqzksyt.html
+
+[O03] 加锁保护共享数据
+来源：http://www.ydjk.org.cn/Article/details/gt2vgjqcmzx.html
+
+Py:   with lock: shared += 1
+来源：http://www.ydjk.org.cn/Article/details/gt2aevlrvxd.html
+
+PHP:  // 用 flock() 做文件锁
+来源：http://www.52xcode.cn/Article/details/gt2etmvhfyy.html
+
+JS:   // 单线程无需锁；跨线程共享内存用 Atomics
+来源：http://www.52xcode.cn/Article/details/gt2iwfqokfr.html
+
+TS:   // 同 JS
+来源：http://www.52xcode.cn/Article/details/gt2bhaqyhvj.html
+
+Java: synchronized (this) { shared++; }
+来源：http://www.ydjk.org.cn/Article/details/gt2ozxfxlgj.html
+
+Go:   mu.Lock();  defer mu.Unlock()
+来源：http://www.52xcode.cn/Article/details/gt2vcosfcya.html
+
+Ruby: mutex.synchronize { shared += 1 }
+来源：http://www.52xcode.cn/Article/details/gt2gipbjthb.html
+
+C#:   lock (gate) { shared++; }
+来源：http://www.ydjk.org.cn/Article/details/gt2sfbaqnxl.html
+
+[O04] 定义异步函数并等待
+来源：http://www.52xcode.cn/Article/details/gt2hxnfkjnx.html
+
+Py:   async def f():⏎    await g()
+来源：http://www.ydjk.org.cn/Article/details/gt2dxvttmqv.html
+
+PHP:  // 无原生 async：用 Fiber 或 Swoole
+来源：http://www.52xcode.cn/Article/details/gt2ihsrkurw.html
+
+JS:   async function f() { await g(); }
+来源：http://www.52xcode.cn/Article/details/gt2yttsljws.html
+
+TS:   async function f(): Promise<void> { await g(); }
+来源：http://www.ydjk.org.cn/Article/details/gt2nwyfjzmh.html
+
+Java: // 用 CompletableFuture 或虚拟线程
+来源：http://www.52xcode.cn/Article/details/gt2wukugoue.html
+
+Go:   // 无 async 关键字：直接 go 调用，用 channel 收结果
+来源：http://www.52xcode.cn/Article/details/gt2rsddhmrn.html
+
+Ruby: # 用 Fiber 或 async gem
+来源：http://www.ydjk.org.cn/Article/details/gt2wznoyzbt.html
+
+C#:   async Task F() { await G(); }
+来源：http://www.52xcode.cn/Article/details/gt2qfctlvmk.html
+
+[O05] 并发执行并等待全部完成
+来源：http://www.ydjk.org.cn/Article/details/gt2syvvruyy.html
+
+Py:   asyncio.gather(*tasks)
+来源：http://www.52xcode.cn/Article/details/gt2fwnguvrt.html
+
+PHP:  // curl_multi 或 Amp 的 Promise\all
+来源：http://www.52xcode.cn/Article/details/gt2rkigvxsu.html
+
+JS:   await Promise.all(tasks)
+来源：http://www.ydjk.org.cn/Article/details/gt2hlplmvkm.html
+
+TS:   await Promise.all(tasks)
+来源：http://www.ydjk.org.cn/Article/details/gt2iuboyiea.html
+
+Java: CompletableFuture.allOf(f1, f2).join()
+来源：http://www.52xcode.cn/Article/details/gt2fmrrxidv.html
+
+Go:   sync.WaitGroup 或 errgroup.Wait()
+来源：http://www.ydjk.org.cn/Article/details/gt2jyftdjpj.html
+
+Ruby: threads.map(&:join)
+来源：http://www.52xcode.cn/Article/details/gt2cvsdfafu.html
+
+C#:   await Task.WhenAll(t1, t2)
+来源：http://www.ydjk.org.cn/Article/details/gt2sdaqswpl.html
+
+[O06] 使用进程池
+来源：http://www.52xcode.cn/Article/details/gt2dnhgpvoi.html
+
+Py:   concurrent.futures.ProcessPoolExecutor()
+来源：http://www.ydjk.org.cn/Article/details/gt2poyvbdrw.html
+
+PHP:  // pcntl_fork 或多进程队列
+来源：http://www.ydjk.org.cn/Article/details/gt2hrcrwapl.html
+
+JS:   // child_process / cluster 模块
+来源：http://www.52xcode.cn/Article/details/gt2tartkpdf.html
+
+TS:   // child_process / cluster 模块
+来源：http://www.ydjk.org.cn/Article/details/gt2bhclfccs.html
+
+Java: // ForkJoinPool 或 ProcessBuilder
+来源：http://www.ydjk.org.cn/Article/details/gt2elscewoy.html
+
+Go:   // goroutine 已占用多核，直接并发即可
+来源：http://www.ydjk.org.cn/Article/details/gt2cbezfwvo.html
+
+Ruby: // fork 块
+来源：http://www.52xcode.cn/Article/details/gt2nncorzqt.html
+
+C#:   Parallel.For
+来源：http://www.52xcode.cn/Article/details/gt2jzfrmfjq.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt2pgmjxggy.html
+
+P. 常用工具函数
+来源：http://www.52xcode.cn/Article/details/gt2mysblvhr.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt2sullkjkq.html
+
+[P01] 生成 UUID
+来源：http://www.52xcode.cn/Article/details/gt2pyzlaxhz.html
+
+Py:   str(uuid.uuid4())
+来源：http://www.ydjk.org.cn/Article/details/gt2vudjjgri.html
+
+PHP:  bin2hex(random_bytes(16));        // 或 ramsey/uuid
+来源：http://www.ydjk.org.cn/Article/details/gt2ysgxdyun.html
+
+JS:   crypto.randomUUID()
+来源：http://www.ydjk.org.cn/Article/details/gt2uvefqnav.html
+
+TS:   crypto.randomUUID()
+来源：http://www.ydjk.org.cn/Article/details/gt2nprtdqnj.html
+
+Java: UUID.randomUUID().toString()
+来源：http://www.52xcode.cn/Article/details/gt2yavjuorq.html
+
+Go:   // 用 github.com/google/uuid
+来源：http://www.52xcode.cn/Article/details/gt2vqmzdoyv.html
+
+Ruby: SecureRandom.uuid
+来源：http://www.ydjk.org.cn/Article/details/gt2gxafblvu.html
+
+C#:   Guid.NewGuid().ToString()
+来源：http://www.52xcode.cn/Article/details/gt2qpwrsvyz.html
+
+[P02] MD5 / SHA256 摘要
+来源：http://www.ydjk.org.cn/Article/details/gt2zfbromic.html
+
+Py:   hashlib.sha256(b).hexdigest();  hashlib.md5(b).hexdigest()
+来源：http://www.ydjk.org.cn/Article/details/gt2ordaclzz.html
+
+PHP:  hash("sha256", $s);  md5($s);
+来源：http://www.52xcode.cn/Article/details/gt2yturgfqp.html
+
+JS:   crypto.createHash("sha256").update(s).digest("hex")     // Node
+来源：http://www.52xcode.cn/Article/details/gt2gpxpqptf.html
+
+TS:   crypto.createHash("sha256").update(s).digest("hex")
+来源：http://www.52xcode.cn/Article/details/gt2jiznzyru.html
+
+Java: MessageDigest.getInstance("SHA-256").digest(bytes)
+来源：http://www.ydjk.org.cn/Article/details/gt2pbglshxt.html
+
+Go:   fmt.Sprintf("%x", sha256.Sum256([]byte(s)))
+来源：http://www.52xcode.cn/Article/details/gt2ownaeybq.html
+
+Ruby: Digest::SHA256.hexdigest(s)
+来源：http://www.ydjk.org.cn/Article/details/gt2wiobqenk.html
+
+C#:   Convert.ToHexString(SHA256.HashData(bytes))
+来源：http://www.ydjk.org.cn/Article/details/gt2gzgvlhqq.html
+
+[P03] 生成短随机字符串
+来源：http://www.ydjk.org.cn/Article/details/gt2vltoejvn.html
+
+Py:   "".join(random.choices(string.ascii_letters + string.digits, k=16))
+来源：http://www.52xcode.cn/Article/details/gt2aheolopj.html
+
+PHP:  substr(str_shuffle(str_repeat("abcdefghijklmnopqrstuvwxyz0123456789", 2)), 0, 16);
+来源：http://www.ydjk.org.cn/Article/details/gt2uvjeaweb.html
+
+JS:   [...crypto.getRandomValues(new Uint8Array(16))].map(b => (b % 36).toString(36)).join("")
+来源：http://www.ydjk.org.cn/Article/details/gt2vrjzfhrc.html
+
+TS:   [...crypto.getRandomValues(new Uint8Array(16))].map(b => (b % 36).toString(36)).join("")
+来源：http://www.ydjk.org.cn/Article/details/gt2cihdwthj.html
+
+Java: new BigInteger(130, new SecureRandom()).toString(36).substring(0, 16)
+来源：http://www.ydjk.org.cn/Article/details/gt2lmkkupes.html
+
+Go:   // crypto/rand 生成随机字节后 base64 或 hex 编码
+来源：http://www.52xcode.cn/Article/details/gt2dmeywwxu.html
+
+Ruby: SecureRandom.alphanumeric(16)
+来源：http://www.ydjk.org.cn/Article/details/gt2fyqgjdqk.html
+
+C#:   RandomNumberGenerator.GetHexString(16)     // .NET 8+
+来源：http://www.52xcode.cn/Article/details/gt2ywhvjuwb.html
+
+[P04] 求长度
+来源：http://www.ydjk.org.cn/Article/details/gt2plwpknyi.html
+
+Py:   len(x)            # 字符串、列表、字典通用
+来源：http://www.ydjk.org.cn/Article/details/gt2oraklapc.html
+
+PHP:  count($arr);  strlen($s);  mb_strlen($s, "UTF-8");
+来源：http://www.52xcode.cn/Article/details/gt2fdebvhxb.html
+
+JS:   Array.isArray(x) ? x.length : Object.keys(x).length
+来源：http://www.52xcode.cn/Article/details/gt2gmpsfevz.html
+
+TS:   Array.isArray(x) ? x.length : Object.keys(x).length
+来源：http://www.52xcode.cn/Article/details/gt2njhutton.html
+
+Java: list.size();  map.size();  s.length()
+来源：http://www.52xcode.cn/Article/details/gt2pdujgwdl.html
+
+Go:   len(arr);  len(m)
+来源：http://www.ydjk.org.cn/Article/details/gt2aysyeiep.html
+
+Ruby: x.length;  x.size
+来源：http://www.ydjk.org.cn/Article/details/gt2dppzebwp.html
+
+C#:   list.Count;  dict.Count;  s.Length
+来源：http://www.52xcode.cn/Article/details/gt2ykpuvwdo.html
+
+[P05] 判断两个对象内容是否相等
+来源：http://www.52xcode.cn/Article/details/gt2aevqfdcw.html
+
+Py:   a == b              # 列表与字典递归比较内容
+来源：http://www.ydjk.org.cn/Article/details/gt2uczfgole.html
+
+PHP:  $a == $b            // 值比较；$a === $b 要求顺序与类型一致
+来源：http://www.52xcode.cn/Article/details/gt2ahnywzom.html
+
+JS:   JSON.stringify(a) === JSON.stringify(b)   // 简单场景；复杂用深比较库
+来源：http://www.ydjk.org.cn/Article/details/gt2ghshiadp.html
+
+TS:   JSON.stringify(a) === JSON.stringify(b)
+来源：http://www.ydjk.org.cn/Article/details/gt2elsqufux.html
+
+Java: a.equals(b)         // 需正确实现 equals；数组用 Arrays.equals
+来源：http://www.ydjk.org.cn/Article/details/gt2oluzkbko.html
+
+Go:   reflect.DeepEqual(a, b)
+来源：http://www.52xcode.cn/Article/details/gt2thhnffnl.html
+
+Ruby: a == b
+来源：http://www.ydjk.org.cn/Article/details/gt2jnlcnuqi.html
+
+C#:   Equals(a, b)  或 StructuralComparisons
+来源：http://www.ydjk.org.cn/Article/details/gt2gaozilcc.html
+
+[P06] 综合判空（null / 空串 / 空集合）
+来源：http://www.ydjk.org.cn/Article/details/gt2olgirobz.html
+
+Py:   if not x:           # None、""、[]、{}、0 均为假
+来源：http://www.52xcode.cn/Article/details/gt2fkvuwkpn.html
+
+PHP:  if (empty($x)) {}
+来源：http://www.ydjk.org.cn/Article/details/gt2ohfusbuj.html
+
+JS:   if (x == null) {}    // 同时覆盖 null 与 undefined
+来源：http://www.ydjk.org.cn/Article/details/gt2iouejshf.html
+
+TS:   if (x == null) {}
+来源：http://www.52xcode.cn/Article/details/gt2gygsghdh.html
+
+Java: if (x == null || x.isEmpty()) {}
+来源：http://www.52xcode.cn/Article/details/gt2lswodywq.html
+
+Go:   if x == nil {}
+来源：http://www.ydjk.org.cn/Article/details/gt2nrdrfljc.html
+
+Ruby: if x.nil? || (x.respond_to?(:empty?) && x.empty?)
+来源：http://www.ydjk.org.cn/Article/details/gt2iugigvfa.html
+
+C#:   if (x is null) {}
+来源：http://www.52xcode.cn/Article/details/gt2faqcfjbx.html
+
+[P07] 防抖与节流
+来源：http://www.52xcode.cn/Article/details/gt2faigbaqk.html
+
+Py:   # 用装饰器 + threading.Timer 实现；或 functools.lru_cache 做缓存
+来源：http://www.ydjk.org.cn/Article/details/gt2fnssqown.html
+
+PHP:  // 手写时间戳比较
+来源：http://www.ydjk.org.cn/Article/details/gt2jnozqjyu.html
+
+JS:   const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+来源：http://www.52xcode.cn/Article/details/gt2vhgzvoac.html
+
+TS:   const debounce = <A extends unknown[]>(fn: (...a: A) => void, ms: number) => { let t: ReturnType<typeof setTimeout>; return (...a: A) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+来源：http://www.52xcode.cn/Article/details/gt2wuitjyyz.html
+
+Java: long last = 0;  if (now - last > ms) { last = now; run(); }
+来源：http://www.52xcode.cn/Article/details/gt2aujhhuji.html
+
+Go:   time.AfterFunc 实现，或用带缓冲 channel 丢弃
+来源：http://www.ydjk.org.cn/Article/details/gt2yenekgbb.html
+
+Ruby: // 手写闭包 + Time.now 判断
+来源：http://www.52xcode.cn/Article/details/gt2nmtnkwfx.html
+
+C#:   // 用 System.Timers.Timer 重置实现
+来源：http://www.ydjk.org.cn/Article/details/gt2regizumr.html
+
+[P08] 处理浮点精度问题
+来源：http://www.ydjk.org.cn/Article/details/gt2xjpwyeae.html
+
+Py:   Decimal("0.1") + Decimal("0.2");  round(0.1 + 0.2, 10)
+来源：http://www.52xcode.cn/Article/details/gt2eiopnnts.html
+
+PHP:  bcadd("0.1", "0.2", 2);
+来源：http://www.ydjk.org.cn/Article/details/gt2rtmxatdm.html
+
+JS:   (0.1 + 0.2).toFixed(2);  Math.round((0.1 + 0.2) * 100) / 100
+来源：http://www.52xcode.cn/Article/details/gt2abszhzdz.html
+
+TS:   (0.1 + 0.2).toFixed(2)
+来源：http://www.ydjk.org.cn/Article/details/gt2lnmzwdcv.html
+
+Java: BigDecimal.valueOf(0.1).add(BigDecimal.valueOf(0.2))
+来源：http://www.52xcode.cn/Article/details/gt2dcetbgwm.html
+
+Go:   math/big.Float，或全部换算成整数分再算
+来源：http://www.52xcode.cn/Article/details/gt2qkbuwthk.html
+
+Ruby: BigDecimal("0.1") + BigDecimal("0.2")
+来源：http://www.ydjk.org.cn/Article/details/gt2rbierwio.html
+
+C#:   decimal d = 0.1m + 0.2m;      // decimal 为精确十进制
+来源：http://www.ydjk.org.cn/Article/details/gt2yeusqhrl.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt2sxvzhupu.html
+
+Q. SQL 专题（以 MySQL 8 为主，附 PostgreSQL 差异）
+来源：http://www.52xcode.cn/Article/details/gt2cokxznfc.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2agzzbhty.html
+
+[Q01] 创建表
+来源：http://www.52xcode.cn/Article/details/gt2bjuxvxcu.html
+
+CREATE TABLE users (
+来源：http://www.52xcode.cn/Article/details/gt2datqvviq.html
+
+id INT PRIMARY KEY AUTO_INCREMENT,
+来源：http://www.52xcode.cn/Article/details/gt2ayhdsrfc.html
+
+name VARCHAR(50) NOT NULL,
+来源：http://www.52xcode.cn/Article/details/gt2wiwkdtmi.html
+
+email VARCHAR(100) UNIQUE,
+来源：http://www.ydjk.org.cn/Article/details/gt2nquyeaiw.html
+
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+来源：http://www.ydjk.org.cn/Article/details/gt2railjkdm.html
+
+);
+来源：http://www.ydjk.org.cn/Article/details/gt2gebbejar.html
+
+[Q02] 创建带外键的表
+来源：http://www.ydjk.org.cn/Article/details/gt2lnqqywta.html
+
+CREATE TABLE orders (
+来源：http://www.ydjk.org.cn/Article/details/gt2ontdhsna.html
+
+id BIGINT PRIMARY KEY AUTO_INCREMENT,
+来源：http://www.ydjk.org.cn/Article/details/gt2yrhzfjor.html
+
+user_id INT NOT NULL,
+来源：http://www.ydjk.org.cn/Article/details/gt2umbdnvwb.html
+
+amount DECIMAL(10, 2),
+来源：http://www.ydjk.org.cn/Article/details/gt2dkxpwymh.html
+
+FOREIGN KEY (user_id) REFERENCES users(id)
+来源：http://www.ydjk.org.cn/Article/details/gt2tubxyszv.html
+
+
+<!-- 参考信息 -->

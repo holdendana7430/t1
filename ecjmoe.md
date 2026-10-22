@@ -1,0 +1,904 @@
+代发 wailian999
+
+Py:   (s[:20] + "…") if len(s) > 20 else s
+来源：http://www.52xcode.cn/Article/details/gt2pzbvmylq.html
+
+PHP:  mb_strimwidth($s, 0, 20, "…", "UTF-8");
+来源：http://www.52xcode.cn/Article/details/gt2kltwkflr.html
+
+JS:   s.length > 20 ? s.slice(0, 20) + "…" : s
+来源：http://www.52xcode.cn/Article/details/gt2icfjbzoo.html
+
+TS:   s.length > 20 ? s.slice(0, 20) + "…" : s
+来源：http://www.52xcode.cn/Article/details/gt2hqeqqjde.html
+
+Java: s.length() > 20 ? s.substring(0, 20) + "…" : s
+来源：http://www.ydjk.org.cn/Article/details/gt2ycshsmzk.html
+
+Go:   // 按 rune 判断长度后截断
+来源：http://www.ydjk.org.cn/Article/details/gt2aebisjof.html
+
+Ruby: s.length > 20 ? s[0, 20] + "…" : s
+来源：http://www.ydjk.org.cn/Article/details/gt2sytddmgy.html
+
+C#:   s.Length > 20 ? s[..20] + "…" : s
+来源：http://www.ydjk.org.cn/Article/details/gt2hdcnyivj.html
+
+[E22] 字节长度与字符长度
+来源：http://www.52xcode.cn/Article/details/gt2gryqawbb.html
+
+Py:   len(s.encode("utf-8"));  len(s)
+来源：http://www.ydjk.org.cn/Article/details/gt2qppzjpbx.html
+
+PHP:  strlen($s);  mb_strlen($s, "UTF-8");
+来源：http://www.ydjk.org.cn/Article/details/gt2oojaiiwe.html
+
+JS:   new TextEncoder().encode(s).length;  s.length
+来源：http://www.ydjk.org.cn/Article/details/gt2vwnoqfsj.html
+
+TS:   new TextEncoder().encode(s).length;  s.length
+来源：http://www.ydjk.org.cn/Article/details/gt2vulhuguc.html
+
+Java: s.getBytes(StandardCharsets.UTF_8).length;  s.length()
+来源：http://www.ydjk.org.cn/Article/details/gt2pmtsbleb.html
+
+Go:   len(s);  utf8.RuneCountInString(s)     # 前者字节数，后者字符数
+来源：http://www.52xcode.cn/Article/details/gt2rcjerthk.html
+
+Ruby: s.bytesize;  s.length
+来源：http://www.ydjk.org.cn/Article/details/gt2vbmysopy.html
+
+C#:   Encoding.UTF8.GetByteCount(s);  s.Length
+来源：http://www.52xcode.cn/Article/details/gt2ntlckgvh.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2izuavtcn.html
+
+F. 文件与目录
+来源：http://www.ydjk.org.cn/Article/details/gt2qmwmgyge.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt2bdvyrsrm.html
+
+[F01] 读取整个文件
+来源：http://www.52xcode.cn/Article/details/gt2wktxlepr.html
+
+Py:   open("a.txt", encoding="utf-8").read();  Path("a.txt").read_text()
+来源：http://www.ydjk.org.cn/Article/details/gt2ionpctnv.html
+
+PHP:  file_get_contents("a.txt");
+来源：http://www.ydjk.org.cn/Article/details/gt2kyilmkie.html
+
+JS:   fs.readFileSync("a.txt", "utf8")          // Node.js
+来源：http://www.52xcode.cn/Article/details/gt2vrjrdzfq.html
+
+TS:   fs.readFileSync("a.txt", "utf8")
+来源：http://www.ydjk.org.cn/Article/details/gt2mzxiitae.html
+
+Java: Files.readString(Path.of("a.txt"))
+来源：http://www.52xcode.cn/Article/details/gt2bfkqswuk.html
+
+Go:   data, err := os.ReadFile("a.txt")        // []byte，用 string(data) 转文本
+来源：http://www.ydjk.org.cn/Article/details/gt2xhlppgay.html
+
+Ruby: File.read("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2gqgjfsco.html
+
+C#:   File.ReadAllText("a.txt");
+来源：http://www.ydjk.org.cn/Article/details/gt2ztktsjyb.html
+
+[F02] 逐行读取文件
+来源：http://www.52xcode.cn/Article/details/gt2ehuevigr.html
+
+Py:   for line in open("a.txt", encoding="utf-8"): print(line.rstrip())
+来源：http://www.ydjk.org.cn/Article/details/gt2jrkqktsv.html
+
+PHP:  foreach (file("a.txt", FILE_IGNORE_NEW_LINES) as $line) { echo $line; }
+来源：http://www.ydjk.org.cn/Article/details/gt2ofavmcko.html
+
+JS:   for (const line of fs.readFileSync("a.txt", "utf8").split("\n")) {}
+来源：http://www.52xcode.cn/Article/details/gt2xrlwgxmj.html
+
+TS:   for (const line of fs.readFileSync("a.txt", "utf8").split("\n")) {}
+来源：http://www.52xcode.cn/Article/details/gt2lunezpsj.html
+
+Java: Files.lines(Path.of("a.txt")).forEach(System.out::println)
+来源：http://www.ydjk.org.cn/Article/details/gt2xlsvvpap.html
+
+Go:   scanner := bufio.NewScanner(f); for scanner.Scan() { fmt.Println(scanner.Text()) }
+来源：http://www.52xcode.cn/Article/details/gt2bldbzouz.html
+
+Ruby: File.foreach("a.txt") { |line| puts line }
+来源：http://www.52xcode.cn/Article/details/gt2mxmooqcd.html
+
+C#:   foreach (var line in File.ReadLines("a.txt")) { Console.WriteLine(line); }
+来源：http://www.52xcode.cn/Article/details/gt2jebqnkvr.html
+
+[F03] 写入文件（覆盖）
+来源：http://www.ydjk.org.cn/Article/details/gt2heogqfhw.html
+
+Py:   open("a.txt", "w", encoding="utf-8").write("hi")
+来源：http://www.ydjk.org.cn/Article/details/gt2vaohntuw.html
+
+PHP:  file_put_contents("a.txt", "hi");
+来源：http://www.52xcode.cn/Article/details/gt2scokvqbq.html
+
+JS:   fs.writeFileSync("a.txt", "hi", "utf8")
+来源：http://www.52xcode.cn/Article/details/gt2ljhaqrtj.html
+
+TS:   fs.writeFileSync("a.txt", "hi", "utf8")
+来源：http://www.52xcode.cn/Article/details/gt2mwysoqda.html
+
+Java: Files.writeString(Path.of("a.txt"), "hi")
+来源：http://www.ydjk.org.cn/Article/details/gt2oarydyix.html
+
+Go:   os.WriteFile("a.txt", []byte("hi"), 0644)
+来源：http://www.52xcode.cn/Article/details/gt2mhtpncfv.html
+
+Ruby: File.write("a.txt", "hi")
+来源：http://www.ydjk.org.cn/Article/details/gt2otrvgsns.html
+
+C#:   File.WriteAllText("a.txt", "hi");
+来源：http://www.52xcode.cn/Article/details/gt2xzvkbozu.html
+
+[F04] 追加写入文件
+来源：http://www.52xcode.cn/Article/details/gt2qljmhzbp.html
+
+Py:   open("a.txt", "a", encoding="utf-8").write("more\n")
+来源：http://www.ydjk.org.cn/Article/details/gt2mdsrvasm.html
+
+PHP:  file_put_contents("a.txt", "more\n", FILE_APPEND);
+来源：http://www.ydjk.org.cn/Article/details/gt2mjpnkoch.html
+
+JS:   fs.appendFileSync("a.txt", "more\n")
+来源：http://www.ydjk.org.cn/Article/details/gt2oqospwhn.html
+
+TS:   fs.appendFileSync("a.txt", "more\n")
+来源：http://www.52xcode.cn/Article/details/gt2zfwliqtu.html
+
+Java: Files.writeString(Path.of("a.txt"), "more\n", StandardOpenOption.APPEND)
+来源：http://www.ydjk.org.cn/Article/details/gt2blkhhfcx.html
+
+Go:   f, _ := os.OpenFile("a.txt", os.O_APPEND|os.O_WRONLY, 0644); f.WriteString("more\n")
+来源：http://www.ydjk.org.cn/Article/details/gt2ktyegbhv.html
+
+Ruby: File.open("a.txt", "a") { |f| f.puts "more" }
+来源：http://www.ydjk.org.cn/Article/details/gt2bpwggxyh.html
+
+C#:   File.AppendAllText("a.txt", "more\n");
+来源：http://www.52xcode.cn/Article/details/gt2avhurkao.html
+
+[F05] 判断文件或目录是否存在
+来源：http://www.ydjk.org.cn/Article/details/gt2gebajrri.html
+
+Py:   os.path.exists("a.txt");  Path("a.txt").exists()
+来源：http://www.ydjk.org.cn/Article/details/gt2wcnpogoy.html
+
+PHP:  file_exists("a.txt");
+来源：http://www.52xcode.cn/Article/details/gt2oypusqxd.html
+
+JS:   fs.existsSync("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt2idymxzxz.html
+
+TS:   fs.existsSync("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2znbiomvd.html
+
+Java: Files.exists(Path.of("a.txt"))
+来源：http://www.ydjk.org.cn/Article/details/gt2gebwgoqv.html
+
+Go:   if _, err := os.Stat("a.txt"); err == nil { /* 存在 */ }
+来源：http://www.ydjk.org.cn/Article/details/gt2kszeblrm.html
+
+Ruby: File.exist?("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2tqalscdt.html
+
+C#:   File.Exists("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2cncidizi.html
+
+[F06] 删除文件
+来源：http://www.52xcode.cn/Article/details/gt2qakngrta.html
+
+Py:   os.remove("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2fwbmnisd.html
+
+PHP:  unlink("a.txt");
+来源：http://www.52xcode.cn/Article/details/gt2lrrocahs.html
+
+JS:   fs.unlinkSync("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt2hwvvmuhy.html
+
+TS:   fs.unlinkSync("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2nacdoqvg.html
+
+Java: Files.deleteIfExists(Path.of("a.txt"))
+来源：http://www.ydjk.org.cn/Article/details/gt2yaixwkxo.html
+
+Go:   os.Remove("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2mbtqwryr.html
+
+Ruby: File.delete("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2ljaqeycn.html
+
+C#:   File.Delete("a.txt");
+来源：http://www.ydjk.org.cn/Article/details/gt2jacxmeuj.html
+
+[F07] 创建目录（含多级）
+来源：http://www.52xcode.cn/Article/details/gt2fttmuxio.html
+
+Py:   os.makedirs("dir/sub", exist_ok=True)
+来源：http://www.ydjk.org.cn/Article/details/gt2yhfrnvnh.html
+
+PHP:  mkdir("dir/sub", 0777, true);
+来源：http://www.ydjk.org.cn/Article/details/gt2rcjwvvrs.html
+
+JS:   fs.mkdirSync("dir/sub", { recursive: true })
+来源：http://www.52xcode.cn/Article/details/gt2wmcpwtim.html
+
+TS:   fs.mkdirSync("dir/sub", { recursive: true })
+来源：http://www.52xcode.cn/Article/details/gt2kreoocnh.html
+
+Java: Files.createDirectories(Path.of("dir/sub"))
+来源：http://www.52xcode.cn/Article/details/gt2gowiztjk.html
+
+Go:   os.MkdirAll("dir/sub", 0755)
+来源：http://www.ydjk.org.cn/Article/details/gt2iggtbhdw.html
+
+Ruby: FileUtils.mkdir_p("dir/sub")
+来源：http://www.ydjk.org.cn/Article/details/gt2ufwomkfu.html
+
+C#:   Directory.CreateDirectory("dir/sub");
+来源：http://www.52xcode.cn/Article/details/gt2topktrba.html
+
+[F08] 遍历目录
+来源：http://www.52xcode.cn/Article/details/gt2sonszdwq.html
+
+Py:   for name in os.listdir("dir"): print(name)
+来源：http://www.ydjk.org.cn/Article/details/gt2clmqqkjh.html
+
+PHP:  foreach (scandir("dir") as $f) { echo $f; }
+来源：http://www.52xcode.cn/Article/details/gt2aosvanzk.html
+
+JS:   fs.readdirSync("dir")
+来源：http://www.ydjk.org.cn/Article/details/gt2sujbfeqd.html
+
+TS:   fs.readdirSync("dir")
+来源：http://www.52xcode.cn/Article/details/gt2moxgkurk.html
+
+Java: Files.list(Path.of("dir")).forEach(System.out::println)
+来源：http://www.ydjk.org.cn/Article/details/gt2uzdhkgse.html
+
+Go:   entries, _ := os.ReadDir("dir")
+来源：http://www.ydjk.org.cn/Article/details/gt2lsykbcdn.html
+
+Ruby: Dir.children("dir")
+来源：http://www.ydjk.org.cn/Article/details/gt2hkotcbca.html
+
+C#:   Directory.GetFiles("dir")
+来源：http://www.52xcode.cn/Article/details/gt2fwrzhmjv.html
+
+[F09] 获取文件大小
+来源：http://www.52xcode.cn/Article/details/gt2audaiirt.html
+
+Py:   os.path.getsize("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt2dbntcowy.html
+
+PHP:  filesize("a.txt");
+来源：http://www.52xcode.cn/Article/details/gt2nqqfwalu.html
+
+JS:   fs.statSync("a.txt").size
+来源：http://www.ydjk.org.cn/Article/details/gt2lltacgoq.html
+
+TS:   fs.statSync("a.txt").size
+来源：http://www.ydjk.org.cn/Article/details/gt2giltllsb.html
+
+Java: Files.size(Path.of("a.txt"))
+来源：http://www.ydjk.org.cn/Article/details/gt2focgofpb.html
+
+Go:   info, _ := os.Stat("a.txt"); info.Size()
+来源：http://www.ydjk.org.cn/Article/details/gt2djxcmyim.html
+
+Ruby: File.size("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2lvxffkje.html
+
+C#:   new FileInfo("a.txt").Length
+来源：http://www.52xcode.cn/Article/details/gt2mrtkkmll.html
+
+[F10] 取文件扩展名 / 文件名
+来源：http://www.52xcode.cn/Article/details/gt2hpnrzhus.html
+
+Py:   os.path.splitext("a.txt");  os.path.basename("/x/a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2adfnfhit.html
+
+PHP:  pathinfo("a.txt", PATHINFO_EXTENSION);  basename("/x/a.txt");
+来源：http://www.ydjk.org.cn/Article/details/gt2pxbnwajv.html
+
+JS:   path.extname("a.txt");  path.basename("/x/a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2myhnttzy.html
+
+TS:   path.extname("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt2zjatyffv.html
+
+Java: // 手动 substring(lastIndexOf('.'))
+来源：http://www.52xcode.cn/Article/details/gt2vhhngnif.html
+
+Go:   filepath.Ext("a.txt");  filepath.Base("/x/a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt2zeixbwgx.html
+
+Ruby: File.extname("a.txt");  File.basename("/x/a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2advmyfrn.html
+
+C#:   Path.GetExtension("a.txt");  Path.GetFileName("/x/a.txt")
+来源：http://www.52xcode.cn/Article/details/gt2iiovifzt.html
+
+[F11] 复制与移动文件
+来源：http://www.ydjk.org.cn/Article/details/gt2qyeoycxq.html
+
+Py:   shutil.copy("a.txt", "b.txt");  shutil.move("a.txt", "b.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt2uafafwaq.html
+
+PHP:  copy("a.txt", "b.txt");  rename("a.txt", "b.txt");
+来源：http://www.52xcode.cn/Article/details/gt2krlneqzw.html
+
+JS:   fs.copyFileSync("a.txt", "b.txt");  fs.renameSync("a.txt", "b.txt")
+来源：http://www.52xcode.cn/Article/details/gt2bavjpawb.html
+
+TS:   fs.copyFileSync("a.txt", "b.txt");  fs.renameSync("a.txt", "b.txt")
+来源：http://www.52xcode.cn/Article/details/gt2sdrrgrtn.html
+
+Java: Files.copy(Path.of("a"), Path.of("b"));  Files.move(a, b)
+来源：http://www.52xcode.cn/Article/details/gt2vzvbskxv.html
+
+Go:   data, _ := os.ReadFile("a.txt"); os.WriteFile("b.txt", data, 0644)   // 移动用 os.Rename
+来源：http://www.52xcode.cn/Article/details/gt2qwedwphs.html
+
+Ruby: FileUtils.cp("a.txt", "b.txt");  FileUtils.mv("a.txt", "b.txt")
+来源：http://www.52xcode.cn/Article/details/gt2fehxycmv.html
+
+C#:   File.Copy("a", "b", true);  File.Move("a", "b", true);
+来源：http://www.ydjk.org.cn/Article/details/gt2mkrpmrja.html
+
+[F12] CSV 读写
+来源：http://www.ydjk.org.cn/Article/details/gt2vgdkvyop.html
+
+Py:   csv.reader(open("a.csv"));  csv.writer(f).writerow(row)
+来源：http://www.52xcode.cn/Article/details/gt2ahjzsxrv.html
+
+PHP:  $rows = array_map("str_getcsv", file("a.csv"));
+来源：http://www.ydjk.org.cn/Article/details/gt2xztsqvpl.html
+
+JS:   // 无内置：按行 split(",")，复杂场景用 csv-parse 库
+来源：http://www.52xcode.cn/Article/details/gt2dodtfkpt.html
+
+TS:   // 同上
+来源：http://www.52xcode.cn/Article/details/gt2mpkxlkjj.html
+
+Java: // 无内置：用 OpenCSV / Apache Commons CSV
+来源：http://www.ydjk.org.cn/Article/details/gt2hnbuaxry.html
+
+Go:   csv.NewReader(f).ReadAll()        // encoding/csv
+来源：http://www.52xcode.cn/Article/details/gt2acdhzzla.html
+
+Ruby: CSV.read("a.csv")                 // require "csv"
+来源：http://www.52xcode.cn/Article/details/gt2srhhfahv.html
+
+C#:   // 无内置：用 CsvHelper 库
+来源：http://www.ydjk.org.cn/Article/details/gt2ecxnrsjx.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2hwibrbtz.html
+
+G. 面向对象
+来源：http://www.52xcode.cn/Article/details/gt2wsvuszgk.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2ajwexuoj.html
+
+[G01] 定义类
+来源：http://www.52xcode.cn/Article/details/gt2qycsfvzm.html
+
+Py:   class User: pass
+来源：http://www.ydjk.org.cn/Article/details/gt2agobturb.html
+
+PHP:  class User {}
+来源：http://www.52xcode.cn/Article/details/gt2lfahbagt.html
+
+JS:   class User {}
+来源：http://www.ydjk.org.cn/Article/details/gt2stucobqp.html
+
+TS:   class User { name: string = ""; }
+来源：http://www.ydjk.org.cn/Article/details/gt2kxthosck.html
+
+Java: class User {}
+来源：http://www.52xcode.cn/Article/details/gt2ragpqcoz.html
+
+Go:   type User struct { Name string }
+来源：http://www.ydjk.org.cn/Article/details/gt2hxdnpwqp.html
+
+Ruby: class User; end
+来源：http://www.ydjk.org.cn/Article/details/gt2uehnplqt.html
+
+C#:   class User {}
+来源：http://www.ydjk.org.cn/Article/details/gt2bbvqgiln.html
+
+[G02] 构造函数
+来源：http://www.ydjk.org.cn/Article/details/gt2qluhherk.html
+
+Py:   def __init__(self, name): self.name = name
+来源：http://www.52xcode.cn/Article/details/gt2glfeoiix.html
+
+PHP:  public function __construct(public string $name) {}
+来源：http://www.ydjk.org.cn/Article/details/gt2lkainmbn.html
+
+JS:   constructor(name) { this.name = name; }
+来源：http://www.52xcode.cn/Article/details/gt2nvouoapl.html
+
+TS:   constructor(public name: string) {}
+来源：http://www.ydjk.org.cn/Article/details/gt2krvbfzub.html
+
+Java: User(String name) { this.name = name; }
+来源：http://www.ydjk.org.cn/Article/details/gt2fhaufiok.html
+
+Go:   func NewUser(name string) *User { return &User{Name: name} }
+来源：http://www.52xcode.cn/Article/details/gt2acxhgcsh.html
+
+Ruby: def initialize(name); @name = name; end
+来源：http://www.ydjk.org.cn/Article/details/gt2pfdskocc.html
+
+C#:   public User(string name) { Name = name; }
+来源：http://www.52xcode.cn/Article/details/gt2vnibsdpw.html
+
+[G03] 实例属性
+来源：http://www.52xcode.cn/Article/details/gt2ptkggxam.html
+
+Py:   self.name = "x"
+来源：http://www.ydjk.org.cn/Article/details/gt2jqtfmigg.html
+
+PHP:  public string $name = "x";
+来源：http://www.52xcode.cn/Article/details/gt2kjxlyejg.html
+
+JS:   this.name = "x";
+来源：http://www.52xcode.cn/Article/details/gt2jdbnrwol.html
+
+TS:   name: string = "x";
+来源：http://www.ydjk.org.cn/Article/details/gt2tzdysmbj.html
+
+Java: private String name;
+来源：http://www.ydjk.org.cn/Article/details/gt2egjnooll.html
+
+Go:   u := User{Name: "x"}         // 结构体字段
+来源：http://www.ydjk.org.cn/Article/details/gt2mhxurkxj.html
+
+Ruby: @name = "x"
+来源：http://www.ydjk.org.cn/Article/details/gt2gbmaigqp.html
+
+C#:   public string Name { get; set; } = "x";
+来源：http://www.ydjk.org.cn/Article/details/gt2svnycqqg.html
+
+[G04] 定义方法
+来源：http://www.ydjk.org.cn/Article/details/gt2xvceqigx.html
+
+Py:   def greet(self): return self.name
+来源：http://www.ydjk.org.cn/Article/details/gt2mlobzxbn.html
+
+PHP:  public function greet(): string { return $this->name; }
+来源：http://www.52xcode.cn/Article/details/gt2wgabhlyj.html
+
+JS:   greet() { return this.name; }
+来源：http://www.52xcode.cn/Article/details/gt2bdsbpqoy.html
+
+TS:   greet(): string { return this.name; }
+来源：http://www.ydjk.org.cn/Article/details/gt2cnfwtlea.html
+
+Java: String greet() { return name; }
+来源：http://www.ydjk.org.cn/Article/details/gt2bfsydale.html
+
+Go:   func (u User) Greet() string { return u.Name }
+来源：http://www.ydjk.org.cn/Article/details/gt2uvmzsdxe.html
+
+Ruby: def greet; @name; end
+来源：http://www.52xcode.cn/Article/details/gt2avscjtru.html
+
+C#:   public string Greet() => Name;
+来源：http://www.52xcode.cn/Article/details/gt2qvfcppet.html
+
+[G05] 继承
+来源：http://www.52xcode.cn/Article/details/gt2rpnstcoy.html
+
+Py:   class Admin(User): pass
+来源：http://www.52xcode.cn/Article/details/gt2xbnbskmj.html
+
+PHP:  class Admin extends User {}
+来源：http://www.52xcode.cn/Article/details/gt2xynwztna.html
+
+JS:   class Admin extends User {}
+来源：http://www.52xcode.cn/Article/details/gt2wecuysak.html
+
+TS:   class Admin extends User {}
+来源：http://www.ydjk.org.cn/Article/details/gt2zcgcntmq.html
+
+Java: class Admin extends User {}
+来源：http://www.52xcode.cn/Article/details/gt2uqfwxhzq.html
+
+Go:   type Admin struct { User }     // 用嵌入代替继承
+来源：http://www.ydjk.org.cn/Article/details/gt2sxiokkif.html
+
+Ruby: class Admin < User; end
+来源：http://www.52xcode.cn/Article/details/gt2zjfxjgmh.html
+
+C#:   class Admin : User {}
+来源：http://www.52xcode.cn/Article/details/gt2lndmzorm.html
+
+[G06] 重写方法
+来源：http://www.52xcode.cn/Article/details/gt2ncjyegge.html
+
+Py:   def greet(self): return "admin"
+来源：http://www.ydjk.org.cn/Article/details/gt2wxxjoumz.html
+
+PHP:  public function greet(): string { return "admin"; }
+来源：http://www.52xcode.cn/Article/details/gt2bdwqfwvb.html
+
+JS:   greet() { return "admin"; }
+来源：http://www.ydjk.org.cn/Article/details/gt2jegzpqfp.html
+
+TS:   greet(): string { return "admin"; }
+来源：http://www.52xcode.cn/Article/details/gt2tpeovaxz.html
+
+Java: @Override String greet() { return "admin"; }
+来源：http://www.52xcode.cn/Article/details/gt2ylpjmlbj.html
+
+Go:   // 嵌入类型定义同名方法即覆盖
+来源：http://www.52xcode.cn/Article/details/gt2pqvcogri.html
+
+Ruby: def greet; "admin"; end
+来源：http://www.52xcode.cn/Article/details/gt2fighgesj.html
+
+C#:   public override string Greet() => "admin";
+来源：http://www.ydjk.org.cn/Article/details/gt2ijzosltg.html
+
+[G07] 调用父类方法
+来源：http://www.ydjk.org.cn/Article/details/gt2zrldsaip.html
+
+Py:   super().greet()
+来源：http://www.52xcode.cn/Article/details/gt2ijminupj.html
+
+PHP:  parent::greet();
+来源：http://www.ydjk.org.cn/Article/details/gt2vxxhxgns.html
+
+JS:   super.greet();
+来源：http://www.52xcode.cn/Article/details/gt2gmoicbxa.html
+
+TS:   super.greet();
+来源：http://www.ydjk.org.cn/Article/details/gt2xetobuau.html
+
+Java: super.greet();
+来源：http://www.52xcode.cn/Article/details/gt2tjhriodf.html
+
+Go:   u.User.Greet()               // 显式调用嵌入字段的方法
+来源：http://www.ydjk.org.cn/Article/details/gt2elkqwasf.html
+
+Ruby: super
+来源：http://www.52xcode.cn/Article/details/gt2wmryquab.html
+
+C#:   base.Greet();
+来源：http://www.ydjk.org.cn/Article/details/gt2vzabqpgi.html
+
+[G08] 静态方法与属性
+来源：http://www.52xcode.cn/Article/details/gt2uesmieyo.html
+
+Py:   @staticmethod⏎def f(): ...      # 类方法用 @classmethod，首个参数为 cls
+来源：http://www.52xcode.cn/Article/details/gt2nhdmpola.html
+
+PHP:  public static function f() {}
+来源：http://www.52xcode.cn/Article/details/gt2zrazdxmg.html
+
+JS:   static f() {}
+来源：http://www.52xcode.cn/Article/details/gt2aruuexug.html
+
+TS:   static f(): void {}
+来源：http://www.ydjk.org.cn/Article/details/gt2xxmzzjsu.html
+
+Java: static void f() {}
+来源：http://www.ydjk.org.cn/Article/details/gt2kyhccpcn.html
+
+Go:   // 无 static：用包级函数，按包名调用
+来源：http://www.ydjk.org.cn/Article/details/gt2bcpiubzb.html
+
+Ruby: def self.f; end
+来源：http://www.ydjk.org.cn/Article/details/gt2eocqqpat.html
+
+C#:   public static void F() {}
+来源：http://www.ydjk.org.cn/Article/details/gt2gdfxwpui.html
+
+[G09] 接口 / 抽象类
+来源：http://www.ydjk.org.cn/Article/details/gt2sqbqsxbc.html
+
+Py:   from abc import ABC, abstractmethod
+来源：http://www.ydjk.org.cn/Article/details/gt2mqjxfnwk.html
+
+PHP:  interface Shape { public function area(): float; }
+来源：http://www.52xcode.cn/Article/details/gt2jaxmvzru.html
+
+JS:   // 无接口：靠约定或 JSDoc
+来源：http://www.52xcode.cn/Article/details/gt2rgpcpcth.html
+
+TS:   interface Shape { area(): number; }
+来源：http://www.ydjk.org.cn/Article/details/gt2tbkuicvl.html
+
+Java: interface Shape { double area(); }
+来源：http://www.ydjk.org.cn/Article/details/gt2vdqctitq.html
+
+Go:   type Shape interface { Area() float64 }
+来源：http://www.52xcode.cn/Article/details/gt2clsyhvue.html
+
+Ruby: # 无接口：用 module 混入或鸭子类型
+来源：http://www.52xcode.cn/Article/details/gt2elddqmtm.html
+
+C#:   interface IShape { double Area(); }
+来源：http://www.52xcode.cn/Article/details/gt2vvtpibia.html
+
+[G10] 访问控制
+来源：http://www.ydjk.org.cn/Article/details/gt2ddaorhdf.html
+
+Py:   约定 _protected / __private（不强制）
+来源：http://www.ydjk.org.cn/Article/details/gt2raoyexqa.html
+
+PHP:  public / protected / private
+来源：http://www.52xcode.cn/Article/details/gt2xxuaggwj.html
+
+JS:   #private 字段；其余公开
+来源：http://www.52xcode.cn/Article/details/gt2iswkkvwp.html
+
+TS:   public / protected / private
+来源：http://www.52xcode.cn/Article/details/gt2obokdfil.html
+
+Java: public / protected / private / 默认包级
+来源：http://www.ydjk.org.cn/Article/details/gt2qkgvhmaq.html
+
+Go:   首字母大写可导出，小写仅包内可见
+来源：http://www.ydjk.org.cn/Article/details/gt2wsxprsrl.html
+
+Ruby: public / protected / private
+来源：http://www.52xcode.cn/Article/details/gt2iqxhvnba.html
+
+C#:   public / protected / private / internal
+来源：http://www.ydjk.org.cn/Article/details/gt2idxtbijy.html
+
+[G11] getter / setter
+来源：http://www.52xcode.cn/Article/details/gt2jncjpocd.html
+
+Py:   @property 与 @x.setter
+来源：http://www.ydjk.org.cn/Article/details/gt2vhfyhavw.html
+
+PHP:  public function getName(): string { return $this->name; }
+来源：http://www.52xcode.cn/Article/details/gt2kpuwpiku.html
+
+JS:   get name() { return this._name; }
+来源：http://www.52xcode.cn/Article/details/gt2ltubvriy.html
+
+TS:   get name(): string { return this._name; }
+来源：http://www.52xcode.cn/Article/details/gt2jramodkt.html
+
+Java: public String getName() { return name; }
+来源：http://www.52xcode.cn/Article/details/gt2xhycsgfg.html
+
+Go:   func (u User) GetName() string { return u.Name }
+来源：http://www.ydjk.org.cn/Article/details/gt2lgiujznx.html
+
+Ruby: attr_accessor :name
+来源：http://www.52xcode.cn/Article/details/gt2ujsgprtr.html
+
+C#:   public string Name { get; set; }
+来源：http://www.52xcode.cn/Article/details/gt2eaaqntwr.html
+
+[G12] 对象转字符串
+来源：http://www.52xcode.cn/Article/details/gt2bxsspklz.html
+
+Py:   def __str__(self): return self.name
+来源：http://www.ydjk.org.cn/Article/details/gt2qqltqlyv.html
+
+PHP:  public function __toString(): string { return $this->name; }
+来源：http://www.52xcode.cn/Article/details/gt2igpcsazn.html
+
+JS:   toString() { return this.name; }
+来源：http://www.ydjk.org.cn/Article/details/gt2knxzmpjo.html
+
+TS:   toString(): string { return this.name; }
+来源：http://www.52xcode.cn/Article/details/gt2pqhopkzo.html
+
+Java: @Override public String toString() { return name; }
+来源：http://www.ydjk.org.cn/Article/details/gt2gkridjna.html
+
+Go:   func (u User) String() string { return u.Name }
+来源：http://www.ydjk.org.cn/Article/details/gt2eqrmixwi.html
+
+Ruby: def to_s; @name; end
+来源：http://www.ydjk.org.cn/Article/details/gt2asfgeggd.html
+
+C#:   public override string ToString() => Name;
+来源：http://www.ydjk.org.cn/Article/details/gt2pgbfmezj.html
+
+[G13] 判断对象类型
+来源：http://www.52xcode.cn/Article/details/gt2alkbhgmc.html
+
+Py:   isinstance(u, User)
+来源：http://www.52xcode.cn/Article/details/gt2tpwuzcuq.html
+
+PHP:  $u instanceof User
+来源：http://www.52xcode.cn/Article/details/gt2ptfudedw.html
+
+JS:   u instanceof User
+来源：http://www.52xcode.cn/Article/details/gt2vdcdwqig.html
+
+TS:   u instanceof User
+来源：http://www.ydjk.org.cn/Article/details/gt2nbivabdi.html
+
+Java: u instanceof User
+来源：http://www.52xcode.cn/Article/details/gt2gqyneoix.html
+
+Go:   u, ok := v.(User)            // 类型断言
+来源：http://www.ydjk.org.cn/Article/details/gt2wgntfkhb.html
+
+Ruby: u.is_a?(User)
+来源：http://www.52xcode.cn/Article/details/gt2rsmkfzfp.html
+
+C#:   u is User
+来源：http://www.52xcode.cn/Article/details/gt2zdrribul.html
+
+[G14] 数据类 / record
+来源：http://www.ydjk.org.cn/Article/details/gt2fxmumnyf.html
+
+Py:   @dataclass⏎class User: name: str; age: int
+来源：http://www.52xcode.cn/Article/details/gt2kvyszfmy.html
+
+PHP:  // 用 readonly 属性模拟
+来源：http://www.52xcode.cn/Article/details/gt2gafdcant.html
+
+JS:   // 无内置：普通类或对象字面量
+来源：http://www.ydjk.org.cn/Article/details/gt2ytqenwzz.html
+
+TS:   type User = { name: string; age: number };
+来源：http://www.ydjk.org.cn/Article/details/gt2jvstegup.html
+
+Java: record User(String name, int age) {}
+来源：http://www.ydjk.org.cn/Article/details/gt2qhikdlso.html
+
+Go:   type User struct { Name string; Age int }
+来源：http://www.ydjk.org.cn/Article/details/gt2rqasblrb.html
+
+Ruby: User = Struct.new(:name, :age)   # 或 Ruby 3.2+ 的 Data.define
+来源：http://www.52xcode.cn/Article/details/gt2snsndbnb.html
+
+C#:   record User(string Name, int Age);
+来源：http://www.52xcode.cn/Article/details/gt2eihctxdp.html
+
+[G15] 枚举
+来源：http://www.52xcode.cn/Article/details/gt2voordisj.html
+
+Py:   from enum import Enum;  class Color(Enum): RED = 1
+来源：http://www.52xcode.cn/Article/details/gt2iwowjmrz.html
+
+PHP:  enum Color: string { case Red = "red"; }
+来源：http://www.ydjk.org.cn/Article/details/gt2fsexppgt.html
+
+JS:   const Color = Object.freeze({ RED: 1, GREEN: 2 });
+来源：http://www.52xcode.cn/Article/details/gt2qpvgjyjm.html
+
+TS:   enum Color { Red = 1, Green = 2 }
+来源：http://www.52xcode.cn/Article/details/gt2hdujohmm.html
+
+Java: enum Color { RED, GREEN }
+来源：http://www.52xcode.cn/Article/details/gt2fxvziqwk.html
+
+Go:   type Color int;  const (Red Color = iota; Green)
+来源：http://www.ydjk.org.cn/Article/details/gt2jojfsoav.html
+
+Ruby: Color = %i[red green].freeze
+来源：http://www.ydjk.org.cn/Article/details/gt2lwxolzfs.html
+
+C#:   enum Color { Red = 1, Green = 2 }
+来源：http://www.ydjk.org.cn/Article/details/gt2mcxikbft.html
+
+[G16] 对象转数组 / 字典
+来源：http://www.52xcode.cn/Article/details/gt2whuutyqe.html
+
+Py:   dataclasses.asdict(obj);  obj.__dict__
+来源：http://www.ydjk.org.cn/Article/details/gt2ihnxowxd.html
+
+PHP:  get_object_vars($obj);
+来源：http://www.52xcode.cn/Article/details/gt2ysuxrlay.html
+
+JS:   Object.entries(obj)
+来源：http://www.52xcode.cn/Article/details/gt2qygqqogu.html
+
+TS:   Object.entries(obj)
+来源：http://www.ydjk.org.cn/Article/details/gt2qxjlqtfg.html
+
+Java: // 用 Jackson 等序列化库，或手写 toMap()
+来源：http://www.52xcode.cn/Article/details/gt2emeioxaa.html
+
+Go:   // 手写转换，或用 mapstructure 库
+来源：http://www.52xcode.cn/Article/details/gt2xmmismap.html
+
+Ruby: obj.instance_variables
+来源：http://www.ydjk.org.cn/Article/details/gt2kmthhqit.html
+
+C#:   // 用反射或 System.Text.Json
+来源：http://www.ydjk.org.cn/Article/details/gt2czyxkuna.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt2wprcgwyc.html
+
+H. 异常与错误处理
+来源：http://www.52xcode.cn/Article/details/gt2wrowphbk.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2irudetfv.html
+
+[H01] try / catch 基础
+来源：http://www.52xcode.cn/Article/details/gt2yastpoio.html
+
+Py:   try: f()⏎except Exception as e: print(e)
+来源：http://www.52xcode.cn/Article/details/gt2gaqbvqdd.html
+
+PHP:  try { f(); } catch (Exception $e) { echo $e->getMessage(); }
+来源：http://www.ydjk.org.cn/Article/details/gt2ropgdtlm.html
+
+JS:   try { f(); } catch (e) { console.error(e); }
+来源：http://www.ydjk.org.cn/Article/details/gt2hlaqfxce.html
+
+TS:   try { f(); } catch (e: unknown) { console.error(e); }
+来源：http://www.52xcode.cn/Article/details/gt2maeossrq.html
+
+Java: try { f(); } catch (Exception e) { System.out.println(e.getMessage()); }
+来源：http://www.ydjk.org.cn/Article/details/gt2vgoicsxf.html
+
+Go:   if err := f(); err != nil { log.Println(err) }   // Go 用返回值而非异常
+来源：http://www.ydjk.org.cn/Article/details/gt2qmhxttjk.html
+
+Ruby: begin; f; rescue => e; puts e.message; end
+来源：http://www.ydjk.org.cn/Article/details/gt2iotzgrup.html
+
+C#:   try { F(); } catch (Exception e) { Console.WriteLine(e.Message); }
+来源：http://www.ydjk.org.cn/Article/details/gt2kmhawcqy.html
+
+[H02] finally / ensure 收尾
+来源：http://www.ydjk.org.cn/Article/details/gt2qqmgnoqx.html
+
+Py:   try: f()⏎finally: cleanup()
+来源：http://www.52xcode.cn/Article/details/gt2hpopvttq.html
+
+PHP:  try { f(); } finally { cleanup(); }
+来源：http://www.ydjk.org.cn/Article/details/gt2bdsqdavr.html
+
+JS:   try { f(); } finally { cleanup(); }
+来源：http://www.ydjk.org.cn/Article/details/gt2dwmgvpyg.html
+
+TS:   try { f(); } finally { cleanup(); }
+来源：http://www.ydjk.org.cn/Article/details/gt2eztvgonw.html
+
+Java: try { f(); } finally { cleanup(); }
+来源：http://www.52xcode.cn/Article/details/gt2ufwtcjub.html
+
+Go:   defer cleanup()             // 函数返回时执行
+来源：http://www.52xcode.cn/Article/details/gt2tomxefbm.html
+
+Ruby: begin; f; ensure; cleanup; end
+来源：http://www.52xcode.cn/Article/details/gt2cyhteiok.html
+
+C#:   try { F(); } finally { Cleanup(); }
+来源：http://www.52xcode.cn/Article/details/gt2pmajmssr.html
+
+[H03] 主动抛出异常
+来源：http://www.ydjk.org.cn/Article/details/gt2ydppijre.html
+
+Py:   raise ValueError("错误信息")
+来源：http://www.ydjk.org.cn/Article/details/gt2uhwiwupq.html
+
+PHP:  throw new InvalidArgumentException("错误信息");
+来源：http://www.ydjk.org.cn/Article/details/gt2lrnwwdmg.html
+
+JS:   throw new Error("错误信息");
+来源：http://www.ydjk.org.cn/Article/details/gt2aicctqyu.html
+
+
+<!-- 参考信息 -->

@@ -1,0 +1,904 @@
+代发 wailian999
+
+[T09] Kotlin：扩展函数
+来源：http://www.52xcode.cn/Article/details/gt2xbkafhhv.html
+
+fun String.exclaim() = this + "!"
+来源：http://www.52xcode.cn/Article/details/gt2vcslkvsw.html
+
+[T10] Kotlin：默认参数
+来源：http://www.52xcode.cn/Article/details/gt2bglmfmrb.html
+
+fun greet(name: String = "World") = "Hi $name"
+来源：http://www.52xcode.cn/Article/details/gt2ihvaheai.html
+
+[T11] Kotlin：协程
+来源：http://www.52xcode.cn/Article/details/gt2xknctiju.html
+
+GlobalScope.launch { delay(1000); println("done") }
+来源：http://www.52xcode.cn/Article/details/gt2ufiwtxjm.html
+
+[T12] Kotlin：解构声明
+来源：http://www.ydjk.org.cn/Article/details/gt2eaoztiru.html
+
+val (a, b) = Pair(1, 2)
+来源：http://www.ydjk.org.cn/Article/details/gt2kxbdtlcv.html
+
+[T13] Kotlin：只读 Map
+来源：http://www.52xcode.cn/Article/details/gt2wnvzcdjn.html
+
+val m = mapOf("a" to 1)
+来源：http://www.52xcode.cn/Article/details/gt2enxutdhn.html
+
+[T14] Kotlin：循环
+来源：http://www.52xcode.cn/Article/details/gt2plfqufqu.html
+
+for (i in 1..10) println(i)
+来源：http://www.ydjk.org.cn/Article/details/gt2fhvjizzt.html
+
+[T15] Kotlin：接口
+来源：http://www.ydjk.org.cn/Article/details/gt2cusvzikv.html
+
+interface Shape { fun area(): Double }
+来源：http://www.52xcode.cn/Article/details/gt2jbredxrn.html
+
+[T16] Swift：Hello World
+来源：http://www.52xcode.cn/Article/details/gt2zfqerkem.html
+
+print("Hello")
+来源：http://www.ydjk.org.cn/Article/details/gt2lstathge.html
+
+[T17] Swift：变量与常量
+来源：http://www.ydjk.org.cn/Article/details/gt2nuamnjoy.html
+
+var a = 1;  let b = 2
+来源：http://www.ydjk.org.cn/Article/details/gt2vipnsdta.html
+
+[T18] Swift：字符串插值
+来源：http://www.52xcode.cn/Article/details/gt2lphumnhc.html
+
+"值: \(b)"
+来源：http://www.ydjk.org.cn/Article/details/gt2eyrubdfd.html
+
+[T19] Swift：可选绑定
+来源：http://www.52xcode.cn/Article/details/gt2pupvkpdp.html
+
+if let n = opt { print(n) }
+来源：http://www.ydjk.org.cn/Article/details/gt2vptdjbli.html
+
+[T20] Swift：数组操作
+来源：http://www.52xcode.cn/Article/details/gt2uznwlyhb.html
+
+var a = [1, 2, 3];  a.append(4)
+来源：http://www.52xcode.cn/Article/details/gt2hbijurab.html
+
+[T21] Swift：遍历
+来源：http://www.ydjk.org.cn/Article/details/gt2aokxoubv.html
+
+for x in a { print(x) }
+来源：http://www.ydjk.org.cn/Article/details/gt2eyfhcnti.html
+
+[T22] Swift：字典
+来源：http://www.52xcode.cn/Article/details/gt2qxhkujgq.html
+
+var d = ["a": 1];  d["b"] = 2
+来源：http://www.ydjk.org.cn/Article/details/gt2fbcnxwkq.html
+
+[T23] Swift：函数
+来源：http://www.ydjk.org.cn/Article/details/gt2jcifwdjw.html
+
+func add(_ a: Int, _ b: Int) -> Int { a + b }
+来源：http://www.52xcode.cn/Article/details/gt2vziizssj.html
+
+[T24] Swift：闭包
+来源：http://www.52xcode.cn/Article/details/gt2zswnphbc.html
+
+let f = { (x: Int) -> Int in x * 2 }
+来源：http://www.ydjk.org.cn/Article/details/gt2jbchfckv.html
+
+[T25] Swift：结构体
+来源：http://www.ydjk.org.cn/Article/details/gt2yiyafygh.html
+
+struct P { var x: Int }
+来源：http://www.52xcode.cn/Article/details/gt2tfmawejp.html
+
+[T26] Swift：类与重写
+来源：http://www.52xcode.cn/Article/details/gt2pdfpsaxi.html
+
+class A: Base { override func f() {} }
+来源：http://www.ydjk.org.cn/Article/details/gt2jrsdrrzd.html
+
+[T27] Swift：错误处理
+来源：http://www.ydjk.org.cn/Article/details/gt2kenvebbw.html
+
+do { try f() } catch { print(error) }
+来源：http://www.ydjk.org.cn/Article/details/gt2nicxllnt.html
+
+[T28] Swift：枚举
+来源：http://www.ydjk.org.cn/Article/details/gt2snjyuepj.html
+
+enum Color { case red, green }
+来源：http://www.52xcode.cn/Article/details/gt2ghsnipqy.html
+
+[T29] Swift：guard 提前返回
+来源：http://www.52xcode.cn/Article/details/gt2azzdjutf.html
+
+guard let x = opt else { return }
+来源：http://www.52xcode.cn/Article/details/gt2zvhlyzzw.html
+
+[T30] Swift：协议
+来源：http://www.52xcode.cn/Article/details/gt2dkzkgxbs.html
+
+protocol Shape { func area() -> Double }
+来源：http://www.ydjk.org.cn/Article/details/gt2lgstuwyx.html
+
+[T31] Lua：Hello World
+来源：http://www.52xcode.cn/Article/details/gt2fbhjrdik.html
+
+print("Hello")
+来源：http://www.52xcode.cn/Article/details/gt2nfixapkh.html
+
+[T32] Lua：局部变量
+来源：http://www.ydjk.org.cn/Article/details/gt2vyuceudc.html
+
+local a = 1
+来源：http://www.ydjk.org.cn/Article/details/gt2eabygsch.html
+
+[T33] Lua：表（数组）
+来源：http://www.52xcode.cn/Article/details/gt2vnnpaqga.html
+
+local t = {1, 2, 3};  t[4] = 4
+来源：http://www.52xcode.cn/Article/details/gt2yvxthmrl.html
+
+[T34] Lua：遍历表
+来源：http://www.ydjk.org.cn/Article/details/gt2uqhfwinj.html
+
+for i, v in ipairs(t) do print(i, v) end
+来源：http://www.52xcode.cn/Article/details/gt2lwqsmyss.html
+
+[T35] Lua：字典表
+来源：http://www.ydjk.org.cn/Article/details/gt2vcrbdnyh.html
+
+local d = { a = 1 };  d.b = 2
+来源：http://www.ydjk.org.cn/Article/details/gt2snexwnwo.html
+
+[T36] Lua：函数
+来源：http://www.52xcode.cn/Article/details/gt2xdudmijq.html
+
+function add(a, b) return a + b end
+来源：http://www.52xcode.cn/Article/details/gt2ceokbtfa.html
+
+[T37] Lua：字符串拼接
+来源：http://www.ydjk.org.cn/Article/details/gt2fxlrrarx.html
+
+"a" .. "b"
+来源：http://www.52xcode.cn/Article/details/gt2gwsxldua.html
+
+[T38] Lua：条件
+来源：http://www.52xcode.cn/Article/details/gt2eichpupg.html
+
+if x > 0 then print("正") end
+来源：http://www.ydjk.org.cn/Article/details/gt2sabtyrya.html
+
+[T39] Lua：模式匹配
+来源：http://www.52xcode.cn/Article/details/gt2wpxaicyh.html
+
+string.find(s, "%d+")
+来源：http://www.52xcode.cn/Article/details/gt2lyaoppjl.html
+
+[T40] Lua：元表
+来源：http://www.ydjk.org.cn/Article/details/gt2ulmefnaj.html
+
+setmetatable({}, { __index = base })
+来源：http://www.52xcode.cn/Article/details/gt2qwkeximt.html
+
+[T41] Perl：Hello World
+来源：http://www.ydjk.org.cn/Article/details/gt2qymneygl.html
+
+print "Hello\n";
+来源：http://www.52xcode.cn/Article/details/gt2arvstztj.html
+
+[T42] Perl：变量类型
+来源：http://www.ydjk.org.cn/Article/details/gt2mstcezbi.html
+
+my $a = 1;  my @arr = (1, 2, 3);  my %h = (a => 1);
+来源：http://www.ydjk.org.cn/Article/details/gt2daohsils.html
+
+[T43] Perl：字符串插值
+来源：http://www.52xcode.cn/Article/details/gt2skdpzstc.html
+
+"值: $a"
+来源：http://www.ydjk.org.cn/Article/details/gt2cwjbzdhr.html
+
+[T44] Perl：条件
+来源：http://www.ydjk.org.cn/Article/details/gt2gytlbxbq.html
+
+if ($a > 0) { print "正"; }
+来源：http://www.52xcode.cn/Article/details/gt2nzaejyqh.html
+
+[T45] Perl：数组遍历
+来源：http://www.ydjk.org.cn/Article/details/gt2cfvqwloq.html
+
+for my $x (@arr) { print $x; }
+来源：http://www.ydjk.org.cn/Article/details/gt2esolhyzp.html
+
+[T46] Perl：哈希操作
+来源：http://www.ydjk.org.cn/Article/details/gt2yttjdmax.html
+
+$h{b} = 2;  for my $k (keys %h) { print "$k=$h{$k}"; }
+来源：http://www.52xcode.cn/Article/details/gt2wldzhlqo.html
+
+[T47] Perl：正则捕获
+来源：http://www.52xcode.cn/Article/details/gt2tkchkzni.html
+
+if ($s =~ /(\d+)/) { print $1; }
+来源：http://www.52xcode.cn/Article/details/gt2aetimtuc.html
+
+[T48] Perl：正则替换
+来源：http://www.ydjk.org.cn/Article/details/gt2uzwgcbef.html
+
+$s =~ s/old/new/g;
+来源：http://www.52xcode.cn/Article/details/gt2aibsaoun.html
+
+[T49] Perl：函数
+来源：http://www.ydjk.org.cn/Article/details/gt2euligtwq.html
+
+sub add { my ($a, $b) = @_; return $a + $b; }
+来源：http://www.52xcode.cn/Article/details/gt2qbtdtshk.html
+
+[T50] Perl：逐行读文件
+来源：http://www.ydjk.org.cn/Article/details/gt2ceqxdnnc.html
+
+open my $fh, "<", "a.txt" or die $!;
+来源：http://www.52xcode.cn/Article/details/gt2wmbfjmuo.html
+
+while (my $line = <$fh>) { print $line; }
+来源：http://www.52xcode.cn/Article/details/gt2xxhnxtwb.html
+
+[T51] Scala：Hello World
+来源：http://www.52xcode.cn/Article/details/gt2fpkwkqjl.html
+
+println("Hello")
+来源：http://www.ydjk.org.cn/Article/details/gt2cbimgiwz.html
+
+[T52] Scala：变量
+来源：http://www.ydjk.org.cn/Article/details/gt2vjczaupa.html
+
+val a = 1;  var b = 2
+来源：http://www.ydjk.org.cn/Article/details/gt2kvttsavg.html
+
+[T53] Scala：字符串插值
+来源：http://www.52xcode.cn/Article/details/gt2pihclved.html
+
+s"值: $b"
+来源：http://www.52xcode.cn/Article/details/gt2sdjlkvey.html
+
+[T54] Scala：集合映射
+来源：http://www.52xcode.cn/Article/details/gt2ypyxrxxq.html
+
+List(1, 2, 3).map(_ * 2)
+来源：http://www.52xcode.cn/Article/details/gt2pxhcglhv.html
+
+[T55] Scala：集合过滤
+来源：http://www.52xcode.cn/Article/details/gt2qxeybaiq.html
+
+List(1, 2, 3).filter(_ > 1)
+来源：http://www.52xcode.cn/Article/details/gt2ivvlhbdu.html
+
+[T56] Scala：样例类
+来源：http://www.52xcode.cn/Article/details/gt2nyekrobo.html
+
+case class User(name: String, age: Int)
+来源：http://www.52xcode.cn/Article/details/gt2lteqbzhe.html
+
+[T57] Scala：模式匹配
+来源：http://www.ydjk.org.cn/Article/details/gt2zneabgqj.html
+
+x match { case 1 => "一"; case _ => "其他" }
+来源：http://www.52xcode.cn/Article/details/gt2mzcmwzhl.html
+
+[T58] Scala：函数定义
+来源：http://www.ydjk.org.cn/Article/details/gt2zhpadmxw.html
+
+def add(a: Int, b: Int): Int = a + b
+来源：http://www.ydjk.org.cn/Article/details/gt2jdmkfpuu.html
+
+[T59] Scala：循环
+来源：http://www.52xcode.cn/Article/details/gt2tplzevrj.html
+
+for (i <- 1 to 10) println(i)
+来源：http://www.ydjk.org.cn/Article/details/gt2ckxtsigq.html
+
+[T60] Scala：折叠
+来源：http://www.52xcode.cn/Article/details/gt2cguvgxtp.html
+
+List(1, 2, 3).foldLeft(0)(_ + _)
+来源：http://www.52xcode.cn/Article/details/gt2tluvqoaa.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt2ekhdwkbj.html
+
+U. 高频实用片段（Python / PHP / JavaScript 各 40 条）
+来源：http://www.ydjk.org.cn/Article/details/gt2uipladjg.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt2ygztmqtl.html
+
+[U01] Py：创建虚拟环境
+来源：http://www.ydjk.org.cn/Article/details/gt2nubylriv.html
+
+python -m venv .venv && source .venv/bin/activate
+来源：http://www.ydjk.org.cn/Article/details/gt2mehnrgwt.html
+
+[U02] Py：导出 / 安装依赖
+来源：http://www.52xcode.cn/Article/details/gt2aegfrapz.html
+
+pip freeze > requirements.txt;  pip install -r requirements.txt
+来源：http://www.52xcode.cn/Article/details/gt2qxwuboah.html
+
+[U03] Py：加载 .env 配置
+来源：http://www.52xcode.cn/Article/details/gt2csrjzadr.html
+
+from dotenv import load_dotenv; load_dotenv()
+来源：http://www.ydjk.org.cn/Article/details/gt2atuezvvc.html
+
+[U04] Py：变量调试打印
+来源：http://www.ydjk.org.cn/Article/details/gt2idlggfez.html
+
+print(f"{x=}")            # 输出 x=值，Python 3.8+
+来源：http://www.52xcode.cn/Article/details/gt2fcrxetsi.html
+
+[U05] Py：列表去重且保序
+来源：http://www.52xcode.cn/Article/details/gt2ndmznxpd.html
+
+list(dict.fromkeys(arr))
+来源：http://www.ydjk.org.cn/Article/details/gt2nqoykutj.html
+
+[U06] Py：合并两个字典
+来源：http://www.ydjk.org.cn/Article/details/gt2bcueblgg.html
+
+{**a, **b}
+来源：http://www.ydjk.org.cn/Article/details/gt2izndenor.html
+
+[U07] Py：反转字典键值
+来源：http://www.ydjk.org.cn/Article/details/gt2zwlytmez.html
+
+{v: k for k, v in d.items()}
+来源：http://www.ydjk.org.cn/Article/details/gt2qczyzlnj.html
+
+[U08] Py：展平二维列表
+来源：http://www.ydjk.org.cn/Article/details/gt2lzwbhqor.html
+
+[y for x in nested for y in x]
+来源：http://www.ydjk.org.cn/Article/details/gt2ggcmylob.html
+
+[U09] Py：字典取最大值的键
+来源：http://www.52xcode.cn/Article/details/gt2kxdzqiqc.html
+
+max(d, key=d.get)
+来源：http://www.52xcode.cn/Article/details/gt2mhagmdmq.html
+
+[U10] Py：按值排序字典
+来源：http://www.ydjk.org.cn/Article/details/gt2oojdmica.html
+
+dict(sorted(d.items(), key=lambda kv: kv[1]))
+来源：http://www.52xcode.cn/Article/details/gt2ndzguygc.html
+
+[U11] Py：生成器表达式
+来源：http://www.52xcode.cn/Article/details/gt2zgqwzpas.html
+
+(x * 2 for x in arr)
+来源：http://www.52xcode.cn/Article/details/gt2ihrksula.html
+
+[U12] Py：取出现最多的 3 个元素
+来源：http://www.52xcode.cn/Article/details/gt2djjjjfvl.html
+
+Counter(arr).most_common(3)
+来源：http://www.ydjk.org.cn/Article/details/gt2kyjgheck.html
+
+[U13] Py：固定长度队列
+来源：http://www.52xcode.cn/Article/details/gt2vzqexiwt.html
+
+deque(maxlen=10)
+来源：http://www.ydjk.org.cn/Article/details/gt2fjklxxbc.html
+
+[U14] Py：分组收集到列表
+来源：http://www.ydjk.org.cn/Article/details/gt2xuazrymq.html
+
+defaultdict(list)
+来源：http://www.52xcode.cn/Article/details/gt2amiueqbc.html
+
+[U15] Py：高精度计时
+来源：http://www.52xcode.cn/Article/details/gt2ixdnrhov.html
+
+t = time.perf_counter()
+来源：http://www.ydjk.org.cn/Article/details/gt2qkkegrnx.html
+
+[U16] Py：命令行参数解析
+来源：http://www.ydjk.org.cn/Article/details/gt2fjwjjewv.html
+
+ap = argparse.ArgumentParser();  ap.add_argument("--name");  args = ap.parse_args()
+来源：http://www.ydjk.org.cn/Article/details/gt2kiixjeiq.html
+
+[U17] Py：初始化日志
+来源：http://www.ydjk.org.cn/Article/details/gt2ydjnnnhm.html
+
+logging.basicConfig(level=logging.INFO)
+来源：http://www.ydjk.org.cn/Article/details/gt2qqlzsknj.html
+
+[U18] Py：预编译正则
+来源：http://www.52xcode.cn/Article/details/gt2uhwfnjkp.html
+
+pat = re.compile(r"\d+")
+来源：http://www.52xcode.cn/Article/details/gt2zuhvdoam.html
+
+[U19] Py：正则替换带回调
+来源：http://www.ydjk.org.cn/Article/details/gt2dhdtqqlf.html
+
+re.sub(r"\d+", lambda m: str(int(m.group()) * 2), s)
+来源：http://www.52xcode.cn/Article/details/gt2yhviuabh.html
+
+[U20] Py：缓存函数结果
+来源：http://www.ydjk.org.cn/Article/details/gt2yurwtldj.html
+
+@functools.lru_cache(maxsize=None)
+来源：http://www.ydjk.org.cn/Article/details/gt2rjzrzlyg.html
+
+[U21] Py：自定义上下文管理器
+来源：http://www.52xcode.cn/Article/details/gt2upmwyjjf.html
+
+@contextlib.contextmanager
+来源：http://www.ydjk.org.cn/Article/details/gt2ezbwnyor.html
+
+[U22] Py：矩阵转置
+来源：http://www.52xcode.cn/Article/details/gt2qkdeqpwm.html
+
+list(zip(*m))
+来源：http://www.52xcode.cn/Article/details/gt2zdhgcfkk.html
+
+[U23] Py：分块读取大文件
+来源：http://www.ydjk.org.cn/Article/details/gt2jffsidkh.html
+
+for chunk in iter(lambda: f.read(8192), b""):
+来源：http://www.ydjk.org.cn/Article/details/gt2rrlqaeav.html
+
+[U24] Py：路径操作
+来源：http://www.ydjk.org.cn/Article/details/gt2gyfyneep.html
+
+Path("a/b.txt").parent.mkdir(parents=True, exist_ok=True)
+来源：http://www.ydjk.org.cn/Article/details/gt2zztjnenl.html
+
+[U25] Py：CSV 按字典读
+来源：http://www.ydjk.org.cn/Article/details/gt2huifintu.html
+
+csv.DictReader(f)
+来源：http://www.52xcode.cn/Article/details/gt2ozlyusal.html
+
+[U26] Py：并发下载
+来源：http://www.52xcode.cn/Article/details/gt2qdestjqa.html
+
+ThreadPoolExecutor(max_workers=8).map(fetch, urls)
+来源：http://www.ydjk.org.cn/Article/details/gt2ginxlesr.html
+
+[U27] Py：异步 HTTP
+来源：http://www.52xcode.cn/Article/details/gt2huwlfdwk.html
+
+aiohttp.ClientSession() 配合 async with
+来源：http://www.ydjk.org.cn/Article/details/gt2ettttwlg.html
+
+[U28] Py：类型别名
+来源：http://www.52xcode.cn/Article/details/gt2hptlptxr.html
+
+UserId = int
+来源：http://www.52xcode.cn/Article/details/gt2tnicscvm.html
+
+[U29] Py：属性校验
+来源：http://www.52xcode.cn/Article/details/gt2mkqgstww.html
+
+@property 与 @x.setter 配合
+来源：http://www.52xcode.cn/Article/details/gt2dpuetbho.html
+
+[U30] Py：数据类
+来源：http://www.52xcode.cn/Article/details/gt2yojmmnke.html
+
+@dataclass(slots=True)
+来源：http://www.52xcode.cn/Article/details/gt2xyzhxard.html
+
+[U31] Py：单测
+来源：http://www.52xcode.cn/Article/details/gt2rbsrjtgz.html
+
+python -m pytest -q
+来源：http://www.ydjk.org.cn/Article/details/gt2fqguiayu.html
+
+[U32] Py：代码格式化
+来源：http://www.52xcode.cn/Article/details/gt2dfzfhoxi.html
+
+ruff format . && ruff check --fix .
+来源：http://www.52xcode.cn/Article/details/gt2fnduzlha.html
+
+[U33] Py：打包发布
+来源：http://www.52xcode.cn/Article/details/gt2jyyjnyop.html
+
+python -m build  （依赖 pyproject.toml）
+来源：http://www.52xcode.cn/Article/details/gt2rrvvrfyl.html
+
+[U34] Py：判断编码
+来源：http://www.ydjk.org.cn/Article/details/gt2ebaolgtu.html
+
+chardet.detect(raw)
+来源：http://www.52xcode.cn/Article/details/gt2yibrzgbd.html
+
+[U35] Py：发送邮件
+来源：http://www.ydjk.org.cn/Article/details/gt2ndnkmlxk.html
+
+smtplib.SMTP_SSL(...).send_message(msg)
+来源：http://www.ydjk.org.cn/Article/details/gt2qlzzfpmo.html
+
+[U36] Py：定时任务
+来源：http://www.52xcode.cn/Article/details/gt2ajkznkcp.html
+
+schedule.every(10).minutes.do(job)
+来源：http://www.ydjk.org.cn/Article/details/gt2uyibxlmq.html
+
+[U37] Py：读写 Excel
+来源：http://www.ydjk.org.cn/Article/details/gt2ocjypeoy.html
+
+pandas.read_excel / DataFrame.to_excel
+来源：http://www.52xcode.cn/Article/details/gt2lxxmuqvx.html
+
+[U38] Py：获取脚本所在目录
+来源：http://www.52xcode.cn/Article/details/gt2viehmcwz.html
+
+Path(__file__).resolve().parent
+来源：http://www.52xcode.cn/Article/details/gt2dahelohw.html
+
+[U39] Py：判断是否在交互环境
+来源：http://www.ydjk.org.cn/Article/details/gt2klnhvfmz.html
+
+sys.stdout.isatty()
+来源：http://www.ydjk.org.cn/Article/details/gt2kdefwxpy.html
+
+[U40] Py：打印到标准错误
+来源：http://www.52xcode.cn/Article/details/gt2cwbwecdi.html
+
+print("err", file=sys.stderr)
+来源：http://www.52xcode.cn/Article/details/gt2xdydbmhh.html
+
+[U41] PHP：初始化 Composer 项目
+来源：http://www.ydjk.org.cn/Article/details/gt2gjcobkfg.html
+
+composer init;  composer require guzzlehttp/guzzle
+来源：http://www.52xcode.cn/Article/details/gt2gklnfopf.html
+
+[U42] PHP：PSR-4 自动加载
+来源：http://www.ydjk.org.cn/Article/details/gt2rmocypiy.html
+
+"autoload": { "psr-4": { "App\\": "src/" } }
+来源：http://www.ydjk.org.cn/Article/details/gt2ydkxvymv.html
+
+[U43] PHP：声明命名空间
+来源：http://www.52xcode.cn/Article/details/gt2qnjszjup.html
+
+namespace App\Http;
+来源：http://www.ydjk.org.cn/Article/details/gt2nylnygck.html
+
+[U44] PHP：开启严格类型
+来源：http://www.ydjk.org.cn/Article/details/gt2zslyfxut.html
+
+declare(strict_types=1);
+来源：http://www.ydjk.org.cn/Article/details/gt2piejqpsl.html
+
+[U45] PHP：类型声明与返回类型
+来源：http://www.52xcode.cn/Article/details/gt2nolnfuwx.html
+
+function add(int $a, int $b): int { return $a + $b; }
+来源：http://www.ydjk.org.cn/Article/details/gt2kwywckrk.html
+
+[U46] PHP：可空类型
+来源：http://www.ydjk.org.cn/Article/details/gt2xxbiiiil.html
+
+?string $name = null
+来源：http://www.ydjk.org.cn/Article/details/gt2roucqsex.html
+
+[U47] PHP：联合类型
+来源：http://www.52xcode.cn/Article/details/gt2qnjdpbsq.html
+
+int|string $id
+来源：http://www.ydjk.org.cn/Article/details/gt2katxsinm.html
+
+[U48] PHP：纯枚举
+来源：http://www.ydjk.org.cn/Article/details/gt2ohtqfgmi.html
+
+enum Status: string { case Active = "active"; case Off = "off"; }
+来源：http://www.52xcode.cn/Article/details/gt2wqtwcmwf.html
+
+[U49] PHP：只读属性
+来源：http://www.52xcode.cn/Article/details/gt2bunpnkpi.html
+
+public readonly string $name
+来源：http://www.ydjk.org.cn/Article/details/gt2vqyrysmv.html
+
+[U50] PHP：构造器属性提升
+来源：http://www.52xcode.cn/Article/details/gt2eymgrora.html
+
+public function __construct(private int $id) {}
+来源：http://www.ydjk.org.cn/Article/details/gt2uccclivu.html
+
+[U51] PHP：数组解构
+来源：http://www.52xcode.cn/Article/details/gt2ctrkxgjj.html
+
+[$a, $b] = $arr;
+来源：http://www.52xcode.cn/Article/details/gt2symvcxdr.html
+
+[U52] PHP：箭头函数
+来源：http://www.ydjk.org.cn/Article/details/gt2tjmzndsc.html
+
+$double = fn($x) => $x * 2;
+来源：http://www.ydjk.org.cn/Article/details/gt2xeovbchw.html
+
+[U53] PHP：空合并运算符
+来源：http://www.ydjk.org.cn/Article/details/gt2hslpmxwe.html
+
+$v = $a ?? $b ?? "default";
+来源：http://www.52xcode.cn/Article/details/gt2kipgdstf.html
+
+[U54] PHP：空安全调用
+来源：http://www.52xcode.cn/Article/details/gt2nvqqdkfs.html
+
+$obj?->method()
+来源：http://www.ydjk.org.cn/Article/details/gt2irxwbizy.html
+
+[U55] PHP：match 表达式
+来源：http://www.52xcode.cn/Article/details/gt2xnilwiku.html
+
+$s = match($x) { 1 => "一", default => "其他" };
+来源：http://www.52xcode.cn/Article/details/gt2gxpdbahf.html
+
+[U56] PHP：命名参数
+来源：http://www.ydjk.org.cn/Article/details/gt2gotzregm.html
+
+f(a: 1, b: 2)
+来源：http://www.52xcode.cn/Article/details/gt2lqvscnfq.html
+
+[U57] PHP：字符串插值
+来源：http://www.52xcode.cn/Article/details/gt2syhbccpq.html
+
+"值: {$a}"
+来源：http://www.ydjk.org.cn/Article/details/gt2nilafmgu.html
+
+[U58] PHP：数组三件套
+来源：http://www.ydjk.org.cn/Article/details/gt2obmgznxq.html
+
+array_map($f, $a);  array_filter($a, $f);  array_reduce($a, $f, 0);
+来源：http://www.52xcode.cn/Article/details/gt2ouaivsxf.html
+
+[U59] PHP：自定义排序
+来源：http://www.ydjk.org.cn/Article/details/gt2aypunhmh.html
+
+usort($arr, fn($a, $b) => $a["age"] <=> $b["age"]);
+来源：http://www.ydjk.org.cn/Article/details/gt2vorhwsbe.html
+
+[U60] PHP：JSON 编解码
+来源：http://www.ydjk.org.cn/Article/details/gt2eosydupm.html
+
+json_encode($d, JSON_UNESCAPED_UNICODE);  json_decode($s, true);
+来源：http://www.ydjk.org.cn/Article/details/gt2cgkofbcd.html
+
+[U61] PHP：正则
+来源：http://www.52xcode.cn/Article/details/gt2bpdictqp.html
+
+preg_match('/(\d+)/', $s, $m);  preg_replace('/\d+/', '#', $s);
+来源：http://www.52xcode.cn/Article/details/gt2ufjrpnhi.html
+
+[U62] PHP：日期对象
+来源：http://www.52xcode.cn/Article/details/gt2xueeuxry.html
+
+(new DateTimeImmutable())->format("Y-m-d");
+来源：http://www.ydjk.org.cn/Article/details/gt2abkxumdc.html
+
+[U63] PHP：文件读写
+来源：http://www.52xcode.cn/Article/details/gt2vopsmako.html
+
+file_get_contents($f);  file_put_contents($f, $data);
+来源：http://www.ydjk.org.cn/Article/details/gt2ihadwucx.html
+
+[U64] PHP：目录遍历
+来源：http://www.ydjk.org.cn/Article/details/gt2dqxfkdaa.html
+
+glob("dir/*.php");  scandir("dir");
+来源：http://www.ydjk.org.cn/Article/details/gt2ytmyaezm.html
+
+[U65] PHP：会话
+来源：http://www.ydjk.org.cn/Article/details/gt2cwidkzzf.html
+
+session_start();  $_SESSION["uid"] = 1;
+来源：http://www.ydjk.org.cn/Article/details/gt2jznbbhxh.html
+
+[U66] PHP：设置 Cookie
+来源：http://www.52xcode.cn/Article/details/gt2eriqfghu.html
+
+setcookie("token", $v, ["httponly" => true, "samesite" => "Lax"]);
+来源：http://www.52xcode.cn/Article/details/gt2jwzmfrmb.html
+
+[U67] PHP：处理文件上传
+来源：http://www.ydjk.org.cn/Article/details/gt2tsuaafiz.html
+
+$_FILES["file"]["tmp_name"] 与 move_uploaded_file()
+来源：http://www.ydjk.org.cn/Article/details/gt2bmcisbjo.html
+
+[U68] PHP：PDO 连接
+来源：http://www.52xcode.cn/Article/details/gt2blpgkwjb.html
+
+$pdo = new PDO("mysql:host=localhost;dbname=app", "root", "");
+来源：http://www.ydjk.org.cn/Article/details/gt2bkfncjud.html
+
+[U69] PHP：PDO 预处理
+来源：http://www.52xcode.cn/Article/details/gt2opaklmtw.html
+
+$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");  $stmt->execute([$id]);
+来源：http://www.ydjk.org.cn/Article/details/gt2mpdwrzbd.html
+
+[U70] PHP：PDO 事务
+来源：http://www.52xcode.cn/Article/details/gt2qhaohkle.html
+
+$pdo->beginTransaction();  $pdo->commit();  $pdo->rollBack();
+来源：http://www.ydjk.org.cn/Article/details/gt2myvewjup.html
+
+[U71] PHP：抛出异常
+来源：http://www.ydjk.org.cn/Article/details/gt2abokmmme.html
+
+throw new RuntimeException("失败", 500);
+来源：http://www.52xcode.cn/Article/details/gt2wbngljhm.html
+
+[U72] PHP：写错误日志
+来源：http://www.ydjk.org.cn/Article/details/gt2otozstiy.html
+
+error_log("失败: " . $e->getMessage());
+来源：http://www.ydjk.org.cn/Article/details/gt2njgbhiul.html
+
+[U73] PHP：读取 ini 配置
+来源：http://www.ydjk.org.cn/Article/details/gt2neadofex.html
+
+parse_ini_file("config.ini", true)
+来源：http://www.52xcode.cn/Article/details/gt2etfkermd.html
+
+[U74] PHP：读取环境变量
+来源：http://www.52xcode.cn/Article/details/gt2cmdoferq.html
+
+getenv("APP_ENV") ?: "production"
+来源：http://www.ydjk.org.cn/Article/details/gt2trtygloy.html
+
+[U75] PHP：依赖注入
+来源：http://www.52xcode.cn/Article/details/gt2qwdpgpeo.html
+
+composer require psr/container
+来源：http://www.ydjk.org.cn/Article/details/gt2risggvyh.html
+
+[U76] PHP：简单路由
+来源：http://www.ydjk.org.cn/Article/details/gt2slhzbnbm.html
+
+$path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+来源：http://www.ydjk.org.cn/Article/details/gt2onvxvqtt.html
+
+[U77] PHP：模板渲染
+来源：http://www.52xcode.cn/Article/details/gt2fqqosvlu.html
+
+composer require twig/twig
+来源：http://www.52xcode.cn/Article/details/gt2tcjnmczi.html
+
+[U78] PHP：单元测试
+来源：http://www.52xcode.cn/Article/details/gt2hbwmgukq.html
+
+composer require --dev phpunit/phpunit
+来源：http://www.ydjk.org.cn/Article/details/gt2uwpzfyvx.html
+
+[U79] PHP：静态分析
+来源：http://www.52xcode.cn/Article/details/gt2yceyqapq.html
+
+composer require --dev phpstan/phpstan
+来源：http://www.ydjk.org.cn/Article/details/gt2trhwepdl.html
+
+[U80] PHP：代码规范修复
+来源：http://www.52xcode.cn/Article/details/gt2mzbbpxof.html
+
+composer require --dev friendsofphp/php-cs-fixer
+来源：http://www.52xcode.cn/Article/details/gt2wlhovlew.html
+
+[U81] JS：初始化项目
+来源：http://www.ydjk.org.cn/Article/details/gt2yjberkpm.html
+
+npm init -y;  npm i express
+来源：http://www.52xcode.cn/Article/details/gt2fonubxgi.html
+
+[U82] JS：package.json 脚本
+来源：http://www.52xcode.cn/Article/details/gt2llkiwzyo.html
+
+"scripts": { "dev": "vite", "build": "vite build" }
+来源：http://www.52xcode.cn/Article/details/gt2zvskggww.html
+
+[U83] JS：ES Module 导入导出
+来源：http://www.52xcode.cn/Article/details/gt2cwmgbuzm.html
+
+export const a = 1;  import { a } from "./m.js";
+来源：http://www.ydjk.org.cn/Article/details/gt2mvqnmpyb.html
+
+[U84] JS：CommonJS 写法
+来源：http://www.52xcode.cn/Article/details/gt2tsbpxeud.html
+
+module.exports = { a };  const { a } = require("./m");
+来源：http://www.ydjk.org.cn/Article/details/gt2hpqykdtt.html
+
+[U85] JS：可选链
+来源：http://www.ydjk.org.cn/Article/details/gt2prndvdqr.html
+
+a?.b?.c
+来源：http://www.ydjk.org.cn/Article/details/gt2hlsfxmos.html
+
+[U86] JS：空值合并
+来源：http://www.ydjk.org.cn/Article/details/gt2kmxnxopb.html
+
+a ?? b
+来源：http://www.52xcode.cn/Article/details/gt2pepmdqac.html
+
+[U87] JS：解构默认值
+来源：http://www.ydjk.org.cn/Article/details/gt2hpbqjfbb.html
+
+const { a = 1, b = 2 } = obj;
+来源：http://www.52xcode.cn/Article/details/gt2ztsvlgua.html
+
+[U88] JS：对象展开合并
+来源：http://www.52xcode.cn/Article/details/gt2wlapqjec.html
+
+{ ...a, ...b }
+来源：http://www.ydjk.org.cn/Article/details/gt2tuggguew.html
+
+[U89] JS：数组去重
+来源：http://www.ydjk.org.cn/Article/details/gt2izwdpqyh.html
+
+[...new Set(arr)]
+来源：http://www.ydjk.org.cn/Article/details/gt2hvodpgww.html
+
+[U90] JS：数字数组排序
+来源：http://www.ydjk.org.cn/Article/details/gt2afcrxbjz.html
+
+[...arr].sort((a, b) => a - b)
+来源：http://www.52xcode.cn/Article/details/gt2sqkwzpur.html
+
+[U91] JS：对象键值遍历
+来源：http://www.ydjk.org.cn/Article/details/gt2yjtelubg.html
+
+Object.entries(obj).forEach(([k, v]) => {});
+来源：http://www.ydjk.org.cn/Article/details/gt2hhqzmfyl.html
+
+[U92] JS：深拷贝
+来源：http://www.52xcode.cn/Article/details/gt2txswmvvl.html
+
+structuredClone(obj)
+来源：http://www.ydjk.org.cn/Article/details/gt2zhyzzabo.html
+
+[U93] JS：模板字符串
+来源：http://www.ydjk.org.cn/Article/details/gt2eirchdqa.html
+
+`共 ${n} 条`
+来源：http://www.ydjk.org.cn/Article/details/gt2xahyjcrg.html
+
+[U94] JS：箭头函数
+来源：http://www.52xcode.cn/Article/details/gt2otuztkcx.html
+
+const double = x => x * 2;
+来源：http://www.52xcode.cn/Article/details/gt2rxwfnhli.html
+
+[U95] JS：Promise 包装
+来源：http://www.ydjk.org.cn/Article/details/gt2wmgkoama.html
+
+new Promise((resolve, reject) => {})
+来源：http://www.ydjk.org.cn/Article/details/gt2alleqiox.html
+
+[U96] JS：async/await 与异常
+来源：http://www.52xcode.cn/Article/details/gt2vppcfjxb.html
+
+try { const d = await f(); } catch (e) { console.error(e); }
+来源：http://www.ydjk.org.cn/Article/details/gt2ijffdvbn.html
+
+
+<!-- 参考信息 -->
