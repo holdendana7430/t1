@@ -1,0 +1,904 @@
+代发 wailian999
+
+Java: new ArrayList<>(list);
+来源：http://www.52xcode.cn/Article/details/gt3zsxatqid.html
+
+Go:   copied := append([]int(nil), arr...)
+来源：http://www.ydjk.org.cn/Article/details/gt3oszuizmg.html
+
+Ruby: arr.dup;  arr.clone
+来源：http://www.52xcode.cn/Article/details/gt3bayfbfqt.html
+
+C#:   new List<int>(list);
+来源：http://www.ydjk.org.cn/Article/details/gt3fzoqwmux.html
+
+[D23] reduce 累积计算
+来源：http://www.ydjk.org.cn/Article/details/gt3bkdkdziu.html
+
+Py:   functools.reduce(lambda a, b: a + b, arr, 0)
+来源：http://www.52xcode.cn/Article/details/gt3vpbctvmu.html
+
+PHP:  array_reduce($arr, fn($carry, $x) => $carry + $x, 0);
+来源：http://www.ydjk.org.cn/Article/details/gt3zzkoboqr.html
+
+JS:   arr.reduce((acc, x) => acc + x, 0)
+来源：http://www.ydjk.org.cn/Article/details/gt3xkbpnydv.html
+
+TS:   arr.reduce((acc, x) => acc + x, 0)
+来源：http://www.52xcode.cn/Article/details/gt3zjvnstkw.html
+
+Java: list.stream().reduce(0, Integer::sum)
+来源：http://www.ydjk.org.cn/Article/details/gt3ckurlmsr.html
+
+Go:   // 手写循环
+来源：http://www.ydjk.org.cn/Article/details/gt3bpsfybpm.html
+
+Ruby: arr.reduce(0) { |acc, x| acc + x };  arr.sum
+来源：http://www.ydjk.org.cn/Article/details/gt3tbzfkxqc.html
+
+C#:   list.Aggregate(0, (acc, x) => acc + x)
+来源：http://www.ydjk.org.cn/Article/details/gt3aslmnopa.html
+
+[D24] 字典 / Map 基本操作
+来源：http://www.52xcode.cn/Article/details/gt3xufxgpnq.html
+
+Py:   d["k"] = 1;  d.get("k");  "k" in d;  d.pop("k")
+来源：http://www.52xcode.cn/Article/details/gt3snyhiaxx.html
+
+PHP:  $d["k"] = 1;  $d["k"] ?? null;  isset($d["k"]);  unset($d["k"]);
+来源：http://www.ydjk.org.cn/Article/details/gt3jygnvwcx.html
+
+JS:   obj.k = 1;  "k" in obj;  delete obj.k;  new Map().set("k", 1)
+来源：http://www.52xcode.cn/Article/details/gt3zdgjtyrv.html
+
+TS:   const d: Record<string, number> = {};  d["k"] = 1;
+来源：http://www.52xcode.cn/Article/details/gt3bfekvqns.html
+
+Java: map.put("k", 1);  map.get("k");  map.containsKey("k");  map.remove("k")
+来源：http://www.ydjk.org.cn/Article/details/gt3yybiagsv.html
+
+Go:   m := map[string]int{};  m["k"] = 1;  v, ok := m["k"];  delete(m, "k")
+来源：http://www.ydjk.org.cn/Article/details/gt3qxzuktqu.html
+
+Ruby: h["k"] = 1;  h["k"];  h.key?("k");  h.delete("k")
+来源：http://www.ydjk.org.cn/Article/details/gt3vhqqaewo.html
+
+C#:   dict["k"] = 1;  dict.TryGetValue("k", out var v);  dict.Remove("k");
+来源：http://www.52xcode.cn/Article/details/gt3rulciruf.html
+
+[D25] Set 集合去重与交并差
+来源：http://www.52xcode.cn/Article/details/gt3jbbmyexp.html
+
+Py:   s = {1, 2, 3};  s | {3, 4};  s & {2};  s - {1}
+来源：http://www.52xcode.cn/Article/details/gt3qhwoxewe.html
+
+PHP:  // 无原生 Set：用数组键或 SplObjectStorage 变通
+来源：http://www.ydjk.org.cn/Article/details/gt3zzgismnz.html
+
+JS:   const s = new Set([1, 2, 3]);  s.add(4);  s.has(1);  s.delete(1)
+来源：http://www.52xcode.cn/Article/details/gt3smvagmso.html
+
+TS:   const s = new Set<number>([1, 2, 3]);
+来源：http://www.52xcode.cn/Article/details/gt3xgyyqncg.html
+
+Java: var s = new HashSet<>(List.of(1, 2, 3));  s.add(4);  s.contains(1)
+来源：http://www.52xcode.cn/Article/details/gt3eoufpgat.html
+
+Go:   // 无原生 Set：用 map[int]struct{}
+来源：http://www.ydjk.org.cn/Article/details/gt3tgolilry.html
+
+Ruby: s = Set[1, 2, 3];  s.add(4);  s.include?(1)
+来源：http://www.ydjk.org.cn/Article/details/gt3cxkkelti.html
+
+C#:   var s = new HashSet<int> { 1, 2, 3 };  s.Add(4);  s.Contains(1)
+来源：http://www.52xcode.cn/Article/details/gt3ykfwacnk.html
+
+[D26] 数组转字符串
+来源：http://www.52xcode.cn/Article/details/gt3asjqkpky.html
+
+Py:   ", ".join(map(str, arr))
+来源：http://www.52xcode.cn/Article/details/gt3nnhqheqj.html
+
+PHP:  implode(", ", $arr);
+来源：http://www.52xcode.cn/Article/details/gt3cwzsksrj.html
+
+JS:   arr.join(", ")
+来源：http://www.ydjk.org.cn/Article/details/gt3xroschut.html
+
+TS:   arr.join(", ")
+来源：http://www.52xcode.cn/Article/details/gt3mhryzvze.html
+
+Java: String.join(", ", list)
+来源：http://www.ydjk.org.cn/Article/details/gt3qxyokgih.html
+
+Go:   strings.Join(strs, ", ")
+来源：http://www.ydjk.org.cn/Article/details/gt3dscmpquy.html
+
+Ruby: arr.join(", ")
+来源：http://www.ydjk.org.cn/Article/details/gt3uqieajox.html
+
+C#:   string.Join(", ", list)
+来源：http://www.52xcode.cn/Article/details/gt3ililtgeo.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt3tbuylsii.html
+
+E. 字符串处理
+来源：http://www.52xcode.cn/Article/details/gt3vlqheqhd.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt3pipymlcj.html
+
+[E01] 拼接字符串
+来源：http://www.52xcode.cn/Article/details/gt3furwfjjp.html
+
+Py:   "a" + "b";  "".join(["a", "b"])
+来源：http://www.52xcode.cn/Article/details/gt3pzgldixn.html
+
+PHP:  "a" . "b";  implode("", ["a", "b"]);
+来源：http://www.ydjk.org.cn/Article/details/gt3ajwirkro.html
+
+JS:   "a" + "b";  ["a", "b"].join("")
+来源：http://www.ydjk.org.cn/Article/details/gt3vwtgjlbu.html
+
+TS:   "a" + "b";  ["a", "b"].join("")
+来源：http://www.ydjk.org.cn/Article/details/gt3sipfsias.html
+
+Java: "a" + "b";  String.join("", List.of("a", "b"))
+来源：http://www.52xcode.cn/Article/details/gt3lbnlmljv.html
+
+Go:   "a" + "b";  strings.Join([]string{"a", "b"}, "")
+来源：http://www.ydjk.org.cn/Article/details/gt3zecjxcqe.html
+
+Ruby: "a" + "b";  ["a", "b"].join
+来源：http://www.ydjk.org.cn/Article/details/gt3wvigtpsa.html
+
+C#:   "a" + "b";  string.Concat("a", "b")
+来源：http://www.52xcode.cn/Article/details/gt3rohjzmuv.html
+
+[E02] 重复字符串
+来源：http://www.ydjk.org.cn/Article/details/gt3dozphuhd.html
+
+Py:   "ab" * 3
+来源：http://www.52xcode.cn/Article/details/gt3dhuqtuid.html
+
+PHP:  str_repeat("ab", 3);
+来源：http://www.ydjk.org.cn/Article/details/gt3curmxsuc.html
+
+JS:   "ab".repeat(3)
+来源：http://www.ydjk.org.cn/Article/details/gt3rctlxlmd.html
+
+TS:   "ab".repeat(3)
+来源：http://www.52xcode.cn/Article/details/gt3szulvuud.html
+
+Java: "ab".repeat(3)
+来源：http://www.ydjk.org.cn/Article/details/gt3hookbsil.html
+
+Go:   strings.Repeat("ab", 3)
+来源：http://www.52xcode.cn/Article/details/gt3vqdrvtdy.html
+
+Ruby: "ab" * 3
+来源：http://www.ydjk.org.cn/Article/details/gt3xizctklv.html
+
+C#:   string.Concat(Enumerable.Repeat("ab", 3))
+来源：http://www.52xcode.cn/Article/details/gt3twpyalrh.html
+
+[E03] 截取子串
+来源：http://www.52xcode.cn/Article/details/gt3ejlbcjsw.html
+
+Py:   s[1:4];  s[:3];  s[3:]
+来源：http://www.ydjk.org.cn/Article/details/gt3bdktoxkl.html
+
+PHP:  substr($s, 1, 3);  mb_substr($s, 1, 3, "UTF-8");
+来源：http://www.52xcode.cn/Article/details/gt3mhyxhkep.html
+
+JS:   s.slice(1, 4);  s.substring(1, 4)
+来源：http://www.52xcode.cn/Article/details/gt3lkruxmjz.html
+
+TS:   s.slice(1, 4)
+来源：http://www.52xcode.cn/Article/details/gt3cvlkyrgz.html
+
+Java: s.substring(1, 4)
+来源：http://www.ydjk.org.cn/Article/details/gt3wwvwclis.html
+
+Go:   s[1:4]        // 按字节；中文用 []rune(s)[1:4] 再转回 string
+来源：http://www.ydjk.org.cn/Article/details/gt3qqcldotw.html
+
+Ruby: s[1, 3];  s[1..3]
+来源：http://www.52xcode.cn/Article/details/gt3nelcszlr.html
+
+C#:   s.Substring(1, 3)
+来源：http://www.ydjk.org.cn/Article/details/gt3gftkrvel.html
+
+[E04] 查找子串位置
+来源：http://www.52xcode.cn/Article/details/gt3gmymiotm.html
+
+Py:   s.find("x");  s.index("x")
+来源：http://www.52xcode.cn/Article/details/gt3muwsoxzk.html
+
+PHP:  strpos($s, "x");
+来源：http://www.52xcode.cn/Article/details/gt3jyhtejsn.html
+
+JS:   s.indexOf("x");  s.search(/x/)
+来源：http://www.ydjk.org.cn/Article/details/gt3eghtriig.html
+
+TS:   s.indexOf("x")
+来源：http://www.ydjk.org.cn/Article/details/gt3tzhwhfhc.html
+
+Java: s.indexOf("x")
+来源：http://www.ydjk.org.cn/Article/details/gt3uvrrmxwy.html
+
+Go:   strings.Index(s, "x")
+来源：http://www.52xcode.cn/Article/details/gt3dufklogc.html
+
+Ruby: s.index("x")
+来源：http://www.ydjk.org.cn/Article/details/gt3msogyjqa.html
+
+C#:   s.IndexOf("x")
+来源：http://www.ydjk.org.cn/Article/details/gt3mrsokhvq.html
+
+[E05] 判断包含 / 前缀 / 后缀
+来源：http://www.52xcode.cn/Article/details/gt3ecjfprnh.html
+
+Py:   "x" in s;  s.startswith("a");  s.endswith("z")
+来源：http://www.ydjk.org.cn/Article/details/gt3uuyxwqto.html
+
+PHP:  str_contains($s, "x");  str_starts_with($s, "a");  str_ends_with($s, "z");
+来源：http://www.52xcode.cn/Article/details/gt3kzkfejox.html
+
+JS:   s.includes("x");  s.startsWith("a");  s.endsWith("z")
+来源：http://www.ydjk.org.cn/Article/details/gt3xtyhayzg.html
+
+TS:   s.includes("x");  s.startsWith("a")
+来源：http://www.ydjk.org.cn/Article/details/gt3bojdqlwf.html
+
+Java: s.contains("x");  s.startsWith("a");  s.endsWith("z")
+来源：http://www.52xcode.cn/Article/details/gt3farerprm.html
+
+Go:   strings.Contains(s, "x");  strings.HasPrefix(s, "a");  strings.HasSuffix(s, "z")
+来源：http://www.ydjk.org.cn/Article/details/gt3amyleqmq.html
+
+Ruby: s.include?("x");  s.start_with?("a");  s.end_with?("z")
+来源：http://www.52xcode.cn/Article/details/gt3dgboqlss.html
+
+C#:   s.Contains("x");  s.StartsWith("a");  s.EndsWith("z")
+来源：http://www.52xcode.cn/Article/details/gt3yhifvnqm.html
+
+[E06] 替换子串
+来源：http://www.ydjk.org.cn/Article/details/gt3zxwmduef.html
+
+Py:   s.replace("a", "b");  s.replace("a", "b", 1)
+来源：http://www.52xcode.cn/Article/details/gt3hoflethu.html
+
+PHP:  str_replace("a", "b", $s);
+来源：http://www.52xcode.cn/Article/details/gt3vtkszjuj.html
+
+JS:   s.replace("a", "b");  s.replaceAll("a", "b")
+来源：http://www.ydjk.org.cn/Article/details/gt3hyfrdsok.html
+
+TS:   s.replaceAll("a", "b")
+来源：http://www.52xcode.cn/Article/details/gt3ajtdysxj.html
+
+Java: s.replace("a", "b");  s.replaceAll("a", "b")
+来源：http://www.ydjk.org.cn/Article/details/gt3uwtazyay.html
+
+Go:   strings.ReplaceAll(s, "a", "b");  strings.Replace(s, "a", "b", 1)
+来源：http://www.ydjk.org.cn/Article/details/gt3zwwlblho.html
+
+Ruby: s.gsub("a", "b");  s.sub("a", "b")
+来源：http://www.52xcode.cn/Article/details/gt3bfltauvn.html
+
+C#:   s.Replace("a", "b")
+来源：http://www.52xcode.cn/Article/details/gt3uqbqknca.html
+
+[E07] 按分隔符拆分
+来源：http://www.ydjk.org.cn/Article/details/gt3ryejzzat.html
+
+Py:   s.split(",");  s.split()      # 无参按任意空白拆
+来源：http://www.ydjk.org.cn/Article/details/gt3ffslwwkm.html
+
+PHP:  explode(",", $s);  preg_split('/\s+/', $s);
+来源：http://www.ydjk.org.cn/Article/details/gt3ehgsycbz.html
+
+JS:   s.split(",");  s.split(/\s+/)
+来源：http://www.52xcode.cn/Article/details/gt3lfvhksqj.html
+
+TS:   s.split(",")
+来源：http://www.ydjk.org.cn/Article/details/gt3ncmdfbhn.html
+
+Java: s.split(",");  s.split("\\s+")
+来源：http://www.52xcode.cn/Article/details/gt3hbpyzctw.html
+
+Go:   strings.Split(s, ",");  strings.Fields(s)
+来源：http://www.52xcode.cn/Article/details/gt3fepgtrrx.html
+
+Ruby: s.split(",");  s.split
+来源：http://www.ydjk.org.cn/Article/details/gt3sahxfxsy.html
+
+C#:   s.Split(',');  s.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+来源：http://www.52xcode.cn/Article/details/gt3dyekrblf.html
+
+[E08] 数组按分隔符合并
+来源：http://www.52xcode.cn/Article/details/gt3ivkryvhv.html
+
+Py:   ",".join(items)
+来源：http://www.52xcode.cn/Article/details/gt3jxcqkrhs.html
+
+PHP:  implode(",", $items);
+来源：http://www.52xcode.cn/Article/details/gt3vecyqijh.html
+
+JS:   items.join(",")
+来源：http://www.ydjk.org.cn/Article/details/gt3hlnhcztt.html
+
+TS:   items.join(",")
+来源：http://www.ydjk.org.cn/Article/details/gt3aoeoxvkw.html
+
+Java: String.join(",", items)
+来源：http://www.52xcode.cn/Article/details/gt3voxkhkws.html
+
+Go:   strings.Join(items, ",")
+来源：http://www.52xcode.cn/Article/details/gt3ackjvkia.html
+
+Ruby: items.join(",")
+来源：http://www.ydjk.org.cn/Article/details/gt3zafsyapw.html
+
+C#:   string.Join(",", items)
+来源：http://www.52xcode.cn/Article/details/gt3ztdoxack.html
+
+[E09] 去除所有空白字符
+来源：http://www.52xcode.cn/Article/details/gt3quqcxtbq.html
+
+Py:   "".join(s.split());  re.sub(r"\s+", "", s)
+来源：http://www.ydjk.org.cn/Article/details/gt3chrkwkjr.html
+
+PHP:  preg_replace('/\s+/', '', $s);
+来源：http://www.ydjk.org.cn/Article/details/gt3fghmwdil.html
+
+JS:   s.replace(/\s+/g, "")
+来源：http://www.52xcode.cn/Article/details/gt3ztpnllbf.html
+
+TS:   s.replace(/\s+/g, "")
+来源：http://www.52xcode.cn/Article/details/gt3udkirlxr.html
+
+Java: s.replaceAll("\\s+", "")
+来源：http://www.ydjk.org.cn/Article/details/gt3lreboaks.html
+
+Go:   strings.Join(strings.Fields(s), "")
+来源：http://www.ydjk.org.cn/Article/details/gt3cttppslx.html
+
+Ruby: s.gsub(/\s+/, "")
+来源：http://www.ydjk.org.cn/Article/details/gt3ojrphkqp.html
+
+C#:   Regex.Replace(s, @"\s+", "")
+来源：http://www.52xcode.cn/Article/details/gt3yopkwsxi.html
+
+[E10] 左侧补零 / 定长填充
+来源：http://www.ydjk.org.cn/Article/details/gt3rfiaxvcv.html
+
+Py:   str(7).zfill(3);  "7".rjust(3, "0")
+来源：http://www.ydjk.org.cn/Article/details/gt3bwylgwlv.html
+
+PHP:  str_pad("7", 3, "0", STR_PAD_LEFT);
+来源：http://www.ydjk.org.cn/Article/details/gt3ujcpmmon.html
+
+JS:   "7".padStart(3, "0")
+来源：http://www.52xcode.cn/Article/details/gt3wdinjyrj.html
+
+TS:   "7".padStart(3, "0")
+来源：http://www.ydjk.org.cn/Article/details/gt3emldvcaq.html
+
+Java: String.format("%03d", 7)
+来源：http://www.52xcode.cn/Article/details/gt3ouwmgfil.html
+
+Go:   fmt.Sprintf("%03d", 7)
+来源：http://www.ydjk.org.cn/Article/details/gt3tdyldcrd.html
+
+Ruby: 7.to_s.rjust(3, "0");  format("%03d", 7)
+来源：http://www.52xcode.cn/Article/details/gt3pkvylkph.html
+
+C#:   7.ToString("D3");  7.ToString().PadLeft(3, '0')
+来源：http://www.ydjk.org.cn/Article/details/gt3mrvliflv.html
+
+[E11] 反转字符串
+来源：http://www.ydjk.org.cn/Article/details/gt3dvhuowcp.html
+
+Py:   s[::-1]
+来源：http://www.52xcode.cn/Article/details/gt3wdynjiel.html
+
+PHP:  strrev($s);
+来源：http://www.ydjk.org.cn/Article/details/gt3gvxyhkau.html
+
+JS:   [...s].reverse().join("")
+来源：http://www.ydjk.org.cn/Article/details/gt3nbdzmnsv.html
+
+TS:   [...s].reverse().join("")
+来源：http://www.52xcode.cn/Article/details/gt3tczkwnxs.html
+
+Java: new StringBuilder(s).reverse().toString()
+来源：http://www.52xcode.cn/Article/details/gt3vayckelz.html
+
+Go:   // 转 []rune 后倒序再转回 string
+来源：http://www.52xcode.cn/Article/details/gt3xxxesirt.html
+
+Ruby: s.reverse
+来源：http://www.52xcode.cn/Article/details/gt3dyivjopx.html
+
+C#:   new string(s.Reverse().ToArray())
+来源：http://www.52xcode.cn/Article/details/gt3tsawaide.html
+
+[E12] 统计某字符出现次数
+来源：http://www.ydjk.org.cn/Article/details/gt3khycgaoc.html
+
+Py:   s.count("a")
+来源：http://www.52xcode.cn/Article/details/gt3ctsdhvds.html
+
+PHP:  substr_count($s, "a");
+来源：http://www.52xcode.cn/Article/details/gt3lpwvxuuy.html
+
+JS:   s.split("a").length - 1
+来源：http://www.ydjk.org.cn/Article/details/gt3pvpqzznm.html
+
+TS:   s.split("a").length - 1
+来源：http://www.ydjk.org.cn/Article/details/gt3ntwfguai.html
+
+Java: s.chars().filter(c -> c == 'a').count()
+来源：http://www.52xcode.cn/Article/details/gt3vcdlbyta.html
+
+Go:   strings.Count(s, "a")
+来源：http://www.ydjk.org.cn/Article/details/gt3qlidlhsh.html
+
+Ruby: s.count("a")
+来源：http://www.ydjk.org.cn/Article/details/gt3pocfwaxy.html
+
+C#:   s.Count(c => c == 'a')
+来源：http://www.52xcode.cn/Article/details/gt3zreevfyq.html
+
+[E13] 逐字符遍历
+来源：http://www.ydjk.org.cn/Article/details/gt3rmvkthln.html
+
+Py:   for ch in s: print(ch)
+来源：http://www.52xcode.cn/Article/details/gt3xjfyzcvm.html
+
+PHP:  foreach (mb_str_split($s) as $ch) { echo $ch; }
+来源：http://www.ydjk.org.cn/Article/details/gt3jmhabyoz.html
+
+JS:   for (const ch of s) { console.log(ch); }
+来源：http://www.ydjk.org.cn/Article/details/gt3wwfovsuy.html
+
+TS:   for (const ch of s) { console.log(ch); }
+来源：http://www.ydjk.org.cn/Article/details/gt3uexfzgvf.html
+
+Java: for (char ch : s.toCharArray()) { System.out.println(ch); }
+来源：http://www.ydjk.org.cn/Article/details/gt3fzogocvv.html
+
+Go:   for _, ch := range s { fmt.Println(string(ch)) }   // 按 rune 遍历
+来源：http://www.ydjk.org.cn/Article/details/gt3izkrccjs.html
+
+Ruby: s.each_char { |ch| puts ch }
+来源：http://www.52xcode.cn/Article/details/gt3ovopxbrg.html
+
+C#:   foreach (var ch in s) { Console.WriteLine(ch); }
+来源：http://www.52xcode.cn/Article/details/gt3aczkjsmg.html
+
+[E14] URL 编码与 Base64
+来源：http://www.52xcode.cn/Article/details/gt3hlbpaimj.html
+
+Py:   urllib.parse.quote(s);  base64.b64encode(b).decode()
+来源：http://www.52xcode.cn/Article/details/gt3ryjpzwne.html
+
+PHP:  urlencode($s);  base64_encode($s);
+来源：http://www.52xcode.cn/Article/details/gt3wkazcidw.html
+
+JS:   encodeURIComponent(s);  btoa(s);  atob(b64)
+来源：http://www.52xcode.cn/Article/details/gt3ljxtkgay.html
+
+TS:   encodeURIComponent(s);  btoa(s)
+来源：http://www.52xcode.cn/Article/details/gt3iwkmasfq.html
+
+Java: URLEncoder.encode(s, StandardCharsets.UTF_8);  Base64.getEncoder().encodeToString(bytes)
+来源：http://www.ydjk.org.cn/Article/details/gt3tdwxuqid.html
+
+Go:   url.QueryEscape(s);  base64.StdEncoding.EncodeToString([]byte(s))
+来源：http://www.ydjk.org.cn/Article/details/gt3hjqtfpec.html
+
+Ruby: URI.encode_www_form_component(s);  [s].pack("m0")
+来源：http://www.52xcode.cn/Article/details/gt3hcbzoohp.html
+
+C#:   Uri.EscapeDataString(s);  Convert.ToBase64String(bytes)
+来源：http://www.52xcode.cn/Article/details/gt3yxmyovun.html
+
+[E15] HTML 转义 / 反转义
+来源：http://www.52xcode.cn/Article/details/gt3viyrpkkd.html
+
+Py:   html.escape(s);  html.unescape(s)
+来源：http://www.ydjk.org.cn/Article/details/gt3vxwpftat.html
+
+PHP:  htmlspecialchars($s, ENT_QUOTES, "UTF-8");  htmlspecialchars_decode($s);
+来源：http://www.52xcode.cn/Article/details/gt3qwnixfbd.html
+
+JS:   // 文本节点自动转义；拼接 HTML 时用 DOMPurify.sanitize(s)
+来源：http://www.52xcode.cn/Article/details/gt3hivgnzmf.html
+
+TS:   // 同上，务必做 XSS 过滤
+来源：http://www.ydjk.org.cn/Article/details/gt3pyworlkr.html
+
+Java: HtmlUtils.htmlEscape(s)   // Spring；通用可用 Apache Commons Text
+来源：http://www.52xcode.cn/Article/details/gt3ivpgtanw.html
+
+Go:   html.EscapeString(s);  html.UnescapeString(s)
+来源：http://www.52xcode.cn/Article/details/gt3ymsosfra.html
+
+Ruby: CGI.escapeHTML(s);  CGI.unescapeHTML(s)
+来源：http://www.ydjk.org.cn/Article/details/gt3rbcwdmku.html
+
+C#:   WebUtility.HtmlEncode(s);  WebUtility.HtmlDecode(s)
+来源：http://www.ydjk.org.cn/Article/details/gt3lfykwucb.html
+
+[E16] 数字千分位
+来源：http://www.ydjk.org.cn/Article/details/gt3fecweucz.html
+
+Py:   f"{1234567:,}"
+来源：http://www.52xcode.cn/Article/details/gt3fbbptxhj.html
+
+PHP:  number_format(1234567);
+来源：http://www.52xcode.cn/Article/details/gt3mtbdiuci.html
+
+JS:   (1234567).toLocaleString("en-US")
+来源：http://www.ydjk.org.cn/Article/details/gt3fhektgei.html
+
+TS:   (1234567).toLocaleString("en-US")
+来源：http://www.52xcode.cn/Article/details/gt3derkskuf.html
+
+Java: NumberFormat.getNumberInstance(Locale.US).format(1234567)
+来源：http://www.ydjk.org.cn/Article/details/gt3dcjymnvf.html
+
+Go:   // 用 golang.org/x/text/message 或手写分组
+来源：http://www.52xcode.cn/Article/details/gt3rjiqzbip.html
+
+Ruby: "1234567".reverse.scan(/\d{1,3}/).join(",").reverse
+来源：http://www.52xcode.cn/Article/details/gt3wchbvkqh.html
+
+C#:   1234567.ToString("N0")
+来源：http://www.52xcode.cn/Article/details/gt3ygfhkotx.html
+
+[E17] 首字母大写
+来源：http://www.52xcode.cn/Article/details/gt3eghgzdzu.html
+
+Py:   s[0].upper() + s[1:];  s.capitalize();  s.title()
+来源：http://www.ydjk.org.cn/Article/details/gt3tuzrkbir.html
+
+PHP:  ucfirst($s);  ucwords($s);
+来源：http://www.ydjk.org.cn/Article/details/gt3fuxejbcf.html
+
+JS:   s.charAt(0).toUpperCase() + s.slice(1)
+来源：http://www.ydjk.org.cn/Article/details/gt3tuvciyfp.html
+
+TS:   s.charAt(0).toUpperCase() + s.slice(1)
+来源：http://www.52xcode.cn/Article/details/gt3grwmqjjo.html
+
+Java: Character.toUpperCase(s.charAt(0)) + s.substring(1)
+来源：http://www.ydjk.org.cn/Article/details/gt3gkopinfj.html
+
+Go:   strings.ToUpper(s[:1]) + s[1:]
+来源：http://www.ydjk.org.cn/Article/details/gt3fzgaxqcd.html
+
+Ruby: s.capitalize
+来源：http://www.52xcode.cn/Article/details/gt3stbcyclm.html
+
+C#:   char.ToUpper(s[0]) + s[1..]
+来源：http://www.52xcode.cn/Article/details/gt3xslugvir.html
+
+[E18] 模板占位符替换
+来源：http://www.ydjk.org.cn/Article/details/gt3zrfqxiqy.html
+
+Py:   "Hello, {name}".format(name="A");  tpl.replace("{name}", "A")
+来源：http://www.ydjk.org.cn/Article/details/gt3eyhjplzj.html
+
+PHP:  str_replace("{name}", "A", $tpl);  sprintf("Hello, %s", $name);
+来源：http://www.52xcode.cn/Article/details/gt3vkhbikum.html
+
+JS:   tpl.replaceAll("{name}", name)
+来源：http://www.52xcode.cn/Article/details/gt3orxibsdl.html
+
+TS:   tpl.replaceAll("{name}", name)
+来源：http://www.52xcode.cn/Article/details/gt3naugwipe.html
+
+Java: "Hello, %s".formatted(name);  tpl.replace("{name}", name)
+来源：http://www.ydjk.org.cn/Article/details/gt3ubaqvizh.html
+
+Go:   strings.ReplaceAll(tpl, "{name}", name)
+来源：http://www.52xcode.cn/Article/details/gt3cpqxmvza.html
+
+Ruby: tpl.gsub("{name}", name);  "Hello, #{name}"
+来源：http://www.52xcode.cn/Article/details/gt3ufhwubon.html
+
+C#:   tpl.Replace("{name}", name);  $"Hello, {name}"
+来源：http://www.52xcode.cn/Article/details/gt3zlyfbwxw.html
+
+[E19] 多行文本按行拆分
+来源：http://www.ydjk.org.cn/Article/details/gt3ozqjanyk.html
+
+Py:   s.splitlines()
+来源：http://www.52xcode.cn/Article/details/gt3lmtzbizt.html
+
+PHP:  preg_split('/\r\n|\r|\n/', $s);
+来源：http://www.52xcode.cn/Article/details/gt3gcfkdsul.html
+
+JS:   s.split(/\r?\n/)
+来源：http://www.ydjk.org.cn/Article/details/gt3hyfcixup.html
+
+TS:   s.split(/\r?\n/)
+来源：http://www.52xcode.cn/Article/details/gt3elnnxbex.html
+
+Java: s.lines().toList()
+来源：http://www.ydjk.org.cn/Article/details/gt3esuupwiz.html
+
+Go:   strings.Split(s, "\n")
+来源：http://www.52xcode.cn/Article/details/gt3duxgxflx.html
+
+Ruby: s.lines
+来源：http://www.ydjk.org.cn/Article/details/gt3ujxahmqo.html
+
+C#:   s.Split('\n')
+来源：http://www.52xcode.cn/Article/details/gt3lyftrtyr.html
+
+[E20] 判断字符串是否为空
+来源：http://www.52xcode.cn/Article/details/gt3uwgvawxu.html
+
+Py:   if not s:
+来源：http://www.ydjk.org.cn/Article/details/gt3evosrubh.html
+
+PHP:  if ($s === "") {}      // 注意 empty("0") 也为 true
+来源：http://www.52xcode.cn/Article/details/gt3rqimamcv.html
+
+JS:   if (s === "") {} 或 if (!s) {}
+来源：http://www.52xcode.cn/Article/details/gt3qidexxrg.html
+
+TS:   if (s === "") {}
+来源：http://www.52xcode.cn/Article/details/gt3adlqpfik.html
+
+Java: if (s.isEmpty()) {}
+来源：http://www.ydjk.org.cn/Article/details/gt3kqmgkive.html
+
+Go:   if s == "" {}
+来源：http://www.52xcode.cn/Article/details/gt3tuhyxhta.html
+
+Ruby: if s.empty?
+来源：http://www.ydjk.org.cn/Article/details/gt3owrpbvux.html
+
+C#:   if (string.IsNullOrEmpty(s)) {}
+来源：http://www.ydjk.org.cn/Article/details/gt3ldahfrfv.html
+
+[E21] 超长截断加省略号
+来源：http://www.ydjk.org.cn/Article/details/gt3npqqswdp.html
+
+Py:   (s[:20] + "…") if len(s) > 20 else s
+来源：http://www.ydjk.org.cn/Article/details/gt3gksjwcgg.html
+
+PHP:  mb_strimwidth($s, 0, 20, "…", "UTF-8");
+来源：http://www.52xcode.cn/Article/details/gt3quwlhzai.html
+
+JS:   s.length > 20 ? s.slice(0, 20) + "…" : s
+来源：http://www.ydjk.org.cn/Article/details/gt3owamiaks.html
+
+TS:   s.length > 20 ? s.slice(0, 20) + "…" : s
+来源：http://www.ydjk.org.cn/Article/details/gt3fnvgxhil.html
+
+Java: s.length() > 20 ? s.substring(0, 20) + "…" : s
+来源：http://www.52xcode.cn/Article/details/gt3bawslflc.html
+
+Go:   // 按 rune 判断长度后截断
+来源：http://www.52xcode.cn/Article/details/gt3fvqpqxud.html
+
+Ruby: s.length > 20 ? s[0, 20] + "…" : s
+来源：http://www.52xcode.cn/Article/details/gt3rllxxwod.html
+
+C#:   s.Length > 20 ? s[..20] + "…" : s
+来源：http://www.ydjk.org.cn/Article/details/gt3jworxbaj.html
+
+[E22] 字节长度与字符长度
+来源：http://www.ydjk.org.cn/Article/details/gt3vdoxxlzu.html
+
+Py:   len(s.encode("utf-8"));  len(s)
+来源：http://www.52xcode.cn/Article/details/gt3jrpbaxga.html
+
+PHP:  strlen($s);  mb_strlen($s, "UTF-8");
+来源：http://www.ydjk.org.cn/Article/details/gt3zzqrggni.html
+
+JS:   new TextEncoder().encode(s).length;  s.length
+来源：http://www.52xcode.cn/Article/details/gt3haqdrtjg.html
+
+TS:   new TextEncoder().encode(s).length;  s.length
+来源：http://www.ydjk.org.cn/Article/details/gt3meumuckj.html
+
+Java: s.getBytes(StandardCharsets.UTF_8).length;  s.length()
+来源：http://www.52xcode.cn/Article/details/gt3mtjphbxz.html
+
+Go:   len(s);  utf8.RuneCountInString(s)     # 前者字节数，后者字符数
+来源：http://www.ydjk.org.cn/Article/details/gt3djrbkegx.html
+
+Ruby: s.bytesize;  s.length
+来源：http://www.ydjk.org.cn/Article/details/gt3njezifeb.html
+
+C#:   Encoding.UTF8.GetByteCount(s);  s.Length
+来源：http://www.ydjk.org.cn/Article/details/gt3mgoktdpd.html
+
+================================================================================
+来源：http://www.ydjk.org.cn/Article/details/gt3jpfoxvrk.html
+
+F. 文件与目录
+来源：http://www.ydjk.org.cn/Article/details/gt3kzocsyfn.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt3kvucnrmy.html
+
+[F01] 读取整个文件
+来源：http://www.ydjk.org.cn/Article/details/gt3avsqmrhh.html
+
+Py:   open("a.txt", encoding="utf-8").read();  Path("a.txt").read_text()
+来源：http://www.ydjk.org.cn/Article/details/gt3sbchdclp.html
+
+PHP:  file_get_contents("a.txt");
+来源：http://www.ydjk.org.cn/Article/details/gt3fdahvoak.html
+
+JS:   fs.readFileSync("a.txt", "utf8")          // Node.js
+来源：http://www.52xcode.cn/Article/details/gt3vcblxunc.html
+
+TS:   fs.readFileSync("a.txt", "utf8")
+来源：http://www.52xcode.cn/Article/details/gt3ezxohwrg.html
+
+Java: Files.readString(Path.of("a.txt"))
+来源：http://www.52xcode.cn/Article/details/gt3eezzvscj.html
+
+Go:   data, err := os.ReadFile("a.txt")        // []byte，用 string(data) 转文本
+来源：http://www.52xcode.cn/Article/details/gt3zayookja.html
+
+Ruby: File.read("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt3jxxqoqaq.html
+
+C#:   File.ReadAllText("a.txt");
+来源：http://www.52xcode.cn/Article/details/gt3twfnvwoe.html
+
+[F02] 逐行读取文件
+来源：http://www.52xcode.cn/Article/details/gt3irztauej.html
+
+Py:   for line in open("a.txt", encoding="utf-8"): print(line.rstrip())
+来源：http://www.ydjk.org.cn/Article/details/gt3kaclgtxk.html
+
+PHP:  foreach (file("a.txt", FILE_IGNORE_NEW_LINES) as $line) { echo $line; }
+来源：http://www.ydjk.org.cn/Article/details/gt3uscvpmig.html
+
+JS:   for (const line of fs.readFileSync("a.txt", "utf8").split("\n")) {}
+来源：http://www.52xcode.cn/Article/details/gt3watdkide.html
+
+TS:   for (const line of fs.readFileSync("a.txt", "utf8").split("\n")) {}
+来源：http://www.52xcode.cn/Article/details/gt3vdhklzdk.html
+
+Java: Files.lines(Path.of("a.txt")).forEach(System.out::println)
+来源：http://www.52xcode.cn/Article/details/gt3womauytf.html
+
+Go:   scanner := bufio.NewScanner(f); for scanner.Scan() { fmt.Println(scanner.Text()) }
+来源：http://www.ydjk.org.cn/Article/details/gt3zifmrxwg.html
+
+Ruby: File.foreach("a.txt") { |line| puts line }
+来源：http://www.52xcode.cn/Article/details/gt3xxskpfpz.html
+
+C#:   foreach (var line in File.ReadLines("a.txt")) { Console.WriteLine(line); }
+来源：http://www.52xcode.cn/Article/details/gt3mvkorzui.html
+
+[F03] 写入文件（覆盖）
+来源：http://www.ydjk.org.cn/Article/details/gt3pgqbxwub.html
+
+Py:   open("a.txt", "w", encoding="utf-8").write("hi")
+来源：http://www.52xcode.cn/Article/details/gt3uubmrvfc.html
+
+PHP:  file_put_contents("a.txt", "hi");
+来源：http://www.ydjk.org.cn/Article/details/gt3fjjcepij.html
+
+JS:   fs.writeFileSync("a.txt", "hi", "utf8")
+来源：http://www.ydjk.org.cn/Article/details/gt3memslxlw.html
+
+TS:   fs.writeFileSync("a.txt", "hi", "utf8")
+来源：http://www.52xcode.cn/Article/details/gt3ezbfgght.html
+
+Java: Files.writeString(Path.of("a.txt"), "hi")
+来源：http://www.ydjk.org.cn/Article/details/gt3skxpajja.html
+
+Go:   os.WriteFile("a.txt", []byte("hi"), 0644)
+来源：http://www.ydjk.org.cn/Article/details/gt3ykuadlvm.html
+
+Ruby: File.write("a.txt", "hi")
+来源：http://www.52xcode.cn/Article/details/gt3qjywtgle.html
+
+C#:   File.WriteAllText("a.txt", "hi");
+来源：http://www.52xcode.cn/Article/details/gt3rceuxahs.html
+
+[F04] 追加写入文件
+来源：http://www.52xcode.cn/Article/details/gt3hyjocswd.html
+
+Py:   open("a.txt", "a", encoding="utf-8").write("more\n")
+来源：http://www.52xcode.cn/Article/details/gt3mqgmphmw.html
+
+PHP:  file_put_contents("a.txt", "more\n", FILE_APPEND);
+来源：http://www.52xcode.cn/Article/details/gt3rbbofbcd.html
+
+JS:   fs.appendFileSync("a.txt", "more\n")
+来源：http://www.52xcode.cn/Article/details/gt3udhvkzib.html
+
+TS:   fs.appendFileSync("a.txt", "more\n")
+来源：http://www.52xcode.cn/Article/details/gt3dyqwopag.html
+
+Java: Files.writeString(Path.of("a.txt"), "more\n", StandardOpenOption.APPEND)
+来源：http://www.52xcode.cn/Article/details/gt3jsnserlg.html
+
+Go:   f, _ := os.OpenFile("a.txt", os.O_APPEND|os.O_WRONLY, 0644); f.WriteString("more\n")
+来源：http://www.ydjk.org.cn/Article/details/gt3hmqiefda.html
+
+Ruby: File.open("a.txt", "a") { |f| f.puts "more" }
+来源：http://www.52xcode.cn/Article/details/gt3bvuzahnb.html
+
+C#:   File.AppendAllText("a.txt", "more\n");
+来源：http://www.52xcode.cn/Article/details/gt3shqjswal.html
+
+[F05] 判断文件或目录是否存在
+来源：http://www.ydjk.org.cn/Article/details/gt3cczhzvka.html
+
+Py:   os.path.exists("a.txt");  Path("a.txt").exists()
+来源：http://www.52xcode.cn/Article/details/gt3jhiajzef.html
+
+PHP:  file_exists("a.txt");
+来源：http://www.ydjk.org.cn/Article/details/gt3auyqgmoq.html
+
+JS:   fs.existsSync("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt3uobjufda.html
+
+TS:   fs.existsSync("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt3qgaoohnn.html
+
+Java: Files.exists(Path.of("a.txt"))
+来源：http://www.ydjk.org.cn/Article/details/gt3uqfvsbpf.html
+
+Go:   if _, err := os.Stat("a.txt"); err == nil { /* 存在 */ }
+来源：http://www.ydjk.org.cn/Article/details/gt3nbpqfsne.html
+
+Ruby: File.exist?("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt3rsxpybjf.html
+
+C#:   File.Exists("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt3fhfjltgp.html
+
+[F06] 删除文件
+来源：http://www.ydjk.org.cn/Article/details/gt3brmemgri.html
+
+Py:   os.remove("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt3batphtnu.html
+
+PHP:  unlink("a.txt");
+来源：http://www.52xcode.cn/Article/details/gt3ttjbjtmo.html
+
+JS:   fs.unlinkSync("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt3sssqzrum.html
+
+TS:   fs.unlinkSync("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt3efyynavp.html
+
+Java: Files.deleteIfExists(Path.of("a.txt"))
+来源：http://www.ydjk.org.cn/Article/details/gt3ziaxsynv.html
+
+Go:   os.Remove("a.txt")
+来源：http://www.ydjk.org.cn/Article/details/gt3wqrnbxld.html
+
+Ruby: File.delete("a.txt")
+来源：http://www.52xcode.cn/Article/details/gt3mjdckfcc.html
+
+C#:   File.Delete("a.txt");
+来源：http://www.ydjk.org.cn/Article/details/gt3tljfyrse.html
+
+[F07] 创建目录（含多级）
+来源：http://www.ydjk.org.cn/Article/details/gt3ehmawwwo.html
+
+Py:   os.makedirs("dir/sub", exist_ok=True)
+来源：http://www.52xcode.cn/Article/details/gt3eumktrhr.html
+
+
+<!-- 参考信息 -->

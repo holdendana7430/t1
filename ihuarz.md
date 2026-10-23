@@ -1,0 +1,904 @@
+代发 wailian999
+
+CREATE TABLE users (
+来源：http://www.ydjk.org.cn/Article/details/gt3xlvcscsu.html
+
+id INT PRIMARY KEY AUTO_INCREMENT,
+来源：http://www.ydjk.org.cn/Article/details/gt3zggjvkwv.html
+
+name VARCHAR(50) NOT NULL,
+来源：http://www.ydjk.org.cn/Article/details/gt3nvwzeyvv.html
+
+email VARCHAR(100) UNIQUE,
+来源：http://www.ydjk.org.cn/Article/details/gt3pghfrqck.html
+
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+来源：http://www.ydjk.org.cn/Article/details/gt3ewqtfile.html
+
+);
+来源：http://www.ydjk.org.cn/Article/details/gt3gzpjgdbh.html
+
+[Q02] 创建带外键的表
+来源：http://www.52xcode.cn/Article/details/gt3nlublcvm.html
+
+CREATE TABLE orders (
+来源：http://www.ydjk.org.cn/Article/details/gt3uuumzxvx.html
+
+id BIGINT PRIMARY KEY AUTO_INCREMENT,
+来源：http://www.ydjk.org.cn/Article/details/gt3ijyrmlld.html
+
+user_id INT NOT NULL,
+来源：http://www.ydjk.org.cn/Article/details/gt3xlfaiagh.html
+
+amount DECIMAL(10, 2),
+来源：http://www.52xcode.cn/Article/details/gt3gkrgaohm.html
+
+FOREIGN KEY (user_id) REFERENCES users(id)
+来源：http://www.ydjk.org.cn/Article/details/gt3iqaohfeq.html
+
+);
+来源：http://www.52xcode.cn/Article/details/gt3bjvkgkrx.html
+
+[Q03] 增加列
+来源：http://www.52xcode.cn/Article/details/gt3uvnpnooj.html
+
+ALTER TABLE users ADD COLUMN age INT DEFAULT 0;
+来源：http://www.52xcode.cn/Article/details/gt3hdcrruvx.html
+
+[Q04] 修改列类型
+来源：http://www.ydjk.org.cn/Article/details/gt3dyavkgvr.html
+
+ALTER TABLE users MODIFY COLUMN name VARCHAR(100) NOT NULL;
+来源：http://www.52xcode.cn/Article/details/gt3gblejxxb.html
+
+[Q05] 重命名列
+来源：http://www.ydjk.org.cn/Article/details/gt3kkqhfqpk.html
+
+ALTER TABLE users RENAME COLUMN name TO full_name;
+来源：http://www.ydjk.org.cn/Article/details/gt3udscfjij.html
+
+[Q06] 删除列
+来源：http://www.52xcode.cn/Article/details/gt3ivdsjdgf.html
+
+ALTER TABLE users DROP COLUMN age;
+来源：http://www.52xcode.cn/Article/details/gt3zmowvwxh.html
+
+[Q07] 删除表
+来源：http://www.52xcode.cn/Article/details/gt3pcircjir.html
+
+DROP TABLE IF EXISTS orders;
+来源：http://www.52xcode.cn/Article/details/gt3qphhhong.html
+
+[Q08] 创建普通索引
+来源：http://www.ydjk.org.cn/Article/details/gt3ukjhdyvr.html
+
+CREATE INDEX idx_users_email ON users(email);
+来源：http://www.ydjk.org.cn/Article/details/gt3gtcukhcc.html
+
+[Q09] 创建唯一索引
+来源：http://www.ydjk.org.cn/Article/details/gt3sefjcjof.html
+
+CREATE UNIQUE INDEX uq_users_email ON users(email);
+来源：http://www.52xcode.cn/Article/details/gt3kcmbcvgt.html
+
+[Q10] 插入单行
+来源：http://www.ydjk.org.cn/Article/details/gt3gcxmtsbk.html
+
+INSERT INTO users (name, email) VALUES ('Tom', 'tom@a.com');
+来源：http://www.ydjk.org.cn/Article/details/gt3gvkkfhti.html
+
+[Q11] 一次插入多行
+来源：http://www.ydjk.org.cn/Article/details/gt3tulcctjm.html
+
+INSERT INTO users (name, email) VALUES ('A', 'a@a.com'), ('B', 'b@a.com');
+来源：http://www.ydjk.org.cn/Article/details/gt3vslwczoo.html
+
+[Q12] 插入后取自增 ID
+来源：http://www.52xcode.cn/Article/details/gt3rbznbmzb.html
+
+INSERT INTO users (name) VALUES ('C');
+来源：http://www.ydjk.org.cn/Article/details/gt3esdjsoly.html
+
+SELECT LAST_INSERT_ID();          -- PostgreSQL: INSERT ... RETURNING id
+来源：http://www.ydjk.org.cn/Article/details/gt3xtulevjd.html
+
+[Q13] 忽略重复插入
+来源：http://www.ydjk.org.cn/Article/details/gt3acylgewl.html
+
+INSERT IGNORE INTO users (email) VALUES ('a@a.com');
+来源：http://www.52xcode.cn/Article/details/gt3hnscjgnr.html
+
+[Q14] 存在则更新（upsert）
+来源：http://www.52xcode.cn/Article/details/gt3liasvtsk.html
+
+INSERT INTO users (email, name) VALUES ('a@a.com', 'A')
+来源：http://www.52xcode.cn/Article/details/gt3tnaedwnq.html
+
+ON DUPLICATE KEY UPDATE name = VALUES(name);
+来源：http://www.ydjk.org.cn/Article/details/gt3aqqtxfgf.html
+
+[Q15] 查询全部
+来源：http://www.ydjk.org.cn/Article/details/gt3pcyoiqwv.html
+
+SELECT * FROM users;
+来源：http://www.ydjk.org.cn/Article/details/gt3gxkziyxi.html
+
+[Q16] 查询指定列
+来源：http://www.ydjk.org.cn/Article/details/gt3zwueneki.html
+
+SELECT id, name FROM users;
+来源：http://www.52xcode.cn/Article/details/gt3degaallo.html
+
+[Q17] 条件查询
+来源：http://www.ydjk.org.cn/Article/details/gt3cbryrhtk.html
+
+SELECT * FROM users WHERE age > 18 AND status = 1;
+来源：http://www.52xcode.cn/Article/details/gt3woktrutb.html
+
+[Q18] 模糊匹配
+来源：http://www.52xcode.cn/Article/details/gt3jhapodnu.html
+
+SELECT * FROM users WHERE name LIKE '张%';
+来源：http://www.ydjk.org.cn/Article/details/gt3oclaiqna.html
+
+[Q19] 范围查询
+来源：http://www.ydjk.org.cn/Article/details/gt3qyncenym.html
+
+SELECT * FROM users WHERE age BETWEEN 18 AND 30;
+来源：http://www.52xcode.cn/Article/details/gt3trkbyhcz.html
+
+[Q20] IN 列表
+来源：http://www.ydjk.org.cn/Article/details/gt3duphewxd.html
+
+SELECT * FROM users WHERE id IN (1, 2, 3);
+来源：http://www.ydjk.org.cn/Article/details/gt3mirpmrqb.html
+
+[Q21] 空值判断
+来源：http://www.ydjk.org.cn/Article/details/gt3jisldtkq.html
+
+SELECT * FROM users WHERE email IS NULL;
+来源：http://www.52xcode.cn/Article/details/gt3sndfruiz.html
+
+[Q22] 排序
+来源：http://www.52xcode.cn/Article/details/gt3rslwccto.html
+
+SELECT * FROM users ORDER BY age DESC, id ASC;
+来源：http://www.52xcode.cn/Article/details/gt3frqbtreq.html
+
+[Q23] 分页
+来源：http://www.52xcode.cn/Article/details/gt3ojregvgr.html
+
+SELECT * FROM users ORDER BY id LIMIT 20 OFFSET 40;
+来源：http://www.ydjk.org.cn/Article/details/gt3jchzxeip.html
+
+[Q24] 去重
+来源：http://www.ydjk.org.cn/Article/details/gt3nzavqith.html
+
+SELECT DISTINCT city FROM users;
+来源：http://www.ydjk.org.cn/Article/details/gt3qprcgfps.html
+
+[Q25] 只取前 N 条
+来源：http://www.ydjk.org.cn/Article/details/gt3jizkztcd.html
+
+SELECT * FROM users LIMIT 10;      -- SQL Server: SELECT TOP 10 *
+来源：http://www.ydjk.org.cn/Article/details/gt3evzsyjda.html
+
+[Q26] 计数
+来源：http://www.ydjk.org.cn/Article/details/gt3vpzlcxdt.html
+
+SELECT COUNT(*) FROM users;
+来源：http://www.52xcode.cn/Article/details/gt3tpwgknch.html
+
+[Q27] 条件计数
+来源：http://www.52xcode.cn/Article/details/gt3wyoodlll.html
+
+SELECT COUNT(CASE WHEN age > 18 THEN 1 END) AS adults FROM users;
+来源：http://www.ydjk.org.cn/Article/details/gt3eoigaiwi.html
+
+[Q28] 求和与平均
+来源：http://www.52xcode.cn/Article/details/gt3asfdfueq.html
+
+SELECT SUM(amount), AVG(amount) FROM orders;
+来源：http://www.52xcode.cn/Article/details/gt3ypqjkhid.html
+
+[Q29] 最大最小值
+来源：http://www.52xcode.cn/Article/details/gt3baztgyul.html
+
+SELECT MAX(age), MIN(age) FROM users;
+来源：http://www.ydjk.org.cn/Article/details/gt3idffyoeo.html
+
+[Q30] 分组统计
+来源：http://www.ydjk.org.cn/Article/details/gt3ncjlmrfy.html
+
+SELECT city, COUNT(*) FROM users GROUP BY city;
+来源：http://www.ydjk.org.cn/Article/details/gt3omjedrot.html
+
+[Q31] 分组后过滤
+来源：http://www.ydjk.org.cn/Article/details/gt3pqsrfbhj.html
+
+SELECT city, COUNT(*) AS c FROM users GROUP BY city HAVING c > 10;
+来源：http://www.ydjk.org.cn/Article/details/gt3bbvpsgnj.html
+
+[Q32] 分组拼接字符串
+来源：http://www.ydjk.org.cn/Article/details/gt3zfzmtedm.html
+
+SELECT city, GROUP_CONCAT(name) FROM users GROUP BY city;
+来源：http://www.52xcode.cn/Article/details/gt3tggzsswb.html
+
+-- PostgreSQL: STRING_AGG(name, ',')
+来源：http://www.ydjk.org.cn/Article/details/gt3nispupva.html
+
+[Q33] 多列分组
+来源：http://www.52xcode.cn/Article/details/gt3sudzqiyf.html
+
+SELECT city, gender, COUNT(*) FROM users GROUP BY city, gender;
+来源：http://www.52xcode.cn/Article/details/gt3dlpsohja.html
+
+[Q34] 每组取第一条
+来源：http://www.ydjk.org.cn/Article/details/gt3niotofif.html
+
+SELECT * FROM (
+来源：http://www.52xcode.cn/Article/details/gt3swdaqxfa.html
+
+SELECT *, ROW_NUMBER() OVER (PARTITION BY city ORDER BY age DESC) AS rn FROM users
+来源：http://www.ydjk.org.cn/Article/details/gt3hldtiuem.html
+
+) t WHERE rn = 1;
+来源：http://www.52xcode.cn/Article/details/gt3hgvhyubr.html
+
+[Q35] 内连接
+来源：http://www.ydjk.org.cn/Article/details/gt3atogtsef.html
+
+SELECT u.name, o.amount FROM users u JOIN orders o ON o.user_id = u.id;
+来源：http://www.52xcode.cn/Article/details/gt3qxvnuyfn.html
+
+[Q36] 左连接
+来源：http://www.ydjk.org.cn/Article/details/gt3mpaarfwa.html
+
+SELECT u.name, o.amount FROM users u LEFT JOIN orders o ON o.user_id = u.id;
+来源：http://www.52xcode.cn/Article/details/gt3qyoaidre.html
+
+[Q37] 右连接
+来源：http://www.52xcode.cn/Article/details/gt3lhpxmszh.html
+
+SELECT * FROM orders o RIGHT JOIN users u ON u.id = o.user_id;
+来源：http://www.ydjk.org.cn/Article/details/gt3tisncdzc.html
+
+[Q38] 全外连接（PostgreSQL）
+来源：http://www.52xcode.cn/Article/details/gt3cvuiyorb.html
+
+SELECT * FROM a FULL OUTER JOIN b ON a.id = b.a_id;
+来源：http://www.ydjk.org.cn/Article/details/gt3yhyfpkdt.html
+
+[Q39] 自连接（查上下级）
+来源：http://www.ydjk.org.cn/Article/details/gt3lumydygs.html
+
+SELECT e.name, m.name AS manager FROM employees e
+来源：http://www.ydjk.org.cn/Article/details/gt3holttbhw.html
+
+LEFT JOIN employees m ON e.manager_id = m.id;
+来源：http://www.52xcode.cn/Article/details/gt3dqlfqsty.html
+
+[Q40] 交叉连接（笛卡尔积）
+来源：http://www.ydjk.org.cn/Article/details/gt3wexebpta.html
+
+SELECT * FROM colors CROSS JOIN sizes;
+来源：http://www.52xcode.cn/Article/details/gt3kwdsiuky.html
+
+[Q41] 多表连接
+来源：http://www.ydjk.org.cn/Article/details/gt3dssvpsvp.html
+
+SELECT o.id, u.name, p.title FROM orders o
+来源：http://www.ydjk.org.cn/Article/details/gt3csowgtzu.html
+
+JOIN users u ON u.id = o.user_id
+来源：http://www.ydjk.org.cn/Article/details/gt3ceezlrgm.html
+
+JOIN products p ON p.id = o.product_id;
+来源：http://www.ydjk.org.cn/Article/details/gt3kwlzaqnx.html
+
+[Q42] 连接条件附加过滤
+来源：http://www.52xcode.cn/Article/details/gt3fqopkbpu.html
+
+SELECT u.name, o.amount FROM users u
+来源：http://www.ydjk.org.cn/Article/details/gt3tzfjquxy.html
+
+JOIN orders o ON o.user_id = u.id AND o.amount > 100;
+来源：http://www.52xcode.cn/Article/details/gt3wxrdsgke.html
+
+[Q43] 标量子查询
+来源：http://www.52xcode.cn/Article/details/gt3gxypsrzu.html
+
+SELECT name, (SELECT COUNT(*) FROM orders o WHERE o.user_id = u.id) AS cnt FROM users u;
+来源：http://www.ydjk.org.cn/Article/details/gt3jacrsncz.html
+
+[Q44] IN 子查询
+来源：http://www.52xcode.cn/Article/details/gt3yhbpzvgw.html
+
+SELECT * FROM users WHERE id IN (SELECT user_id FROM orders);
+来源：http://www.52xcode.cn/Article/details/gt3dtpmqmxj.html
+
+[Q45] EXISTS 判断存在
+来源：http://www.ydjk.org.cn/Article/details/gt3rqqcistv.html
+
+SELECT * FROM users u WHERE EXISTS (SELECT 1 FROM orders o WHERE o.user_id = u.id);
+来源：http://www.ydjk.org.cn/Article/details/gt3spprpgqf.html
+
+[Q46] NOT EXISTS 判断不存在
+来源：http://www.52xcode.cn/Article/details/gt3qgwsocam.html
+
+SELECT * FROM users u WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.user_id = u.id);
+来源：http://www.52xcode.cn/Article/details/gt3jzntfjnb.html
+
+[Q47] 与平均值比较
+来源：http://www.52xcode.cn/Article/details/gt3wsdigfpf.html
+
+SELECT * FROM users WHERE age > (SELECT AVG(age) FROM users);
+来源：http://www.52xcode.cn/Article/details/gt3gamwtegx.html
+
+[Q48] CTE 公用表表达式
+来源：http://www.52xcode.cn/Article/details/gt3xvyffkgc.html
+
+WITH t AS (SELECT city, COUNT(*) AS c FROM users GROUP BY city)
+来源：http://www.52xcode.cn/Article/details/gt3bclaygru.html
+
+SELECT * FROM t WHERE c > 5;
+来源：http://www.ydjk.org.cn/Article/details/gt3rbriwvkn.html
+
+[Q49] 更新单行
+来源：http://www.52xcode.cn/Article/details/gt3ovroirsa.html
+
+UPDATE users SET status = 1 WHERE id = 10;
+来源：http://www.ydjk.org.cn/Article/details/gt3ywawisba.html
+
+[Q50] 批量更新
+来源：http://www.52xcode.cn/Article/details/gt3hiiroxjz.html
+
+UPDATE users SET status = 2 WHERE created_at < '2024-01-01';
+来源：http://www.ydjk.org.cn/Article/details/gt3bqxccqsg.html
+
+[Q51] 用子查询更新
+来源：http://www.52xcode.cn/Article/details/gt3kuzlbtoh.html
+
+UPDATE users SET age = (SELECT MAX(age) FROM users) WHERE id = 1;
+来源：http://www.52xcode.cn/Article/details/gt3gvrtfbaq.html
+
+[Q52] 删除指定行
+来源：http://www.52xcode.cn/Article/details/gt3agzkizfc.html
+
+DELETE FROM users WHERE id = 10;
+来源：http://www.ydjk.org.cn/Article/details/gt3inbobmzr.html
+
+[Q53] 按条件删除
+来源：http://www.52xcode.cn/Article/details/gt3mipkbpie.html
+
+DELETE FROM orders WHERE created_at < '2020-01-01';
+来源：http://www.ydjk.org.cn/Article/details/gt3imdyexkj.html
+
+[Q54] 清空表
+来源：http://www.52xcode.cn/Article/details/gt3wpylvyxr.html
+
+TRUNCATE TABLE logs;
+来源：http://www.52xcode.cn/Article/details/gt3ipcxeybg.html
+
+[Q55] 排名（并列占位）
+来源：http://www.ydjk.org.cn/Article/details/gt3wmyyswnt.html
+
+SELECT name, RANK() OVER (ORDER BY score DESC) AS rk FROM scores;
+来源：http://www.52xcode.cn/Article/details/gt3vyscagim.html
+
+[Q56] 密集排名（并列不占位）
+来源：http://www.ydjk.org.cn/Article/details/gt3ydmuggdx.html
+
+SELECT name, DENSE_RANK() OVER (ORDER BY score DESC) FROM scores;
+来源：http://www.52xcode.cn/Article/details/gt3aldkaxkq.html
+
+[Q57] 行号
+来源：http://www.ydjk.org.cn/Article/details/gt3buqctoan.html
+
+SELECT ROW_NUMBER() OVER (ORDER BY id) AS seq FROM users;
+来源：http://www.52xcode.cn/Article/details/gt3cnnzxeil.html
+
+[Q58] 累计求和
+来源：http://www.ydjk.org.cn/Article/details/gt3tlhtzafg.html
+
+SELECT id, amount, SUM(amount) OVER (ORDER BY id) AS running FROM orders;
+来源：http://www.52xcode.cn/Article/details/gt3qwsmpgtf.html
+
+[Q59] 分组内累计
+来源：http://www.52xcode.cn/Article/details/gt3ghoazjst.html
+
+SELECT city, id, SUM(amount) OVER (PARTITION BY city ORDER BY id) FROM orders;
+来源：http://www.52xcode.cn/Article/details/gt3ajevjeoq.html
+
+[Q60] 取上一行 / 下一行
+来源：http://www.52xcode.cn/Article/details/gt3rtwpyfyq.html
+
+SELECT id, LAG(amount) OVER (ORDER BY id) AS prev,
+来源：http://www.52xcode.cn/Article/details/gt3zxiwlqdr.html
+
+LEAD(amount) OVER (ORDER BY id) AS next FROM orders;
+来源：http://www.ydjk.org.cn/Article/details/gt3xmwngkvl.html
+
+[Q61] 移动平均
+来源：http://www.ydjk.org.cn/Article/details/gt3fpjhcvbw.html
+
+SELECT id, AVG(amount) OVER (ORDER BY id ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) FROM orders;
+来源：http://www.ydjk.org.cn/Article/details/gt3jvvfnjva.html
+
+[Q62] 分组占比
+来源：http://www.52xcode.cn/Article/details/gt3srjmhupy.html
+
+SELECT city, COUNT(*) * 100.0 / SUM(COUNT(*)) OVER () AS pct FROM users GROUP BY city;
+来源：http://www.ydjk.org.cn/Article/details/gt3glanvrhn.html
+
+[Q63] 开启事务
+来源：http://www.52xcode.cn/Article/details/gt3mfziymgd.html
+
+START TRANSACTION;                -- 或 BEGIN
+来源：http://www.52xcode.cn/Article/details/gt3ktiphwol.html
+
+[Q64] 提交事务
+来源：http://www.52xcode.cn/Article/details/gt3chgfjbzt.html
+
+COMMIT;
+来源：http://www.ydjk.org.cn/Article/details/gt3fmynhxaw.html
+
+[Q65] 回滚事务
+来源：http://www.52xcode.cn/Article/details/gt3ffyycgvq.html
+
+ROLLBACK;
+来源：http://www.52xcode.cn/Article/details/gt3pqnrdbgp.html
+
+[Q66] 行锁查询
+来源：http://www.ydjk.org.cn/Article/details/gt3zhisenlp.html
+
+SELECT * FROM users WHERE id = 1 FOR UPDATE;
+来源：http://www.52xcode.cn/Article/details/gt3tnemfxpl.html
+
+[Q67] 设置隔离级别
+来源：http://www.52xcode.cn/Article/details/gt3cxsngrka.html
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+来源：http://www.ydjk.org.cn/Article/details/gt3jqdrgtbk.html
+
+[Q68] 保存点
+来源：http://www.ydjk.org.cn/Article/details/gt3ukcpedyj.html
+
+SAVEPOINT sp1;
+来源：http://www.52xcode.cn/Article/details/gt3aviyptoh.html
+
+ROLLBACK TO sp1;
+来源：http://www.ydjk.org.cn/Article/details/gt3cvnuoowo.html
+
+[Q69] 查看执行计划
+来源：http://www.52xcode.cn/Article/details/gt3ykhneyko.html
+
+EXPLAIN SELECT * FROM users WHERE email = 'a@a.com';
+来源：http://www.52xcode.cn/Article/details/gt3tuvngxcf.html
+
+[Q70] 更新统计信息
+来源：http://www.ydjk.org.cn/Article/details/gt3wfcxwhri.html
+
+ANALYZE TABLE users;
+来源：http://www.52xcode.cn/Article/details/gt3hxbixrcj.html
+
+[Q71] 查看建表语句
+来源：http://www.ydjk.org.cn/Article/details/gt3ekjhmtas.html
+
+SHOW CREATE TABLE users;          -- PostgreSQL: \d users
+来源：http://www.ydjk.org.cn/Article/details/gt3amifqngp.html
+
+[Q72] 查看索引
+来源：http://www.ydjk.org.cn/Article/details/gt3opizqzmv.html
+
+SHOW INDEX FROM users;
+来源：http://www.ydjk.org.cn/Article/details/gt3ooswfato.html
+
+[Q73] 查看表状态
+来源：http://www.52xcode.cn/Article/details/gt3wwyvkheu.html
+
+SHOW TABLE STATUS LIKE 'users';
+来源：http://www.52xcode.cn/Article/details/gt3nbzhtqqp.html
+
+[Q74] 强制使用索引
+来源：http://www.52xcode.cn/Article/details/gt3hqipuvyx.html
+
+SELECT * FROM users FORCE INDEX (idx_users_email) WHERE email = 'x';
+来源：http://www.ydjk.org.cn/Article/details/gt3rtgtmdrt.html
+
+[Q75] 日期格式化
+来源：http://www.52xcode.cn/Article/details/gt3jjmqfuve.html
+
+SELECT DATE_FORMAT(created_at, '%Y-%m') FROM orders;
+来源：http://www.ydjk.org.cn/Article/details/gt3vuszezui.html
+
+-- PostgreSQL: to_char(created_at, 'YYYY-MM')
+来源：http://www.52xcode.cn/Article/details/gt3cxewtbur.html
+
+[Q76] 按天统计
+来源：http://www.ydjk.org.cn/Article/details/gt3vudjciut.html
+
+SELECT DATE(created_at) AS d, COUNT(*) FROM orders GROUP BY d;
+来源：http://www.ydjk.org.cn/Article/details/gt3lvgnhpqm.html
+
+[Q77] 时间加减
+来源：http://www.ydjk.org.cn/Article/details/gt3opimerbj.html
+
+SELECT DATE_ADD(NOW(), INTERVAL 7 DAY);   -- PostgreSQL: now() + interval '7 day'
+来源：http://www.ydjk.org.cn/Article/details/gt3fkxflwnz.html
+
+[Q78] 当前时间
+来源：http://www.52xcode.cn/Article/details/gt3ygbbbwfr.html
+
+SELECT NOW(), CURDATE(), UNIX_TIMESTAMP();
+来源：http://www.52xcode.cn/Article/details/gt3ucofpjie.html
+
+[Q79] 字符串拼接
+来源：http://www.ydjk.org.cn/Article/details/gt3mpteyfff.html
+
+SELECT CONCAT(first_name, ' ', last_name) FROM users;   -- PostgreSQL: ||
+来源：http://www.52xcode.cn/Article/details/gt3uazyuslt.html
+
+[Q80] 字符串截取
+来源：http://www.52xcode.cn/Article/details/gt3mskuznuj.html
+
+SELECT SUBSTRING(name, 1, 3) FROM users;
+来源：http://www.ydjk.org.cn/Article/details/gt3glruvwsu.html
+
+[Q81] 字符串替换
+来源：http://www.52xcode.cn/Article/details/gt3iajminnd.html
+
+SELECT REPLACE(name, 'a', 'b') FROM users;
+来源：http://www.52xcode.cn/Article/details/gt3xsryloqi.html
+
+[Q82] 字符长度与字节长度
+来源：http://www.52xcode.cn/Article/details/gt3soovcjiw.html
+
+SELECT CHAR_LENGTH(name), LENGTH(name) FROM users;
+来源：http://www.ydjk.org.cn/Article/details/gt3igzyzqai.html
+
+[Q83] 大小写转换
+来源：http://www.52xcode.cn/Article/details/gt3gjvzuvmk.html
+
+SELECT UPPER(name), LOWER(name) FROM users;
+来源：http://www.52xcode.cn/Article/details/gt3hhldypqb.html
+
+[Q84] 去除首尾空格
+来源：http://www.52xcode.cn/Article/details/gt3xhvqjugq.html
+
+SELECT TRIM(name) FROM users;
+来源：http://www.52xcode.cn/Article/details/gt3srajnpmw.html
+
+[Q85] 数值取整
+来源：http://www.ydjk.org.cn/Article/details/gt3iqnumfpf.html
+
+SELECT ROUND(3.567, 2), CEIL(3.1), FLOOR(3.9);
+来源：http://www.52xcode.cn/Article/details/gt3bwgltxxi.html
+
+[Q86] 读取 JSON 字段
+来源：http://www.52xcode.cn/Article/details/gt3epbqxbno.html
+
+SELECT data->>'$.name' FROM t;    -- PostgreSQL: data->>'name'
+来源：http://www.52xcode.cn/Article/details/gt3ddtkfgbe.html
+
+[Q87] JSON 字段做条件
+来源：http://www.52xcode.cn/Article/details/gt3jfpvgckc.html
+
+SELECT * FROM t WHERE JSON_EXTRACT(data, '$.age') > 18;
+来源：http://www.52xcode.cn/Article/details/gt3addetizd.html
+
+[Q88] 行转列（条件聚合）
+来源：http://www.52xcode.cn/Article/details/gt3rxgwlnlx.html
+
+SELECT SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END) AS s1,
+来源：http://www.52xcode.cn/Article/details/gt3glyptbpl.html
+
+SUM(CASE WHEN status = 2 THEN 1 ELSE 0 END) AS s2 FROM users;
+来源：http://www.52xcode.cn/Article/details/gt3bsjftkcc.html
+
+[Q89] 判断表是否存在
+来源：http://www.ydjk.org.cn/Article/details/gt3hqvgzaum.html
+
+SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'users';
+来源：http://www.52xcode.cn/Article/details/gt3umbcvdtq.html
+
+[Q90] 生成序号列
+来源：http://www.ydjk.org.cn/Article/details/gt3wuhlxkim.html
+
+SELECT @i := @i + 1 AS seq, name FROM users, (SELECT @i := 0) x;
+来源：http://www.ydjk.org.cn/Article/details/gt3sbenqthx.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt3clensany.html
+
+R. Bash 专题
+来源：http://www.52xcode.cn/Article/details/gt3efcmtwss.html
+
+================================================================================
+来源：http://www.52xcode.cn/Article/details/gt3ytlhhyfb.html
+
+[R01] shebang 与严格模式
+来源：http://www.ydjk.org.cn/Article/details/gt3xhkufeqd.html
+
+#!/usr/bin/env bash
+来源：http://www.52xcode.cn/Article/details/gt3ljhzqbso.html
+
+set -euo pipefail
+来源：http://www.52xcode.cn/Article/details/gt3dbngqrju.html
+
+[R02] 变量赋值与使用
+来源：http://www.ydjk.org.cn/Article/details/gt3ubanspce.html
+
+name="Tom"; echo "$name"
+来源：http://www.ydjk.org.cn/Article/details/gt3cfodmlwd.html
+
+[R03] 只读变量
+来源：http://www.ydjk.org.cn/Article/details/gt3zapimevh.html
+
+readonly PI=3.14
+来源：http://www.52xcode.cn/Article/details/gt3nnbcipos.html
+
+[R04] 位置参数
+来源：http://www.52xcode.cn/Article/details/gt3phiquuhf.html
+
+echo "$0 $1 $2 | 全部: $@ | 个数: $#"
+来源：http://www.ydjk.org.cn/Article/details/gt3jknwmcoy.html
+
+[R05] 参数默认值
+来源：http://www.52xcode.cn/Article/details/gt3auohxtyj.html
+
+name="${1:-default}"
+来源：http://www.ydjk.org.cn/Article/details/gt3jsjgnyxd.html
+
+[R06] 判断命令是否存在
+来源：http://www.ydjk.org.cn/Article/details/gt3stdmgexk.html
+
+command -v git >/dev/null || { echo "缺少 git"; exit 1; }
+来源：http://www.52xcode.cn/Article/details/gt3xwueicoc.html
+
+[R07] if 判断文件
+来源：http://www.ydjk.org.cn/Article/details/gt3ddkhrnhe.html
+
+if [[ -f "$f" ]]; then echo "是文件"; fi
+来源：http://www.52xcode.cn/Article/details/gt3thhzxdpe.html
+
+[R08] 数值比较
+来源：http://www.52xcode.cn/Article/details/gt3nleryfor.html
+
+if (( a > b )); then echo "a 更大"; fi
+来源：http://www.ydjk.org.cn/Article/details/gt3qyrxolqm.html
+
+[R09] 字符串比较
+来源：http://www.52xcode.cn/Article/details/gt3ahizwdof.html
+
+if [[ "$a" == "$b" ]]; then echo "相等"; fi
+来源：http://www.52xcode.cn/Article/details/gt3kasjlgvq.html
+
+[R10] 正则匹配
+来源：http://www.52xcode.cn/Article/details/gt3yqsosrca.html
+
+if [[ "$s" =~ ^[0-9]+$ ]]; then echo "纯数字"; fi
+来源：http://www.52xcode.cn/Article/details/gt3uzopvbzv.html
+
+[R11] case 多分支
+来源：http://www.ydjk.org.cn/Article/details/gt3vfynhlpx.html
+
+case "$1" in
+来源：http://www.ydjk.org.cn/Article/details/gt3iebykxim.html
+
+start) echo "启动" ;;
+来源：http://www.52xcode.cn/Article/details/gt3eskdovzw.html
+
+stop)  echo "停止" ;;
+来源：http://www.52xcode.cn/Article/details/gt3nfvlfsoj.html
+
+*)     echo "未知命令" ;;
+来源：http://www.52xcode.cn/Article/details/gt3kpnvuwcm.html
+
+esac
+来源：http://www.ydjk.org.cn/Article/details/gt3kfmpohmg.html
+
+[R12] for 遍历文件
+来源：http://www.52xcode.cn/Article/details/gt3xmxbpjhz.html
+
+for f in *.txt; do echo "$f"; done
+来源：http://www.52xcode.cn/Article/details/gt3xuxmqqpm.html
+
+[R13] for 计数循环
+来源：http://www.52xcode.cn/Article/details/gt3ipyyxnlf.html
+
+for i in {1..10}; do echo "$i"; done
+来源：http://www.52xcode.cn/Article/details/gt3kxkpcljr.html
+
+[R14] C 风格 for
+来源：http://www.ydjk.org.cn/Article/details/gt3ptvkddgu.html
+
+for ((i = 0; i < 10; i++)); do echo "$i"; done
+来源：http://www.ydjk.org.cn/Article/details/gt3kvmqqzpi.html
+
+[R15] while 逐行读文件
+来源：http://www.52xcode.cn/Article/details/gt3rorsbexj.html
+
+while IFS= read -r line; do echo "$line"; done < file.txt
+来源：http://www.52xcode.cn/Article/details/gt3gcmbicep.html
+
+[R16] until 等待条件
+来源：http://www.52xcode.cn/Article/details/gt3vaialzjz.html
+
+until [[ -f done.flag ]]; do sleep 1; done
+来源：http://www.ydjk.org.cn/Article/details/gt3xqvcxtqm.html
+
+[R17] 数组定义与取值
+来源：http://www.ydjk.org.cn/Article/details/gt3yvdahemm.html
+
+arr=(a b c); echo "${arr[0]}"
+来源：http://www.52xcode.cn/Article/details/gt3jqyixitd.html
+
+[R18] 遍历数组
+来源：http://www.52xcode.cn/Article/details/gt3uyaxowwb.html
+
+for x in "${arr[@]}"; do echo "$x"; done
+来源：http://www.52xcode.cn/Article/details/gt3yzpknadn.html
+
+[R19] 数组长度
+来源：http://www.52xcode.cn/Article/details/gt3vqiavkol.html
+
+echo "${#arr[@]}"
+来源：http://www.52xcode.cn/Article/details/gt3kfynvsst.html
+
+[R20] 关联数组（字典）
+来源：http://www.52xcode.cn/Article/details/gt3yfxjtrbc.html
+
+declare -A m; m[k]=v; echo "${m[k]}"
+来源：http://www.ydjk.org.cn/Article/details/gt3bdzokogq.html
+
+[R21] 字符串长度
+来源：http://www.ydjk.org.cn/Article/details/gt3ikgzlymq.html
+
+echo "${#s}"
+来源：http://www.52xcode.cn/Article/details/gt3ffnwvnic.html
+
+[R22] 截取子串
+来源：http://www.ydjk.org.cn/Article/details/gt3ktnfhvhb.html
+
+echo "${s:0:5}"
+来源：http://www.52xcode.cn/Article/details/gt3okcttdid.html
+
+[R23] 字符串替换
+来源：http://www.ydjk.org.cn/Article/details/gt3kdktikca.html
+
+echo "${s/old/new}"; echo "${s//old/new}"    # 后者全部替换
+来源：http://www.52xcode.cn/Article/details/gt3qrjjwdcl.html
+
+[R24] 大小写转换
+来源：http://www.ydjk.org.cn/Article/details/gt3fiqssofj.html
+
+echo "${s^^}"; echo "${s,,}"
+来源：http://www.ydjk.org.cn/Article/details/gt3wpgpvnce.html
+
+[R25] 去后缀 / 去前缀
+来源：http://www.52xcode.cn/Article/details/gt3ududfiux.html
+
+echo "${f%.txt}"; echo "${f#./}"
+来源：http://www.ydjk.org.cn/Article/details/gt3iqgunycj.html
+
+[R26] 命令替换
+来源：http://www.52xcode.cn/Article/details/gt3ypolfbjg.html
+
+now=$(date +%F); echo "$now"
+来源：http://www.52xcode.cn/Article/details/gt3kzxbzgnf.html
+
+[R27] 算术展开
+来源：http://www.ydjk.org.cn/Article/details/gt3vyrbpjpu.html
+
+echo $((1 + 2 * 3))
+来源：http://www.ydjk.org.cn/Article/details/gt3fdirnvjr.html
+
+[R28] 浮点运算
+来源：http://www.52xcode.cn/Article/details/gt3xhrzvfya.html
+
+echo "scale=2; 10/3" | bc
+来源：http://www.ydjk.org.cn/Article/details/gt3yeamulto.html
+
+[R29] 定义函数
+来源：http://www.52xcode.cn/Article/details/gt3lxqwzvrl.html
+
+add() { echo $(($1 + $2)); }; add 1 2
+来源：http://www.ydjk.org.cn/Article/details/gt3xdsmxisi.html
+
+[R30] 函数返回状态码
+来源：http://www.52xcode.cn/Article/details/gt3nruiiijg.html
+
+f() { return 0; }; f || echo "失败了"
+来源：http://www.52xcode.cn/Article/details/gt3dxnwhupr.html
+
+[R31] 局部变量
+来源：http://www.ydjk.org.cn/Article/details/gt3rgyktcuu.html
+
+f() { local x=1; echo "$x"; }
+来源：http://www.52xcode.cn/Article/details/gt3ygtbihiz.html
+
+[R32] 参数个数校验
+来源：http://www.ydjk.org.cn/Article/details/gt3efthujas.html
+
+[[ $# -lt 2 ]] && { echo "用法: $0 a b"; exit 1; }
+来源：http://www.ydjk.org.cn/Article/details/gt3okehonzp.html
+
+[R33] 捕获错误并提示行号
+来源：http://www.ydjk.org.cn/Article/details/gt3cptjdogd.html
+
+trap 'echo "出错于第 $LINENO 行"' ERR
+来源：http://www.52xcode.cn/Article/details/gt3wmkkwsjw.html
+
+[R34] 退出时清理
+来源：http://www.52xcode.cn/Article/details/gt3sazxuzkv.html
+
+trap 'rm -f "$tmp"' EXIT
+来源：http://www.ydjk.org.cn/Article/details/gt3owwtefmy.html
+
+[R35] 后台执行并等待
+来源：http://www.ydjk.org.cn/Article/details/gt3sgkmeoyn.html
+
+sleep 5 & pid=$!; wait "$pid"
+来源：http://www.ydjk.org.cn/Article/details/gt3iruiwibb.html
+
+[R36] 并发执行多个任务
+来源：http://www.ydjk.org.cn/Article/details/gt3fzokbyts.html
+
+for i in 1 2 3; do (sleep 1; echo "$i") & done; wait
+来源：http://www.52xcode.cn/Article/details/gt3hljjrcvx.html
+
+[R37] 把输出赋给变量
+来源：http://www.52xcode.cn/Article/details/gt3zrnqavjg.html
+
+files=$(ls -1)
+来源：http://www.ydjk.org.cn/Article/details/gt3xixyvinj.html
+
+[R38] 管道串联
+来源：http://www.ydjk.org.cn/Article/details/gt3doeelcby.html
+
+cat a.txt | grep -i error | wc -l
+来源：http://www.52xcode.cn/Article/details/gt3emcazumw.html
+
+[R39] 重定向标准输出与错误
+来源：http://www.ydjk.org.cn/Article/details/gt3jnwitzrk.html
+
+cmd > out.log 2>&1
+来源：http://www.52xcode.cn/Article/details/gt3fwpdrbff.html
+
+[R40] 追加写日志
+来源：http://www.52xcode.cn/Article/details/gt3vzkjhrhx.html
+
+echo "log" >> out.log
+来源：http://www.52xcode.cn/Article/details/gt3evpqewcz.html
+
+[R41] 丢弃输出
+来源：http://www.52xcode.cn/Article/details/gt3bsplyqin.html
+
+cmd >/dev/null 2>&1
+来源：http://www.ydjk.org.cn/Article/details/gt3pemmqelo.html
+
+[R42] 输入重定向
+来源：http://www.52xcode.cn/Article/details/gt3jvdjeitg.html
+
+wc -l < a.txt
+来源：http://www.52xcode.cn/Article/details/gt3czfjgdjb.html
+
+[R43] 按名字查找文件
+来源：http://www.52xcode.cn/Article/details/gt3kpmaftdu.html
+
+find . -name "*.log" -type f
+来源：http://www.ydjk.org.cn/Article/details/gt3jtkasaez.html
+
+[R44] 按修改时间查找
+来源：http://www.ydjk.org.cn/Article/details/gt3tbocwkdz.html
+
+find . -mtime -7 -type f
+来源：http://www.ydjk.org.cn/Article/details/gt3xuotygyb.html
+
+[R45] 批量删除
+来源：http://www.52xcode.cn/Article/details/gt3gpfqpvig.html
+
+
+<!-- 参考信息 -->
