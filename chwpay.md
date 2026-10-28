@@ -1,0 +1,904 @@
+代发 wailian999
+
+tar -czf x.tar.gz dir/;  tar -xzf x.tar.gz
+来源：http://hz.redwolf501.top/gtjvehvnjg.html
+
+[R56] 远程拷贝
+来源：http://hz.daria6918.cn/gtzjxjzrwq.html
+
+scp file user@host:/path/
+来源：http://hz.vqdsnc.cn/gtgswdhhzj.html
+
+[R57] 远程执行命令
+来源：http://hz.jqgufenzy.top/gtsjqjrxnm.html
+
+ssh user@host 'uptime'
+来源：http://hz.tanke756.top/gtiyzeibpg.html
+
+[R58] 下载文件
+来源：http://hz.andypj.xyz/gthmbgkymh.html
+
+curl -LO https://a.com/file.zip;  wget https://a.com/file.zip
+来源：http://hz.zhixingplan.top/gtbuemvmeb.html
+
+[R59] 发 POST JSON
+来源：http://hz.sysykeji.top/gtgwzcgrht.html
+
+curl -X POST -H 'Content-Type: application/json' -d '{"a":1}' https://api.example.com
+来源：http://hz.316326.xyz/gtwbbzdrtm.html
+
+[R60] 只看 HTTP 状态码
+来源：http://hz.nwbrower.top/gtbhnvditm.html
+
+curl -s -o /dev/null -w "%{http_code}\n" https://a.com
+来源：http://hz.yueranfly.top/gtlldpfliq.html
+
+[R61] 磁盘占用
+来源：http://hz.sysykeji.top/gtuvbzpncn.html
+
+df -h;  du -sh *
+来源：http://hz.yuanzhike.top/gtuxifcctc.html
+
+[R62] 找最占空间的文件
+来源：http://hz.ppjwa.cn/gtavaspntc.html
+
+du -ah . | sort -rh | head -10
+来源：http://hz.zycfv.cn/gtkjwuycfe.html
+
+[R63] 内存与进程
+来源：http://hz.ehwqpu.com/gtytahqldg.html
+
+free -h;  ps aux | grep nginx
+来源：http://hz.ehwqpu.com/gtlacbecko.html
+
+[R64] 结束进程
+来源：http://hz.zhixingplan.top/gtenetfmeb.html
+
+kill -9 $(pgrep -f app.py)
+来源：http://hz.jlsjyb.cn/gtmuffwvzr.html
+
+[R65] 查看端口占用
+来源：http://hz.zhijiandao.cn/gtlolmthwh.html
+
+ss -tlnp | grep 8080;  lsof -i:8080
+来源：http://hz.yangfankeji.com/gtnxvudafn.html
+
+[R66] 定时任务
+来源：http://hz.zhongyouzk.top/gthnxevvck.html
+
+crontab -e;  crontab -l
+来源：http://hz.jqgufenzy.top/gtzheicdmb.html
+
+[R67] 生成随机十六进制串
+来源：http://hz.zhaomingkeji.xyz/gtwcfamfnn.html
+
+openssl rand -hex 16
+来源：http://hz.shuidangran.top/gtdsrwperw.html
+
+[R68] 计算文件校验值
+来源：http://hz.ydjk.org.cn/gtwtcdzywk.html
+
+sha256sum a.txt;  md5sum a.txt
+来源：http://hz.52xcode.cn/gtjljfdvos.html
+
+[R69] 生成随机密码
+来源：http://hz.fengsongda.top/gtdcoaolzb.html
+
+head -c 16 /dev/urandom | base64
+来源：http://hz.tanke756.top/gttuzkjfrm.html
+
+[R70] 时间戳与互转
+来源：http://hz.zhengqikj.top/gtrbapvehv.html
+
+date +%s;  date -d @1700000000
+来源：http://hz.zhiwuduotai.top/gttslbuwkm.html
+
+[R71] 日期格式化
+来源：http://hz.wangdashe.top/gtfgvcqoix.html
+
+date +"%Y-%m-%d %H:%M:%S"
+来源：http://hz.cashguo.top/gthquhbldr.html
+
+[R72] 等待端口就绪
+来源：http://hz.yonumen.top/gtdshuwjlr.html
+
+until nc -z localhost 3306; do sleep 1; done
+来源：http://hz.fengsongda.top/gtcccdjfgh.html
+
+[R73] 分割大日志
+来源：http://hz.dianchejie.cn/gtlbqalkqd.html
+
+split -l 1000 big.log part_
+来源：http://hz.fzhhl.top/gtexpxiyvf.html
+
+[R74] 批量重命名
+来源：http://hz.pengpengdd.cyou/gtqgubumxu.html
+
+for f in *.jpeg; do mv "$f" "${f%.jpeg}.jpg"; done
+来源：http://hz.feifeiyinyue.top/gtmxtahuwp.html
+
+[R75] 导出环境变量
+来源：http://hz.jqgfzy.top/gtwferauwx.html
+
+export PATH="$HOME/bin:$PATH"
+来源：http://hz.jinyuanbaomall.cn/gtfyhwmpgf.html
+
+[R76] 使用临时文件
+来源：http://hz.sxryk.cn/gtcijahsta.html
+
+tmp=$(mktemp); trap 'rm -f "$tmp"' EXIT
+来源：http://hz.wangshuangyany.cn/gtupfdfthg.html
+
+[R77] 读取用户输入
+来源：http://hz.hnqzz.top/gtltqmgnni.html
+
+read -rp "请输入: " ans
+来源：http://hz.iojbl.cn/gtlzzvsxep.html
+
+[R78] 交互式菜单
+来源：http://hz.shuidangran.top/gthmmzhhyi.html
+
+select opt in a b c; do echo "$opt"; break; done
+来源：http://hz.ydjk.org.cn/gtfudupkju.html
+
+[R79] 解析命令行选项
+来源：http://hz.tian-w.cn/gtnhkrltlk.html
+
+while getopts "v:f:" o; do case $o in v) V=$OPTARG ;; f) F=$OPTARG ;; esac; done
+来源：http://hz.pycfn.com/gtxyuevutd.html
+
+[R80] 查看脚本执行耗时
+来源：http://hz.tian-w.cn/gtukuyhfer.html
+
+time ./run.sh
+来源：http://hz.nanxuanxn.top/gtfqhgaoks.html
+
+================================================================================
+来源：http://hz.xylfe.cn/gtkseaxpwa.html
+
+S. C / C++ 专题
+来源：http://hz.chenjidiqi.icu/gtahssggdz.html
+
+================================================================================
+来源：http://hz.hfpthk.cn/gtjmfmaxjv.html
+
+[S01] C：Hello World
+来源：http://hz.kuanghao11.cn/gtsbewaclr.html
+
+#include <stdio.h>
+来源：http://hz.ehwqpu.com/gtpcugtyxl.html
+
+int main(void) { printf("Hello\n"); return 0; }
+来源：http://hz.cdnleiting.top/gtkzldcvpz.html
+
+[S02] C：变量与格式化输出
+来源：http://hz.hammf.cn/gtktesqcwc.html
+
+int a = 10; printf("%d\n", a);
+来源：http://hz.jiagoushi.top/gtvrwxqovj.html
+
+[S03] C：读入整数
+来源：http://hz.snrcjt.cn/gtgrpvetdq.html
+
+int x; scanf("%d", &x);
+来源：http://hz.yvedp.cn/gtsomfosld.html
+
+[S04] C：字符串复制
+来源：http://hz.jlsjyb.cn/gtcrczfnwh.html
+
+char dst[32]; strcpy(dst, "hi");
+来源：http://hz.zycfv.cn/gteeejbbir.html
+
+[S05] C：字符串长度
+来源：http://hz.gaohongyu789.top/gteiebisdb.html
+
+strlen(s)
+来源：http://hz.sweek.top/gtryponxfs.html
+
+[S06] C：字符串比较
+来源：http://hz.jqgfzy.top/gtlyifvxgj.html
+
+strcmp(a, b) == 0
+来源：http://hz.smart0.xyz/gtsiwaoces.html
+
+[S07] C：数组遍历求和
+来源：http://hz.cdnleiting.top/gtazzeoarb.html
+
+for (int i = 0; i < n; i++) sum += a[i];
+来源：http://hz.redwolf501.top/gtcijoyzir.html
+
+[S08] C：动态内存分配与释放
+来源：http://hz.ybcxt.top/gtijzrxaiu.html
+
+int *p = malloc(sizeof(int) * n); ... free(p);
+来源：http://hz.zhongyouzk.top/gtnhdgtbny.html
+
+[S09] C：结构体定义与初始化
+来源：http://hz.zhaomingkeji.xyz/gtbjneppcu.html
+
+struct Point { int x, y; };  struct Point p = {1, 2};
+来源：http://hz.aizwys.cn/gtifzhmjqh.html
+
+[S10] C：指针与解引用
+来源：http://hz.xuanzx.com/gtonuzttva.html
+
+int *p = &a;  *p = 5;
+来源：http://hz.zhaomingkeji.xyz/gtbbghmhgl.html
+
+[S11] C：逐行读文件
+来源：http://hz.yj20258.top/gttvkhnvdl.html
+
+FILE *f = fopen("a.txt", "r");
+来源：http://hz.gotoacloud.top/gtyjriejgi.html
+
+while (fgets(buf, sizeof buf, f)) { }
+来源：http://hz.jinqigfzy.top/gtaozrbqra.html
+
+fclose(f);
+来源：http://hz.yongpay.top/gttaptocho.html
+
+[S12] C：写文件
+来源：http://hz.52xcode.cn/gtaxfcohnt.html
+
+FILE *f = fopen("a.txt", "w");  fprintf(f, "hi\n");  fclose(f);
+来源：http://hz.quarkkingdee.top/gteltjbopa.html
+
+[S13] C：宏定义
+来源：http://hz.yueranfly.top/gtxbejzcly.html
+
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+来源：http://hz.cheryme.top/gtipjzgtpo.html
+
+[S14] C：枚举
+来源：http://hz.fengsongda.top/gtgpvxdkmn.html
+
+enum Color { RED, GREEN, BLUE };
+来源：http://hz.shangyingyoupin.top/gtjweavgtz.html
+
+[S15] C：类型转换
+来源：http://hz.nwbrower.top/gtwuqtweap.html
+
+(double) a / b
+来源：http://hz.guannengcc.top/gtkiltkvbd.html
+
+[S16] C：位操作置位
+来源：http://hz.ybcxt.top/gtfpabkupj.html
+
+x |= (1 << 3);
+来源：http://hz.zhengqikj.top/gtiqqskpix.html
+
+[S17] C：安全拼接字符串
+来源：http://hz.316326.xyz/gtfffsthkz.html
+
+snprintf(buf, sizeof buf, "%s%s", a, b);
+来源：http://hz.cashguo.top/gtspeelxxn.html
+
+[S18] C：命令行参数
+来源：http://hz.yuanzhike.top/gtppbzoeqk.html
+
+int main(int argc, char **argv)
+来源：http://hz.shangyingyoupin.top/gttobtemsd.html
+
+[S19] C：快速排序
+来源：http://hz.zhengqikj.top/gtrnqbenen.html
+
+qsort(a, n, sizeof(int), cmp);
+来源：http://hz.yj20258888.top/gtqerixzew.html
+
+[S20] C：二分查找
+来源：http://hz.aibaodan.cn/gtrcjfcejc.html
+
+bsearch(&key, a, n, sizeof(int), cmp);
+来源：http://hz.yvedp.cn/gtchdfegrl.html
+
+[S21] C：字符类别判断
+来源：http://hz.xuanzx.com/gtisvqfzan.html
+
+isdigit(c);  isalpha(c);  isspace(c);
+来源：http://hz.guannengcc.top/gtqqfrktit.html
+
+[S22] C：字符串转数字
+来源：http://hz.sysykeji.top/gtgwuetytf.html
+
+atoi("42");  strtod("3.14", NULL);
+来源：http://hz.xziqi.cn/gtrofhffes.html
+
+[S23] C：随机数
+来源：http://hz.jlsjyb.cn/gtoroygnks.html
+
+srand(time(NULL));  int r = rand() % 100;
+来源：http://hz.jqgufenzy.top/gtefcumbyh.html
+
+[S24] C：获取本地时间
+来源：http://hz.ivvv.top/gtfxvqywhd.html
+
+time_t t = time(NULL);  struct tm *tm = localtime(&t);
+来源：http://hz.zhongyouzk.top/gtxcnbvsnl.html
+
+[S25] C：内存拷贝
+来源：http://hz.9152youxi.cn/gtrzdkrljd.html
+
+memcpy(dst, src, n);
+来源：http://hz.cucudq.cn/gtgzfwaiwh.html
+
+[S26] C：内存清零
+来源：http://hz.shuidangran.top/gtyfyjapdm.html
+
+memset(a, 0, sizeof a);
+来源：http://hz.gaohongyu789.top/gtmgvomgkx.html
+
+[S27] C：定义常量
+来源：http://hz.zhoulong.xyz/gtlmjmyjyz.html
+
+const double PI = 3.14159;
+来源：http://hz.sweek.top/gtllpqgyob.html
+
+[S28] C：静态变量
+来源：http://hz.yuanzhike.top/gtbimlirtf.html
+
+static int counter = 0;
+来源：http://hz.nanxuanxn.top/gthqprqjjh.html
+
+[S29] C：变参函数
+来源：http://hz.birdmap.top/gtnyumhpfy.html
+
+va_list ap; va_start(ap, fmt); vprintf(fmt, ap); va_end(ap);
+来源：http://hz.shanyushiyangtech.top/gtqzrgnufu.html
+
+[S30] C：头文件保护
+来源：http://hz.dianchejie.cn/gtjiztlqow.html
+
+#ifndef X_H
+来源：http://hz.ivvv.top/gtliwejauf.html
+
+#define X_H
+来源：http://hz.c1oappe.top/gtuvqnyweu.html
+
+#endif
+来源：http://hz.shangyingyoupin.top/gtuvazlqwu.html
+
+[S31] C++：Hello World
+来源：http://hz.meibo888.top/gtinhusdnx.html
+
+#include <iostream>
+来源：http://hz.cdnleiting.top/gtmdenjhnm.html
+
+int main() { std::cout << "Hello\n"; }
+来源：http://hz.hammf.cn/gtzuaxpqcd.html
+
+[S32] C++：字符串
+来源：http://hz.hnxiangtu.top/gtuqmkobgo.html
+
+std::string s = "hi";  s += "!";
+来源：http://hz.sweek.top/gtmclyzela.html
+
+[S33] C++：vector 增删
+来源：http://hz.guowangkeji.top/gtbnvtibaf.html
+
+std::vector<int> v{1, 2, 3};  v.push_back(4);
+来源：http://hz.jinqigufen.top/gtoefkwjuk.html
+
+[S34] C++：遍历 vector
+来源：http://hz.hnqzz.top/gtekrfuizr.html
+
+for (auto &x : v) { std::cout << x; }
+来源：http://hz.hammf.cn/gtlzyvilrg.html
+
+[S35] C++：map
+来源：http://hz.havefunace.top/gtpazlzsbg.html
+
+std::map<std::string, int> m;  m["a"] = 1;
+来源：http://hz.cashguo.top/gttekntujp.html
+
+[S36] C++：unordered_map
+来源：http://hz.jinqigfzy.top/gtijawyvmj.html
+
+std::unordered_map<std::string, int> m;  m["a"] = 1;
+来源：http://hz.guowangkeji.top/gtwnyipfee.html
+
+[S37] C++：set
+来源：http://hz.316326.xyz/gtznquniup.html
+
+std::set<int> s{1, 2, 3};  s.insert(4);
+来源：http://hz.ybcxt.top/gtiykchglq.html
+
+[S38] C++：排序
+来源：http://hz.chenjidiqi.icu/gtilnayvnu.html
+
+std::sort(v.begin(), v.end());
+来源：http://hz.guowangkeji.top/gtuldwtbyq.html
+
+[S39] C++：自定义比较器排序
+来源：http://hz.yanxiufei.cn/gtmcqwpcvd.html
+
+std::sort(v.begin(), v.end(), [](int a, int b) { return a > b; });
+来源：http://hz.xinyue.icu/gtuybtpdam.html
+
+[S40] C++：查找元素
+来源：http://hz.yanxiufei.cn/gtvifgoauq.html
+
+auto it = std::find(v.begin(), v.end(), 3);
+来源：http://hz.yongpay.top/gtdpspacix.html
+
+[S41] C++：类与构造函数
+来源：http://hz.yueranfly.top/gtvsqcynyw.html
+
+class A { public: A(int v) : x_(v) {} int get() const { return x_; } private: int x_; };
+来源：http://hz.wangshuangyany.cn/gtouqfexcq.html
+
+[S42] C++：继承与虚函数
+来源：http://hz.ydjk.org.cn/gthaadxtwj.html
+
+class B : public Base { public: void f() override {} };
+来源：http://hz.shuidangran.top/gtfylqhzsg.html
+
+[S43] C++：智能指针
+来源：http://hz.xuetiantiany.cn/gtikouklbf.html
+
+auto p = std::make_unique<int>(5);
+来源：http://hz.ppjwa.cn/gtnuoxjelf.html
+
+[S44] C++：引用传参
+来源：http://hz.hfpthk.cn/gtdnnznidh.html
+
+void inc(int &x) { ++x; }
+来源：http://hz.fzhhl.top/gtwofuweem.html
+
+[S45] C++：lambda
+来源：http://hz.meibo888.top/gtmzsvgslc.html
+
+auto add = [](int a, int b) { return a + b; };
+来源：http://hz.tanke756.top/gtdqjbbwwd.html
+
+[S46] C++：函数模板
+来源：http://hz.ywan-chungtsiang.top/gtmjfeenqv.html
+
+template <typename T> T maxv(T a, T b) { return a > b ? a : b; }
+来源：http://hz.52xcode.cn/gtwommsenq.html
+
+[S47] C++：结构化绑定遍历
+来源：http://hz.hammf.cn/gthkrsoajc.html
+
+for (const auto &[k, v] : m) { std::cout << k << v; }
+来源：http://hz.hnqzz.top/gtgghizvbw.html
+
+[S48] C++：逐行读文件
+来源：http://hz.ywan-chungtsiang.top/gtzuxopqva.html
+
+std::ifstream in("a.txt");  std::string line;
+来源：http://hz.dashuyun.cn/gtkzblskqu.html
+
+while (std::getline(in, line)) { }
+来源：http://hz.chenzaomai.com/gtamotvnup.html
+
+[S49] C++：写文件
+来源：http://hz.shuidangran.top/gtybukyalv.html
+
+std::ofstream out("a.txt");  out << "hi\n";
+来源：http://hz.jinqigufen.top/gtiipyyvip.html
+
+[S50] C++：格式化数字
+来源：http://hz.jiagoushi.top/gtisftcxrz.html
+
+std::ostringstream os;  os << std::fixed << std::setprecision(2) << 3.14159;
+来源：http://hz.wangdashe.top/gtcobqjaqo.html
+
+[S51] C++：显式类型转换
+来源：http://hz.52xcode.cn/gtgclkyclo.html
+
+static_cast<double>(a) / b
+来源：http://hz.andypj.xyz/gtvnebiknm.html
+
+[S52] C++：const 与 noexcept
+来源：http://hz.chenzaomai.com/gtpyytoasb.html
+
+int size() const noexcept { return n_; }
+来源：http://hz.jianghu66.top/gtiftpadgm.html
+
+[S53] C++：移动语义
+来源：http://hz.zhiwuduotai.top/gthxorbppo.html
+
+std::vector<int> w = std::move(v);
+来源：http://hz.316326.xyz/gtzuufwmvn.html
+
+[S54] C++：异常处理
+来源：http://hz.zhengqikj.top/gtxwxbfoom.html
+
+try { throw std::runtime_error("x"); } catch (const std::exception &e) { }
+来源：http://hz.c1oappe.top/gtqvcsabru.html
+
+[S55] C++：结构化绑定
+来源：http://hz.tanke756.top/gteyjiwxbl.html
+
+auto [a, b] = std::make_pair(1, 2);
+来源：http://hz.tian-w.cn/gtyrpommvo.html
+
+[S56] C++：optional
+来源：http://hz.ehwqpu.com/gteewloncd.html
+
+std::optional<int> o = 5;  if (o) { int v = *o; }
+来源：http://hz.yanxiufei.cn/gtleipwpue.html
+
+[S57] C++：编译期常量
+来源：http://hz.sweek.top/gtxenbnlqf.html
+
+constexpr int N = 10;
+来源：http://hz.quarkkingdee.top/gtkshkrson.html
+
+[S58] C++：命名空间
+来源：http://hz.9152youxi.cn/gttbrpsics.html
+
+namespace ns { int f() { return 1; } }
+来源：http://hz.smart0.xyz/gtzsbylweu.html
+
+[S59] C++：静态断言
+来源：http://hz.nwbrower.top/gtsibeleaz.html
+
+static_assert(sizeof(int) == 4, "int 必须 4 字节");
+来源：http://hz.snrcjt.cn/gtzcdcpdpc.html
+
+[S60] C++：遍历并删除元素
+来源：http://hz.jqgufenzy.top/gtsxzghrzo.html
+
+v.erase(std::remove_if(v.begin(), v.end(), [](int x) { return x < 0; }), v.end());
+来源：http://hz.shzxlz.cn/gtjavpbcdn.html
+
+================================================================================
+来源：http://hz.sweek.top/gtktmdnshs.html
+
+T. 其他语言补充（Kotlin / Swift / Lua / Perl / Scala）
+来源：http://hz.jqgfzy.top/gtkilquzzx.html
+
+================================================================================
+来源：http://hz.cdnleiting.top/gtznfiyrcv.html
+
+[T01] Kotlin：Hello World
+来源：http://hz.gaohongyu789.top/gtgnuuholl.html
+
+println("Hello")
+来源：http://hz.jiagoushi.top/gtzrknspua.html
+
+[T02] Kotlin：变量
+来源：http://hz.shzxlz.cn/gtmpkokssk.html
+
+val a = 1;  var b = 2        // val 只读，var 可变
+来源：http://hz.hywenlv.cn/gtwojgsrpn.html
+
+[T03] Kotlin：字符串模板
+来源：http://hz.yuanzhike.top/gtjjkdkgcw.html
+
+"值: $b"
+来源：http://hz.redwolf501.top/gtmaqbrtqf.html
+
+[T04] Kotlin：空安全
+来源：http://hz.pycfn.com/gtoutdkxhg.html
+
+val n: String? = null;  n?.length
+来源：http://hz.cdnleiting.top/gtpbqlgpxo.html
+
+[T05] Kotlin：when 表达式
+来源：http://hz.mhx1999.top/gtsezllkho.html
+
+val s = when (x) { 1 -> "一" else -> "其他" }   // 多分支时每个分支单独一行
+来源：http://hz.9152youxi.cn/gtqprhhncr.html
+
+[T06] Kotlin：集合映射
+来源：http://hz.ivvv.top/gteyeixikg.html
+
+listOf(1, 2, 3).map { it * 2 }
+来源：http://hz.snrcjt.cn/gtdthbflht.html
+
+[T07] Kotlin：集合过滤
+来源：http://hz.shuidangran.top/gtejzuayvm.html
+
+listOf(1, 2, 3).filter { it > 1 }
+来源：http://hz.yuxming.cn/gtjihpmvpi.html
+
+[T08] Kotlin：数据类
+来源：http://hz.cashguo.top/gtesnxyzxq.html
+
+data class User(val name: String, val age: Int)
+来源：http://hz.52xcode.cn/gtcuengzgx.html
+
+[T09] Kotlin：扩展函数
+来源：http://hz.guowangkeji.top/gtkcujiaie.html
+
+fun String.exclaim() = this + "!"
+来源：http://hz.guannengcc.top/gtrkqidcuu.html
+
+[T10] Kotlin：默认参数
+来源：http://hz.zhixingplan.top/gtcxuwzfzn.html
+
+fun greet(name: String = "World") = "Hi $name"
+来源：http://hz.iojbl.cn/gtjdnyohmi.html
+
+[T11] Kotlin：协程
+来源：http://hz.xuetiantiany.cn/gtrkvnshev.html
+
+GlobalScope.launch { delay(1000); println("done") }
+来源：http://hz.tanke756.top/gtgpfkddwi.html
+
+[T12] Kotlin：解构声明
+来源：http://hz.zhiwuduotai.top/gtqbgggxcx.html
+
+val (a, b) = Pair(1, 2)
+来源：http://hz.shanyushiyangkeji.top/gtjikexwme.html
+
+[T13] Kotlin：只读 Map
+来源：http://hz.smart0.xyz/gtwdytzcam.html
+
+val m = mapOf("a" to 1)
+来源：http://hz.jyoumei.cn/gtwimtxqtr.html
+
+[T14] Kotlin：循环
+来源：http://hz.sufxvd.cn/gtnlnekycl.html
+
+for (i in 1..10) println(i)
+来源：http://hz.iojbl.cn/gtnyvyihay.html
+
+[T15] Kotlin：接口
+来源：http://hz.jqgfzy.top/gtponbitte.html
+
+interface Shape { fun area(): Double }
+来源：http://hz.hysaishi.cn/gtrkmggwxn.html
+
+[T16] Swift：Hello World
+来源：http://hz.tian-w.cn/gtnrdccnxb.html
+
+print("Hello")
+来源：http://hz.hfpthk.cn/gtpyltqyzj.html
+
+[T17] Swift：变量与常量
+来源：http://hz.ppjwa.cn/gtfhpxvfer.html
+
+var a = 1;  let b = 2
+来源：http://hz.ybcxt.top/gtpwpbuake.html
+
+[T18] Swift：字符串插值
+来源：http://hz.zhijiandao.cn/gtawdvrhjb.html
+
+"值: \(b)"
+来源：http://hz.pengpengdd.cyou/gthvhqiuqk.html
+
+[T19] Swift：可选绑定
+来源：http://hz.sweek.top/gtsocncgqa.html
+
+if let n = opt { print(n) }
+来源：http://hz.jiagoushi.top/gtcchlhhtb.html
+
+[T20] Swift：数组操作
+来源：http://hz.yj20258.top/gtiulfclyc.html
+
+var a = [1, 2, 3];  a.append(4)
+来源：http://hz.ivvv.top/gtnuamxihx.html
+
+[T21] Swift：遍历
+来源：http://hz.shangyingyoupin.top/gteyabpgiw.html
+
+for x in a { print(x) }
+来源：http://hz.yuanzhike.top/gtyvenzbhu.html
+
+[T22] Swift：字典
+来源：http://hz.jiagoushi.top/gttnitqmpp.html
+
+var d = ["a": 1];  d["b"] = 2
+来源：http://hz.zhongyouzk.top/gtclxixlpc.html
+
+[T23] Swift：函数
+来源：http://hz.gzhubu.top/gtwzsyzgbc.html
+
+func add(_ a: Int, _ b: Int) -> Int { a + b }
+来源：http://hz.jlsjyb.cn/gtvwcguhng.html
+
+[T24] Swift：闭包
+来源：http://hz.yonumen.top/gtczjyrdrq.html
+
+let f = { (x: Int) -> Int in x * 2 }
+来源：http://hz.0kj1m.cn/gtewdhence.html
+
+[T25] Swift：结构体
+来源：http://hz.yangfankeji.com/gtrcptrzqi.html
+
+struct P { var x: Int }
+来源：http://hz.kuanghao11.cn/gthgvlfsfb.html
+
+[T26] Swift：类与重写
+来源：http://hz.yangfankeji.com/gtbrkhbqzt.html
+
+class A: Base { override func f() {} }
+来源：http://hz.jqgfzy.top/gtivzmxlbr.html
+
+[T27] Swift：错误处理
+来源：http://hz.hfpthk.cn/gtuwigfimm.html
+
+do { try f() } catch { print(error) }
+来源：http://hz.0kj1m.cn/gtdtakfekm.html
+
+[T28] Swift：枚举
+来源：http://hz.zhaomingkeji.xyz/gthcvxsmvd.html
+
+enum Color { case red, green }
+来源：http://hz.havefunace.top/gtrznsabst.html
+
+[T29] Swift：guard 提前返回
+来源：http://hz.daxiang520.top/gtxxydmrue.html
+
+guard let x = opt else { return }
+来源：http://hz.yongpay.top/gtverxrviu.html
+
+[T30] Swift：协议
+来源：http://hz.guowangkeji.top/gtecnjmagj.html
+
+protocol Shape { func area() -> Double }
+来源：http://hz.aibaodan.cn/gtlossagmx.html
+
+[T31] Lua：Hello World
+来源：http://hz.xylfe.cn/gtymwlctld.html
+
+print("Hello")
+来源：http://hz.yonumen.top/gtufynnydi.html
+
+[T32] Lua：局部变量
+来源：http://hz.pycfn.com/gtgrnrbpxs.html
+
+local a = 1
+来源：http://hz.vqdsnc.cn/gthibbszxm.html
+
+[T33] Lua：表（数组）
+来源：http://hz.hammf.cn/gtunovktaj.html
+
+local t = {1, 2, 3};  t[4] = 4
+来源：http://hz.zhongyouzk.top/gtpijalfbn.html
+
+[T34] Lua：遍历表
+来源：http://hz.hnxiangtu.top/gtnbviixgg.html
+
+for i, v in ipairs(t) do print(i, v) end
+来源：http://hz.guannengcc.top/gtdgyvdgwu.html
+
+[T35] Lua：字典表
+来源：http://hz.pengpengdd.cyou/gtzoxgxhli.html
+
+local d = { a = 1 };  d.b = 2
+来源：http://hz.birdmap.top/gtepfajphq.html
+
+[T36] Lua：函数
+来源：http://hz.hongshengwenyu.top/gtxenpelyu.html
+
+function add(a, b) return a + b end
+来源：http://hz.xingfuxueyuan.xyz/gttnyvzjrc.html
+
+[T37] Lua：字符串拼接
+来源：http://hz.fengsongda.top/gtmqhrlqbs.html
+
+"a" .. "b"
+来源：http://hz.chenlongwang.top/gtztjopgdn.html
+
+[T38] Lua：条件
+来源：http://hz.zhiwuduotai.top/gtiynagjil.html
+
+if x > 0 then print("正") end
+来源：http://hz.svipenyu.cn/gtkvglofdz.html
+
+[T39] Lua：模式匹配
+来源：http://hz.dashuyun.cn/gtqnopyobi.html
+
+string.find(s, "%d+")
+来源：http://hz.zhiwuduotai.top/gtpwkudflj.html
+
+[T40] Lua：元表
+来源：http://hz.jinyuanbaomall.cn/gtlpxgttmd.html
+
+setmetatable({}, { __index = base })
+来源：http://hz.sxryk.cn/gtrcqpcolf.html
+
+[T41] Perl：Hello World
+来源：http://hz.gaohongyu789.top/gtmiylfzqv.html
+
+print "Hello\n";
+来源：http://hz.aibaodan.cn/gtpjecvtam.html
+
+[T42] Perl：变量类型
+来源：http://hz.xziqi.cn/gthgpfqrcy.html
+
+my $a = 1;  my @arr = (1, 2, 3);  my %h = (a => 1);
+来源：http://hz.ywan-chungtsiang.top/gttplqilun.html
+
+[T43] Perl：字符串插值
+来源：http://hz.jinqigfzy.top/gtghmrdtym.html
+
+"值: $a"
+来源：http://hz.fengsongda.top/gtsngsprdi.html
+
+[T44] Perl：条件
+来源：http://hz.hongshengwenyu.top/gtotenjyke.html
+
+if ($a > 0) { print "正"; }
+来源：http://hz.sysykeji.top/gtkdicfifk.html
+
+[T45] Perl：数组遍历
+来源：http://hz.birdmap.top/gtcwovxtfv.html
+
+for my $x (@arr) { print $x; }
+来源：http://hz.fengsongda.top/gtqizlczxu.html
+
+[T46] Perl：哈希操作
+来源：http://hz.dashuyun.cn/gtldfbbgvj.html
+
+$h{b} = 2;  for my $k (keys %h) { print "$k=$h{$k}"; }
+来源：http://hz.zhengqikj.top/gtchqckcle.html
+
+[T47] Perl：正则捕获
+来源：http://hz.vqdsnc.cn/gteqvvbhjs.html
+
+if ($s =~ /(\d+)/) { print $1; }
+来源：http://hz.zhaomingkeji.xyz/gtidtndlhd.html
+
+[T48] Perl：正则替换
+来源：http://hz.hongshengwenyu.top/gtplicjlto.html
+
+$s =~ s/old/new/g;
+来源：http://hz.daria6918.cn/gtnmjfveud.html
+
+[T49] Perl：函数
+来源：http://hz.pengpengdd.cyou/gtfjkvwluw.html
+
+sub add { my ($a, $b) = @_; return $a + $b; }
+来源：http://hz.nanxuanxn.top/gtoxppdyei.html
+
+[T50] Perl：逐行读文件
+来源：http://hz.ydzc1.top/gtiyvggaxz.html
+
+open my $fh, "<", "a.txt" or die $!;
+来源：http://hz.xuanzx.com/gtdiavtblx.html
+
+while (my $line = <$fh>) { print $line; }
+来源：http://hz.jlsjyb.cn/gttdadvlvw.html
+
+[T51] Scala：Hello World
+来源：http://hz.nanxuanxn.top/gtfhxvzknc.html
+
+println("Hello")
+来源：http://hz.yueranfly.top/gtmxshecag.html
+
+[T52] Scala：变量
+来源：http://hz.yangfankeji.com/gtovjpyjnt.html
+
+val a = 1;  var b = 2
+来源：http://hz.tian-w.cn/gtfnszharg.html
+
+[T53] Scala：字符串插值
+来源：http://hz.daxiang520.top/gttckjisdc.html
+
+s"值: $b"
+来源：http://hz.jinqigufen.top/gthgtlcndo.html
+
+[T54] Scala：集合映射
+来源：http://hz.yonumen.top/gteqovxyby.html
+
+List(1, 2, 3).map(_ * 2)
+来源：http://hz.ydjk.org.cn/gtqslnlypx.html
+
+[T55] Scala：集合过滤
+来源：http://hz.xingfuxueyuan.xyz/gtyjzvpwuy.html
+
+List(1, 2, 3).filter(_ > 1)
+来源：http://hz.yueranfly.top/gtxgcueuyr.html
+
+[T56] Scala：样例类
+来源：http://hz.xziqi.cn/gtvjdnzgkv.html
+
+case class User(name: String, age: Int)
+来源：http://hz.wangshuangyany.cn/gtdyduekna.html
+
+[T57] Scala：模式匹配
+来源：http://hz.hnqzz.top/gtmskxqjsm.html
+
+x match { case 1 => "一"; case _ => "其他" }
+来源：http://hz.zhongyouzk.top/gtndfbcdig.html
+
+[T58] Scala：函数定义
+来源：http://hz.jinqigfzy.top/gtsgrghmjv.html
+
+
+<!-- 参考信息 -->

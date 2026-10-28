@@ -1,0 +1,904 @@
+代发 wailian999
+
+[T45] Perl：数组遍历
+来源：http://hz.zhaomingkeji.xyz/gtybvzjnke.html
+
+for my $x (@arr) { print $x; }
+来源：http://hz.iojbl.cn/gtxlmelzip.html
+
+[T46] Perl：哈希操作
+来源：http://hz.52xcode.cn/gtsvpaqduc.html
+
+$h{b} = 2;  for my $k (keys %h) { print "$k=$h{$k}"; }
+来源：http://hz.shanyushiyangkeji.top/gtnsoarpyn.html
+
+[T47] Perl：正则捕获
+来源：http://hz.fengsongda.top/gtamjbycyj.html
+
+if ($s =~ /(\d+)/) { print $1; }
+来源：http://hz.zdqjudy.top/gtegzkhids.html
+
+[T48] Perl：正则替换
+来源：http://hz.yuanzhike.top/gthdfgkfcs.html
+
+$s =~ s/old/new/g;
+来源：http://hz.ppjwa.cn/gtvojlmwwu.html
+
+[T49] Perl：函数
+来源：http://hz.chenzaomai.com/gtdwhkxwqb.html
+
+sub add { my ($a, $b) = @_; return $a + $b; }
+来源：http://hz.aibaodan.cn/gtjjojcdap.html
+
+[T50] Perl：逐行读文件
+来源：http://hz.pengpengdd.cyou/gtbzhdaioj.html
+
+open my $fh, "<", "a.txt" or die $!;
+来源：http://hz.feifeiyinyue.top/gtwstolcya.html
+
+while (my $line = <$fh>) { print $line; }
+来源：http://hz.pycfn.com/gtlcsooilt.html
+
+[T51] Scala：Hello World
+来源：http://hz.yvedp.cn/gtwbowgrtv.html
+
+println("Hello")
+来源：http://hz.redwolf501.top/gtwmxptauc.html
+
+[T52] Scala：变量
+来源：http://hz.yanxiufei.cn/gttllqryne.html
+
+val a = 1;  var b = 2
+来源：http://hz.feifeiyinyue.top/gtnlfqbvez.html
+
+[T53] Scala：字符串插值
+来源：http://hz.fzhhl.top/gtpdihoxvb.html
+
+s"值: $b"
+来源：http://hz.yonumen.top/gtmnksqlde.html
+
+[T54] Scala：集合映射
+来源：http://hz.xuetiantiany.cn/gthvkxsode.html
+
+List(1, 2, 3).map(_ * 2)
+来源：http://hz.daria6918.cn/gtzwynwskm.html
+
+[T55] Scala：集合过滤
+来源：http://hz.zhixingplan.top/gtvhpjedgq.html
+
+List(1, 2, 3).filter(_ > 1)
+来源：http://hz.xuanzx.com/gtjtknqrry.html
+
+[T56] Scala：样例类
+来源：http://hz.shzxlz.cn/gttccqumjy.html
+
+case class User(name: String, age: Int)
+来源：http://hz.shanyushiyangkeji.top/gtapjssjxy.html
+
+[T57] Scala：模式匹配
+来源：http://hz.yvedp.cn/gtwsbnfdkm.html
+
+x match { case 1 => "一"; case _ => "其他" }
+来源：http://hz.sysykeji.top/gthjckkpcc.html
+
+[T58] Scala：函数定义
+来源：http://hz.xuetiantiany.cn/gtydqdmpbb.html
+
+def add(a: Int, b: Int): Int = a + b
+来源：http://hz.pengpengdd.cyou/gtdwzdyedc.html
+
+[T59] Scala：循环
+来源：http://hz.andypj.xyz/gtoyljajjf.html
+
+for (i <- 1 to 10) println(i)
+来源：http://hz.guannengcc.top/gtcpjnflkx.html
+
+[T60] Scala：折叠
+来源：http://hz.zhoulong.xyz/gtngdxaxfw.html
+
+List(1, 2, 3).foldLeft(0)(_ + _)
+来源：http://hz.pengpengdd.cyou/gtkwocpwst.html
+
+================================================================================
+来源：http://hz.gaohongyu789.top/gtqedglhqn.html
+
+U. 高频实用片段（Python / PHP / JavaScript 各 40 条）
+来源：http://hz.sufxvd.cn/gtbolnhcxf.html
+
+================================================================================
+来源：http://hz.yuxming.cn/gttabvnrgz.html
+
+[U01] Py：创建虚拟环境
+来源：http://hz.c1oappe.top/gtsmqetcrv.html
+
+python -m venv .venv && source .venv/bin/activate
+来源：http://hz.hnqzz.top/gtksnxmbwr.html
+
+[U02] Py：导出 / 安装依赖
+来源：http://hz.hfpthk.cn/gtfjtvdpjh.html
+
+pip freeze > requirements.txt;  pip install -r requirements.txt
+来源：http://hz.kuanghao11.cn/gtorzzxnqe.html
+
+[U03] Py：加载 .env 配置
+来源：http://hz.hfpthk.cn/gtfwwcnfxg.html
+
+from dotenv import load_dotenv; load_dotenv()
+来源：http://hz.redwolf501.top/gtbuessfkp.html
+
+[U04] Py：变量调试打印
+来源：http://hz.hnxiangtu.top/gtwfzvvekk.html
+
+print(f"{x=}")            # 输出 x=值，Python 3.8+
+来源：http://hz.yvedp.cn/gtslfwhejk.html
+
+[U05] Py：列表去重且保序
+来源：http://hz.chenjidiqi.icu/gtmntkfiwr.html
+
+list(dict.fromkeys(arr))
+来源：http://hz.xingfuxueyuan.xyz/gtbebjrpwm.html
+
+[U06] Py：合并两个字典
+来源：http://hz.jyoumei.cn/gtavcnhnrz.html
+
+{**a, **b}
+来源：http://hz.yuanzhike.top/gttbxukqzn.html
+
+[U07] Py：反转字典键值
+来源：http://hz.zhongyouzk.top/gteomubpbv.html
+
+{v: k for k, v in d.items()}
+来源：http://hz.daxiang520.top/gtqlbkcucr.html
+
+[U08] Py：展平二维列表
+来源：http://hz.sxryk.cn/gtkikbvixc.html
+
+[y for x in nested for y in x]
+来源：http://hz.yj20258.top/gtcfjmxyin.html
+
+[U09] Py：字典取最大值的键
+来源：http://hz.jlsjyb.cn/gtqfrpwmrv.html
+
+max(d, key=d.get)
+来源：http://hz.jqgfzy.top/gtygfsasrr.html
+
+[U10] Py：按值排序字典
+来源：http://hz.jqgfzy.top/gtcbmtljxh.html
+
+dict(sorted(d.items(), key=lambda kv: kv[1]))
+来源：http://hz.snrcjt.cn/gtkrjzennk.html
+
+[U11] Py：生成器表达式
+来源：http://hz.chenlongwang.top/gtledlxrly.html
+
+(x * 2 for x in arr)
+来源：http://hz.ydjk.org.cn/gtmayormiw.html
+
+[U12] Py：取出现最多的 3 个元素
+来源：http://hz.dashuyun.cn/gtqatrwgis.html
+
+Counter(arr).most_common(3)
+来源：http://hz.nanxuanxn.top/gtxzwdljfw.html
+
+[U13] Py：固定长度队列
+来源：http://hz.shuidangran.top/gtdbrkwsmt.html
+
+deque(maxlen=10)
+来源：http://hz.yuanzhike.top/gtjcvuqhrc.html
+
+[U14] Py：分组收集到列表
+来源：http://hz.bjfxy.top/gtyafxubri.html
+
+defaultdict(list)
+来源：http://hz.0kj1m.cn/gthqchubfd.html
+
+[U15] Py：高精度计时
+来源：http://hz.haohaochexian.top/gtmkcmkkkl.html
+
+t = time.perf_counter()
+来源：http://hz.316326.xyz/gtmgnrvkuh.html
+
+[U16] Py：命令行参数解析
+来源：http://hz.nanxuanxn.top/gtcysxgtkz.html
+
+ap = argparse.ArgumentParser();  ap.add_argument("--name");  args = ap.parse_args()
+来源：http://hz.yonumen.top/gtqphkdrhh.html
+
+[U17] Py：初始化日志
+来源：http://hz.zhijiandao.cn/gthbvrdcpk.html
+
+logging.basicConfig(level=logging.INFO)
+来源：http://hz.hfpthk.cn/gtczttvyil.html
+
+[U18] Py：预编译正则
+来源：http://hz.hfpthk.cn/gtvagocaye.html
+
+pat = re.compile(r"\d+")
+来源：http://hz.ydjk.org.cn/gtszgmqukd.html
+
+[U19] Py：正则替换带回调
+来源：http://hz.gotoacloud.top/gtmnbwcrsi.html
+
+re.sub(r"\d+", lambda m: str(int(m.group()) * 2), s)
+来源：http://hz.svipenyu.cn/gtmrknfvjg.html
+
+[U20] Py：缓存函数结果
+来源：http://hz.hywenlv.cn/gtoplsunlq.html
+
+@functools.lru_cache(maxsize=None)
+来源：http://hz.ehwqpu.com/gttqxgclch.html
+
+[U21] Py：自定义上下文管理器
+来源：http://hz.zhoulong.xyz/gtipwyuisd.html
+
+@contextlib.contextmanager
+来源：http://hz.jlsjyb.cn/gtaypqlfmh.html
+
+[U22] Py：矩阵转置
+来源：http://hz.hysaishi.cn/gtxkawmyqd.html
+
+list(zip(*m))
+来源：http://hz.yuanzhike.top/gtxyabvmtz.html
+
+[U23] Py：分块读取大文件
+来源：http://hz.haohaochexian.top/gtxjcxbhdg.html
+
+for chunk in iter(lambda: f.read(8192), b""):
+来源：http://hz.yonumen.top/gtvsrrtieu.html
+
+[U24] Py：路径操作
+来源：http://hz.cucudq.cn/gtmmhjdeuq.html
+
+Path("a/b.txt").parent.mkdir(parents=True, exist_ok=True)
+来源：http://hz.yj20258888.top/gtfntwqjrt.html
+
+[U25] Py：CSV 按字典读
+来源：http://hz.hongshengwenyu.top/gthhnjvjgy.html
+
+csv.DictReader(f)
+来源：http://hz.yuanzhike.top/gtuzxmqkun.html
+
+[U26] Py：并发下载
+来源：http://hz.kuanghao11.cn/gteeloayfb.html
+
+ThreadPoolExecutor(max_workers=8).map(fetch, urls)
+来源：http://hz.chenjidiqi.icu/gtjfhxdabv.html
+
+[U27] Py：异步 HTTP
+来源：http://hz.xuetiantiany.cn/gtkdkpwncg.html
+
+aiohttp.ClientSession() 配合 async with
+来源：http://hz.tian-w.cn/gtnkscdnev.html
+
+[U28] Py：类型别名
+来源：http://hz.daria6918.cn/gtokbdbizj.html
+
+UserId = int
+来源：http://hz.tianlin.xyz/gtsnrxjesm.html
+
+[U29] Py：属性校验
+来源：http://hz.pycfn.com/gtegpzpeyb.html
+
+@property 与 @x.setter 配合
+来源：http://hz.hammf.cn/gtshscpibd.html
+
+[U30] Py：数据类
+来源：http://hz.jinghuilouyu.cn/gtlyaensyz.html
+
+@dataclass(slots=True)
+来源：http://hz.hnqzz.top/gtoafucsjn.html
+
+[U31] Py：单测
+来源：http://hz.iojbl.cn/gtoaxphmce.html
+
+python -m pytest -q
+来源：http://hz.hfpthk.cn/gtbuoicdev.html
+
+[U32] Py：代码格式化
+来源：http://hz.shzxlz.cn/gtmlkpqhfs.html
+
+ruff format . && ruff check --fix .
+来源：http://hz.ivvv.top/gtsiprqwpt.html
+
+[U33] Py：打包发布
+来源：http://hz.jianghu66.top/gttzqielte.html
+
+python -m build  （依赖 pyproject.toml）
+来源：http://hz.gaohongyu789.top/gtccmqhyxh.html
+
+[U34] Py：判断编码
+来源：http://hz.gaohongyu789.top/gtdxfelbxx.html
+
+chardet.detect(raw)
+来源：http://hz.jlsjyb.cn/gtbycjqyah.html
+
+[U35] Py：发送邮件
+来源：http://hz.meibo888.top/gtvucqkfic.html
+
+smtplib.SMTP_SSL(...).send_message(msg)
+来源：http://hz.mhx1999.top/gtdjrzpauo.html
+
+[U36] Py：定时任务
+来源：http://hz.hnxiangtu.top/gtzdbbtmiz.html
+
+schedule.every(10).minutes.do(job)
+来源：http://hz.feifeiyinyue.top/gtlemlocik.html
+
+[U37] Py：读写 Excel
+来源：http://hz.tian-w.cn/gtiskrjdsy.html
+
+pandas.read_excel / DataFrame.to_excel
+来源：http://hz.yueranfly.top/gtqnqbhhfm.html
+
+[U38] Py：获取脚本所在目录
+来源：http://hz.yj202588.top/gtnpbihcrf.html
+
+Path(__file__).resolve().parent
+来源：http://hz.ywan-chungtsiang.top/gteououoca.html
+
+[U39] Py：判断是否在交互环境
+来源：http://hz.ydjk.org.cn/gtjembnbot.html
+
+sys.stdout.isatty()
+来源：http://hz.quarkkingdee.top/gtpxmtivgy.html
+
+[U40] Py：打印到标准错误
+来源：http://hz.jqgufenzy.top/gtshaxdrmh.html
+
+print("err", file=sys.stderr)
+来源：http://hz.gaohongyu789.top/gttoyjbsnj.html
+
+[U41] PHP：初始化 Composer 项目
+来源：http://hz.snrcjt.cn/gtozhjigjy.html
+
+composer init;  composer require guzzlehttp/guzzle
+来源：http://hz.gzhubu.top/gtisgoxwsm.html
+
+[U42] PHP：PSR-4 自动加载
+来源：http://hz.zhongyouzk.top/gtqtkycuwv.html
+
+"autoload": { "psr-4": { "App\\": "src/" } }
+来源：http://hz.yangfankeji.com/gtawizsooj.html
+
+[U43] PHP：声明命名空间
+来源：http://hz.ywan-chungtsiang.top/gtbzoagzpl.html
+
+namespace App\Http;
+来源：http://hz.iojbl.cn/gtjxqqmhqq.html
+
+[U44] PHP：开启严格类型
+来源：http://hz.xuanzx.com/gtskopbbwt.html
+
+declare(strict_types=1);
+来源：http://hz.bjfxy.top/gtdsfqqegm.html
+
+[U45] PHP：类型声明与返回类型
+来源：http://hz.52xcode.cn/gtlfzndpfy.html
+
+function add(int $a, int $b): int { return $a + $b; }
+来源：http://hz.redwolf501.top/gtmucwwmmy.html
+
+[U46] PHP：可空类型
+来源：http://hz.quarkkingdee.top/gtztmtwzbw.html
+
+?string $name = null
+来源：http://hz.shzxlz.cn/gtjxrnxnyp.html
+
+[U47] PHP：联合类型
+来源：http://hz.yj202588.top/gtijgdsqkg.html
+
+int|string $id
+来源：http://hz.bjfxy.top/gthvtgrezu.html
+
+[U48] PHP：纯枚举
+来源：http://hz.aizwys.cn/gtgfwpxabp.html
+
+enum Status: string { case Active = "active"; case Off = "off"; }
+来源：http://hz.cqqwz.cn/gttgdlhbvr.html
+
+[U49] PHP：只读属性
+来源：http://hz.zhixingplan.top/gthwfmkejf.html
+
+public readonly string $name
+来源：http://hz.hysaishi.cn/gtprjkotqm.html
+
+[U50] PHP：构造器属性提升
+来源：http://hz.shanyushiyangkeji.top/gtiqvxwcqq.html
+
+public function __construct(private int $id) {}
+来源：http://hz.fengsongda.top/gtnagievcc.html
+
+[U51] PHP：数组解构
+来源：http://hz.jiagoushi.top/gtyuytvpda.html
+
+[$a, $b] = $arr;
+来源：http://hz.nwbrower.top/gtfrjtpmcw.html
+
+[U52] PHP：箭头函数
+来源：http://hz.cashguo.top/gtkixodvji.html
+
+$double = fn($x) => $x * 2;
+来源：http://hz.52xcode.cn/gtbygxaufe.html
+
+[U53] PHP：空合并运算符
+来源：http://hz.sufxvd.cn/gtvgshhfxv.html
+
+$v = $a ?? $b ?? "default";
+来源：http://hz.yonumen.top/gtllxwfiid.html
+
+[U54] PHP：空安全调用
+来源：http://hz.ywan-chungtsiang.top/gtsekoimuz.html
+
+$obj?->method()
+来源：http://hz.iojbl.cn/gtuacvlgrl.html
+
+[U55] PHP：match 表达式
+来源：http://hz.fzhhl.top/gtfsrleybj.html
+
+$s = match($x) { 1 => "一", default => "其他" };
+来源：http://hz.jinqigfzy.top/gtjjviddko.html
+
+[U56] PHP：命名参数
+来源：http://hz.gaohongyu789.top/gthhsicxxp.html
+
+f(a: 1, b: 2)
+来源：http://hz.iojbl.cn/gtmlppczub.html
+
+[U57] PHP：字符串插值
+来源：http://hz.jinghuilouyu.cn/gtuiwbxrhp.html
+
+"值: {$a}"
+来源：http://hz.xuetiantiany.cn/gtoaqrezbo.html
+
+[U58] PHP：数组三件套
+来源：http://hz.smart0.xyz/gtfpaylosm.html
+
+array_map($f, $a);  array_filter($a, $f);  array_reduce($a, $f, 0);
+来源：http://hz.gaohongyu789.top/gtcdzsejza.html
+
+[U59] PHP：自定义排序
+来源：http://hz.ehwqpu.com/gtwjrszgio.html
+
+usort($arr, fn($a, $b) => $a["age"] <=> $b["age"]);
+来源：http://hz.ivvv.top/gtzbiabqhw.html
+
+[U60] PHP：JSON 编解码
+来源：http://hz.cashguo.top/gtaidsrqbf.html
+
+json_encode($d, JSON_UNESCAPED_UNICODE);  json_decode($s, true);
+来源：http://hz.zdqjudy.top/gtpzigdcql.html
+
+[U61] PHP：正则
+来源：http://hz.nanxuanxn.top/gtxkmsxzlf.html
+
+preg_match('/(\d+)/', $s, $m);  preg_replace('/\d+/', '#', $s);
+来源：http://hz.snrcjt.cn/gtctoguacb.html
+
+[U62] PHP：日期对象
+来源：http://hz.ydjk.org.cn/gtuemhnhif.html
+
+(new DateTimeImmutable())->format("Y-m-d");
+来源：http://hz.c1oappe.top/gttzbrdvvu.html
+
+[U63] PHP：文件读写
+来源：http://hz.haohaochexian.top/gtxfckhorx.html
+
+file_get_contents($f);  file_put_contents($f, $data);
+来源：http://hz.jlsjyb.cn/gtwseiopfg.html
+
+[U64] PHP：目录遍历
+来源：http://hz.meibo888.top/gtqveovolm.html
+
+glob("dir/*.php");  scandir("dir");
+来源：http://hz.jinqigfzy.top/gtstevxgwj.html
+
+[U65] PHP：会话
+来源：http://hz.aizwys.cn/gtmihcnowt.html
+
+session_start();  $_SESSION["uid"] = 1;
+来源：http://hz.jqgufenzy.top/gtlujbjzmn.html
+
+[U66] PHP：设置 Cookie
+来源：http://hz.yj20258888.top/gtlmnkjjmp.html
+
+setcookie("token", $v, ["httponly" => true, "samesite" => "Lax"]);
+来源：http://hz.xuetiantiany.cn/gtppmkxftq.html
+
+[U67] PHP：处理文件上传
+来源：http://hz.yj20258888.top/gtqdjqdsqn.html
+
+$_FILES["file"]["tmp_name"] 与 move_uploaded_file()
+来源：http://hz.ydzc1.top/gtotfdnifs.html
+
+[U68] PHP：PDO 连接
+来源：http://hz.tianlin.xyz/gturepsarw.html
+
+$pdo = new PDO("mysql:host=localhost;dbname=app", "root", "");
+来源：http://hz.birdmap.top/gtvawsbflm.html
+
+[U69] PHP：PDO 预处理
+来源：http://hz.andypj.xyz/gtvtteorml.html
+
+$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");  $stmt->execute([$id]);
+来源：http://hz.yangfankeji.com/gtxcmriupa.html
+
+[U70] PHP：PDO 事务
+来源：http://hz.jlsjyb.cn/gtuqwrqbfg.html
+
+$pdo->beginTransaction();  $pdo->commit();  $pdo->rollBack();
+来源：http://hz.sysykeji.top/gtlekgipli.html
+
+[U71] PHP：抛出异常
+来源：http://hz.hnxiangtu.top/gtxyqwxjyp.html
+
+throw new RuntimeException("失败", 500);
+来源：http://hz.bjfxy.top/gtckmylgpz.html
+
+[U72] PHP：写错误日志
+来源：http://hz.sweek.top/gtknibydeu.html
+
+error_log("失败: " . $e->getMessage());
+来源：http://hz.yuxming.cn/gtpqaqrdye.html
+
+[U73] PHP：读取 ini 配置
+来源：http://hz.jqgfzy.top/gtxfwzlfho.html
+
+parse_ini_file("config.ini", true)
+来源：http://hz.ywan-chungtsiang.top/gtxjrmkcpp.html
+
+[U74] PHP：读取环境变量
+来源：http://hz.chenjidiqi.icu/gtvmldozsl.html
+
+getenv("APP_ENV") ?: "production"
+来源：http://hz.yueranfly.top/gtidouvhrs.html
+
+[U75] PHP：依赖注入
+来源：http://hz.shanyushiyangtech.top/gtzracpoah.html
+
+composer require psr/container
+来源：http://hz.feifeiyinyue.top/gtbcpbbifu.html
+
+[U76] PHP：简单路由
+来源：http://hz.shanyushiyangtech.top/gtcqkdkuse.html
+
+$path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+来源：http://hz.hnqzz.top/gtdhrcgrfs.html
+
+[U77] PHP：模板渲染
+来源：http://hz.yuxming.cn/gtyflshnlc.html
+
+composer require twig/twig
+来源：http://hz.nanxuanxn.top/gtpqhzdpxp.html
+
+[U78] PHP：单元测试
+来源：http://hz.hammf.cn/gtbpgirmqj.html
+
+composer require --dev phpunit/phpunit
+来源：http://hz.dianchejie.cn/gtukvxaoll.html
+
+[U79] PHP：静态分析
+来源：http://hz.sxryk.cn/gtebkjsmvp.html
+
+composer require --dev phpstan/phpstan
+来源：http://hz.hnqzz.top/gtdxtazhud.html
+
+[U80] PHP：代码规范修复
+来源：http://hz.yj202588.top/gtzgfpoozf.html
+
+composer require --dev friendsofphp/php-cs-fixer
+来源：http://hz.pycfn.com/gtrntuqynn.html
+
+[U81] JS：初始化项目
+来源：http://hz.ybcxt.top/gtmturqsps.html
+
+npm init -y;  npm i express
+来源：http://hz.tanke756.top/gtuuwudbkz.html
+
+[U82] JS：package.json 脚本
+来源：http://hz.zhiwuduotai.top/gtvxqtvxvg.html
+
+"scripts": { "dev": "vite", "build": "vite build" }
+来源：http://hz.9152youxi.cn/gthqpkabpr.html
+
+[U83] JS：ES Module 导入导出
+来源：http://hz.hongshengwenyu.top/gtuwhhuwla.html
+
+export const a = 1;  import { a } from "./m.js";
+来源：http://hz.bjfxy.top/gtcictxsxn.html
+
+[U84] JS：CommonJS 写法
+来源：http://hz.fzhhl.top/gthdnzngbg.html
+
+module.exports = { a };  const { a } = require("./m");
+来源：http://hz.jiagoushi.top/gtnvzufnvm.html
+
+[U85] JS：可选链
+来源：http://hz.pycfn.com/gtbauynvkp.html
+
+a?.b?.c
+来源：http://hz.jinyuanbaomall.cn/gtrtvhonjg.html
+
+[U86] JS：空值合并
+来源：http://hz.dianchejie.cn/gtmdrdpaof.html
+
+a ?? b
+来源：http://hz.0kj1m.cn/gtjdotoyge.html
+
+[U87] JS：解构默认值
+来源：http://hz.yj20258888.top/gtmgglxzyx.html
+
+const { a = 1, b = 2 } = obj;
+来源：http://hz.nwbrower.top/gtbqlclvkq.html
+
+[U88] JS：对象展开合并
+来源：http://hz.xuetiantiany.cn/gtkfsrllms.html
+
+{ ...a, ...b }
+来源：http://hz.ydjk.org.cn/gtjqlovrwo.html
+
+[U89] JS：数组去重
+来源：http://hz.hfpthk.cn/gttvzurjdh.html
+
+[...new Set(arr)]
+来源：http://hz.zhongyouzk.top/gtoydkksto.html
+
+[U90] JS：数字数组排序
+来源：http://hz.ehwqpu.com/gtmfnfuzal.html
+
+[...arr].sort((a, b) => a - b)
+来源：http://hz.yangfankeji.com/gtclyuvgyf.html
+
+[U91] JS：对象键值遍历
+来源：http://hz.zhixingplan.top/gtslflnfps.html
+
+Object.entries(obj).forEach(([k, v]) => {});
+来源：http://hz.chenzaomai.com/gtjzdqhnzk.html
+
+[U92] JS：深拷贝
+来源：http://hz.ydzc1.top/gtwwsshgal.html
+
+structuredClone(obj)
+来源：http://hz.xylfe.cn/gtcrrcsnok.html
+
+[U93] JS：模板字符串
+来源：http://hz.316326.xyz/gtmhqifagx.html
+
+`共 ${n} 条`
+来源：http://hz.ydzc1.top/gtlntnhwbn.html
+
+[U94] JS：箭头函数
+来源：http://hz.feifeiyinyue.top/gtruprhpwe.html
+
+const double = x => x * 2;
+来源：http://hz.vqdsnc.cn/gtqbdgebng.html
+
+[U95] JS：Promise 包装
+来源：http://hz.52xcode.cn/gtaaxqbokk.html
+
+new Promise((resolve, reject) => {})
+来源：http://hz.xinyue.icu/gtybsamowd.html
+
+[U96] JS：async/await 与异常
+来源：http://hz.zhiwuduotai.top/gtbeuuhlcz.html
+
+try { const d = await f(); } catch (e) { console.error(e); }
+来源：http://hz.hywenlv.cn/gtduokihtr.html
+
+[U97] JS：并发请求
+来源：http://hz.haohaochexian.top/gtnpjnpoye.html
+
+await Promise.all(urls.map(u => fetch(u)))
+来源：http://hz.0kj1m.cn/gtqrxawhtt.html
+
+[U98] JS：fetch 带 JSON
+来源：http://hz.ivvv.top/gtrprzizzl.html
+
+await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(d) })
+来源：http://hz.feifeiyinyue.top/gtrxczzser.html
+
+[U99] JS：事件监听
+来源：http://hz.jlsjyb.cn/gtcklbelmw.html
+
+el.addEventListener("click", e => {})
+来源：http://hz.pycfn.com/gtwbmmjstr.html
+
+[U100] JS：DOM 查询
+来源：http://hz.hnqzz.top/gtzyzlrqgk.html
+
+document.querySelector(".item")
+来源：http://hz.xinyue.icu/gtqivjkahf.html
+
+[U101] JS：classList 操作
+来源：http://hz.zhijiandao.cn/gtvjxjinxl.html
+
+el.classList.toggle("active")
+来源：http://hz.zhiwuduotai.top/gtpctxgeal.html
+
+[U102] JS：本地存储
+来源：http://hz.cucudq.cn/gtnqxpsoeq.html
+
+localStorage.setItem("k", JSON.stringify(v))
+来源：http://hz.cashguo.top/gtmwamioff.html
+
+[U103] JS：定时器
+来源：http://hz.aibaodan.cn/gtyaafyqvr.html
+
+setTimeout(fn, 1000);  setInterval(fn, 1000);
+来源：http://hz.jlsjyb.cn/gtlvaiohtj.html
+
+[U104] JS：防抖
+来源：http://hz.guowangkeji.top/gtpnokheht.html
+
+const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+来源：http://hz.xuanzx.com/gtizwdmiru.html
+
+[U105] JS：节流
+来源：http://hz.c1oappe.top/gtyzjknbry.html
+
+const throttle = (fn, ms) => { let last = 0; return (...a) => { const n = Date.now(); if (n - last >= ms) { last = n; fn(...a); } }; };
+来源：http://hz.svipenyu.cn/gtgfihzwvl.html
+
+[U106] JS：日期格式化
+来源：http://hz.jinqigufen.top/gtgyqbbmtf.html
+
+new Intl.DateTimeFormat("zh-CN", { dateStyle: "medium" }).format(new Date())
+来源：http://hz.yangfankeji.com/gtenyyoekl.html
+
+[U107] JS：数字千分位
+来源：http://hz.9152youxi.cn/gtmuzwkzkm.html
+
+new Intl.NumberFormat("en-US").format(1234567)
+来源：http://hz.xuanzx.com/gtzneiisfg.html
+
+[U108] JS：随机整数
+来源：http://hz.gzhubu.top/gtphnckgwj.html
+
+Math.floor(Math.random() * (max - min + 1)) + min
+来源：http://hz.ppjwa.cn/gtmnxggpnz.html
+
+[U109] JS：数组分组
+来源：http://hz.fzhhl.top/gtababsykz.html
+
+Object.groupBy(arr, x => x.type)
+来源：http://hz.wangshuangyany.cn/gtddtsnvnr.html
+
+[U110] JS：数组分块
+来源：http://hz.pycfn.com/gtixcvrnbr.html
+
+arr.reduce((acc, x, i) => (i % size ? acc : [...acc, arr.slice(i, i + size)]), [])
+来源：http://hz.jqgfzy.top/gtygkoupzn.html
+
+[U111] JS：对象转 Map
+来源：http://hz.tian-w.cn/gtkptrxaud.html
+
+new Map(Object.entries(obj))
+来源：http://hz.ppjwa.cn/gtesgktqyn.html
+
+[U112] JS：字符串补位
+来源：http://hz.yuxming.cn/gtufcvcxhz.html
+
+"7".padStart(3, "0")
+来源：http://hz.vqdsnc.cn/gtebcodxxr.html
+
+[U113] JS：正则替换全部
+来源：http://hz.sufxvd.cn/gtludaguvz.html
+
+s.replaceAll("a", "b")
+来源：http://hz.iojbl.cn/gtdvlifslb.html
+
+[U114] JS：JSON 深比较
+来源：http://hz.yueranfly.top/gtpvzzqbpq.html
+
+JSON.stringify(a) === JSON.stringify(b)
+来源：http://hz.shuidangran.top/gtjdalcpji.html
+
+[U115] JS：生成 UUID
+来源：http://hz.xziqi.cn/gtsyvjbfrv.html
+
+crypto.randomUUID()
+来源：http://hz.xingfuxueyuan.xyz/gtahlbdgca.html
+
+[U116] JS：类型检查（JSDoc）
+来源：http://hz.yangfankeji.com/gtuwonqnuv.html
+
+/** @param {string} name */ function f(name) {}
+来源：http://hz.cashguo.top/gtdflpquwj.html
+
+[U117] JS：单元测试
+来源：http://hz.nanxinkj.top/gtykzlufik.html
+
+npm i -D vitest;  npx vitest
+来源：http://hz.xziqi.cn/gtkshztvco.html
+
+[U118] JS：开发服务器
+来源：http://hz.pycfn.com/gttenvfyil.html
+
+npm i -D vite;  npx vite
+来源：http://hz.zhaomingkeji.xyz/gtxqgoqxnv.html
+
+[U119] JS：生产构建
+来源：http://hz.shzxlz.cn/gtqjhkddzt.html
+
+npx vite build
+来源：http://hz.ehwqpu.com/gtgqpiyreo.html
+
+[U120] JS：读取环境变量（Vite）
+来源：http://hz.ydjk.org.cn/gtavsgemvp.html
+
+import.meta.env.VITE_API_URL
+来源：http://hz.sysykeji.top/gtkzlksavx.html
+
+================================================================================
+来源：http://hz.zhengqikj.top/gtttpurhjc.html
+
+统计汇总
+来源：http://hz.hnqzz.top/gtwumanbyb.html
+
+================================================================================
+来源：http://hz.gotoacloud.top/gtncztcwul.html
+
+按语言统计（条）：
+来源：http://hz.hammf.cn/gtquxrswip.html
+
+Python ......... 252
+来源：http://hz.yj202588.top/gtglpnfmxz.html
+
+PHP ............ 252
+来源：http://hz.guowangkeji.top/gtuwarwgjw.html
+
+JavaScript ..... 252
+来源：http://hz.316326.xyz/gtbamenmcs.html
+
+TypeScript ..... 212
+来源：http://hz.nanxuanxn.top/gtstceuvvv.html
+
+Java ........... 212
+来源：http://hz.snrcjt.cn/gtztzfqgdq.html
+
+Go ............. 212
+来源：http://hz.cucudq.cn/gtcbilfzau.html
+
+Ruby ........... 212
+来源：http://hz.vqdsnc.cn/gtmcdpwxyv.html
+
+C# ............. 212
+来源：http://hz.pycfn.com/gtxwddgbns.html
+
+C .............. 30
+来源：http://hz.ywan-chungtsiang.top/gtddcyobmp.html
+
+C++ ............ 30
+来源：http://hz.tian-w.cn/gtcdkthzbd.html
+
+SQL ............ 90
+来源：http://hz.xinyue.icu/gtfmrcgazu.html
+
+Bash ........... 80
+来源：http://hz.cashguo.top/gtzqyjzcwo.html
+
+Kotlin ......... 15
+来源：http://hz.jqgufenzy.top/gtsgrinuhf.html
+
+Swift .......... 15
+来源：http://hz.zhijiandao.cn/gtevrvngol.html
+
+Lua ............ 10
+来源：http://hz.shanyushiyangkeji.top/gtbnqjrxaz.html
+
+Perl ........... 10
+来源：http://hz.redwolf501.top/gtzklvajqz.html
+
+Scala .......... 10
+来源：http://hz.zdqjudy.top/gtdysgnmxb.html
+
+------------------------------------
+来源：http://hz.hywenlv.cn/gtcwwdgisr.html
+
+合计 ........... 2106 条
+来源：http://hz.shanyushiyangtech.top/gtfyqzfzvu.html
+
+按章节统计：
+来源：http://hz.hfpthk.cn/gtrmtxzasb.html
+
+
+<!-- 参考信息 -->
