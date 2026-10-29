@@ -1,0 +1,904 @@
+代发 wailian999
+
+Go:   // 无原生 Set：用 map[int]struct{}
+来源：http://read.share.fehbvm.com/Article/details/gpjxvmcnh.sHtML
+
+Ruby: s = Set[1, 2, 3];  s.add(4);  s.include?(1)
+来源：http://wap.zdbjq.cn/Article/details/gotilebhd.sHtML
+
+C#:   var s = new HashSet<int> { 1, 2, 3 };  s.Add(4);  s.Contains(1)
+来源：http://wap.hesvh.cn/Article/details/gaqlkxpag.sHtML
+
+[D26] 数组转字符串
+来源：http://blog.fehbvm.com/Article/details/gredafpoj.sHtML
+
+Py:   ", ".join(map(str, arr))
+来源：http://www.blog.fehbvm.com/Article/details/gaoqesrxm.sHtML
+
+PHP:  implode(", ", $arr);
+来源：http://m.share.fehbvm.com/Article/details/gcjnhgezj.sHtML
+
+JS:   arr.join(", ")
+来源：http://wap.fehbvm.com/Article/details/ghbzgjqen.sHtML
+
+TS:   arr.join(", ")
+来源：http://www.m.share.fehbvm.com/Article/details/gwbarnfnt.sHtML
+
+Java: String.join(", ", list)
+来源：http://www.m.share.zdbjq.cn/Article/details/ggwsbcfey.sHtML
+
+Go:   strings.Join(strs, ", ")
+来源：http://mobile.fehbvm.com/Article/details/gmazfsyhp.sHtML
+
+Ruby: arr.join(", ")
+来源：http://www.blog.fehbvm.com/Article/details/gxysnztsv.sHtML
+
+C#:   string.Join(", ", list)
+来源：http://wap.zdbjq.cn/Article/details/gayxpizgv.sHtML
+
+================================================================================
+来源：http://3g.hesvh.cn/Article/details/glfhyjrqb.sHtML
+
+E. 字符串处理
+来源：http://baike.fehbvm.com/Article/details/gtpdlhrut.sHtML
+
+================================================================================
+来源：http://www.m.share.fehbvm.com/Article/details/gyyloshuw.sHtML
+
+[E01] 拼接字符串
+来源：http://www.m.share.zdbjq.cn/Article/details/gkecnnwzg.sHtML
+
+Py:   "a" + "b";  "".join(["a", "b"])
+来源：http://m.share.zdbjq.cn/Article/details/gusvpnvki.sHtML
+
+PHP:  "a" . "b";  implode("", ["a", "b"]);
+来源：http://3g.fehbvm.com/Article/details/gnwucecvv.sHtML
+
+JS:   "a" + "b";  ["a", "b"].join("")
+来源：http://mobile.hesvh.cn/Article/details/gjywmsykk.sHtML
+
+TS:   "a" + "b";  ["a", "b"].join("")
+来源：http://blog.zdbjq.cn/Article/details/gdezdqqha.sHtML
+
+Java: "a" + "b";  String.join("", List.of("a", "b"))
+来源：http://blog.hesvh.cn/Article/details/ghkzezxvg.sHtML
+
+Go:   "a" + "b";  strings.Join([]string{"a", "b"}, "")
+来源：http://www.blog.fehbvm.com/Article/details/gdrqpisjr.sHtML
+
+Ruby: "a" + "b";  ["a", "b"].join
+来源：http://wap.hesvh.cn/Article/details/gudryneap.sHtML
+
+C#:   "a" + "b";  string.Concat("a", "b")
+来源：http://3g.hesvh.cn/Article/details/ggxkymjwq.sHtML
+
+[E02] 重复字符串
+来源：http://read.share.zdbjq.cn/Article/details/gorshqwfn.sHtML
+
+Py:   "ab" * 3
+来源：http://mobile.fehbvm.com/Article/details/gvlzincrr.sHtML
+
+PHP:  str_repeat("ab", 3);
+来源：http://blog.hesvh.cn/Article/details/gddacgscw.sHtML
+
+JS:   "ab".repeat(3)
+来源：http://www.blog.fehbvm.com/Article/details/ghnskfsjy.sHtML
+
+TS:   "ab".repeat(3)
+来源：http://www.share.zdbjq.cn/Article/details/gagsidntt.sHtML
+
+Java: "ab".repeat(3)
+来源：http://blog.fehbvm.com/Article/details/gdvlyqjec.sHtML
+
+Go:   strings.Repeat("ab", 3)
+来源：http://www.blog.hesvh.cn/Article/details/gmrsyukxe.sHtML
+
+Ruby: "ab" * 3
+来源：http://3g.hesvh.cn/Article/details/ghgooqzvr.sHtML
+
+C#:   string.Concat(Enumerable.Repeat("ab", 3))
+来源：http://www.m.share.fehbvm.com/Article/details/gfqbakzrr.sHtML
+
+[E03] 截取子串
+来源：http://mobile.zdbjq.cn/Article/details/glqzfzxve.sHtML
+
+Py:   s[1:4];  s[:3];  s[3:]
+来源：http://www.m.share.fehbvm.com/Article/details/gzjsalyqj.sHtML
+
+PHP:  substr($s, 1, 3);  mb_substr($s, 1, 3, "UTF-8");
+来源：http://www.m.share.fehbvm.com/Article/details/gsvijvsjb.sHtML
+
+JS:   s.slice(1, 4);  s.substring(1, 4)
+来源：http://www.m.share.fehbvm.com/Article/details/gozexhque.sHtML
+
+TS:   s.slice(1, 4)
+来源：http://3g.hesvh.cn/Article/details/gasipnbzm.sHtML
+
+Java: s.substring(1, 4)
+来源：http://baike.fehbvm.com/Article/details/gaktnjijd.sHtML
+
+Go:   s[1:4]        // 按字节；中文用 []rune(s)[1:4] 再转回 string
+来源：http://www.blog.zdbjq.cn/Article/details/gjzedfjyv.sHtML
+
+Ruby: s[1, 3];  s[1..3]
+来源：http://blog.zdbjq.cn/Article/details/gnqwjvysb.sHtML
+
+C#:   s.Substring(1, 3)
+来源：http://www.share.fehbvm.com/Article/details/ggcmuugtb.sHtML
+
+[E04] 查找子串位置
+来源：http://mobile.zdbjq.cn/Article/details/guwskfmbn.sHtML
+
+Py:   s.find("x");  s.index("x")
+来源：http://read.share.zdbjq.cn/Article/details/gzuaktyaa.sHtML
+
+PHP:  strpos($s, "x");
+来源：http://m.share.hesvh.cn/Article/details/ggyrjarvm.sHtML
+
+JS:   s.indexOf("x");  s.search(/x/)
+来源：http://wap.hesvh.cn/Article/details/gyssrioxm.sHtML
+
+TS:   s.indexOf("x")
+来源：http://baike.hesvh.cn/Article/details/gpdwwrdea.sHtML
+
+Java: s.indexOf("x")
+来源：http://m.share.zdbjq.cn/Article/details/gkthktiya.sHtML
+
+Go:   strings.Index(s, "x")
+来源：http://blog.zdbjq.cn/Article/details/guhpjxuqk.sHtML
+
+Ruby: s.index("x")
+来源：http://mobile.zdbjq.cn/Article/details/gkkavgmsp.sHtML
+
+C#:   s.IndexOf("x")
+来源：http://m.share.hesvh.cn/Article/details/gqizwkurk.sHtML
+
+[E05] 判断包含 / 前缀 / 后缀
+来源：http://www.m.share.fehbvm.com/Article/details/gfychtdkl.sHtML
+
+Py:   "x" in s;  s.startswith("a");  s.endswith("z")
+来源：http://blog.zdbjq.cn/Article/details/gdwzfbcmz.sHtML
+
+PHP:  str_contains($s, "x");  str_starts_with($s, "a");  str_ends_with($s, "z");
+来源：http://www.m.share.fehbvm.com/Article/details/gvinvqwes.sHtML
+
+JS:   s.includes("x");  s.startsWith("a");  s.endsWith("z")
+来源：http://baike.hesvh.cn/Article/details/grrqdnxxx.sHtML
+
+TS:   s.includes("x");  s.startsWith("a")
+来源：http://m.share.zdbjq.cn/Article/details/gfucsnpue.sHtML
+
+Java: s.contains("x");  s.startsWith("a");  s.endsWith("z")
+来源：http://3g.hesvh.cn/Article/details/guxevsmfq.sHtML
+
+Go:   strings.Contains(s, "x");  strings.HasPrefix(s, "a");  strings.HasSuffix(s, "z")
+来源：http://3g.fehbvm.com/Article/details/gyzexkhlv.sHtML
+
+Ruby: s.include?("x");  s.start_with?("a");  s.end_with?("z")
+来源：http://3g.hesvh.cn/Article/details/gnmhoovcy.sHtML
+
+C#:   s.Contains("x");  s.StartsWith("a");  s.EndsWith("z")
+来源：http://read.share.zdbjq.cn/Article/details/ghhgzqjrk.sHtML
+
+[E06] 替换子串
+来源：http://blog.hesvh.cn/Article/details/gnrazzwca.sHtML
+
+Py:   s.replace("a", "b");  s.replace("a", "b", 1)
+来源：http://www.m.share.fehbvm.com/Article/details/gdrjonfej.sHtML
+
+PHP:  str_replace("a", "b", $s);
+来源：http://read.share.hesvh.cn/Article/details/gdyxmwprx.sHtML
+
+JS:   s.replace("a", "b");  s.replaceAll("a", "b")
+来源：http://baike.hesvh.cn/Article/details/gfyehevba.sHtML
+
+TS:   s.replaceAll("a", "b")
+来源：http://www.share.fehbvm.com/Article/details/gvxbhwtim.sHtML
+
+Java: s.replace("a", "b");  s.replaceAll("a", "b")
+来源：http://m.share.hesvh.cn/Article/details/gewlwnzdi.sHtML
+
+Go:   strings.ReplaceAll(s, "a", "b");  strings.Replace(s, "a", "b", 1)
+来源：http://blog.zdbjq.cn/Article/details/gkdiqnaag.sHtML
+
+Ruby: s.gsub("a", "b");  s.sub("a", "b")
+来源：http://baike.fehbvm.com/Article/details/gnsgrzlqs.sHtML
+
+C#:   s.Replace("a", "b")
+来源：http://www.share.fehbvm.com/Article/details/giwboiycy.sHtML
+
+[E07] 按分隔符拆分
+来源：http://3g.hesvh.cn/Article/details/gylypsict.sHtML
+
+Py:   s.split(",");  s.split()      # 无参按任意空白拆
+来源：http://www.m.share.fehbvm.com/Article/details/gktjshhnl.sHtML
+
+PHP:  explode(",", $s);  preg_split('/\s+/', $s);
+来源：http://wap.fehbvm.com/Article/details/guinbnaoq.sHtML
+
+JS:   s.split(",");  s.split(/\s+/)
+来源：http://www.blog.hesvh.cn/Article/details/gixcvkwnw.sHtML
+
+TS:   s.split(",")
+来源：http://read.share.hesvh.cn/Article/details/gvnrxcaom.sHtML
+
+Java: s.split(",");  s.split("\\s+")
+来源：http://www.blog.hesvh.cn/Article/details/gkdfbmbyf.sHtML
+
+Go:   strings.Split(s, ",");  strings.Fields(s)
+来源：http://www.blog.zdbjq.cn/Article/details/gbiujjwkq.sHtML
+
+Ruby: s.split(",");  s.split
+来源：http://mobile.zdbjq.cn/Article/details/gahqplpak.sHtML
+
+C#:   s.Split(',');  s.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+来源：http://www.m.share.hesvh.cn/Article/details/gsirzcjuz.sHtML
+
+[E08] 数组按分隔符合并
+来源：http://mobile.zdbjq.cn/Article/details/gbkrvnzlc.sHtML
+
+Py:   ",".join(items)
+来源：http://read.share.fehbvm.com/Article/details/ghredkplo.sHtML
+
+PHP:  implode(",", $items);
+来源：http://m.share.hesvh.cn/Article/details/gwrmunorl.sHtML
+
+JS:   items.join(",")
+来源：http://www.m.share.fehbvm.com/Article/details/gyztmpntz.sHtML
+
+TS:   items.join(",")
+来源：http://www.blog.zdbjq.cn/Article/details/gyfveerjt.sHtML
+
+Java: String.join(",", items)
+来源：http://www.blog.zdbjq.cn/Article/details/gkeqqwezz.sHtML
+
+Go:   strings.Join(items, ",")
+来源：http://www.share.fehbvm.com/Article/details/gjnnkqwic.sHtML
+
+Ruby: items.join(",")
+来源：http://www.blog.zdbjq.cn/Article/details/gdbbxshpt.sHtML
+
+C#:   string.Join(",", items)
+来源：http://mobile.zdbjq.cn/Article/details/gopnzzggi.sHtML
+
+[E09] 去除所有空白字符
+来源：http://3g.hesvh.cn/Article/details/gksdtdmhk.sHtML
+
+Py:   "".join(s.split());  re.sub(r"\s+", "", s)
+来源：http://mobile.zdbjq.cn/Article/details/gvzkhbjat.sHtML
+
+PHP:  preg_replace('/\s+/', '', $s);
+来源：http://www.blog.zdbjq.cn/Article/details/gwizfiwpd.sHtML
+
+JS:   s.replace(/\s+/g, "")
+来源：http://www.share.zdbjq.cn/Article/details/gflvqamkm.sHtML
+
+TS:   s.replace(/\s+/g, "")
+来源：http://www.share.fehbvm.com/Article/details/goffhtlwl.sHtML
+
+Java: s.replaceAll("\\s+", "")
+来源：http://www.blog.zdbjq.cn/Article/details/girzjbkqn.sHtML
+
+Go:   strings.Join(strings.Fields(s), "")
+来源：http://read.share.fehbvm.com/Article/details/gfnnrjicf.sHtML
+
+Ruby: s.gsub(/\s+/, "")
+来源：http://baike.fehbvm.com/Article/details/gzdabuegu.sHtML
+
+C#:   Regex.Replace(s, @"\s+", "")
+来源：http://3g.zdbjq.cn/Article/details/gykogujmc.sHtML
+
+[E10] 左侧补零 / 定长填充
+来源：http://www.m.share.fehbvm.com/Article/details/gbjdlmsca.sHtML
+
+Py:   str(7).zfill(3);  "7".rjust(3, "0")
+来源：http://m.share.zdbjq.cn/Article/details/gofxlvfic.sHtML
+
+PHP:  str_pad("7", 3, "0", STR_PAD_LEFT);
+来源：http://wap.zdbjq.cn/Article/details/gsdgkkwgd.sHtML
+
+JS:   "7".padStart(3, "0")
+来源：http://wap.fehbvm.com/Article/details/gyaoenomv.sHtML
+
+TS:   "7".padStart(3, "0")
+来源：http://mobile.hesvh.cn/Article/details/gduiimnqn.sHtML
+
+Java: String.format("%03d", 7)
+来源：http://www.m.share.hesvh.cn/Article/details/ggjoyuyum.sHtML
+
+Go:   fmt.Sprintf("%03d", 7)
+来源：http://baike.zdbjq.cn/Article/details/gmwwfauve.sHtML
+
+Ruby: 7.to_s.rjust(3, "0");  format("%03d", 7)
+来源：http://mobile.zdbjq.cn/Article/details/gcqtoqwnh.sHtML
+
+C#:   7.ToString("D3");  7.ToString().PadLeft(3, '0')
+来源：http://www.blog.hesvh.cn/Article/details/gfqgtsurr.sHtML
+
+[E11] 反转字符串
+来源：http://www.share.hesvh.cn/Article/details/gmfxfnlkd.sHtML
+
+Py:   s[::-1]
+来源：http://www.blog.hesvh.cn/Article/details/gtrvdupgu.sHtML
+
+PHP:  strrev($s);
+来源：http://read.share.hesvh.cn/Article/details/gyuzkiuok.sHtML
+
+JS:   [...s].reverse().join("")
+来源：http://3g.hesvh.cn/Article/details/gckzobbys.sHtML
+
+TS:   [...s].reverse().join("")
+来源：http://www.m.share.hesvh.cn/Article/details/gwownjmqk.sHtML
+
+Java: new StringBuilder(s).reverse().toString()
+来源：http://wap.zdbjq.cn/Article/details/gdhbghvkt.sHtML
+
+Go:   // 转 []rune 后倒序再转回 string
+来源：http://wap.fehbvm.com/Article/details/gadyaluzj.sHtML
+
+Ruby: s.reverse
+来源：http://blog.fehbvm.com/Article/details/gikxtbqei.sHtML
+
+C#:   new string(s.Reverse().ToArray())
+来源：http://blog.hesvh.cn/Article/details/gostmtshu.sHtML
+
+[E12] 统计某字符出现次数
+来源：http://www.share.hesvh.cn/Article/details/guecejvuo.sHtML
+
+Py:   s.count("a")
+来源：http://baike.zdbjq.cn/Article/details/gkpvpgfet.sHtML
+
+PHP:  substr_count($s, "a");
+来源：http://www.blog.fehbvm.com/Article/details/ghxwoyhou.sHtML
+
+JS:   s.split("a").length - 1
+来源：http://m.share.hesvh.cn/Article/details/goqhmosdc.sHtML
+
+TS:   s.split("a").length - 1
+来源：http://www.m.share.hesvh.cn/Article/details/goclqmoyf.sHtML
+
+Java: s.chars().filter(c -> c == 'a').count()
+来源：http://mobile.hesvh.cn/Article/details/guimhgzph.sHtML
+
+Go:   strings.Count(s, "a")
+来源：http://mobile.fehbvm.com/Article/details/ghxuumelq.sHtML
+
+Ruby: s.count("a")
+来源：http://www.blog.hesvh.cn/Article/details/gwqsefixx.sHtML
+
+C#:   s.Count(c => c == 'a')
+来源：http://read.share.fehbvm.com/Article/details/gvzqrfbdf.sHtML
+
+[E13] 逐字符遍历
+来源：http://www.blog.zdbjq.cn/Article/details/gonyzmunm.sHtML
+
+Py:   for ch in s: print(ch)
+来源：http://baike.hesvh.cn/Article/details/gdalcmcrn.sHtML
+
+PHP:  foreach (mb_str_split($s) as $ch) { echo $ch; }
+来源：http://mobile.fehbvm.com/Article/details/gotwkeovz.sHtML
+
+JS:   for (const ch of s) { console.log(ch); }
+来源：http://www.m.share.zdbjq.cn/Article/details/gaotetcka.sHtML
+
+TS:   for (const ch of s) { console.log(ch); }
+来源：http://m.share.zdbjq.cn/Article/details/guahekeam.sHtML
+
+Java: for (char ch : s.toCharArray()) { System.out.println(ch); }
+来源：http://wap.fehbvm.com/Article/details/gihfczabq.sHtML
+
+Go:   for _, ch := range s { fmt.Println(string(ch)) }   // 按 rune 遍历
+来源：http://read.share.hesvh.cn/Article/details/gbipzpcmx.sHtML
+
+Ruby: s.each_char { |ch| puts ch }
+来源：http://read.share.fehbvm.com/Article/details/gwugfwdhx.sHtML
+
+C#:   foreach (var ch in s) { Console.WriteLine(ch); }
+来源：http://www.share.fehbvm.com/Article/details/ggtcygepy.sHtML
+
+[E14] URL 编码与 Base64
+来源：http://www.m.share.fehbvm.com/Article/details/goqtecqep.sHtML
+
+Py:   urllib.parse.quote(s);  base64.b64encode(b).decode()
+来源：http://mobile.hesvh.cn/Article/details/gddvvcirv.sHtML
+
+PHP:  urlencode($s);  base64_encode($s);
+来源：http://www.m.share.hesvh.cn/Article/details/gtvlegfcg.sHtML
+
+JS:   encodeURIComponent(s);  btoa(s);  atob(b64)
+来源：http://m.share.fehbvm.com/Article/details/ghsexknpn.sHtML
+
+TS:   encodeURIComponent(s);  btoa(s)
+来源：http://read.share.zdbjq.cn/Article/details/gsruleflb.sHtML
+
+Java: URLEncoder.encode(s, StandardCharsets.UTF_8);  Base64.getEncoder().encodeToString(bytes)
+来源：http://www.blog.zdbjq.cn/Article/details/govzynknu.sHtML
+
+Go:   url.QueryEscape(s);  base64.StdEncoding.EncodeToString([]byte(s))
+来源：http://www.m.share.zdbjq.cn/Article/details/gtgtmgxip.sHtML
+
+Ruby: URI.encode_www_form_component(s);  [s].pack("m0")
+来源：http://www.blog.fehbvm.com/Article/details/gqlfvwcty.sHtML
+
+C#:   Uri.EscapeDataString(s);  Convert.ToBase64String(bytes)
+来源：http://www.m.share.zdbjq.cn/Article/details/geijjducw.sHtML
+
+[E15] HTML 转义 / 反转义
+来源：http://mobile.hesvh.cn/Article/details/gdoegodbz.sHtML
+
+Py:   html.escape(s);  html.unescape(s)
+来源：http://mobile.fehbvm.com/Article/details/giuemyfei.sHtML
+
+PHP:  htmlspecialchars($s, ENT_QUOTES, "UTF-8");  htmlspecialchars_decode($s);
+来源：http://mobile.fehbvm.com/Article/details/gknnoiwfy.sHtML
+
+JS:   // 文本节点自动转义；拼接 HTML 时用 DOMPurify.sanitize(s)
+来源：http://www.m.share.zdbjq.cn/Article/details/gybvnqhdq.sHtML
+
+TS:   // 同上，务必做 XSS 过滤
+来源：http://blog.fehbvm.com/Article/details/grbttalwi.sHtML
+
+Java: HtmlUtils.htmlEscape(s)   // Spring；通用可用 Apache Commons Text
+来源：http://read.share.hesvh.cn/Article/details/gmaaefsnp.sHtML
+
+Go:   html.EscapeString(s);  html.UnescapeString(s)
+来源：http://m.share.zdbjq.cn/Article/details/gqkwvsseq.sHtML
+
+Ruby: CGI.escapeHTML(s);  CGI.unescapeHTML(s)
+来源：http://www.blog.zdbjq.cn/Article/details/gajvfspbr.sHtML
+
+C#:   WebUtility.HtmlEncode(s);  WebUtility.HtmlDecode(s)
+来源：http://baike.zdbjq.cn/Article/details/gdncnzjfl.sHtML
+
+[E16] 数字千分位
+来源：http://m.share.hesvh.cn/Article/details/ghhwxqpyz.sHtML
+
+Py:   f"{1234567:,}"
+来源：http://www.blog.zdbjq.cn/Article/details/glrunpakn.sHtML
+
+PHP:  number_format(1234567);
+来源：http://wap.zdbjq.cn/Article/details/gqfgmifsq.sHtML
+
+JS:   (1234567).toLocaleString("en-US")
+来源：http://mobile.zdbjq.cn/Article/details/gltmbtvfk.sHtML
+
+TS:   (1234567).toLocaleString("en-US")
+来源：http://www.share.fehbvm.com/Article/details/gwpfdlmbb.sHtML
+
+Java: NumberFormat.getNumberInstance(Locale.US).format(1234567)
+来源：http://www.m.share.hesvh.cn/Article/details/gyjvoxwph.sHtML
+
+Go:   // 用 golang.org/x/text/message 或手写分组
+来源：http://baike.fehbvm.com/Article/details/gjxqntckq.sHtML
+
+Ruby: "1234567".reverse.scan(/\d{1,3}/).join(",").reverse
+来源：http://www.share.zdbjq.cn/Article/details/gkfzoslfh.sHtML
+
+C#:   1234567.ToString("N0")
+来源：http://3g.hesvh.cn/Article/details/gxkoridxp.sHtML
+
+[E17] 首字母大写
+来源：http://www.share.hesvh.cn/Article/details/gjihovpmc.sHtML
+
+Py:   s[0].upper() + s[1:];  s.capitalize();  s.title()
+来源：http://blog.hesvh.cn/Article/details/gvtfzrfdx.sHtML
+
+PHP:  ucfirst($s);  ucwords($s);
+来源：http://blog.zdbjq.cn/Article/details/gzskgfrxh.sHtML
+
+JS:   s.charAt(0).toUpperCase() + s.slice(1)
+来源：http://read.share.fehbvm.com/Article/details/gohvbjuql.sHtML
+
+TS:   s.charAt(0).toUpperCase() + s.slice(1)
+来源：http://wap.zdbjq.cn/Article/details/glimuyafh.sHtML
+
+Java: Character.toUpperCase(s.charAt(0)) + s.substring(1)
+来源：http://www.m.share.fehbvm.com/Article/details/gbwppjjcn.sHtML
+
+Go:   strings.ToUpper(s[:1]) + s[1:]
+来源：http://baike.zdbjq.cn/Article/details/gzufzsobw.sHtML
+
+Ruby: s.capitalize
+来源：http://www.m.share.hesvh.cn/Article/details/gnjstybpb.sHtML
+
+C#:   char.ToUpper(s[0]) + s[1..]
+来源：http://blog.zdbjq.cn/Article/details/ggqdhicqz.sHtML
+
+[E18] 模板占位符替换
+来源：http://www.blog.fehbvm.com/Article/details/gseflfqda.sHtML
+
+Py:   "Hello, {name}".format(name="A");  tpl.replace("{name}", "A")
+来源：http://www.share.hesvh.cn/Article/details/ghmuhxzsg.sHtML
+
+PHP:  str_replace("{name}", "A", $tpl);  sprintf("Hello, %s", $name);
+来源：http://baike.fehbvm.com/Article/details/ggwnyphvu.sHtML
+
+JS:   tpl.replaceAll("{name}", name)
+来源：http://blog.zdbjq.cn/Article/details/gwwwqjlxu.sHtML
+
+TS:   tpl.replaceAll("{name}", name)
+来源：http://m.share.hesvh.cn/Article/details/gwtbtnuqw.sHtML
+
+Java: "Hello, %s".formatted(name);  tpl.replace("{name}", name)
+来源：http://mobile.zdbjq.cn/Article/details/gyzfuolkf.sHtML
+
+Go:   strings.ReplaceAll(tpl, "{name}", name)
+来源：http://www.blog.hesvh.cn/Article/details/giikaxduu.sHtML
+
+Ruby: tpl.gsub("{name}", name);  "Hello, #{name}"
+来源：http://3g.fehbvm.com/Article/details/gboeacada.sHtML
+
+C#:   tpl.Replace("{name}", name);  $"Hello, {name}"
+来源：http://www.m.share.zdbjq.cn/Article/details/gbefttphf.sHtML
+
+[E19] 多行文本按行拆分
+来源：http://blog.zdbjq.cn/Article/details/gdkukfkbe.sHtML
+
+Py:   s.splitlines()
+来源：http://baike.fehbvm.com/Article/details/grypjxovy.sHtML
+
+PHP:  preg_split('/\r\n|\r|\n/', $s);
+来源：http://m.share.fehbvm.com/Article/details/gszxiimnu.sHtML
+
+JS:   s.split(/\r?\n/)
+来源：http://m.share.zdbjq.cn/Article/details/grpcsqhqu.sHtML
+
+TS:   s.split(/\r?\n/)
+来源：http://read.share.hesvh.cn/Article/details/geqolifbi.sHtML
+
+Java: s.lines().toList()
+来源：http://read.share.zdbjq.cn/Article/details/gjelqbldi.sHtML
+
+Go:   strings.Split(s, "\n")
+来源：http://read.share.zdbjq.cn/Article/details/gemkpdoys.sHtML
+
+Ruby: s.lines
+来源：http://mobile.hesvh.cn/Article/details/gybtlgzzd.sHtML
+
+C#:   s.Split('\n')
+来源：http://wap.fehbvm.com/Article/details/gddhyacpe.sHtML
+
+[E20] 判断字符串是否为空
+来源：http://www.m.share.fehbvm.com/Article/details/gdkursbwi.sHtML
+
+Py:   if not s:
+来源：http://read.share.fehbvm.com/Article/details/ghjunmmpy.sHtML
+
+PHP:  if ($s === "") {}      // 注意 empty("0") 也为 true
+来源：http://www.blog.fehbvm.com/Article/details/ghboivfkb.sHtML
+
+JS:   if (s === "") {} 或 if (!s) {}
+来源：http://blog.zdbjq.cn/Article/details/gqdvxqatp.sHtML
+
+TS:   if (s === "") {}
+来源：http://wap.fehbvm.com/Article/details/gwqmdzheh.sHtML
+
+Java: if (s.isEmpty()) {}
+来源：http://baike.hesvh.cn/Article/details/gbtrhplui.sHtML
+
+Go:   if s == "" {}
+来源：http://blog.zdbjq.cn/Article/details/guolhpcbd.sHtML
+
+Ruby: if s.empty?
+来源：http://3g.zdbjq.cn/Article/details/gmofzmpul.sHtML
+
+C#:   if (string.IsNullOrEmpty(s)) {}
+来源：http://3g.hesvh.cn/Article/details/gqshgrujh.sHtML
+
+[E21] 超长截断加省略号
+来源：http://3g.zdbjq.cn/Article/details/gzoopulht.sHtML
+
+Py:   (s[:20] + "…") if len(s) > 20 else s
+来源：http://www.blog.zdbjq.cn/Article/details/gfnpjbxid.sHtML
+
+PHP:  mb_strimwidth($s, 0, 20, "…", "UTF-8");
+来源：http://m.share.fehbvm.com/Article/details/gvhmsdjyh.sHtML
+
+JS:   s.length > 20 ? s.slice(0, 20) + "…" : s
+来源：http://baike.zdbjq.cn/Article/details/gjebmthep.sHtML
+
+TS:   s.length > 20 ? s.slice(0, 20) + "…" : s
+来源：http://www.share.zdbjq.cn/Article/details/glxajuvzz.sHtML
+
+Java: s.length() > 20 ? s.substring(0, 20) + "…" : s
+来源：http://mobile.fehbvm.com/Article/details/gdkqhydzw.sHtML
+
+Go:   // 按 rune 判断长度后截断
+来源：http://wap.hesvh.cn/Article/details/gvyeveghh.sHtML
+
+Ruby: s.length > 20 ? s[0, 20] + "…" : s
+来源：http://www.blog.hesvh.cn/Article/details/ggmguhdey.sHtML
+
+C#:   s.Length > 20 ? s[..20] + "…" : s
+来源：http://www.m.share.fehbvm.com/Article/details/gtjjrdbhw.sHtML
+
+[E22] 字节长度与字符长度
+来源：http://baike.hesvh.cn/Article/details/gkgbzmhwg.sHtML
+
+Py:   len(s.encode("utf-8"));  len(s)
+来源：http://mobile.zdbjq.cn/Article/details/gwmpvugte.sHtML
+
+PHP:  strlen($s);  mb_strlen($s, "UTF-8");
+来源：http://read.share.hesvh.cn/Article/details/gfrvsaazf.sHtML
+
+JS:   new TextEncoder().encode(s).length;  s.length
+来源：http://mobile.hesvh.cn/Article/details/giwxqbeag.sHtML
+
+TS:   new TextEncoder().encode(s).length;  s.length
+来源：http://baike.zdbjq.cn/Article/details/giwssrxzg.sHtML
+
+Java: s.getBytes(StandardCharsets.UTF_8).length;  s.length()
+来源：http://m.share.zdbjq.cn/Article/details/gopcqhtvb.sHtML
+
+Go:   len(s);  utf8.RuneCountInString(s)     # 前者字节数，后者字符数
+来源：http://www.blog.zdbjq.cn/Article/details/gzwgpmxla.sHtML
+
+Ruby: s.bytesize;  s.length
+来源：http://blog.hesvh.cn/Article/details/gdjopmwje.sHtML
+
+C#:   Encoding.UTF8.GetByteCount(s);  s.Length
+来源：http://read.share.zdbjq.cn/Article/details/ghctytzjl.sHtML
+
+================================================================================
+来源：http://blog.fehbvm.com/Article/details/gomshcgxq.sHtML
+
+F. 文件与目录
+来源：http://blog.hesvh.cn/Article/details/ghqlpeksg.sHtML
+
+================================================================================
+来源：http://wap.fehbvm.com/Article/details/gsqqxogus.sHtML
+
+[F01] 读取整个文件
+来源：http://www.m.share.zdbjq.cn/Article/details/gchpnkirg.sHtML
+
+Py:   open("a.txt", encoding="utf-8").read();  Path("a.txt").read_text()
+来源：http://www.share.zdbjq.cn/Article/details/gmejvrgeu.sHtML
+
+PHP:  file_get_contents("a.txt");
+来源：http://baike.zdbjq.cn/Article/details/grueeglbp.sHtML
+
+JS:   fs.readFileSync("a.txt", "utf8")          // Node.js
+来源：http://www.share.hesvh.cn/Article/details/gnjwepvgv.sHtML
+
+TS:   fs.readFileSync("a.txt", "utf8")
+来源：http://3g.zdbjq.cn/Article/details/gthnckuzu.sHtML
+
+Java: Files.readString(Path.of("a.txt"))
+来源：http://read.share.fehbvm.com/Article/details/ggqksbrce.sHtML
+
+Go:   data, err := os.ReadFile("a.txt")        // []byte，用 string(data) 转文本
+来源：http://wap.hesvh.cn/Article/details/gwknzgqmy.sHtML
+
+Ruby: File.read("a.txt")
+来源：http://mobile.zdbjq.cn/Article/details/gbdcoaykg.sHtML
+
+C#:   File.ReadAllText("a.txt");
+来源：http://3g.zdbjq.cn/Article/details/gfvchdebm.sHtML
+
+[F02] 逐行读取文件
+来源：http://read.share.fehbvm.com/Article/details/gaklihpsi.sHtML
+
+Py:   for line in open("a.txt", encoding="utf-8"): print(line.rstrip())
+来源：http://www.m.share.fehbvm.com/Article/details/grkvqdgpv.sHtML
+
+PHP:  foreach (file("a.txt", FILE_IGNORE_NEW_LINES) as $line) { echo $line; }
+来源：http://www.blog.zdbjq.cn/Article/details/gwhmwggom.sHtML
+
+JS:   for (const line of fs.readFileSync("a.txt", "utf8").split("\n")) {}
+来源：http://blog.zdbjq.cn/Article/details/gueydepim.sHtML
+
+TS:   for (const line of fs.readFileSync("a.txt", "utf8").split("\n")) {}
+来源：http://read.share.hesvh.cn/Article/details/gjtmrcndz.sHtML
+
+Java: Files.lines(Path.of("a.txt")).forEach(System.out::println)
+来源：http://baike.hesvh.cn/Article/details/gmwzvehez.sHtML
+
+Go:   scanner := bufio.NewScanner(f); for scanner.Scan() { fmt.Println(scanner.Text()) }
+来源：http://blog.zdbjq.cn/Article/details/gdzwgqhny.sHtML
+
+Ruby: File.foreach("a.txt") { |line| puts line }
+来源：http://www.m.share.fehbvm.com/Article/details/gjuhsndkj.sHtML
+
+C#:   foreach (var line in File.ReadLines("a.txt")) { Console.WriteLine(line); }
+来源：http://m.share.zdbjq.cn/Article/details/gquaxdlhk.sHtML
+
+[F03] 写入文件（覆盖）
+来源：http://blog.hesvh.cn/Article/details/gozxnyhdx.sHtML
+
+Py:   open("a.txt", "w", encoding="utf-8").write("hi")
+来源：http://www.blog.fehbvm.com/Article/details/gknlczwvh.sHtML
+
+PHP:  file_put_contents("a.txt", "hi");
+来源：http://m.share.zdbjq.cn/Article/details/gvvaxrupr.sHtML
+
+JS:   fs.writeFileSync("a.txt", "hi", "utf8")
+来源：http://www.m.share.zdbjq.cn/Article/details/gcsuoshmx.sHtML
+
+TS:   fs.writeFileSync("a.txt", "hi", "utf8")
+来源：http://www.blog.zdbjq.cn/Article/details/gqheqbvna.sHtML
+
+Java: Files.writeString(Path.of("a.txt"), "hi")
+来源：http://wap.hesvh.cn/Article/details/gclugvhxl.sHtML
+
+Go:   os.WriteFile("a.txt", []byte("hi"), 0644)
+来源：http://www.blog.zdbjq.cn/Article/details/grybvoesh.sHtML
+
+Ruby: File.write("a.txt", "hi")
+来源：http://blog.zdbjq.cn/Article/details/gzsrybzys.sHtML
+
+C#:   File.WriteAllText("a.txt", "hi");
+来源：http://www.share.hesvh.cn/Article/details/ghrnesdvo.sHtML
+
+[F04] 追加写入文件
+来源：http://3g.zdbjq.cn/Article/details/ggsuvcjhe.sHtML
+
+Py:   open("a.txt", "a", encoding="utf-8").write("more\n")
+来源：http://mobile.zdbjq.cn/Article/details/ggmrpuxmx.sHtML
+
+PHP:  file_put_contents("a.txt", "more\n", FILE_APPEND);
+来源：http://wap.hesvh.cn/Article/details/glvasovhw.sHtML
+
+JS:   fs.appendFileSync("a.txt", "more\n")
+来源：http://wap.hesvh.cn/Article/details/gcnedzomr.sHtML
+
+TS:   fs.appendFileSync("a.txt", "more\n")
+来源：http://www.m.share.hesvh.cn/Article/details/gfgjskqzc.sHtML
+
+Java: Files.writeString(Path.of("a.txt"), "more\n", StandardOpenOption.APPEND)
+来源：http://baike.hesvh.cn/Article/details/gqdgjxota.sHtML
+
+Go:   f, _ := os.OpenFile("a.txt", os.O_APPEND|os.O_WRONLY, 0644); f.WriteString("more\n")
+来源：http://www.blog.hesvh.cn/Article/details/gmmxcknuj.sHtML
+
+Ruby: File.open("a.txt", "a") { |f| f.puts "more" }
+来源：http://baike.hesvh.cn/Article/details/gyrhtepni.sHtML
+
+C#:   File.AppendAllText("a.txt", "more\n");
+来源：http://wap.zdbjq.cn/Article/details/gptfxutpe.sHtML
+
+[F05] 判断文件或目录是否存在
+来源：http://mobile.zdbjq.cn/Article/details/glslapyyc.sHtML
+
+Py:   os.path.exists("a.txt");  Path("a.txt").exists()
+来源：http://read.share.zdbjq.cn/Article/details/gyjzwtnrz.sHtML
+
+PHP:  file_exists("a.txt");
+来源：http://www.blog.zdbjq.cn/Article/details/gmdsziltk.sHtML
+
+JS:   fs.existsSync("a.txt")
+来源：http://3g.fehbvm.com/Article/details/gbcezuqam.sHtML
+
+TS:   fs.existsSync("a.txt")
+来源：http://wap.fehbvm.com/Article/details/ghkcafbbs.sHtML
+
+Java: Files.exists(Path.of("a.txt"))
+来源：http://mobile.fehbvm.com/Article/details/gtctlfaul.sHtML
+
+Go:   if _, err := os.Stat("a.txt"); err == nil { /* 存在 */ }
+来源：http://baike.zdbjq.cn/Article/details/geuhrgkyo.sHtML
+
+Ruby: File.exist?("a.txt")
+来源：http://baike.fehbvm.com/Article/details/gvzgipqpf.sHtML
+
+C#:   File.Exists("a.txt")
+来源：http://www.blog.fehbvm.com/Article/details/gzqwyryuv.sHtML
+
+[F06] 删除文件
+来源：http://baike.fehbvm.com/Article/details/gxkpvuwyp.sHtML
+
+Py:   os.remove("a.txt")
+来源：http://blog.fehbvm.com/Article/details/gshftbhbr.sHtML
+
+PHP:  unlink("a.txt");
+来源：http://www.share.zdbjq.cn/Article/details/gwamnkeoz.sHtML
+
+JS:   fs.unlinkSync("a.txt")
+来源：http://mobile.zdbjq.cn/Article/details/gqprwbeaf.sHtML
+
+TS:   fs.unlinkSync("a.txt")
+来源：http://www.share.zdbjq.cn/Article/details/gyybomstb.sHtML
+
+Java: Files.deleteIfExists(Path.of("a.txt"))
+来源：http://m.share.hesvh.cn/Article/details/gkleshtkc.sHtML
+
+Go:   os.Remove("a.txt")
+来源：http://www.blog.fehbvm.com/Article/details/gfhfktilo.sHtML
+
+Ruby: File.delete("a.txt")
+来源：http://3g.fehbvm.com/Article/details/gvcmbxwdp.sHtML
+
+C#:   File.Delete("a.txt");
+来源：http://www.blog.zdbjq.cn/Article/details/gtxyhbzuf.sHtML
+
+[F07] 创建目录（含多级）
+来源：http://blog.fehbvm.com/Article/details/gamanjdqz.sHtML
+
+Py:   os.makedirs("dir/sub", exist_ok=True)
+来源：http://www.share.hesvh.cn/Article/details/gzseekypd.sHtML
+
+PHP:  mkdir("dir/sub", 0777, true);
+来源：http://www.m.share.zdbjq.cn/Article/details/gpykpaloz.sHtML
+
+JS:   fs.mkdirSync("dir/sub", { recursive: true })
+来源：http://read.share.fehbvm.com/Article/details/gycvjulpi.sHtML
+
+TS:   fs.mkdirSync("dir/sub", { recursive: true })
+来源：http://read.share.fehbvm.com/Article/details/gjuxnjgeg.sHtML
+
+Java: Files.createDirectories(Path.of("dir/sub"))
+来源：http://read.share.zdbjq.cn/Article/details/gluyzwdrx.sHtML
+
+Go:   os.MkdirAll("dir/sub", 0755)
+来源：http://mobile.fehbvm.com/Article/details/gwvmmhbze.sHtML
+
+Ruby: FileUtils.mkdir_p("dir/sub")
+来源：http://mobile.fehbvm.com/Article/details/gdnnqmnuw.sHtML
+
+C#:   Directory.CreateDirectory("dir/sub");
+来源：http://m.share.fehbvm.com/Article/details/gdbhhkxht.sHtML
+
+[F08] 遍历目录
+来源：http://www.blog.zdbjq.cn/Article/details/gjwdedqpr.sHtML
+
+Py:   for name in os.listdir("dir"): print(name)
+来源：http://www.m.share.fehbvm.com/Article/details/gdpfteaie.sHtML
+
+PHP:  foreach (scandir("dir") as $f) { echo $f; }
+来源：http://www.share.hesvh.cn/Article/details/gnvvyojmp.sHtML
+
+JS:   fs.readdirSync("dir")
+来源：http://mobile.hesvh.cn/Article/details/gaghjpwfh.sHtML
+
+TS:   fs.readdirSync("dir")
+来源：http://wap.zdbjq.cn/Article/details/ggolsazhs.sHtML
+
+Java: Files.list(Path.of("dir")).forEach(System.out::println)
+来源：http://blog.fehbvm.com/Article/details/gpdkeapoc.sHtML
+
+Go:   entries, _ := os.ReadDir("dir")
+来源：http://mobile.zdbjq.cn/Article/details/groovgsxl.sHtML
+
+Ruby: Dir.children("dir")
+来源：http://www.share.fehbvm.com/Article/details/gdgvuhjlh.sHtML
+
+C#:   Directory.GetFiles("dir")
+来源：http://3g.zdbjq.cn/Article/details/gpxbboksm.sHtML
+
+[F09] 获取文件大小
+来源：http://3g.fehbvm.com/Article/details/ghuugtegl.sHtML
+
+Py:   os.path.getsize("a.txt")
+来源：http://www.share.fehbvm.com/Article/details/gyzflgmsv.sHtML
+
+PHP:  filesize("a.txt");
+来源：http://blog.zdbjq.cn/Article/details/gqprwlhsb.sHtML
+
+JS:   fs.statSync("a.txt").size
+来源：http://baike.hesvh.cn/Article/details/gvepvwhcd.sHtML
+
+TS:   fs.statSync("a.txt").size
+来源：http://blog.hesvh.cn/Article/details/gutogrvwu.sHtML
+
+Java: Files.size(Path.of("a.txt"))
+来源：http://www.share.hesvh.cn/Article/details/gcfqizlfr.sHtML
+
+Go:   info, _ := os.Stat("a.txt"); info.Size()
+来源：http://www.m.share.fehbvm.com/Article/details/gzqrbyhyy.sHtML
+
+Ruby: File.size("a.txt")
+来源：http://www.blog.zdbjq.cn/Article/details/gtckkkecl.sHtML
+
+C#:   new FileInfo("a.txt").Length
+来源：http://mobile.zdbjq.cn/Article/details/gkxmprctl.sHtML
+
+[F10] 取文件扩展名 / 文件名
+来源：http://3g.fehbvm.com/Article/details/gbwucwqpb.sHtML
+
+Py:   os.path.splitext("a.txt");  os.path.basename("/x/a.txt")
+来源：http://www.m.share.fehbvm.com/Article/details/grvypknfb.sHtML
+
+PHP:  pathinfo("a.txt", PATHINFO_EXTENSION);  basename("/x/a.txt");
+来源：http://www.blog.hesvh.cn/Article/details/gbqrnulcq.sHtML
+
+
+<!-- 参考信息 -->

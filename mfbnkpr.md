@@ -1,0 +1,904 @@
+代发 wailian999
+
+df -h;  du -sh *
+来源：http://wap.hesvh.cn/Article/details/ggqwglslr.sHtML
+
+[R62] 找最占空间的文件
+来源：http://www.blog.fehbvm.com/Article/details/gyftxvxla.sHtML
+
+du -ah . | sort -rh | head -10
+来源：http://read.share.zdbjq.cn/Article/details/gbqqrrgtk.sHtML
+
+[R63] 内存与进程
+来源：http://wap.fehbvm.com/Article/details/gqnxwjovo.sHtML
+
+free -h;  ps aux | grep nginx
+来源：http://www.m.share.zdbjq.cn/Article/details/givljmoql.sHtML
+
+[R64] 结束进程
+来源：http://blog.fehbvm.com/Article/details/grokanity.sHtML
+
+kill -9 $(pgrep -f app.py)
+来源：http://www.blog.zdbjq.cn/Article/details/gpehwqdvo.sHtML
+
+[R65] 查看端口占用
+来源：http://3g.hesvh.cn/Article/details/gkfeztlle.sHtML
+
+ss -tlnp | grep 8080;  lsof -i:8080
+来源：http://read.share.hesvh.cn/Article/details/gdocbjoqx.sHtML
+
+[R66] 定时任务
+来源：http://read.share.fehbvm.com/Article/details/ggqbbtdwa.sHtML
+
+crontab -e;  crontab -l
+来源：http://wap.zdbjq.cn/Article/details/gdrivfwwc.sHtML
+
+[R67] 生成随机十六进制串
+来源：http://3g.zdbjq.cn/Article/details/gqqeqdkoh.sHtML
+
+openssl rand -hex 16
+来源：http://wap.hesvh.cn/Article/details/gbvfsznyx.sHtML
+
+[R68] 计算文件校验值
+来源：http://baike.hesvh.cn/Article/details/goyxlaqvp.sHtML
+
+sha256sum a.txt;  md5sum a.txt
+来源：http://www.m.share.hesvh.cn/Article/details/gpdcptqop.sHtML
+
+[R69] 生成随机密码
+来源：http://www.m.share.hesvh.cn/Article/details/gchqfxubt.sHtML
+
+head -c 16 /dev/urandom | base64
+来源：http://blog.fehbvm.com/Article/details/gtustuaoh.sHtML
+
+[R70] 时间戳与互转
+来源：http://mobile.zdbjq.cn/Article/details/gnubxvlxv.sHtML
+
+date +%s;  date -d @1700000000
+来源：http://blog.hesvh.cn/Article/details/gschiexju.sHtML
+
+[R71] 日期格式化
+来源：http://read.share.zdbjq.cn/Article/details/ggtziymtj.sHtML
+
+date +"%Y-%m-%d %H:%M:%S"
+来源：http://www.blog.zdbjq.cn/Article/details/gdunddmrg.sHtML
+
+[R72] 等待端口就绪
+来源：http://www.m.share.zdbjq.cn/Article/details/gbetbyzsm.sHtML
+
+until nc -z localhost 3306; do sleep 1; done
+来源：http://baike.fehbvm.com/Article/details/gsulkcifg.sHtML
+
+[R73] 分割大日志
+来源：http://baike.hesvh.cn/Article/details/gbcncotux.sHtML
+
+split -l 1000 big.log part_
+来源：http://www.m.share.fehbvm.com/Article/details/gmwbtzlbv.sHtML
+
+[R74] 批量重命名
+来源：http://www.share.zdbjq.cn/Article/details/gupdpqirt.sHtML
+
+for f in *.jpeg; do mv "$f" "${f%.jpeg}.jpg"; done
+来源：http://blog.zdbjq.cn/Article/details/gbfkaoony.sHtML
+
+[R75] 导出环境变量
+来源：http://baike.hesvh.cn/Article/details/guponrldu.sHtML
+
+export PATH="$HOME/bin:$PATH"
+来源：http://baike.hesvh.cn/Article/details/gmeblarfr.sHtML
+
+[R76] 使用临时文件
+来源：http://blog.zdbjq.cn/Article/details/gbykrkprz.sHtML
+
+tmp=$(mktemp); trap 'rm -f "$tmp"' EXIT
+来源：http://baike.hesvh.cn/Article/details/gcdicydyr.sHtML
+
+[R77] 读取用户输入
+来源：http://wap.zdbjq.cn/Article/details/gxbnacwnr.sHtML
+
+read -rp "请输入: " ans
+来源：http://m.share.zdbjq.cn/Article/details/gjqcxvseq.sHtML
+
+[R78] 交互式菜单
+来源：http://read.share.hesvh.cn/Article/details/geqcdoaaf.sHtML
+
+select opt in a b c; do echo "$opt"; break; done
+来源：http://3g.zdbjq.cn/Article/details/gnxyzdbhr.sHtML
+
+[R79] 解析命令行选项
+来源：http://wap.zdbjq.cn/Article/details/gnqrlhunn.sHtML
+
+while getopts "v:f:" o; do case $o in v) V=$OPTARG ;; f) F=$OPTARG ;; esac; done
+来源：http://3g.zdbjq.cn/Article/details/gcilydhqn.sHtML
+
+[R80] 查看脚本执行耗时
+来源：http://www.m.share.hesvh.cn/Article/details/gtqqvffsn.sHtML
+
+time ./run.sh
+来源：http://read.share.fehbvm.com/Article/details/gfimssryv.sHtML
+
+================================================================================
+来源：http://mobile.zdbjq.cn/Article/details/gdineqpgt.sHtML
+
+S. C / C++ 专题
+来源：http://wap.fehbvm.com/Article/details/gczbgrmlc.sHtML
+
+================================================================================
+来源：http://www.m.share.zdbjq.cn/Article/details/gqlqsxjni.sHtML
+
+[S01] C：Hello World
+来源：http://www.blog.fehbvm.com/Article/details/gtruxwxte.sHtML
+
+#include <stdio.h>
+来源：http://m.share.zdbjq.cn/Article/details/gidseykkg.sHtML
+
+int main(void) { printf("Hello\n"); return 0; }
+来源：http://www.m.share.fehbvm.com/Article/details/govqcafgi.sHtML
+
+[S02] C：变量与格式化输出
+来源：http://www.share.hesvh.cn/Article/details/gjroqmtrs.sHtML
+
+int a = 10; printf("%d\n", a);
+来源：http://m.share.fehbvm.com/Article/details/gfagryvob.sHtML
+
+[S03] C：读入整数
+来源：http://baike.hesvh.cn/Article/details/ghihsuloc.sHtML
+
+int x; scanf("%d", &x);
+来源：http://www.blog.fehbvm.com/Article/details/guoqyfhdv.sHtML
+
+[S04] C：字符串复制
+来源：http://3g.zdbjq.cn/Article/details/gumsusszo.sHtML
+
+char dst[32]; strcpy(dst, "hi");
+来源：http://www.blog.fehbvm.com/Article/details/gfwwzvjhu.sHtML
+
+[S05] C：字符串长度
+来源：http://read.share.fehbvm.com/Article/details/gwbmpkxij.sHtML
+
+strlen(s)
+来源：http://3g.zdbjq.cn/Article/details/gdgjzfavw.sHtML
+
+[S06] C：字符串比较
+来源：http://www.blog.fehbvm.com/Article/details/gqqdhpgxa.sHtML
+
+strcmp(a, b) == 0
+来源：http://m.share.fehbvm.com/Article/details/gnjyuoapm.sHtML
+
+[S07] C：数组遍历求和
+来源：http://blog.hesvh.cn/Article/details/guhmwpvca.sHtML
+
+for (int i = 0; i < n; i++) sum += a[i];
+来源：http://baike.hesvh.cn/Article/details/gjrmwumrj.sHtML
+
+[S08] C：动态内存分配与释放
+来源：http://blog.fehbvm.com/Article/details/guiabzrlv.sHtML
+
+int *p = malloc(sizeof(int) * n); ... free(p);
+来源：http://3g.zdbjq.cn/Article/details/gayezfaiz.sHtML
+
+[S09] C：结构体定义与初始化
+来源：http://3g.zdbjq.cn/Article/details/ghjgpromz.sHtML
+
+struct Point { int x, y; };  struct Point p = {1, 2};
+来源：http://read.share.zdbjq.cn/Article/details/gdfxursjw.sHtML
+
+[S10] C：指针与解引用
+来源：http://baike.fehbvm.com/Article/details/gyheuwwix.sHtML
+
+int *p = &a;  *p = 5;
+来源：http://baike.hesvh.cn/Article/details/gaczkbchg.sHtML
+
+[S11] C：逐行读文件
+来源：http://3g.hesvh.cn/Article/details/ggszkoavq.sHtML
+
+FILE *f = fopen("a.txt", "r");
+来源：http://read.share.hesvh.cn/Article/details/gvqlbvhax.sHtML
+
+while (fgets(buf, sizeof buf, f)) { }
+来源：http://read.share.zdbjq.cn/Article/details/gauxqioif.sHtML
+
+fclose(f);
+来源：http://m.share.hesvh.cn/Article/details/gajdomjin.sHtML
+
+[S12] C：写文件
+来源：http://blog.hesvh.cn/Article/details/gdlqmcetj.sHtML
+
+FILE *f = fopen("a.txt", "w");  fprintf(f, "hi\n");  fclose(f);
+来源：http://www.share.zdbjq.cn/Article/details/gkczvoyes.sHtML
+
+[S13] C：宏定义
+来源：http://wap.zdbjq.cn/Article/details/guhfmczma.sHtML
+
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+来源：http://3g.fehbvm.com/Article/details/grhtstmip.sHtML
+
+[S14] C：枚举
+来源：http://www.m.share.zdbjq.cn/Article/details/gmnaxoycp.sHtML
+
+enum Color { RED, GREEN, BLUE };
+来源：http://wap.fehbvm.com/Article/details/gxlhcjkpv.sHtML
+
+[S15] C：类型转换
+来源：http://m.share.fehbvm.com/Article/details/ggngmgcox.sHtML
+
+(double) a / b
+来源：http://wap.zdbjq.cn/Article/details/gesjsllht.sHtML
+
+[S16] C：位操作置位
+来源：http://wap.zdbjq.cn/Article/details/gqakxtdkq.sHtML
+
+x |= (1 << 3);
+来源：http://wap.hesvh.cn/Article/details/gjwyltpjy.sHtML
+
+[S17] C：安全拼接字符串
+来源：http://m.share.zdbjq.cn/Article/details/ggvrkxaty.sHtML
+
+snprintf(buf, sizeof buf, "%s%s", a, b);
+来源：http://www.blog.hesvh.cn/Article/details/ghvuxikit.sHtML
+
+[S18] C：命令行参数
+来源：http://mobile.hesvh.cn/Article/details/ghrgurbed.sHtML
+
+int main(int argc, char **argv)
+来源：http://mobile.hesvh.cn/Article/details/gxkfansgs.sHtML
+
+[S19] C：快速排序
+来源：http://www.blog.fehbvm.com/Article/details/gycnrqgji.sHtML
+
+qsort(a, n, sizeof(int), cmp);
+来源：http://wap.zdbjq.cn/Article/details/gxfyigoss.sHtML
+
+[S20] C：二分查找
+来源：http://www.share.zdbjq.cn/Article/details/gphxdosea.sHtML
+
+bsearch(&key, a, n, sizeof(int), cmp);
+来源：http://www.blog.hesvh.cn/Article/details/gvrznfjxz.sHtML
+
+[S21] C：字符类别判断
+来源：http://www.m.share.fehbvm.com/Article/details/gcwxtprct.sHtML
+
+isdigit(c);  isalpha(c);  isspace(c);
+来源：http://m.share.hesvh.cn/Article/details/gvzkfjmue.sHtML
+
+[S22] C：字符串转数字
+来源：http://read.share.hesvh.cn/Article/details/gkcedgfgr.sHtML
+
+atoi("42");  strtod("3.14", NULL);
+来源：http://read.share.fehbvm.com/Article/details/gcwzrgfdy.sHtML
+
+[S23] C：随机数
+来源：http://mobile.hesvh.cn/Article/details/gelrhioch.sHtML
+
+srand(time(NULL));  int r = rand() % 100;
+来源：http://3g.zdbjq.cn/Article/details/gxoqyjclo.sHtML
+
+[S24] C：获取本地时间
+来源：http://www.blog.zdbjq.cn/Article/details/gvlplunbm.sHtML
+
+time_t t = time(NULL);  struct tm *tm = localtime(&t);
+来源：http://www.blog.zdbjq.cn/Article/details/guxhbhslf.sHtML
+
+[S25] C：内存拷贝
+来源：http://3g.zdbjq.cn/Article/details/giagezchk.sHtML
+
+memcpy(dst, src, n);
+来源：http://3g.hesvh.cn/Article/details/gforkoqen.sHtML
+
+[S26] C：内存清零
+来源：http://wap.zdbjq.cn/Article/details/gevtinqat.sHtML
+
+memset(a, 0, sizeof a);
+来源：http://www.share.fehbvm.com/Article/details/gnyazkugu.sHtML
+
+[S27] C：定义常量
+来源：http://mobile.zdbjq.cn/Article/details/gwqwjkxkz.sHtML
+
+const double PI = 3.14159;
+来源：http://baike.hesvh.cn/Article/details/ggriqswfa.sHtML
+
+[S28] C：静态变量
+来源：http://mobile.hesvh.cn/Article/details/gtgkoydet.sHtML
+
+static int counter = 0;
+来源：http://blog.fehbvm.com/Article/details/gjuqvxhci.sHtML
+
+[S29] C：变参函数
+来源：http://mobile.hesvh.cn/Article/details/gvuoppsxe.sHtML
+
+va_list ap; va_start(ap, fmt); vprintf(fmt, ap); va_end(ap);
+来源：http://www.m.share.hesvh.cn/Article/details/gfkkakzom.sHtML
+
+[S30] C：头文件保护
+来源：http://mobile.fehbvm.com/Article/details/gmvxnjvej.sHtML
+
+#ifndef X_H
+来源：http://3g.fehbvm.com/Article/details/ghypukoii.sHtML
+
+#define X_H
+来源：http://wap.fehbvm.com/Article/details/gmuhmlthn.sHtML
+
+#endif
+来源：http://mobile.fehbvm.com/Article/details/ggvdrkckx.sHtML
+
+[S31] C++：Hello World
+来源：http://baike.hesvh.cn/Article/details/gyenzhtlo.sHtML
+
+#include <iostream>
+来源：http://www.share.hesvh.cn/Article/details/gbfnbpvtk.sHtML
+
+int main() { std::cout << "Hello\n"; }
+来源：http://blog.fehbvm.com/Article/details/glgjhijmy.sHtML
+
+[S32] C++：字符串
+来源：http://m.share.fehbvm.com/Article/details/gmipfqocf.sHtML
+
+std::string s = "hi";  s += "!";
+来源：http://read.share.zdbjq.cn/Article/details/grrgurqux.sHtML
+
+[S33] C++：vector 增删
+来源：http://www.blog.zdbjq.cn/Article/details/gonldfvel.sHtML
+
+std::vector<int> v{1, 2, 3};  v.push_back(4);
+来源：http://blog.fehbvm.com/Article/details/goisdcjpq.sHtML
+
+[S34] C++：遍历 vector
+来源：http://wap.zdbjq.cn/Article/details/gyhtqwsyg.sHtML
+
+for (auto &x : v) { std::cout << x; }
+来源：http://read.share.zdbjq.cn/Article/details/geojileqn.sHtML
+
+[S35] C++：map
+来源：http://www.m.share.zdbjq.cn/Article/details/goteqsixs.sHtML
+
+std::map<std::string, int> m;  m["a"] = 1;
+来源：http://3g.hesvh.cn/Article/details/gbbbfadcg.sHtML
+
+[S36] C++：unordered_map
+来源：http://read.share.zdbjq.cn/Article/details/gaivhlhmt.sHtML
+
+std::unordered_map<std::string, int> m;  m["a"] = 1;
+来源：http://mobile.fehbvm.com/Article/details/gbtgtbvdw.sHtML
+
+[S37] C++：set
+来源：http://wap.zdbjq.cn/Article/details/gatsinmjx.sHtML
+
+std::set<int> s{1, 2, 3};  s.insert(4);
+来源：http://blog.fehbvm.com/Article/details/gvscjbnah.sHtML
+
+[S38] C++：排序
+来源：http://mobile.hesvh.cn/Article/details/gerpxhdfx.sHtML
+
+std::sort(v.begin(), v.end());
+来源：http://read.share.hesvh.cn/Article/details/gjdcocver.sHtML
+
+[S39] C++：自定义比较器排序
+来源：http://read.share.zdbjq.cn/Article/details/gxhejpvzv.sHtML
+
+std::sort(v.begin(), v.end(), [](int a, int b) { return a > b; });
+来源：http://blog.fehbvm.com/Article/details/gjmmjzkcl.sHtML
+
+[S40] C++：查找元素
+来源：http://m.share.zdbjq.cn/Article/details/gxkdegwih.sHtML
+
+auto it = std::find(v.begin(), v.end(), 3);
+来源：http://wap.fehbvm.com/Article/details/gzpbdmxwn.sHtML
+
+[S41] C++：类与构造函数
+来源：http://www.share.hesvh.cn/Article/details/ggpdonehr.sHtML
+
+class A { public: A(int v) : x_(v) {} int get() const { return x_; } private: int x_; };
+来源：http://mobile.fehbvm.com/Article/details/glplxzykj.sHtML
+
+[S42] C++：继承与虚函数
+来源：http://www.m.share.fehbvm.com/Article/details/gufujlsxf.sHtML
+
+class B : public Base { public: void f() override {} };
+来源：http://mobile.fehbvm.com/Article/details/gbdevlcrr.sHtML
+
+[S43] C++：智能指针
+来源：http://www.share.fehbvm.com/Article/details/gbrjxqmhn.sHtML
+
+auto p = std::make_unique<int>(5);
+来源：http://wap.fehbvm.com/Article/details/gokjwwktf.sHtML
+
+[S44] C++：引用传参
+来源：http://www.m.share.fehbvm.com/Article/details/ghxfeeaha.sHtML
+
+void inc(int &x) { ++x; }
+来源：http://m.share.fehbvm.com/Article/details/gtyctmgnh.sHtML
+
+[S45] C++：lambda
+来源：http://m.share.zdbjq.cn/Article/details/gbcqodkef.sHtML
+
+auto add = [](int a, int b) { return a + b; };
+来源：http://www.m.share.fehbvm.com/Article/details/gwzbmacnx.sHtML
+
+[S46] C++：函数模板
+来源：http://read.share.fehbvm.com/Article/details/gtllpzhhh.sHtML
+
+template <typename T> T maxv(T a, T b) { return a > b ? a : b; }
+来源：http://www.share.zdbjq.cn/Article/details/grgfxqmzm.sHtML
+
+[S47] C++：结构化绑定遍历
+来源：http://www.blog.hesvh.cn/Article/details/gyopbvpqi.sHtML
+
+for (const auto &[k, v] : m) { std::cout << k << v; }
+来源：http://read.share.zdbjq.cn/Article/details/ghcspcdiq.sHtML
+
+[S48] C++：逐行读文件
+来源：http://baike.zdbjq.cn/Article/details/gyyaaaqhs.sHtML
+
+std::ifstream in("a.txt");  std::string line;
+来源：http://3g.fehbvm.com/Article/details/gqwatqcqa.sHtML
+
+while (std::getline(in, line)) { }
+来源：http://www.blog.zdbjq.cn/Article/details/goizaltxb.sHtML
+
+[S49] C++：写文件
+来源：http://3g.fehbvm.com/Article/details/gxtauqvfb.sHtML
+
+std::ofstream out("a.txt");  out << "hi\n";
+来源：http://blog.hesvh.cn/Article/details/gmbxlixpr.sHtML
+
+[S50] C++：格式化数字
+来源：http://read.share.fehbvm.com/Article/details/gllcthqxr.sHtML
+
+std::ostringstream os;  os << std::fixed << std::setprecision(2) << 3.14159;
+来源：http://3g.fehbvm.com/Article/details/gbdhfwmdo.sHtML
+
+[S51] C++：显式类型转换
+来源：http://mobile.hesvh.cn/Article/details/gtqkxwjnh.sHtML
+
+static_cast<double>(a) / b
+来源：http://read.share.fehbvm.com/Article/details/ggyfsmvmp.sHtML
+
+[S52] C++：const 与 noexcept
+来源：http://wap.fehbvm.com/Article/details/gwoevimly.sHtML
+
+int size() const noexcept { return n_; }
+来源：http://3g.fehbvm.com/Article/details/gobvfavcc.sHtML
+
+[S53] C++：移动语义
+来源：http://mobile.zdbjq.cn/Article/details/gltitwupq.sHtML
+
+std::vector<int> w = std::move(v);
+来源：http://read.share.zdbjq.cn/Article/details/gywsrwozw.sHtML
+
+[S54] C++：异常处理
+来源：http://3g.fehbvm.com/Article/details/grpgknkqq.sHtML
+
+try { throw std::runtime_error("x"); } catch (const std::exception &e) { }
+来源：http://wap.hesvh.cn/Article/details/gtdqqrpaf.sHtML
+
+[S55] C++：结构化绑定
+来源：http://mobile.hesvh.cn/Article/details/guucnvtoe.sHtML
+
+auto [a, b] = std::make_pair(1, 2);
+来源：http://www.m.share.zdbjq.cn/Article/details/glcfethdt.sHtML
+
+[S56] C++：optional
+来源：http://mobile.zdbjq.cn/Article/details/gzpjtjwmm.sHtML
+
+std::optional<int> o = 5;  if (o) { int v = *o; }
+来源：http://www.blog.hesvh.cn/Article/details/gztiasrrj.sHtML
+
+[S57] C++：编译期常量
+来源：http://3g.zdbjq.cn/Article/details/gpxcjgjrx.sHtML
+
+constexpr int N = 10;
+来源：http://www.blog.fehbvm.com/Article/details/gtwogfopc.sHtML
+
+[S58] C++：命名空间
+来源：http://www.blog.zdbjq.cn/Article/details/grfrcsouk.sHtML
+
+namespace ns { int f() { return 1; } }
+来源：http://www.m.share.fehbvm.com/Article/details/gjquqdddk.sHtML
+
+[S59] C++：静态断言
+来源：http://www.share.zdbjq.cn/Article/details/gufcmllpb.sHtML
+
+static_assert(sizeof(int) == 4, "int 必须 4 字节");
+来源：http://3g.zdbjq.cn/Article/details/glulstgdk.sHtML
+
+[S60] C++：遍历并删除元素
+来源：http://www.share.hesvh.cn/Article/details/gkqohjatr.sHtML
+
+v.erase(std::remove_if(v.begin(), v.end(), [](int x) { return x < 0; }), v.end());
+来源：http://read.share.hesvh.cn/Article/details/gahzvoqrb.sHtML
+
+================================================================================
+来源：http://blog.zdbjq.cn/Article/details/gwdbfgkbk.sHtML
+
+T. 其他语言补充（Kotlin / Swift / Lua / Perl / Scala）
+来源：http://wap.zdbjq.cn/Article/details/gjhcfpbah.sHtML
+
+================================================================================
+来源：http://www.blog.zdbjq.cn/Article/details/gkeqnwylw.sHtML
+
+[T01] Kotlin：Hello World
+来源：http://mobile.fehbvm.com/Article/details/gdllkczhv.sHtML
+
+println("Hello")
+来源：http://3g.hesvh.cn/Article/details/gaiclpxfv.sHtML
+
+[T02] Kotlin：变量
+来源：http://www.m.share.zdbjq.cn/Article/details/gbpnkbuby.sHtML
+
+val a = 1;  var b = 2        // val 只读，var 可变
+来源：http://www.blog.fehbvm.com/Article/details/glcukskfk.sHtML
+
+[T03] Kotlin：字符串模板
+来源：http://mobile.hesvh.cn/Article/details/gdlecdbxf.sHtML
+
+"值: $b"
+来源：http://baike.hesvh.cn/Article/details/gwdxzfxzr.sHtML
+
+[T04] Kotlin：空安全
+来源：http://3g.fehbvm.com/Article/details/gigrmyupv.sHtML
+
+val n: String? = null;  n?.length
+来源：http://www.blog.hesvh.cn/Article/details/gcgmhegzs.sHtML
+
+[T05] Kotlin：when 表达式
+来源：http://wap.hesvh.cn/Article/details/gkhctetqf.sHtML
+
+val s = when (x) { 1 -> "一" else -> "其他" }   // 多分支时每个分支单独一行
+来源：http://baike.zdbjq.cn/Article/details/gtglxsftj.sHtML
+
+[T06] Kotlin：集合映射
+来源：http://read.share.fehbvm.com/Article/details/guliknumb.sHtML
+
+listOf(1, 2, 3).map { it * 2 }
+来源：http://baike.zdbjq.cn/Article/details/gfdtumcpk.sHtML
+
+[T07] Kotlin：集合过滤
+来源：http://www.share.zdbjq.cn/Article/details/gqilmzoxy.sHtML
+
+listOf(1, 2, 3).filter { it > 1 }
+来源：http://wap.hesvh.cn/Article/details/gdndovzan.sHtML
+
+[T08] Kotlin：数据类
+来源：http://blog.hesvh.cn/Article/details/gxkesfjka.sHtML
+
+data class User(val name: String, val age: Int)
+来源：http://wap.zdbjq.cn/Article/details/gybekdwyb.sHtML
+
+[T09] Kotlin：扩展函数
+来源：http://3g.zdbjq.cn/Article/details/gtzrephtd.sHtML
+
+fun String.exclaim() = this + "!"
+来源：http://www.share.fehbvm.com/Article/details/gsdqtqqhr.sHtML
+
+[T10] Kotlin：默认参数
+来源：http://www.blog.fehbvm.com/Article/details/gywcdijbc.sHtML
+
+fun greet(name: String = "World") = "Hi $name"
+来源：http://mobile.hesvh.cn/Article/details/gqwjxedpc.sHtML
+
+[T11] Kotlin：协程
+来源：http://mobile.fehbvm.com/Article/details/gtvpdpiji.sHtML
+
+GlobalScope.launch { delay(1000); println("done") }
+来源：http://mobile.zdbjq.cn/Article/details/glnduhbta.sHtML
+
+[T12] Kotlin：解构声明
+来源：http://www.blog.hesvh.cn/Article/details/gecdpwkwa.sHtML
+
+val (a, b) = Pair(1, 2)
+来源：http://www.blog.zdbjq.cn/Article/details/gnhtzssvt.sHtML
+
+[T13] Kotlin：只读 Map
+来源：http://wap.zdbjq.cn/Article/details/gkcyktlay.sHtML
+
+val m = mapOf("a" to 1)
+来源：http://mobile.fehbvm.com/Article/details/gofjfoeuv.sHtML
+
+[T14] Kotlin：循环
+来源：http://m.share.fehbvm.com/Article/details/ghohkceyk.sHtML
+
+for (i in 1..10) println(i)
+来源：http://www.m.share.hesvh.cn/Article/details/goxpqrpzw.sHtML
+
+[T15] Kotlin：接口
+来源：http://m.share.zdbjq.cn/Article/details/gypwxgazt.sHtML
+
+interface Shape { fun area(): Double }
+来源：http://www.m.share.zdbjq.cn/Article/details/grxgoilnm.sHtML
+
+[T16] Swift：Hello World
+来源：http://www.blog.zdbjq.cn/Article/details/glqcpnntk.sHtML
+
+print("Hello")
+来源：http://m.share.fehbvm.com/Article/details/gjxdsfjul.sHtML
+
+[T17] Swift：变量与常量
+来源：http://www.share.fehbvm.com/Article/details/geqaphweg.sHtML
+
+var a = 1;  let b = 2
+来源：http://www.m.share.zdbjq.cn/Article/details/gopcppmjs.sHtML
+
+[T18] Swift：字符串插值
+来源：http://read.share.zdbjq.cn/Article/details/ghdeguhws.sHtML
+
+"值: \(b)"
+来源：http://read.share.zdbjq.cn/Article/details/gkdrmhzsr.sHtML
+
+[T19] Swift：可选绑定
+来源：http://www.blog.zdbjq.cn/Article/details/gixhkmfep.sHtML
+
+if let n = opt { print(n) }
+来源：http://3g.fehbvm.com/Article/details/gkozuhzcz.sHtML
+
+[T20] Swift：数组操作
+来源：http://m.share.zdbjq.cn/Article/details/gpkmjwmna.sHtML
+
+var a = [1, 2, 3];  a.append(4)
+来源：http://baike.fehbvm.com/Article/details/gdsbzpffs.sHtML
+
+[T21] Swift：遍历
+来源：http://baike.hesvh.cn/Article/details/gofbzaudh.sHtML
+
+for x in a { print(x) }
+来源：http://wap.zdbjq.cn/Article/details/ggcjcyncd.sHtML
+
+[T22] Swift：字典
+来源：http://www.share.hesvh.cn/Article/details/gdgntgszz.sHtML
+
+var d = ["a": 1];  d["b"] = 2
+来源：http://3g.hesvh.cn/Article/details/gnvfkpgva.sHtML
+
+[T23] Swift：函数
+来源：http://wap.hesvh.cn/Article/details/gagdpdvgg.sHtML
+
+func add(_ a: Int, _ b: Int) -> Int { a + b }
+来源：http://wap.zdbjq.cn/Article/details/gjbnjgcxp.sHtML
+
+[T24] Swift：闭包
+来源：http://www.m.share.fehbvm.com/Article/details/gaopxhavu.sHtML
+
+let f = { (x: Int) -> Int in x * 2 }
+来源：http://m.share.fehbvm.com/Article/details/geclafeiu.sHtML
+
+[T25] Swift：结构体
+来源：http://www.m.share.zdbjq.cn/Article/details/gumoqtsln.sHtML
+
+struct P { var x: Int }
+来源：http://3g.zdbjq.cn/Article/details/gqjuderxf.sHtML
+
+[T26] Swift：类与重写
+来源：http://3g.fehbvm.com/Article/details/ggylbmspg.sHtML
+
+class A: Base { override func f() {} }
+来源：http://www.blog.hesvh.cn/Article/details/gjqiovicq.sHtML
+
+[T27] Swift：错误处理
+来源：http://3g.hesvh.cn/Article/details/gpdlldyfd.sHtML
+
+do { try f() } catch { print(error) }
+来源：http://3g.fehbvm.com/Article/details/gikbgzgxi.sHtML
+
+[T28] Swift：枚举
+来源：http://blog.zdbjq.cn/Article/details/gwdtfwqxj.sHtML
+
+enum Color { case red, green }
+来源：http://www.blog.fehbvm.com/Article/details/gjbwoezob.sHtML
+
+[T29] Swift：guard 提前返回
+来源：http://read.share.hesvh.cn/Article/details/ghmrecqxh.sHtML
+
+guard let x = opt else { return }
+来源：http://read.share.hesvh.cn/Article/details/gwrboyqin.sHtML
+
+[T30] Swift：协议
+来源：http://3g.fehbvm.com/Article/details/ggecaqnyx.sHtML
+
+protocol Shape { func area() -> Double }
+来源：http://read.share.hesvh.cn/Article/details/gpmknknne.sHtML
+
+[T31] Lua：Hello World
+来源：http://read.share.zdbjq.cn/Article/details/gxzcokqvy.sHtML
+
+print("Hello")
+来源：http://3g.fehbvm.com/Article/details/gvaivlbos.sHtML
+
+[T32] Lua：局部变量
+来源：http://www.blog.hesvh.cn/Article/details/gfdvypemg.sHtML
+
+local a = 1
+来源：http://www.m.share.fehbvm.com/Article/details/gyuuckucp.sHtML
+
+[T33] Lua：表（数组）
+来源：http://wap.zdbjq.cn/Article/details/gagazgtfs.sHtML
+
+local t = {1, 2, 3};  t[4] = 4
+来源：http://wap.hesvh.cn/Article/details/gejogsfbm.sHtML
+
+[T34] Lua：遍历表
+来源：http://baike.hesvh.cn/Article/details/gnzyihchn.sHtML
+
+for i, v in ipairs(t) do print(i, v) end
+来源：http://m.share.zdbjq.cn/Article/details/gxuylipnn.sHtML
+
+[T35] Lua：字典表
+来源：http://mobile.hesvh.cn/Article/details/gfqahtgdd.sHtML
+
+local d = { a = 1 };  d.b = 2
+来源：http://wap.hesvh.cn/Article/details/gpxpbapht.sHtML
+
+[T36] Lua：函数
+来源：http://www.share.fehbvm.com/Article/details/gbfnvezit.sHtML
+
+function add(a, b) return a + b end
+来源：http://m.share.zdbjq.cn/Article/details/gxadqmcuk.sHtML
+
+[T37] Lua：字符串拼接
+来源：http://3g.fehbvm.com/Article/details/gjmdsmlvy.sHtML
+
+"a" .. "b"
+来源：http://www.share.zdbjq.cn/Article/details/gscquioli.sHtML
+
+[T38] Lua：条件
+来源：http://m.share.fehbvm.com/Article/details/gkazoryhd.sHtML
+
+if x > 0 then print("正") end
+来源：http://wap.hesvh.cn/Article/details/gdzwvewch.sHtML
+
+[T39] Lua：模式匹配
+来源：http://baike.hesvh.cn/Article/details/gkzywcfes.sHtML
+
+string.find(s, "%d+")
+来源：http://wap.zdbjq.cn/Article/details/gzfzmjoje.sHtML
+
+[T40] Lua：元表
+来源：http://www.blog.fehbvm.com/Article/details/goopprbdy.sHtML
+
+setmetatable({}, { __index = base })
+来源：http://blog.hesvh.cn/Article/details/gaaemxhbt.sHtML
+
+[T41] Perl：Hello World
+来源：http://baike.zdbjq.cn/Article/details/gjmixhypd.sHtML
+
+print "Hello\n";
+来源：http://blog.hesvh.cn/Article/details/glfkvewop.sHtML
+
+[T42] Perl：变量类型
+来源：http://www.blog.zdbjq.cn/Article/details/gakdrdgyi.sHtML
+
+my $a = 1;  my @arr = (1, 2, 3);  my %h = (a => 1);
+来源：http://blog.fehbvm.com/Article/details/goqanaits.sHtML
+
+[T43] Perl：字符串插值
+来源：http://www.m.share.zdbjq.cn/Article/details/gpgnvirdl.sHtML
+
+"值: $a"
+来源：http://blog.hesvh.cn/Article/details/gifjehaow.sHtML
+
+[T44] Perl：条件
+来源：http://baike.zdbjq.cn/Article/details/gcronitfm.sHtML
+
+if ($a > 0) { print "正"; }
+来源：http://read.share.zdbjq.cn/Article/details/gkumcntav.sHtML
+
+[T45] Perl：数组遍历
+来源：http://mobile.fehbvm.com/Article/details/gvbjyznmn.sHtML
+
+for my $x (@arr) { print $x; }
+来源：http://www.share.zdbjq.cn/Article/details/gnfpgxkuu.sHtML
+
+[T46] Perl：哈希操作
+来源：http://www.share.hesvh.cn/Article/details/gpddlcyjn.sHtML
+
+$h{b} = 2;  for my $k (keys %h) { print "$k=$h{$k}"; }
+来源：http://3g.fehbvm.com/Article/details/gnattxlzv.sHtML
+
+[T47] Perl：正则捕获
+来源：http://read.share.fehbvm.com/Article/details/geximwual.sHtML
+
+if ($s =~ /(\d+)/) { print $1; }
+来源：http://3g.fehbvm.com/Article/details/gqqmgoavs.sHtML
+
+[T48] Perl：正则替换
+来源：http://3g.fehbvm.com/Article/details/gkudormjg.sHtML
+
+$s =~ s/old/new/g;
+来源：http://baike.fehbvm.com/Article/details/grpkkgqhe.sHtML
+
+[T49] Perl：函数
+来源：http://mobile.fehbvm.com/Article/details/gzqsteoua.sHtML
+
+sub add { my ($a, $b) = @_; return $a + $b; }
+来源：http://www.share.fehbvm.com/Article/details/ggdeattxu.sHtML
+
+[T50] Perl：逐行读文件
+来源：http://mobile.hesvh.cn/Article/details/gqhpuemkn.sHtML
+
+open my $fh, "<", "a.txt" or die $!;
+来源：http://www.blog.zdbjq.cn/Article/details/gznsccfhx.sHtML
+
+while (my $line = <$fh>) { print $line; }
+来源：http://mobile.zdbjq.cn/Article/details/gtvgsnqxy.sHtML
+
+[T51] Scala：Hello World
+来源：http://blog.fehbvm.com/Article/details/gwisxeowb.sHtML
+
+println("Hello")
+来源：http://read.share.hesvh.cn/Article/details/ghcufzhhg.sHtML
+
+[T52] Scala：变量
+来源：http://wap.zdbjq.cn/Article/details/garjtgdnl.sHtML
+
+val a = 1;  var b = 2
+来源：http://wap.fehbvm.com/Article/details/gzuecgtxc.sHtML
+
+[T53] Scala：字符串插值
+来源：http://www.share.zdbjq.cn/Article/details/goiamqhvb.sHtML
+
+s"值: $b"
+来源：http://www.share.zdbjq.cn/Article/details/gsuttczre.sHtML
+
+[T54] Scala：集合映射
+来源：http://mobile.zdbjq.cn/Article/details/ggahvzpxn.sHtML
+
+List(1, 2, 3).map(_ * 2)
+来源：http://www.share.zdbjq.cn/Article/details/gtpwpdcim.sHtML
+
+[T55] Scala：集合过滤
+来源：http://m.share.zdbjq.cn/Article/details/gknyoxiqo.sHtML
+
+List(1, 2, 3).filter(_ > 1)
+来源：http://mobile.fehbvm.com/Article/details/gyybztyfd.sHtML
+
+[T56] Scala：样例类
+来源：http://m.share.hesvh.cn/Article/details/gumhodtry.sHtML
+
+case class User(name: String, age: Int)
+来源：http://baike.zdbjq.cn/Article/details/goeyvsrfs.sHtML
+
+[T57] Scala：模式匹配
+来源：http://www.m.share.fehbvm.com/Article/details/gmeorfvon.sHtML
+
+x match { case 1 => "一"; case _ => "其他" }
+来源：http://3g.zdbjq.cn/Article/details/gzivaudkn.sHtML
+
+[T58] Scala：函数定义
+来源：http://wap.fehbvm.com/Article/details/gspztojjp.sHtML
+
+def add(a: Int, b: Int): Int = a + b
+来源：http://www.m.share.fehbvm.com/Article/details/gngpzopiz.sHtML
+
+[T59] Scala：循环
+来源：http://wap.zdbjq.cn/Article/details/gilezxfbo.sHtML
+
+for (i <- 1 to 10) println(i)
+来源：http://3g.hesvh.cn/Article/details/ggwapezwb.sHtML
+
+[T60] Scala：折叠
+来源：http://3g.fehbvm.com/Article/details/gqdavgbij.sHtML
+
+List(1, 2, 3).foldLeft(0)(_ + _)
+来源：http://blog.hesvh.cn/Article/details/guohjonjx.sHtML
+
+================================================================================
+来源：http://m.share.hesvh.cn/Article/details/gnehmygdi.sHtML
+
+U. 高频实用片段（Python / PHP / JavaScript 各 40 条）
+来源：http://www.blog.hesvh.cn/Article/details/gnptotque.sHtML
+
+================================================================================
+来源：http://blog.zdbjq.cn/Article/details/gqeylqian.sHtML
+
+[U01] Py：创建虚拟环境
+来源：http://wap.zdbjq.cn/Article/details/gbktatkma.sHtML
+
+python -m venv .venv && source .venv/bin/activate
+来源：http://www.m.share.zdbjq.cn/Article/details/gelfgoahb.sHtML
+
+[U02] Py：导出 / 安装依赖
+来源：http://read.share.hesvh.cn/Article/details/gbtdnqjzy.sHtML
+
+pip freeze > requirements.txt;  pip install -r requirements.txt
+来源：http://www.share.zdbjq.cn/Article/details/gawdapsan.sHtML
+
+
+<!-- 参考信息 -->

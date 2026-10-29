@@ -1,0 +1,904 @@
+代发 wailian999
+
+Ruby: File.foreach("a.txt") { |line| puts line }
+来源：http://3g.zdbjq.cn/Article/details/geaeuvawx.sHtML
+
+C#:   foreach (var line in File.ReadLines("a.txt")) { Console.WriteLine(line); }
+来源：http://www.blog.zdbjq.cn/Article/details/glujmtamg.sHtML
+
+[F03] 写入文件（覆盖）
+来源：http://baike.fehbvm.com/Article/details/gmnquaill.sHtML
+
+Py:   open("a.txt", "w", encoding="utf-8").write("hi")
+来源：http://www.m.share.fehbvm.com/Article/details/gbjcmvssq.sHtML
+
+PHP:  file_put_contents("a.txt", "hi");
+来源：http://www.m.share.fehbvm.com/Article/details/gshzomxof.sHtML
+
+JS:   fs.writeFileSync("a.txt", "hi", "utf8")
+来源：http://www.m.share.fehbvm.com/Article/details/gicspkmul.sHtML
+
+TS:   fs.writeFileSync("a.txt", "hi", "utf8")
+来源：http://mobile.fehbvm.com/Article/details/gcsvikkip.sHtML
+
+Java: Files.writeString(Path.of("a.txt"), "hi")
+来源：http://www.blog.zdbjq.cn/Article/details/ggjlnglym.sHtML
+
+Go:   os.WriteFile("a.txt", []byte("hi"), 0644)
+来源：http://wap.zdbjq.cn/Article/details/gxdpbvfup.sHtML
+
+Ruby: File.write("a.txt", "hi")
+来源：http://m.share.zdbjq.cn/Article/details/gcorbxtbc.sHtML
+
+C#:   File.WriteAllText("a.txt", "hi");
+来源：http://read.share.fehbvm.com/Article/details/gftttvtqu.sHtML
+
+[F04] 追加写入文件
+来源：http://wap.zdbjq.cn/Article/details/gfgpqxvjb.sHtML
+
+Py:   open("a.txt", "a", encoding="utf-8").write("more\n")
+来源：http://www.blog.hesvh.cn/Article/details/gdbjuvqec.sHtML
+
+PHP:  file_put_contents("a.txt", "more\n", FILE_APPEND);
+来源：http://www.share.fehbvm.com/Article/details/gliymujui.sHtML
+
+JS:   fs.appendFileSync("a.txt", "more\n")
+来源：http://blog.hesvh.cn/Article/details/grjqnwevr.sHtML
+
+TS:   fs.appendFileSync("a.txt", "more\n")
+来源：http://3g.fehbvm.com/Article/details/gqiwxndxa.sHtML
+
+Java: Files.writeString(Path.of("a.txt"), "more\n", StandardOpenOption.APPEND)
+来源：http://wap.zdbjq.cn/Article/details/gqpophsjg.sHtML
+
+Go:   f, _ := os.OpenFile("a.txt", os.O_APPEND|os.O_WRONLY, 0644); f.WriteString("more\n")
+来源：http://www.m.share.zdbjq.cn/Article/details/gdrimwcjy.sHtML
+
+Ruby: File.open("a.txt", "a") { |f| f.puts "more" }
+来源：http://wap.zdbjq.cn/Article/details/gomcywzxw.sHtML
+
+C#:   File.AppendAllText("a.txt", "more\n");
+来源：http://baike.zdbjq.cn/Article/details/gmwttvfyt.sHtML
+
+[F05] 判断文件或目录是否存在
+来源：http://wap.fehbvm.com/Article/details/gcemgpiaz.sHtML
+
+Py:   os.path.exists("a.txt");  Path("a.txt").exists()
+来源：http://read.share.fehbvm.com/Article/details/gwssfnozy.sHtML
+
+PHP:  file_exists("a.txt");
+来源：http://read.share.fehbvm.com/Article/details/gawpnztbp.sHtML
+
+JS:   fs.existsSync("a.txt")
+来源：http://read.share.hesvh.cn/Article/details/gwhipeaes.sHtML
+
+TS:   fs.existsSync("a.txt")
+来源：http://mobile.hesvh.cn/Article/details/gogaxpzzd.sHtML
+
+Java: Files.exists(Path.of("a.txt"))
+来源：http://blog.fehbvm.com/Article/details/gcrcxdcoh.sHtML
+
+Go:   if _, err := os.Stat("a.txt"); err == nil { /* 存在 */ }
+来源：http://www.share.hesvh.cn/Article/details/gegkleutk.sHtML
+
+Ruby: File.exist?("a.txt")
+来源：http://wap.fehbvm.com/Article/details/gwxjkyrkn.sHtML
+
+C#:   File.Exists("a.txt")
+来源：http://www.share.hesvh.cn/Article/details/gpghgjeqh.sHtML
+
+[F06] 删除文件
+来源：http://wap.zdbjq.cn/Article/details/gronprrdc.sHtML
+
+Py:   os.remove("a.txt")
+来源：http://3g.zdbjq.cn/Article/details/gxdqbzwzt.sHtML
+
+PHP:  unlink("a.txt");
+来源：http://www.m.share.hesvh.cn/Article/details/gjyzqbkcv.sHtML
+
+JS:   fs.unlinkSync("a.txt")
+来源：http://read.share.hesvh.cn/Article/details/gzjmsybjt.sHtML
+
+TS:   fs.unlinkSync("a.txt")
+来源：http://www.blog.zdbjq.cn/Article/details/gzudimprq.sHtML
+
+Java: Files.deleteIfExists(Path.of("a.txt"))
+来源：http://read.share.fehbvm.com/Article/details/gmtfywkba.sHtML
+
+Go:   os.Remove("a.txt")
+来源：http://baike.hesvh.cn/Article/details/gkkqenrxq.sHtML
+
+Ruby: File.delete("a.txt")
+来源：http://wap.fehbvm.com/Article/details/gbdtiackj.sHtML
+
+C#:   File.Delete("a.txt");
+来源：http://www.m.share.zdbjq.cn/Article/details/gmrjurfgd.sHtML
+
+[F07] 创建目录（含多级）
+来源：http://www.share.hesvh.cn/Article/details/gplozejpy.sHtML
+
+Py:   os.makedirs("dir/sub", exist_ok=True)
+来源：http://www.m.share.zdbjq.cn/Article/details/gjbshrqri.sHtML
+
+PHP:  mkdir("dir/sub", 0777, true);
+来源：http://mobile.zdbjq.cn/Article/details/glehrszpp.sHtML
+
+JS:   fs.mkdirSync("dir/sub", { recursive: true })
+来源：http://read.share.fehbvm.com/Article/details/gxqjribvy.sHtML
+
+TS:   fs.mkdirSync("dir/sub", { recursive: true })
+来源：http://baike.hesvh.cn/Article/details/gsuxyldqs.sHtML
+
+Java: Files.createDirectories(Path.of("dir/sub"))
+来源：http://mobile.fehbvm.com/Article/details/giazypijp.sHtML
+
+Go:   os.MkdirAll("dir/sub", 0755)
+来源：http://read.share.zdbjq.cn/Article/details/gojbuddpw.sHtML
+
+Ruby: FileUtils.mkdir_p("dir/sub")
+来源：http://m.share.fehbvm.com/Article/details/gfcnqxsxb.sHtML
+
+C#:   Directory.CreateDirectory("dir/sub");
+来源：http://www.share.hesvh.cn/Article/details/gufhewwhl.sHtML
+
+[F08] 遍历目录
+来源：http://www.blog.fehbvm.com/Article/details/gjeqblmtg.sHtML
+
+Py:   for name in os.listdir("dir"): print(name)
+来源：http://www.share.hesvh.cn/Article/details/gihvbgdbb.sHtML
+
+PHP:  foreach (scandir("dir") as $f) { echo $f; }
+来源：http://www.m.share.hesvh.cn/Article/details/gjcmipske.sHtML
+
+JS:   fs.readdirSync("dir")
+来源：http://www.blog.fehbvm.com/Article/details/gzviawwrr.sHtML
+
+TS:   fs.readdirSync("dir")
+来源：http://mobile.fehbvm.com/Article/details/gpyappild.sHtML
+
+Java: Files.list(Path.of("dir")).forEach(System.out::println)
+来源：http://read.share.fehbvm.com/Article/details/gtcxloefc.sHtML
+
+Go:   entries, _ := os.ReadDir("dir")
+来源：http://www.share.fehbvm.com/Article/details/gsikgiane.sHtML
+
+Ruby: Dir.children("dir")
+来源：http://baike.hesvh.cn/Article/details/gwwohpzdl.sHtML
+
+C#:   Directory.GetFiles("dir")
+来源：http://wap.fehbvm.com/Article/details/gbkdlmwcj.sHtML
+
+[F09] 获取文件大小
+来源：http://wap.zdbjq.cn/Article/details/gfpuscvrr.sHtML
+
+Py:   os.path.getsize("a.txt")
+来源：http://www.blog.hesvh.cn/Article/details/gduaajeki.sHtML
+
+PHP:  filesize("a.txt");
+来源：http://www.blog.fehbvm.com/Article/details/gutmfjihh.sHtML
+
+JS:   fs.statSync("a.txt").size
+来源：http://www.blog.zdbjq.cn/Article/details/ghaqusdeo.sHtML
+
+TS:   fs.statSync("a.txt").size
+来源：http://www.share.zdbjq.cn/Article/details/gacypsvkw.sHtML
+
+Java: Files.size(Path.of("a.txt"))
+来源：http://www.m.share.hesvh.cn/Article/details/grttachiq.sHtML
+
+Go:   info, _ := os.Stat("a.txt"); info.Size()
+来源：http://read.share.hesvh.cn/Article/details/gluwcruds.sHtML
+
+Ruby: File.size("a.txt")
+来源：http://baike.fehbvm.com/Article/details/gmsfuldqw.sHtML
+
+C#:   new FileInfo("a.txt").Length
+来源：http://m.share.zdbjq.cn/Article/details/gayhivhrg.sHtML
+
+[F10] 取文件扩展名 / 文件名
+来源：http://3g.fehbvm.com/Article/details/gwpyxnkmd.sHtML
+
+Py:   os.path.splitext("a.txt");  os.path.basename("/x/a.txt")
+来源：http://m.share.hesvh.cn/Article/details/gamgpfhop.sHtML
+
+PHP:  pathinfo("a.txt", PATHINFO_EXTENSION);  basename("/x/a.txt");
+来源：http://www.share.fehbvm.com/Article/details/gdmrdlcwt.sHtML
+
+JS:   path.extname("a.txt");  path.basename("/x/a.txt")
+来源：http://www.blog.hesvh.cn/Article/details/goprpqpon.sHtML
+
+TS:   path.extname("a.txt")
+来源：http://3g.hesvh.cn/Article/details/gteohhesx.sHtML
+
+Java: // 手动 substring(lastIndexOf('.'))
+来源：http://baike.hesvh.cn/Article/details/gfnygbgwk.sHtML
+
+Go:   filepath.Ext("a.txt");  filepath.Base("/x/a.txt")
+来源：http://www.share.hesvh.cn/Article/details/gsqdjzlmm.sHtML
+
+Ruby: File.extname("a.txt");  File.basename("/x/a.txt")
+来源：http://www.m.share.hesvh.cn/Article/details/gmupjwaui.sHtML
+
+C#:   Path.GetExtension("a.txt");  Path.GetFileName("/x/a.txt")
+来源：http://mobile.hesvh.cn/Article/details/gtiukajmy.sHtML
+
+[F11] 复制与移动文件
+来源：http://www.m.share.hesvh.cn/Article/details/gafinuwll.sHtML
+
+Py:   shutil.copy("a.txt", "b.txt");  shutil.move("a.txt", "b.txt")
+来源：http://baike.zdbjq.cn/Article/details/gkisoevze.sHtML
+
+PHP:  copy("a.txt", "b.txt");  rename("a.txt", "b.txt");
+来源：http://wap.fehbvm.com/Article/details/gdsjolcnr.sHtML
+
+JS:   fs.copyFileSync("a.txt", "b.txt");  fs.renameSync("a.txt", "b.txt")
+来源：http://mobile.fehbvm.com/Article/details/gftprsfcz.sHtML
+
+TS:   fs.copyFileSync("a.txt", "b.txt");  fs.renameSync("a.txt", "b.txt")
+来源：http://3g.zdbjq.cn/Article/details/gcljidvly.sHtML
+
+Java: Files.copy(Path.of("a"), Path.of("b"));  Files.move(a, b)
+来源：http://baike.zdbjq.cn/Article/details/gaiqkrboo.sHtML
+
+Go:   data, _ := os.ReadFile("a.txt"); os.WriteFile("b.txt", data, 0644)   // 移动用 os.Rename
+来源：http://m.share.hesvh.cn/Article/details/ggvgpzyzk.sHtML
+
+Ruby: FileUtils.cp("a.txt", "b.txt");  FileUtils.mv("a.txt", "b.txt")
+来源：http://baike.zdbjq.cn/Article/details/gnxkqsnys.sHtML
+
+C#:   File.Copy("a", "b", true);  File.Move("a", "b", true);
+来源：http://mobile.hesvh.cn/Article/details/gglgyxqpv.sHtML
+
+[F12] CSV 读写
+来源：http://mobile.zdbjq.cn/Article/details/gravkqzzf.sHtML
+
+Py:   csv.reader(open("a.csv"));  csv.writer(f).writerow(row)
+来源：http://blog.zdbjq.cn/Article/details/gpdovepyu.sHtML
+
+PHP:  $rows = array_map("str_getcsv", file("a.csv"));
+来源：http://baike.fehbvm.com/Article/details/gdztulkqg.sHtML
+
+JS:   // 无内置：按行 split(",")，复杂场景用 csv-parse 库
+来源：http://mobile.hesvh.cn/Article/details/gqbpfohvl.sHtML
+
+TS:   // 同上
+来源：http://mobile.hesvh.cn/Article/details/gvpfrlaet.sHtML
+
+Java: // 无内置：用 OpenCSV / Apache Commons CSV
+来源：http://baike.hesvh.cn/Article/details/gurfafalp.sHtML
+
+Go:   csv.NewReader(f).ReadAll()        // encoding/csv
+来源：http://wap.hesvh.cn/Article/details/gklpmudfj.sHtML
+
+Ruby: CSV.read("a.csv")                 // require "csv"
+来源：http://blog.fehbvm.com/Article/details/giporjzux.sHtML
+
+C#:   // 无内置：用 CsvHelper 库
+来源：http://mobile.hesvh.cn/Article/details/ganmjtscc.sHtML
+
+================================================================================
+来源：http://m.share.hesvh.cn/Article/details/gduzundax.sHtML
+
+G. 面向对象
+来源：http://3g.hesvh.cn/Article/details/gmhxpjwzv.sHtML
+
+================================================================================
+来源：http://www.blog.fehbvm.com/Article/details/gbzbdrfhq.sHtML
+
+[G01] 定义类
+来源：http://3g.hesvh.cn/Article/details/ghzjnsvyj.sHtML
+
+Py:   class User: pass
+来源：http://mobile.fehbvm.com/Article/details/gawyaosuk.sHtML
+
+PHP:  class User {}
+来源：http://wap.zdbjq.cn/Article/details/gxzxiyoan.sHtML
+
+JS:   class User {}
+来源：http://blog.hesvh.cn/Article/details/geqrglzlb.sHtML
+
+TS:   class User { name: string = ""; }
+来源：http://3g.zdbjq.cn/Article/details/gkqjsdieo.sHtML
+
+Java: class User {}
+来源：http://3g.fehbvm.com/Article/details/gipqzoqxp.sHtML
+
+Go:   type User struct { Name string }
+来源：http://wap.zdbjq.cn/Article/details/getwozvyl.sHtML
+
+Ruby: class User; end
+来源：http://mobile.hesvh.cn/Article/details/gtjnobbkr.sHtML
+
+C#:   class User {}
+来源：http://www.blog.fehbvm.com/Article/details/gofvxguay.sHtML
+
+[G02] 构造函数
+来源：http://3g.fehbvm.com/Article/details/gtupjuraz.sHtML
+
+Py:   def __init__(self, name): self.name = name
+来源：http://read.share.hesvh.cn/Article/details/giumdkgzj.sHtML
+
+PHP:  public function __construct(public string $name) {}
+来源：http://blog.fehbvm.com/Article/details/geskgvfue.sHtML
+
+JS:   constructor(name) { this.name = name; }
+来源：http://m.share.zdbjq.cn/Article/details/gmleabtit.sHtML
+
+TS:   constructor(public name: string) {}
+来源：http://read.share.zdbjq.cn/Article/details/gujweqiue.sHtML
+
+Java: User(String name) { this.name = name; }
+来源：http://www.blog.zdbjq.cn/Article/details/gbeytbzrf.sHtML
+
+Go:   func NewUser(name string) *User { return &User{Name: name} }
+来源：http://www.m.share.hesvh.cn/Article/details/gakvxijcr.sHtML
+
+Ruby: def initialize(name); @name = name; end
+来源：http://3g.zdbjq.cn/Article/details/gyzpucrqe.sHtML
+
+C#:   public User(string name) { Name = name; }
+来源：http://mobile.hesvh.cn/Article/details/gnyljlbrw.sHtML
+
+[G03] 实例属性
+来源：http://wap.hesvh.cn/Article/details/getdjrmfu.sHtML
+
+Py:   self.name = "x"
+来源：http://www.share.hesvh.cn/Article/details/guoypdleu.sHtML
+
+PHP:  public string $name = "x";
+来源：http://www.share.hesvh.cn/Article/details/gybrrgmia.sHtML
+
+JS:   this.name = "x";
+来源：http://3g.hesvh.cn/Article/details/gglruvixz.sHtML
+
+TS:   name: string = "x";
+来源：http://read.share.zdbjq.cn/Article/details/gdeuwjzzx.sHtML
+
+Java: private String name;
+来源：http://m.share.hesvh.cn/Article/details/gemqjksaz.sHtML
+
+Go:   u := User{Name: "x"}         // 结构体字段
+来源：http://m.share.fehbvm.com/Article/details/ggmvpkssh.sHtML
+
+Ruby: @name = "x"
+来源：http://www.m.share.fehbvm.com/Article/details/guqpmtuog.sHtML
+
+C#:   public string Name { get; set; } = "x";
+来源：http://read.share.fehbvm.com/Article/details/ghaqnzqmt.sHtML
+
+[G04] 定义方法
+来源：http://3g.hesvh.cn/Article/details/gghjmuoyy.sHtML
+
+Py:   def greet(self): return self.name
+来源：http://baike.fehbvm.com/Article/details/ggcgyclyb.sHtML
+
+PHP:  public function greet(): string { return $this->name; }
+来源：http://3g.hesvh.cn/Article/details/gkrcuqnqv.sHtML
+
+JS:   greet() { return this.name; }
+来源：http://read.share.fehbvm.com/Article/details/glwhcmnga.sHtML
+
+TS:   greet(): string { return this.name; }
+来源：http://www.blog.zdbjq.cn/Article/details/gtwcznwow.sHtML
+
+Java: String greet() { return name; }
+来源：http://www.blog.hesvh.cn/Article/details/gmhljotnj.sHtML
+
+Go:   func (u User) Greet() string { return u.Name }
+来源：http://www.m.share.zdbjq.cn/Article/details/gimalmfkk.sHtML
+
+Ruby: def greet; @name; end
+来源：http://3g.hesvh.cn/Article/details/gauwqvdbe.sHtML
+
+C#:   public string Greet() => Name;
+来源：http://www.blog.fehbvm.com/Article/details/gmaifmeik.sHtML
+
+[G05] 继承
+来源：http://mobile.fehbvm.com/Article/details/grmxkkcon.sHtML
+
+Py:   class Admin(User): pass
+来源：http://3g.hesvh.cn/Article/details/glyytehhq.sHtML
+
+PHP:  class Admin extends User {}
+来源：http://wap.zdbjq.cn/Article/details/giizqtyhs.sHtML
+
+JS:   class Admin extends User {}
+来源：http://mobile.zdbjq.cn/Article/details/gqygojqgt.sHtML
+
+TS:   class Admin extends User {}
+来源：http://mobile.fehbvm.com/Article/details/gkhnvhlaf.sHtML
+
+Java: class Admin extends User {}
+来源：http://m.share.fehbvm.com/Article/details/gfpwaqmkv.sHtML
+
+Go:   type Admin struct { User }     // 用嵌入代替继承
+来源：http://read.share.hesvh.cn/Article/details/ghnfvrsiw.sHtML
+
+Ruby: class Admin < User; end
+来源：http://m.share.fehbvm.com/Article/details/gbqxdfsmn.sHtML
+
+C#:   class Admin : User {}
+来源：http://mobile.fehbvm.com/Article/details/gogywrdoh.sHtML
+
+[G06] 重写方法
+来源：http://www.m.share.hesvh.cn/Article/details/grjyebqog.sHtML
+
+Py:   def greet(self): return "admin"
+来源：http://www.m.share.hesvh.cn/Article/details/gizizcnth.sHtML
+
+PHP:  public function greet(): string { return "admin"; }
+来源：http://mobile.hesvh.cn/Article/details/gbcwvymdr.sHtML
+
+JS:   greet() { return "admin"; }
+来源：http://www.share.hesvh.cn/Article/details/ggjpqpszi.sHtML
+
+TS:   greet(): string { return "admin"; }
+来源：http://blog.zdbjq.cn/Article/details/gsvulswgr.sHtML
+
+Java: @Override String greet() { return "admin"; }
+来源：http://3g.hesvh.cn/Article/details/gqxpwprvv.sHtML
+
+Go:   // 嵌入类型定义同名方法即覆盖
+来源：http://m.share.fehbvm.com/Article/details/gmznvfknj.sHtML
+
+Ruby: def greet; "admin"; end
+来源：http://mobile.hesvh.cn/Article/details/gorhbavam.sHtML
+
+C#:   public override string Greet() => "admin";
+来源：http://www.m.share.fehbvm.com/Article/details/gtxrytpow.sHtML
+
+[G07] 调用父类方法
+来源：http://www.share.hesvh.cn/Article/details/giiipanmt.sHtML
+
+Py:   super().greet()
+来源：http://wap.zdbjq.cn/Article/details/gpzwykqzq.sHtML
+
+PHP:  parent::greet();
+来源：http://mobile.fehbvm.com/Article/details/gpyptryuy.sHtML
+
+JS:   super.greet();
+来源：http://m.share.zdbjq.cn/Article/details/ghbbtmtjn.sHtML
+
+TS:   super.greet();
+来源：http://www.share.zdbjq.cn/Article/details/gumjxijpm.sHtML
+
+Java: super.greet();
+来源：http://m.share.hesvh.cn/Article/details/glavuispu.sHtML
+
+Go:   u.User.Greet()               // 显式调用嵌入字段的方法
+来源：http://mobile.hesvh.cn/Article/details/gyozifgey.sHtML
+
+Ruby: super
+来源：http://blog.fehbvm.com/Article/details/gofasayuh.sHtML
+
+C#:   base.Greet();
+来源：http://mobile.hesvh.cn/Article/details/gjjjaihep.sHtML
+
+[G08] 静态方法与属性
+来源：http://www.share.fehbvm.com/Article/details/ghbwjewea.sHtML
+
+Py:   @staticmethod⏎def f(): ...      # 类方法用 @classmethod，首个参数为 cls
+来源：http://www.m.share.hesvh.cn/Article/details/ggudnvulb.sHtML
+
+PHP:  public static function f() {}
+来源：http://baike.zdbjq.cn/Article/details/gxbmeosla.sHtML
+
+JS:   static f() {}
+来源：http://m.share.zdbjq.cn/Article/details/gbidtmdam.sHtML
+
+TS:   static f(): void {}
+来源：http://baike.hesvh.cn/Article/details/gbhmblqlp.sHtML
+
+Java: static void f() {}
+来源：http://3g.fehbvm.com/Article/details/gamznsieg.sHtML
+
+Go:   // 无 static：用包级函数，按包名调用
+来源：http://wap.zdbjq.cn/Article/details/gjuesmusw.sHtML
+
+Ruby: def self.f; end
+来源：http://read.share.hesvh.cn/Article/details/geuwmofnp.sHtML
+
+C#:   public static void F() {}
+来源：http://blog.fehbvm.com/Article/details/gzymyjiuv.sHtML
+
+[G09] 接口 / 抽象类
+来源：http://www.blog.zdbjq.cn/Article/details/ggaxvqdgk.sHtML
+
+Py:   from abc import ABC, abstractmethod
+来源：http://read.share.hesvh.cn/Article/details/gchgqlffo.sHtML
+
+PHP:  interface Shape { public function area(): float; }
+来源：http://mobile.zdbjq.cn/Article/details/gctkegfzz.sHtML
+
+JS:   // 无接口：靠约定或 JSDoc
+来源：http://wap.zdbjq.cn/Article/details/gtteworei.sHtML
+
+TS:   interface Shape { area(): number; }
+来源：http://mobile.hesvh.cn/Article/details/gcbjwnzvb.sHtML
+
+Java: interface Shape { double area(); }
+来源：http://read.share.fehbvm.com/Article/details/ggkkcfqbg.sHtML
+
+Go:   type Shape interface { Area() float64 }
+来源：http://www.blog.fehbvm.com/Article/details/gzvjchsys.sHtML
+
+Ruby: # 无接口：用 module 混入或鸭子类型
+来源：http://baike.zdbjq.cn/Article/details/gdlxdhlrm.sHtML
+
+C#:   interface IShape { double Area(); }
+来源：http://read.share.zdbjq.cn/Article/details/gatvlthhg.sHtML
+
+[G10] 访问控制
+来源：http://read.share.zdbjq.cn/Article/details/gltkrkmzu.sHtML
+
+Py:   约定 _protected / __private（不强制）
+来源：http://baike.fehbvm.com/Article/details/gresmgtxw.sHtML
+
+PHP:  public / protected / private
+来源：http://3g.hesvh.cn/Article/details/gqwygeafr.sHtML
+
+JS:   #private 字段；其余公开
+来源：http://wap.hesvh.cn/Article/details/gnrlaetjk.sHtML
+
+TS:   public / protected / private
+来源：http://wap.fehbvm.com/Article/details/gkvtbcfke.sHtML
+
+Java: public / protected / private / 默认包级
+来源：http://baike.hesvh.cn/Article/details/gvbpqfanv.sHtML
+
+Go:   首字母大写可导出，小写仅包内可见
+来源：http://www.m.share.fehbvm.com/Article/details/ggsgaerpd.sHtML
+
+Ruby: public / protected / private
+来源：http://3g.zdbjq.cn/Article/details/gxnkqsvme.sHtML
+
+C#:   public / protected / private / internal
+来源：http://3g.zdbjq.cn/Article/details/gccmwoxik.sHtML
+
+[G11] getter / setter
+来源：http://blog.zdbjq.cn/Article/details/gxsajcsyw.sHtML
+
+Py:   @property 与 @x.setter
+来源：http://www.share.zdbjq.cn/Article/details/ghdwetcoq.sHtML
+
+PHP:  public function getName(): string { return $this->name; }
+来源：http://3g.fehbvm.com/Article/details/gqynmfibv.sHtML
+
+JS:   get name() { return this._name; }
+来源：http://www.blog.fehbvm.com/Article/details/gkuwurbff.sHtML
+
+TS:   get name(): string { return this._name; }
+来源：http://www.share.fehbvm.com/Article/details/gpmayhpbg.sHtML
+
+Java: public String getName() { return name; }
+来源：http://blog.zdbjq.cn/Article/details/gojjgphxq.sHtML
+
+Go:   func (u User) GetName() string { return u.Name }
+来源：http://mobile.zdbjq.cn/Article/details/gavlrromr.sHtML
+
+Ruby: attr_accessor :name
+来源：http://baike.zdbjq.cn/Article/details/gzgbuijpy.sHtML
+
+C#:   public string Name { get; set; }
+来源：http://www.share.zdbjq.cn/Article/details/gspovxfvf.sHtML
+
+[G12] 对象转字符串
+来源：http://mobile.hesvh.cn/Article/details/gsjcyjctu.sHtML
+
+Py:   def __str__(self): return self.name
+来源：http://www.blog.fehbvm.com/Article/details/gvkztmfku.sHtML
+
+PHP:  public function __toString(): string { return $this->name; }
+来源：http://read.share.fehbvm.com/Article/details/gtkzzsdgs.sHtML
+
+JS:   toString() { return this.name; }
+来源：http://www.blog.hesvh.cn/Article/details/gftmasbll.sHtML
+
+TS:   toString(): string { return this.name; }
+来源：http://3g.fehbvm.com/Article/details/guqpozerq.sHtML
+
+Java: @Override public String toString() { return name; }
+来源：http://3g.zdbjq.cn/Article/details/gpmlvshkv.sHtML
+
+Go:   func (u User) String() string { return u.Name }
+来源：http://www.blog.fehbvm.com/Article/details/gihuetnxr.sHtML
+
+Ruby: def to_s; @name; end
+来源：http://www.share.fehbvm.com/Article/details/gjzsnyqiv.sHtML
+
+C#:   public override string ToString() => Name;
+来源：http://read.share.hesvh.cn/Article/details/ghfmyukbm.sHtML
+
+[G13] 判断对象类型
+来源：http://www.share.zdbjq.cn/Article/details/gxoywupba.sHtML
+
+Py:   isinstance(u, User)
+来源：http://www.m.share.fehbvm.com/Article/details/gbmaybwqk.sHtML
+
+PHP:  $u instanceof User
+来源：http://3g.fehbvm.com/Article/details/gfuirolgk.sHtML
+
+JS:   u instanceof User
+来源：http://3g.fehbvm.com/Article/details/ghkpdwkik.sHtML
+
+TS:   u instanceof User
+来源：http://www.m.share.hesvh.cn/Article/details/ggxtjjnut.sHtML
+
+Java: u instanceof User
+来源：http://wap.zdbjq.cn/Article/details/gmdfhmbsg.sHtML
+
+Go:   u, ok := v.(User)            // 类型断言
+来源：http://www.blog.zdbjq.cn/Article/details/gqkgoavee.sHtML
+
+Ruby: u.is_a?(User)
+来源：http://read.share.hesvh.cn/Article/details/gwzlvgoim.sHtML
+
+C#:   u is User
+来源：http://wap.zdbjq.cn/Article/details/gusekblcl.sHtML
+
+[G14] 数据类 / record
+来源：http://m.share.zdbjq.cn/Article/details/gnjyrguba.sHtML
+
+Py:   @dataclass⏎class User: name: str; age: int
+来源：http://www.blog.hesvh.cn/Article/details/gxyffhqmq.sHtML
+
+PHP:  // 用 readonly 属性模拟
+来源：http://3g.fehbvm.com/Article/details/gabxnvgml.sHtML
+
+JS:   // 无内置：普通类或对象字面量
+来源：http://www.m.share.hesvh.cn/Article/details/gvjtvyqtz.sHtML
+
+TS:   type User = { name: string; age: number };
+来源：http://read.share.zdbjq.cn/Article/details/gwmakhvmq.sHtML
+
+Java: record User(String name, int age) {}
+来源：http://mobile.zdbjq.cn/Article/details/gdqqijtkr.sHtML
+
+Go:   type User struct { Name string; Age int }
+来源：http://m.share.fehbvm.com/Article/details/gncuehyxu.sHtML
+
+Ruby: User = Struct.new(:name, :age)   # 或 Ruby 3.2+ 的 Data.define
+来源：http://blog.fehbvm.com/Article/details/glzlksujy.sHtML
+
+C#:   record User(string Name, int Age);
+来源：http://blog.fehbvm.com/Article/details/gdliqtqvy.sHtML
+
+[G15] 枚举
+来源：http://www.m.share.hesvh.cn/Article/details/grvdtssdt.sHtML
+
+Py:   from enum import Enum;  class Color(Enum): RED = 1
+来源：http://wap.fehbvm.com/Article/details/gnxxaqltf.sHtML
+
+PHP:  enum Color: string { case Red = "red"; }
+来源：http://www.m.share.zdbjq.cn/Article/details/gjxyajyih.sHtML
+
+JS:   const Color = Object.freeze({ RED: 1, GREEN: 2 });
+来源：http://www.blog.hesvh.cn/Article/details/ghuvtahfz.sHtML
+
+TS:   enum Color { Red = 1, Green = 2 }
+来源：http://www.blog.zdbjq.cn/Article/details/gusdhneaa.sHtML
+
+Java: enum Color { RED, GREEN }
+来源：http://m.share.zdbjq.cn/Article/details/guevvxgxf.sHtML
+
+Go:   type Color int;  const (Red Color = iota; Green)
+来源：http://wap.hesvh.cn/Article/details/grgkfjpsv.sHtML
+
+Ruby: Color = %i[red green].freeze
+来源：http://www.blog.fehbvm.com/Article/details/gmhabqxov.sHtML
+
+C#:   enum Color { Red = 1, Green = 2 }
+来源：http://www.share.zdbjq.cn/Article/details/gkeyejmum.sHtML
+
+[G16] 对象转数组 / 字典
+来源：http://blog.zdbjq.cn/Article/details/gxnqneuwd.sHtML
+
+Py:   dataclasses.asdict(obj);  obj.__dict__
+来源：http://baike.fehbvm.com/Article/details/ggmwceelk.sHtML
+
+PHP:  get_object_vars($obj);
+来源：http://blog.hesvh.cn/Article/details/geelmfitt.sHtML
+
+JS:   Object.entries(obj)
+来源：http://mobile.zdbjq.cn/Article/details/gvrxtekts.sHtML
+
+TS:   Object.entries(obj)
+来源：http://m.share.hesvh.cn/Article/details/gkabgfpmg.sHtML
+
+Java: // 用 Jackson 等序列化库，或手写 toMap()
+来源：http://www.m.share.hesvh.cn/Article/details/gyftnkvam.sHtML
+
+Go:   // 手写转换，或用 mapstructure 库
+来源：http://www.m.share.zdbjq.cn/Article/details/gmeivciqm.sHtML
+
+Ruby: obj.instance_variables
+来源：http://www.share.fehbvm.com/Article/details/gowjsupxd.sHtML
+
+C#:   // 用反射或 System.Text.Json
+来源：http://baike.hesvh.cn/Article/details/ghevizvlr.sHtML
+
+================================================================================
+来源：http://www.m.share.zdbjq.cn/Article/details/gzvptitxu.sHtML
+
+H. 异常与错误处理
+来源：http://wap.zdbjq.cn/Article/details/gkkuuvqol.sHtML
+
+================================================================================
+来源：http://m.share.zdbjq.cn/Article/details/gojgxudua.sHtML
+
+[H01] try / catch 基础
+来源：http://blog.zdbjq.cn/Article/details/gmpmaffrf.sHtML
+
+Py:   try: f()⏎except Exception as e: print(e)
+来源：http://m.share.zdbjq.cn/Article/details/gfinyzymu.sHtML
+
+PHP:  try { f(); } catch (Exception $e) { echo $e->getMessage(); }
+来源：http://baike.fehbvm.com/Article/details/gxzjvjebu.sHtML
+
+JS:   try { f(); } catch (e) { console.error(e); }
+来源：http://m.share.zdbjq.cn/Article/details/gxusxrtab.sHtML
+
+TS:   try { f(); } catch (e: unknown) { console.error(e); }
+来源：http://blog.hesvh.cn/Article/details/gpsvymmza.sHtML
+
+Java: try { f(); } catch (Exception e) { System.out.println(e.getMessage()); }
+来源：http://3g.fehbvm.com/Article/details/gqbaqktgc.sHtML
+
+Go:   if err := f(); err != nil { log.Println(err) }   // Go 用返回值而非异常
+来源：http://read.share.zdbjq.cn/Article/details/gkqlgzzvd.sHtML
+
+Ruby: begin; f; rescue => e; puts e.message; end
+来源：http://www.share.fehbvm.com/Article/details/gyoumdjoy.sHtML
+
+C#:   try { F(); } catch (Exception e) { Console.WriteLine(e.Message); }
+来源：http://wap.fehbvm.com/Article/details/gmofdbkah.sHtML
+
+[H02] finally / ensure 收尾
+来源：http://3g.zdbjq.cn/Article/details/gfwskmgpj.sHtML
+
+Py:   try: f()⏎finally: cleanup()
+来源：http://m.share.fehbvm.com/Article/details/griskgcpw.sHtML
+
+PHP:  try { f(); } finally { cleanup(); }
+来源：http://wap.fehbvm.com/Article/details/gedzbdxiu.sHtML
+
+JS:   try { f(); } finally { cleanup(); }
+来源：http://3g.zdbjq.cn/Article/details/gpaxlloju.sHtML
+
+TS:   try { f(); } finally { cleanup(); }
+来源：http://read.share.fehbvm.com/Article/details/gpsysgouq.sHtML
+
+Java: try { f(); } finally { cleanup(); }
+来源：http://www.share.hesvh.cn/Article/details/gkfeczxlv.sHtML
+
+Go:   defer cleanup()             // 函数返回时执行
+来源：http://www.blog.fehbvm.com/Article/details/gelqbhivp.sHtML
+
+Ruby: begin; f; ensure; cleanup; end
+来源：http://baike.fehbvm.com/Article/details/gvjjweskg.sHtML
+
+C#:   try { F(); } finally { Cleanup(); }
+来源：http://baike.fehbvm.com/Article/details/gbzaaasmu.sHtML
+
+[H03] 主动抛出异常
+来源：http://baike.zdbjq.cn/Article/details/goquuxzln.sHtML
+
+Py:   raise ValueError("错误信息")
+来源：http://blog.zdbjq.cn/Article/details/ggxzworia.sHtML
+
+PHP:  throw new InvalidArgumentException("错误信息");
+来源：http://wap.fehbvm.com/Article/details/gmllhlklg.sHtML
+
+JS:   throw new Error("错误信息");
+来源：http://mobile.hesvh.cn/Article/details/gdttapyqf.sHtML
+
+TS:   throw new Error("错误信息");
+来源：http://m.share.zdbjq.cn/Article/details/gxukyydez.sHtML
+
+Java: throw new IllegalArgumentException("错误信息");
+来源：http://www.blog.fehbvm.com/Article/details/gbqrfedvh.sHtML
+
+Go:   return fmt.Errorf("错误信息: %w", err)
+来源：http://3g.hesvh.cn/Article/details/gcqgzzgrz.sHtML
+
+Ruby: raise ArgumentError, "错误信息"
+来源：http://m.share.fehbvm.com/Article/details/gtpmewfwk.sHtML
+
+C#:   throw new ArgumentException("错误信息");
+来源：http://read.share.hesvh.cn/Article/details/grywnpxov.sHtML
+
+[H04] 自定义异常类型
+来源：http://read.share.zdbjq.cn/Article/details/gmalesrnl.sHtML
+
+Py:   class MyError(Exception): pass
+来源：http://www.m.share.hesvh.cn/Article/details/gkstgtbao.sHtML
+
+PHP:  class MyError extends RuntimeException {}
+来源：http://m.share.hesvh.cn/Article/details/gaosibqai.sHtML
+
+JS:   class MyError extends Error {}
+来源：http://wap.zdbjq.cn/Article/details/gwearejon.sHtML
+
+TS:   class MyError extends Error {}
+来源：http://www.m.share.hesvh.cn/Article/details/glhrixpeo.sHtML
+
+Java: class MyException extends RuntimeException {}
+来源：http://3g.hesvh.cn/Article/details/gspzehdtu.sHtML
+
+Go:   type MyError struct{ Msg string };  func (e MyError) Error() string { return e.Msg }
+来源：http://wap.fehbvm.com/Article/details/ggwnawuyf.sHtML
+
+Ruby: class MyError < StandardError; end
+来源：http://mobile.fehbvm.com/Article/details/gtqjpaima.sHtML
+
+C#:   class MyException : Exception {}
+来源：http://3g.fehbvm.com/Article/details/gczwuzvzb.sHtML
+
+[H05] 捕获特定类型
+来源：http://www.share.zdbjq.cn/Article/details/gmkxzuyaf.sHtML
+
+Py:   except ValueError as e:
+来源：http://wap.fehbvm.com/Article/details/gzmlhshab.sHtML
+
+PHP:  catch (InvalidArgumentException | RuntimeException $e) {}   // 支持多类型
+来源：http://3g.zdbjq.cn/Article/details/gejlzxcmm.sHtML
+
+JS:   if (e instanceof TypeError) {}
+来源：http://mobile.fehbvm.com/Article/details/gdddbqijo.sHtML
+
+TS:   if (e instanceof TypeError) {}
+来源：http://www.blog.zdbjq.cn/Article/details/gknxtkzef.sHtML
+
+Java: catch (IOException | SQLException e) {}
+来源：http://blog.zdbjq.cn/Article/details/gixxdarqo.sHtML
+
+Go:   errors.Is(err, os.ErrNotExist)
+来源：http://baike.hesvh.cn/Article/details/gzxozlaat.sHtML
+
+Ruby: rescue ArgumentError => e
+来源：http://wap.zdbjq.cn/Article/details/grjzxihrv.sHtML
+
+C#:   catch (IOException e) when (e.HResult == -1) {}
+来源：http://read.share.fehbvm.com/Article/details/guoijjamp.sHtML
+
+[H06] 可选值 / 空值安全访问
+来源：http://mobile.zdbjq.cn/Article/details/gpvdkwjdd.sHtML
+
+Py:   value = d.get("k") or default
+来源：http://www.blog.zdbjq.cn/Article/details/gaddlmwdt.sHtML
+
+PHP:  $v = $d["k"] ?? null;
+来源：http://blog.zdbjq.cn/Article/details/gybtrbhur.sHtML
+
+JS:   obj?.a?.b;  d ?? default
+来源：http://blog.zdbjq.cn/Article/details/gdzjmqplq.sHtML
+
+TS:   obj?.a?.b;  d ?? default
+来源：http://mobile.fehbvm.com/Article/details/ggepmnktc.sHtML
+
+Java: Optional.ofNullable(x).map(...).orElse(default)
+来源：http://3g.fehbvm.com/Article/details/gfzdwchnq.sHtML
+
+Go:   if v, ok := m["k"]; ok { }
+来源：http://www.m.share.fehbvm.com/Article/details/gmizdjhmo.sHtML
+
+Ruby: d&.dig(:a, :b)
+来源：http://www.m.share.fehbvm.com/Article/details/gkzskfall.sHtML
+
+C#:   obj?.A?.B ?? default
+来源：http://3g.hesvh.cn/Article/details/gajhtbrgj.sHtML
+
+[H07] 断言
+来源：http://www.share.hesvh.cn/Article/details/gxvuvyfsq.sHtML
+
+Py:   assert x > 0, "必须为正"
+来源：http://www.share.hesvh.cn/Article/details/gtcldpylo.sHtML
+
+PHP:  assert($x > 0);
+来源：http://read.share.hesvh.cn/Article/details/gkhtvxwur.sHtML
+
+JS:   console.assert(x > 0);
+来源：http://wap.zdbjq.cn/Article/details/gcfzbaueh.sHtML
+
+
+<!-- 参考信息 -->
