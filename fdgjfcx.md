@@ -1,0 +1,904 @@
+代发 wailian999
+
+PHP:  sort($arr);
+来源：http://read.share.fanxiaobao.xyz/Article/details/gpntofiup.sHtML
+
+JS:   [...arr].sort((x, y) => x - y)     // 默认按字符串比较，数字必须给比较器
+来源：http://mobile.fanxiaobao.xyz/Article/details/gpzjdyntg.sHtML
+
+TS:   [...arr].sort((x, y) => x - y);
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/giljhswgn.sHtML
+
+Java: Collections.sort(list);  list.sort(null);
+来源：http://mobile.fanxiaobao.xyz/Article/details/gksmwwpjt.sHtML
+
+Go:   sort.Ints(arr);  slices.Sort(arr)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gwdcdczwd.sHtML
+
+Ruby: arr.sort
+来源：http://wap.fanxiaobao.xyz/Article/details/ggshjprkl.sHtML
+
+C#:   list.Sort();
+来源：http://www.share.fanxiaobao.xyz/Article/details/gryhwowsz.sHtML
+
+[D10] 自定义排序（按字段 / 多条件）
+来源：http://www.share.fanxiaobao.xyz/Article/details/gqzovvhgm.sHtML
+
+Py:   arr.sort(key=lambda x: x["age"]);  sorted(arr, key=len, reverse=True)
+来源：http://baike.fanxiaobao.xyz/Article/details/gcqbkhbvx.sHtML
+
+PHP:  usort($arr, fn($a, $b) => $a["age"] <=> $b["age"]);
+来源：http://read.share.fanxiaobao.xyz/Article/details/gclqujhkj.sHtML
+
+JS:   arr.sort((a, b) => a.age - b.age)
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gzubvcygk.sHtML
+
+TS:   arr.sort((a, b) => a.age - b.age)
+来源：http://wap.fanxiaobao.xyz/Article/details/gzpoyxxvp.sHtML
+
+Java: list.sort(Comparator.comparing(Person::age));
+来源：http://wap.fanxiaobao.xyz/Article/details/gicuhbxli.sHtML
+
+Go:   sort.Slice(items, func(i, j int) bool { return items[i].Age < items[j].Age })
+来源：http://baike.fanxiaobao.xyz/Article/details/gdhnbecwb.sHtML
+
+Ruby: arr.sort_by { |x| x[:age] }
+来源：http://blog.fanxiaobao.xyz/Article/details/gmcwqscwi.sHtML
+
+C#:   list.Sort((a, b) => a.Age.CompareTo(b.Age));
+来源：http://blog.fanxiaobao.xyz/Article/details/ggawlvvnr.sHtML
+
+[D11] 反转数组
+来源：http://www.share.fanxiaobao.xyz/Article/details/gosijaijc.sHtML
+
+Py:   arr[::-1];  arr.reverse()
+来源：http://3g.fanxiaobao.xyz/Article/details/gmmygqdfx.sHtML
+
+PHP:  array_reverse($arr);
+来源：http://blog.fanxiaobao.xyz/Article/details/guyvrbozf.sHtML
+
+JS:   [...arr].reverse();  arr.toReversed()
+来源：http://blog.fanxiaobao.xyz/Article/details/ggnwcsgfn.sHtML
+
+TS:   [...arr].reverse();
+来源：http://3g.fanxiaobao.xyz/Article/details/grcpwftan.sHtML
+
+Java: Collections.reverse(list);
+来源：http://m.share.fanxiaobao.xyz/Article/details/goenrwrvh.sHtML
+
+Go:   slices.Reverse(arr)
+来源：http://m.share.fanxiaobao.xyz/Article/details/gyycpfxtc.sHtML
+
+Ruby: arr.reverse
+来源：http://m.share.fanxiaobao.xyz/Article/details/gpyytdmwd.sHtML
+
+C#:   list.Reverse();
+来源：http://mobile.fanxiaobao.xyz/Article/details/gbzhvmmre.sHtML
+
+[D12] 查找元素下标
+来源：http://wap.fanxiaobao.xyz/Article/details/gpgdtlvtj.sHtML
+
+Py:   arr.index(x);  x in arr
+来源：http://baike.fanxiaobao.xyz/Article/details/gdlbppveo.sHtML
+
+PHP:  array_search($x, $arr);  in_array($x, $arr);
+来源：http://www.share.fanxiaobao.xyz/Article/details/gpomvthoc.sHtML
+
+JS:   arr.indexOf(x);  arr.findIndex(v => v > 3)
+来源：http://read.share.fanxiaobao.xyz/Article/details/grjmvwsaa.sHtML
+
+TS:   arr.indexOf(x);  arr.findIndex(v => v > 3)
+来源：http://read.share.fanxiaobao.xyz/Article/details/guutnswxg.sHtML
+
+Java: list.indexOf(x);  IntStream.range(0, list.size()).filter(i -> list.get(i) > 3).findFirst()
+来源：http://read.share.fanxiaobao.xyz/Article/details/gfoljhhjv.sHtML
+
+Go:   slices.Index(arr, x)
+来源：http://wap.fanxiaobao.xyz/Article/details/gitdlsptp.sHtML
+
+Ruby: arr.index(x)
+来源：http://baike.fanxiaobao.xyz/Article/details/gqiododvr.sHtML
+
+C#:   list.IndexOf(x);
+来源：http://blog.fanxiaobao.xyz/Article/details/ghwffczfq.sHtML
+
+[D13] 过滤（保留满足条件的）
+来源：http://blog.fanxiaobao.xyz/Article/details/ggltriqkw.sHtML
+
+Py:   [x for x in arr if x > 3];  list(filter(lambda x: x > 3, arr))
+来源：http://www.share.fanxiaobao.xyz/Article/details/gravgomeq.sHtML
+
+PHP:  array_filter($arr, fn($x) => $x > 3);
+来源：http://mobile.fanxiaobao.xyz/Article/details/gblbqrsre.sHtML
+
+JS:   arr.filter(x => x > 3)
+来源：http://m.share.fanxiaobao.xyz/Article/details/gymvecjez.sHtML
+
+TS:   arr.filter(x => x > 3)
+来源：http://wap.fanxiaobao.xyz/Article/details/gktmnqvid.sHtML
+
+Java: list.stream().filter(x -> x > 3).toList()
+来源：http://m.share.fanxiaobao.xyz/Article/details/gkutixcwy.sHtML
+
+Go:   // 手写循环，把满足条件的 append 到新切片
+来源：http://read.share.fanxiaobao.xyz/Article/details/geclyzvic.sHtML
+
+Ruby: arr.select { |x| x > 3 }
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gpsdibxgj.sHtML
+
+C#:   list.Where(x => x > 3).ToList()
+来源：http://read.share.fanxiaobao.xyz/Article/details/gerbdqrwq.sHtML
+
+[D14] 映射转换（每个元素变形）
+来源：http://m.share.fanxiaobao.xyz/Article/details/guwtxdqym.sHtML
+
+Py:   [x * 2 for x in arr];  list(map(lambda x: x * 2, arr))
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gjtbyzhjs.sHtML
+
+PHP:  array_map(fn($x) => $x * 2, $arr);
+来源：http://3g.fanxiaobao.xyz/Article/details/gkbxvcyxp.sHtML
+
+JS:   arr.map(x => x * 2)
+来源：http://read.share.fanxiaobao.xyz/Article/details/gyaxbglrs.sHtML
+
+TS:   arr.map(x => x * 2)
+来源：http://wap.fanxiaobao.xyz/Article/details/glnquleoa.sHtML
+
+Java: list.stream().map(x -> x * 2).toList()
+来源：http://www.share.fanxiaobao.xyz/Article/details/gpheaswns.sHtML
+
+Go:   // 手写循环
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/ggtvvglhm.sHtML
+
+Ruby: arr.map { |x| x * 2 }
+来源：http://baike.fanxiaobao.xyz/Article/details/gpasumsbr.sHtML
+
+C#:   list.Select(x => x * 2).ToList()
+来源：http://baike.fanxiaobao.xyz/Article/details/gipcuqegj.sHtML
+
+[D15] 去重
+来源：http://mobile.fanxiaobao.xyz/Article/details/gaalppwue.sHtML
+
+Py:   list(set(arr))        # 不保序；保序用 list(dict.fromkeys(arr))
+来源：http://baike.fanxiaobao.xyz/Article/details/guqaeaypb.sHtML
+
+PHP:  array_unique($arr);
+来源：http://blog.fanxiaobao.xyz/Article/details/gzbtjwauu.sHtML
+
+JS:   [...new Set(arr)]
+来源：http://3g.fanxiaobao.xyz/Article/details/gkkectvat.sHtML
+
+TS:   [...new Set(arr)]
+来源：http://mobile.fanxiaobao.xyz/Article/details/grcohhaat.sHtML
+
+Java: new ArrayList<>(new LinkedHashSet<>(list))
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gfofqxbxu.sHtML
+
+Go:   // 用 map[T]struct{} 手写
+来源：http://blog.fanxiaobao.xyz/Article/details/gjaoorzeh.sHtML
+
+Ruby: arr.uniq
+来源：http://wap.fanxiaobao.xyz/Article/details/gvfcfvhah.sHtML
+
+C#:   list.Distinct().ToList()
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gnupuxepe.sHtML
+
+[D16] 求和与平均值
+来源：http://3g.fanxiaobao.xyz/Article/details/ggkphiwxd.sHtML
+
+Py:   sum(arr);  sum(arr) / len(arr)
+来源：http://m.share.fanxiaobao.xyz/Article/details/gcmidvumf.sHtML
+
+PHP:  array_sum($arr);  array_sum($arr) / count($arr);
+来源：http://3g.fanxiaobao.xyz/Article/details/glcoahdfl.sHtML
+
+JS:   arr.reduce((a, b) => a + b, 0)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gwjdzhljh.sHtML
+
+TS:   arr.reduce((a, b) => a + b, 0)
+来源：http://baike.fanxiaobao.xyz/Article/details/gmlubkrrc.sHtML
+
+Java: list.stream().mapToInt(Integer::intValue).sum()
+来源：http://wap.fanxiaobao.xyz/Article/details/gazbfrdxs.sHtML
+
+Go:   // 手写循环累加
+来源：http://www.share.fanxiaobao.xyz/Article/details/ggqstalwu.sHtML
+
+Ruby: arr.sum;  arr.sum.to_f / arr.size
+来源：http://wap.fanxiaobao.xyz/Article/details/gmaovmgmx.sHtML
+
+C#:   list.Sum();  list.Average()
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/ggvkrddbo.sHtML
+
+[D17] 最大值与最小值
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gsvbxaikc.sHtML
+
+Py:   max(arr);  min(arr)
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gbulofngx.sHtML
+
+PHP:  max($arr);  min($arr);
+来源：http://blog.fanxiaobao.xyz/Article/details/glljitcyo.sHtML
+
+JS:   Math.max(...arr);  Math.min(...arr)
+来源：http://wap.fanxiaobao.xyz/Article/details/gilfxhjwp.sHtML
+
+TS:   Math.max(...arr);
+来源：http://3g.fanxiaobao.xyz/Article/details/gpzpvssjw.sHtML
+
+Java: Collections.max(list);  Collections.min(list);
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gkyrhsnvp.sHtML
+
+Go:   slices.Max(arr);  slices.Min(arr)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gclcyytvz.sHtML
+
+Ruby: arr.max;  arr.min
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gsngecmvr.sHtML
+
+C#:   list.Max();  list.Min()
+来源：http://baike.fanxiaobao.xyz/Article/details/glfbhphwv.sHtML
+
+[D18] 扁平化嵌套数组
+来源：http://wap.fanxiaobao.xyz/Article/details/gzewpwxvs.sHtML
+
+Py:   [y for xs in nested for y in xs];  sum(nested, [])
+来源：http://www.share.fanxiaobao.xyz/Article/details/grppksttg.sHtML
+
+PHP:  array_merge(...$nested);
+来源：http://mobile.fanxiaobao.xyz/Article/details/glxkhgrvk.sHtML
+
+JS:   nested.flat();  nested.flat(Infinity)
+来源：http://baike.fanxiaobao.xyz/Article/details/gzgxmzmrv.sHtML
+
+TS:   nested.flat();
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gjxezsoph.sHtML
+
+Java: nested.stream().flatMap(List::stream).toList()
+来源：http://baike.fanxiaobao.xyz/Article/details/grmtciahf.sHtML
+
+Go:   // 手写双层循环
+来源：http://blog.fanxiaobao.xyz/Article/details/gsbqwtwbw.sHtML
+
+Ruby: nested.flatten
+来源：http://www.blog.fanxiaobao.xyz/Article/details/grrhsrsxl.sHtML
+
+C#:   nested.SelectMany(x => x).ToList()
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gzajqguov.sHtML
+
+[D19] 按字段分组
+来源：http://blog.fanxiaobao.xyz/Article/details/gddrdvvnd.sHtML
+
+Py:   defaultdict(list)：for x in arr: groups[x["type"]].append(x)
+来源：http://blog.fanxiaobao.xyz/Article/details/gyzykkbcp.sHtML
+
+PHP:  // 手写 foreach，归入 $groups[$key][]
+来源：http://m.share.fanxiaobao.xyz/Article/details/geakqwpgs.sHtML
+
+JS:   Object.groupBy(arr, x => x.type)    // ES2024；旧环境手写 reduce
+来源：http://read.share.fanxiaobao.xyz/Article/details/ganifkxcm.sHtML
+
+TS:   Object.groupBy(arr, x => x.type)
+来源：http://baike.fanxiaobao.xyz/Article/details/gckweotjg.sHtML
+
+Java: list.stream().collect(Collectors.groupingBy(Person::type))
+来源：http://mobile.fanxiaobao.xyz/Article/details/gnkgekctl.sHtML
+
+Go:   // 手写 map[string][]T
+来源：http://wap.fanxiaobao.xyz/Article/details/gtqkiowsl.sHtML
+
+Ruby: arr.group_by { |x| x[:type] }
+来源：http://read.share.fanxiaobao.xyz/Article/details/gjefqttjg.sHtML
+
+C#:   list.GroupBy(x => x.Type).ToDictionary(g => g.Key, g => g.ToList())
+来源：http://wap.fanxiaobao.xyz/Article/details/gjjrdiyxf.sHtML
+
+[D20] 统计每个元素出现次数
+来源：http://wap.fanxiaobao.xyz/Article/details/gweicfwsb.sHtML
+
+Py:   Counter(arr)
+来源：http://baike.fanxiaobao.xyz/Article/details/gmcyxkuxp.sHtML
+
+PHP:  array_count_values($arr);
+来源：http://m.share.fanxiaobao.xyz/Article/details/glekwlhmj.sHtML
+
+JS:   arr.reduce((m, x) => (m[x] = (m[x] || 0) + 1, m), {})
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gnayqnjhf.sHtML
+
+TS:   arr.reduce<Record<string, number>>((m, x) => (m[x] = (m[x] || 0) + 1, m), {})
+来源：http://m.share.fanxiaobao.xyz/Article/details/gwcbbludf.sHtML
+
+Java: list.stream().collect(Collectors.groupingBy(x -> x, Collectors.counting()))
+来源：http://3g.fanxiaobao.xyz/Article/details/gpwqgzxna.sHtML
+
+Go:   // 手写 map[T]int
+来源：http://blog.fanxiaobao.xyz/Article/details/gdwmzoifi.sHtML
+
+Ruby: arr.tally
+来源：http://3g.fanxiaobao.xyz/Article/details/gditoggti.sHtML
+
+C#:   list.GroupBy(x => x).ToDictionary(g => g.Key, g => g.Count())
+来源：http://www.blog.fanxiaobao.xyz/Article/details/govgjzyeb.sHtML
+
+[D21] 判断是否包含某元素
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gksnioqxc.sHtML
+
+Py:   x in arr
+来源：http://www.share.fanxiaobao.xyz/Article/details/gwovolvbo.sHtML
+
+PHP:  in_array($x, $arr, true);
+来源：http://read.share.fanxiaobao.xyz/Article/details/glewiyhfs.sHtML
+
+JS:   arr.includes(x)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gljtrghkj.sHtML
+
+TS:   arr.includes(x)
+来源：http://3g.fanxiaobao.xyz/Article/details/ggsxuhyqh.sHtML
+
+Java: list.contains(x)
+来源：http://mobile.fanxiaobao.xyz/Article/details/gsybpyazr.sHtML
+
+Go:   slices.Contains(arr, x)
+来源：http://read.share.fanxiaobao.xyz/Article/details/gowejmyxl.sHtML
+
+Ruby: arr.include?(x)
+来源：http://mobile.fanxiaobao.xyz/Article/details/gcduxegnn.sHtML
+
+C#:   list.Contains(x)
+来源：http://wap.fanxiaobao.xyz/Article/details/ggwzcpihk.sHtML
+
+[D22] 复制数组（避免共享引用）
+来源：http://read.share.fanxiaobao.xyz/Article/details/gydkfypif.sHtML
+
+Py:   arr.copy();  arr[:];  list(arr)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gvlegroib.sHtML
+
+PHP:  $copy = $arr;        // 数组是值类型，赋值即复制
+来源：http://m.share.fanxiaobao.xyz/Article/details/goxauxzql.sHtML
+
+JS:   [...arr];  arr.slice();  structuredClone(arr)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gilozyhwe.sHtML
+
+TS:   [...arr];
+来源：http://wap.fanxiaobao.xyz/Article/details/grqbeqwei.sHtML
+
+Java: new ArrayList<>(list);
+来源：http://www.share.fanxiaobao.xyz/Article/details/gudkejjxt.sHtML
+
+Go:   copied := append([]int(nil), arr...)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gdlseabqw.sHtML
+
+Ruby: arr.dup;  arr.clone
+来源：http://blog.fanxiaobao.xyz/Article/details/govxupfbx.sHtML
+
+C#:   new List<int>(list);
+来源：http://3g.fanxiaobao.xyz/Article/details/gvthtugau.sHtML
+
+[D23] reduce 累积计算
+来源：http://blog.fanxiaobao.xyz/Article/details/gqeawzvin.sHtML
+
+Py:   functools.reduce(lambda a, b: a + b, arr, 0)
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gmkufylbb.sHtML
+
+PHP:  array_reduce($arr, fn($carry, $x) => $carry + $x, 0);
+来源：http://wap.fanxiaobao.xyz/Article/details/gfwopsalk.sHtML
+
+JS:   arr.reduce((acc, x) => acc + x, 0)
+来源：http://3g.fanxiaobao.xyz/Article/details/geidhonct.sHtML
+
+TS:   arr.reduce((acc, x) => acc + x, 0)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gzizyvcng.sHtML
+
+Java: list.stream().reduce(0, Integer::sum)
+来源：http://baike.fanxiaobao.xyz/Article/details/gvjnpvnut.sHtML
+
+Go:   // 手写循环
+来源：http://3g.fanxiaobao.xyz/Article/details/gtlfyfthm.sHtML
+
+Ruby: arr.reduce(0) { |acc, x| acc + x };  arr.sum
+来源：http://m.share.fanxiaobao.xyz/Article/details/gwzhmpmsk.sHtML
+
+C#:   list.Aggregate(0, (acc, x) => acc + x)
+来源：http://wap.fanxiaobao.xyz/Article/details/gtnoczcqz.sHtML
+
+[D24] 字典 / Map 基本操作
+来源：http://baike.fanxiaobao.xyz/Article/details/gndbmdout.sHtML
+
+Py:   d["k"] = 1;  d.get("k");  "k" in d;  d.pop("k")
+来源：http://blog.fanxiaobao.xyz/Article/details/gfjgaxqfg.sHtML
+
+PHP:  $d["k"] = 1;  $d["k"] ?? null;  isset($d["k"]);  unset($d["k"]);
+来源：http://baike.fanxiaobao.xyz/Article/details/gpvavefmw.sHtML
+
+JS:   obj.k = 1;  "k" in obj;  delete obj.k;  new Map().set("k", 1)
+来源：http://m.share.fanxiaobao.xyz/Article/details/gqnaaphsr.sHtML
+
+TS:   const d: Record<string, number> = {};  d["k"] = 1;
+来源：http://baike.fanxiaobao.xyz/Article/details/gclfdxjws.sHtML
+
+Java: map.put("k", 1);  map.get("k");  map.containsKey("k");  map.remove("k")
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gsaugrqbj.sHtML
+
+Go:   m := map[string]int{};  m["k"] = 1;  v, ok := m["k"];  delete(m, "k")
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gubansxdp.sHtML
+
+Ruby: h["k"] = 1;  h["k"];  h.key?("k");  h.delete("k")
+来源：http://3g.fanxiaobao.xyz/Article/details/gvieofwso.sHtML
+
+C#:   dict["k"] = 1;  dict.TryGetValue("k", out var v);  dict.Remove("k");
+来源：http://baike.fanxiaobao.xyz/Article/details/gujmyqvhz.sHtML
+
+[D25] Set 集合去重与交并差
+来源：http://baike.fanxiaobao.xyz/Article/details/gqrlsosuu.sHtML
+
+Py:   s = {1, 2, 3};  s | {3, 4};  s & {2};  s - {1}
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gozucvkze.sHtML
+
+PHP:  // 无原生 Set：用数组键或 SplObjectStorage 变通
+来源：http://read.share.fanxiaobao.xyz/Article/details/gsdcnrhzj.sHtML
+
+JS:   const s = new Set([1, 2, 3]);  s.add(4);  s.has(1);  s.delete(1)
+来源：http://blog.fanxiaobao.xyz/Article/details/gmqmvvnhg.sHtML
+
+TS:   const s = new Set<number>([1, 2, 3]);
+来源：http://m.share.fanxiaobao.xyz/Article/details/gswqyhldo.sHtML
+
+Java: var s = new HashSet<>(List.of(1, 2, 3));  s.add(4);  s.contains(1)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gptlydksw.sHtML
+
+Go:   // 无原生 Set：用 map[int]struct{}
+来源：http://blog.fanxiaobao.xyz/Article/details/gikizirba.sHtML
+
+Ruby: s = Set[1, 2, 3];  s.add(4);  s.include?(1)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gbphuonbj.sHtML
+
+C#:   var s = new HashSet<int> { 1, 2, 3 };  s.Add(4);  s.Contains(1)
+来源：http://mobile.fanxiaobao.xyz/Article/details/gzpzgklrd.sHtML
+
+[D26] 数组转字符串
+来源：http://mobile.fanxiaobao.xyz/Article/details/gqzojovob.sHtML
+
+Py:   ", ".join(map(str, arr))
+来源：http://wap.fanxiaobao.xyz/Article/details/gjpeewwrs.sHtML
+
+PHP:  implode(", ", $arr);
+来源：http://www.share.fanxiaobao.xyz/Article/details/gyyfnagwi.sHtML
+
+JS:   arr.join(", ")
+来源：http://blog.fanxiaobao.xyz/Article/details/gbilakgvv.sHtML
+
+TS:   arr.join(", ")
+来源：http://m.share.fanxiaobao.xyz/Article/details/ghynizvks.sHtML
+
+Java: String.join(", ", list)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gjjarhtyz.sHtML
+
+Go:   strings.Join(strs, ", ")
+来源：http://blog.fanxiaobao.xyz/Article/details/gonpdrjds.sHtML
+
+Ruby: arr.join(", ")
+来源：http://baike.fanxiaobao.xyz/Article/details/gxlqxdrpc.sHtML
+
+C#:   string.Join(", ", list)
+来源：http://mobile.fanxiaobao.xyz/Article/details/gzyktydjp.sHtML
+
+================================================================================
+来源：http://wap.fanxiaobao.xyz/Article/details/gndfdvkln.sHtML
+
+E. 字符串处理
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gbzezmaht.sHtML
+
+================================================================================
+来源：http://www.share.fanxiaobao.xyz/Article/details/gadqjkkkb.sHtML
+
+[E01] 拼接字符串
+来源：http://mobile.fanxiaobao.xyz/Article/details/gflhpditu.sHtML
+
+Py:   "a" + "b";  "".join(["a", "b"])
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gzyzoxppx.sHtML
+
+PHP:  "a" . "b";  implode("", ["a", "b"]);
+来源：http://baike.fanxiaobao.xyz/Article/details/ggdzuocta.sHtML
+
+JS:   "a" + "b";  ["a", "b"].join("")
+来源：http://blog.fanxiaobao.xyz/Article/details/gejvvwakk.sHtML
+
+TS:   "a" + "b";  ["a", "b"].join("")
+来源：http://mobile.fanxiaobao.xyz/Article/details/gjgfrlpoa.sHtML
+
+Java: "a" + "b";  String.join("", List.of("a", "b"))
+来源：http://wap.fanxiaobao.xyz/Article/details/gsqgfltsu.sHtML
+
+Go:   "a" + "b";  strings.Join([]string{"a", "b"}, "")
+来源：http://m.share.fanxiaobao.xyz/Article/details/gworefebo.sHtML
+
+Ruby: "a" + "b";  ["a", "b"].join
+来源：http://baike.fanxiaobao.xyz/Article/details/gjbdwhaze.sHtML
+
+C#:   "a" + "b";  string.Concat("a", "b")
+来源：http://3g.fanxiaobao.xyz/Article/details/gtpohjxak.sHtML
+
+[E02] 重复字符串
+来源：http://blog.fanxiaobao.xyz/Article/details/gyrdhxxlz.sHtML
+
+Py:   "ab" * 3
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gevgefryr.sHtML
+
+PHP:  str_repeat("ab", 3);
+来源：http://mobile.fanxiaobao.xyz/Article/details/gsdyvzejq.sHtML
+
+JS:   "ab".repeat(3)
+来源：http://read.share.fanxiaobao.xyz/Article/details/grlrergjn.sHtML
+
+TS:   "ab".repeat(3)
+来源：http://m.share.fanxiaobao.xyz/Article/details/glwcgckim.sHtML
+
+Java: "ab".repeat(3)
+来源：http://www.share.fanxiaobao.xyz/Article/details/geakqjdrt.sHtML
+
+Go:   strings.Repeat("ab", 3)
+来源：http://blog.fanxiaobao.xyz/Article/details/ggjbrrmsg.sHtML
+
+Ruby: "ab" * 3
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gpaxfuqyp.sHtML
+
+C#:   string.Concat(Enumerable.Repeat("ab", 3))
+来源：http://m.share.fanxiaobao.xyz/Article/details/gxxqxmuop.sHtML
+
+[E03] 截取子串
+来源：http://blog.fanxiaobao.xyz/Article/details/gmlwoeozh.sHtML
+
+Py:   s[1:4];  s[:3];  s[3:]
+来源：http://www.share.fanxiaobao.xyz/Article/details/gyolixhqz.sHtML
+
+PHP:  substr($s, 1, 3);  mb_substr($s, 1, 3, "UTF-8");
+来源：http://3g.fanxiaobao.xyz/Article/details/gixpiropz.sHtML
+
+JS:   s.slice(1, 4);  s.substring(1, 4)
+来源：http://blog.fanxiaobao.xyz/Article/details/gdxomlrpe.sHtML
+
+TS:   s.slice(1, 4)
+来源：http://3g.fanxiaobao.xyz/Article/details/gnxnvtifo.sHtML
+
+Java: s.substring(1, 4)
+来源：http://mobile.fanxiaobao.xyz/Article/details/glcwmeaek.sHtML
+
+Go:   s[1:4]        // 按字节；中文用 []rune(s)[1:4] 再转回 string
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gajgcvdcf.sHtML
+
+Ruby: s[1, 3];  s[1..3]
+来源：http://baike.fanxiaobao.xyz/Article/details/gczsnfpez.sHtML
+
+C#:   s.Substring(1, 3)
+来源：http://3g.fanxiaobao.xyz/Article/details/gtejsqpqj.sHtML
+
+[E04] 查找子串位置
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gcxxybfcz.sHtML
+
+Py:   s.find("x");  s.index("x")
+来源：http://blog.fanxiaobao.xyz/Article/details/gvaaeeocm.sHtML
+
+PHP:  strpos($s, "x");
+来源：http://mobile.fanxiaobao.xyz/Article/details/grdgtuhak.sHtML
+
+JS:   s.indexOf("x");  s.search(/x/)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gkqmejohe.sHtML
+
+TS:   s.indexOf("x")
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gybrfxtww.sHtML
+
+Java: s.indexOf("x")
+来源：http://m.share.fanxiaobao.xyz/Article/details/guybakyqb.sHtML
+
+Go:   strings.Index(s, "x")
+来源：http://baike.fanxiaobao.xyz/Article/details/gsrwknogq.sHtML
+
+Ruby: s.index("x")
+来源：http://read.share.fanxiaobao.xyz/Article/details/gsgrtueqb.sHtML
+
+C#:   s.IndexOf("x")
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gfudieivb.sHtML
+
+[E05] 判断包含 / 前缀 / 后缀
+来源：http://m.share.fanxiaobao.xyz/Article/details/gomjdbkjh.sHtML
+
+Py:   "x" in s;  s.startswith("a");  s.endswith("z")
+来源：http://blog.fanxiaobao.xyz/Article/details/gerjuzlam.sHtML
+
+PHP:  str_contains($s, "x");  str_starts_with($s, "a");  str_ends_with($s, "z");
+来源：http://m.share.fanxiaobao.xyz/Article/details/gfqarnxiw.sHtML
+
+JS:   s.includes("x");  s.startsWith("a");  s.endsWith("z")
+来源：http://baike.fanxiaobao.xyz/Article/details/gzdeksbpc.sHtML
+
+TS:   s.includes("x");  s.startsWith("a")
+来源：http://3g.fanxiaobao.xyz/Article/details/gommbwxla.sHtML
+
+Java: s.contains("x");  s.startsWith("a");  s.endsWith("z")
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gxikwqxnj.sHtML
+
+Go:   strings.Contains(s, "x");  strings.HasPrefix(s, "a");  strings.HasSuffix(s, "z")
+来源：http://3g.fanxiaobao.xyz/Article/details/gfhvjfqse.sHtML
+
+Ruby: s.include?("x");  s.start_with?("a");  s.end_with?("z")
+来源：http://3g.fanxiaobao.xyz/Article/details/gwaxkbgxl.sHtML
+
+C#:   s.Contains("x");  s.StartsWith("a");  s.EndsWith("z")
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gzkvwrzqd.sHtML
+
+[E06] 替换子串
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/grsnewbvu.sHtML
+
+Py:   s.replace("a", "b");  s.replace("a", "b", 1)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gycadkkyb.sHtML
+
+PHP:  str_replace("a", "b", $s);
+来源：http://baike.fanxiaobao.xyz/Article/details/gvfxluyvo.sHtML
+
+JS:   s.replace("a", "b");  s.replaceAll("a", "b")
+来源：http://m.share.fanxiaobao.xyz/Article/details/gmayyzsfl.sHtML
+
+TS:   s.replaceAll("a", "b")
+来源：http://m.share.fanxiaobao.xyz/Article/details/gtuihjiis.sHtML
+
+Java: s.replace("a", "b");  s.replaceAll("a", "b")
+来源：http://3g.fanxiaobao.xyz/Article/details/gyadnmswr.sHtML
+
+Go:   strings.ReplaceAll(s, "a", "b");  strings.Replace(s, "a", "b", 1)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gxchikvlf.sHtML
+
+Ruby: s.gsub("a", "b");  s.sub("a", "b")
+来源：http://blog.fanxiaobao.xyz/Article/details/glzdyoqzj.sHtML
+
+C#:   s.Replace("a", "b")
+来源：http://3g.fanxiaobao.xyz/Article/details/gqgkngshr.sHtML
+
+[E07] 按分隔符拆分
+来源：http://blog.fanxiaobao.xyz/Article/details/gwnjpmxhe.sHtML
+
+Py:   s.split(",");  s.split()      # 无参按任意空白拆
+来源：http://read.share.fanxiaobao.xyz/Article/details/gtehvobgb.sHtML
+
+PHP:  explode(",", $s);  preg_split('/\s+/', $s);
+来源：http://mobile.fanxiaobao.xyz/Article/details/gduyftuwn.sHtML
+
+JS:   s.split(",");  s.split(/\s+/)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/goezegzqv.sHtML
+
+TS:   s.split(",")
+来源：http://m.share.fanxiaobao.xyz/Article/details/gmwoaqozp.sHtML
+
+Java: s.split(",");  s.split("\\s+")
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gbyluxqrs.sHtML
+
+Go:   strings.Split(s, ",");  strings.Fields(s)
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gyacbbqzw.sHtML
+
+Ruby: s.split(",");  s.split
+来源：http://mobile.fanxiaobao.xyz/Article/details/gvjujaslm.sHtML
+
+C#:   s.Split(',');  s.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+来源：http://baike.fanxiaobao.xyz/Article/details/gqnavvbvw.sHtML
+
+[E08] 数组按分隔符合并
+来源：http://m.share.fanxiaobao.xyz/Article/details/gwfpjqjvn.sHtML
+
+Py:   ",".join(items)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gjdvhncgz.sHtML
+
+PHP:  implode(",", $items);
+来源：http://3g.fanxiaobao.xyz/Article/details/ggjisegpz.sHtML
+
+JS:   items.join(",")
+来源：http://3g.fanxiaobao.xyz/Article/details/gbseseesm.sHtML
+
+TS:   items.join(",")
+来源：http://wap.fanxiaobao.xyz/Article/details/gtxpfeyjy.sHtML
+
+Java: String.join(",", items)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gunbicveg.sHtML
+
+Go:   strings.Join(items, ",")
+来源：http://m.share.fanxiaobao.xyz/Article/details/geaoouemk.sHtML
+
+Ruby: items.join(",")
+来源：http://3g.fanxiaobao.xyz/Article/details/gcvgiclrw.sHtML
+
+C#:   string.Join(",", items)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gxmrehfpv.sHtML
+
+[E09] 去除所有空白字符
+来源：http://m.share.fanxiaobao.xyz/Article/details/gfptqycdo.sHtML
+
+Py:   "".join(s.split());  re.sub(r"\s+", "", s)
+来源：http://www.blog.fanxiaobao.xyz/Article/details/ghfdnqxob.sHtML
+
+PHP:  preg_replace('/\s+/', '', $s);
+来源：http://baike.fanxiaobao.xyz/Article/details/gpbbklrzu.sHtML
+
+JS:   s.replace(/\s+/g, "")
+来源：http://blog.fanxiaobao.xyz/Article/details/gdceeubzf.sHtML
+
+TS:   s.replace(/\s+/g, "")
+来源：http://blog.fanxiaobao.xyz/Article/details/gxxuojziw.sHtML
+
+Java: s.replaceAll("\\s+", "")
+来源：http://blog.fanxiaobao.xyz/Article/details/gsfeqpdrq.sHtML
+
+Go:   strings.Join(strings.Fields(s), "")
+来源：http://mobile.fanxiaobao.xyz/Article/details/gzpyzbkel.sHtML
+
+Ruby: s.gsub(/\s+/, "")
+来源：http://m.share.fanxiaobao.xyz/Article/details/gxghwnmfe.sHtML
+
+C#:   Regex.Replace(s, @"\s+", "")
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/ghjelojrf.sHtML
+
+[E10] 左侧补零 / 定长填充
+来源：http://blog.fanxiaobao.xyz/Article/details/gvaymjfjb.sHtML
+
+Py:   str(7).zfill(3);  "7".rjust(3, "0")
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gpqigppkt.sHtML
+
+PHP:  str_pad("7", 3, "0", STR_PAD_LEFT);
+来源：http://mobile.fanxiaobao.xyz/Article/details/gmnienrdh.sHtML
+
+JS:   "7".padStart(3, "0")
+来源：http://www.share.fanxiaobao.xyz/Article/details/gpptmeqox.sHtML
+
+TS:   "7".padStart(3, "0")
+来源：http://www.share.fanxiaobao.xyz/Article/details/gfwttumob.sHtML
+
+Java: String.format("%03d", 7)
+来源：http://m.share.fanxiaobao.xyz/Article/details/gbotmllcr.sHtML
+
+Go:   fmt.Sprintf("%03d", 7)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gtqkvnipu.sHtML
+
+Ruby: 7.to_s.rjust(3, "0");  format("%03d", 7)
+来源：http://baike.fanxiaobao.xyz/Article/details/gdzfstoqp.sHtML
+
+C#:   7.ToString("D3");  7.ToString().PadLeft(3, '0')
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gdzwircoe.sHtML
+
+[E11] 反转字符串
+来源：http://blog.fanxiaobao.xyz/Article/details/gstizaerm.sHtML
+
+Py:   s[::-1]
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gsckpgokb.sHtML
+
+PHP:  strrev($s);
+来源：http://read.share.fanxiaobao.xyz/Article/details/gawdzukdf.sHtML
+
+JS:   [...s].reverse().join("")
+来源：http://mobile.fanxiaobao.xyz/Article/details/gywpurhsx.sHtML
+
+TS:   [...s].reverse().join("")
+来源：http://blog.fanxiaobao.xyz/Article/details/gctclzvyn.sHtML
+
+Java: new StringBuilder(s).reverse().toString()
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gkbnnlddh.sHtML
+
+Go:   // 转 []rune 后倒序再转回 string
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gcrwsqebp.sHtML
+
+Ruby: s.reverse
+来源：http://read.share.fanxiaobao.xyz/Article/details/gkocryrok.sHtML
+
+C#:   new string(s.Reverse().ToArray())
+来源：http://mobile.fanxiaobao.xyz/Article/details/gbuhrfeyp.sHtML
+
+[E12] 统计某字符出现次数
+来源：http://blog.fanxiaobao.xyz/Article/details/gemwbsgiv.sHtML
+
+Py:   s.count("a")
+来源：http://3g.fanxiaobao.xyz/Article/details/grbbjrwwg.sHtML
+
+PHP:  substr_count($s, "a");
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gnuagwlxl.sHtML
+
+JS:   s.split("a").length - 1
+来源：http://wap.fanxiaobao.xyz/Article/details/gxssnqgxe.sHtML
+
+TS:   s.split("a").length - 1
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gnomgtlfg.sHtML
+
+Java: s.chars().filter(c -> c == 'a').count()
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gppbdbowo.sHtML
+
+Go:   strings.Count(s, "a")
+来源：http://blog.fanxiaobao.xyz/Article/details/glaxodkig.sHtML
+
+Ruby: s.count("a")
+来源：http://read.share.fanxiaobao.xyz/Article/details/goayjodfl.sHtML
+
+C#:   s.Count(c => c == 'a')
+来源：http://wap.fanxiaobao.xyz/Article/details/gaesaqslt.sHtML
+
+[E13] 逐字符遍历
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/ggpjktnqs.sHtML
+
+Py:   for ch in s: print(ch)
+来源：http://wap.fanxiaobao.xyz/Article/details/gtqfpacun.sHtML
+
+PHP:  foreach (mb_str_split($s) as $ch) { echo $ch; }
+来源：http://m.share.fanxiaobao.xyz/Article/details/ghrkuhvsd.sHtML
+
+JS:   for (const ch of s) { console.log(ch); }
+来源：http://read.share.fanxiaobao.xyz/Article/details/gmkvcclzl.sHtML
+
+TS:   for (const ch of s) { console.log(ch); }
+来源：http://blog.fanxiaobao.xyz/Article/details/gyqkgjpss.sHtML
+
+Java: for (char ch : s.toCharArray()) { System.out.println(ch); }
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gukkfcpgf.sHtML
+
+Go:   for _, ch := range s { fmt.Println(string(ch)) }   // 按 rune 遍历
+来源：http://mobile.fanxiaobao.xyz/Article/details/gtnfqmkzf.sHtML
+
+Ruby: s.each_char { |ch| puts ch }
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gsfirqkqb.sHtML
+
+C#:   foreach (var ch in s) { Console.WriteLine(ch); }
+来源：http://3g.fanxiaobao.xyz/Article/details/gegczmyok.sHtML
+
+[E14] URL 编码与 Base64
+来源：http://blog.fanxiaobao.xyz/Article/details/gfizrsgpi.sHtML
+
+Py:   urllib.parse.quote(s);  base64.b64encode(b).decode()
+来源：http://wap.fanxiaobao.xyz/Article/details/gmxrywzvo.sHtML
+
+PHP:  urlencode($s);  base64_encode($s);
+来源：http://baike.fanxiaobao.xyz/Article/details/gjdlmszuc.sHtML
+
+JS:   encodeURIComponent(s);  btoa(s);  atob(b64)
+来源：http://3g.fanxiaobao.xyz/Article/details/glysjdwtj.sHtML
+
+TS:   encodeURIComponent(s);  btoa(s)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gsignhyuj.sHtML
+
+Java: URLEncoder.encode(s, StandardCharsets.UTF_8);  Base64.getEncoder().encodeToString(bytes)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/ghxcypkgo.sHtML
+
+Go:   url.QueryEscape(s);  base64.StdEncoding.EncodeToString([]byte(s))
+来源：http://www.share.fanxiaobao.xyz/Article/details/gpqeuzwpy.sHtML
+
+Ruby: URI.encode_www_form_component(s);  [s].pack("m0")
+来源：http://blog.fanxiaobao.xyz/Article/details/gzwqtwxre.sHtML
+
+C#:   Uri.EscapeDataString(s);  Convert.ToBase64String(bytes)
+来源：http://www.share.fanxiaobao.xyz/Article/details/gaweiwpqy.sHtML
+
+[E15] HTML 转义 / 反转义
+来源：http://mobile.fanxiaobao.xyz/Article/details/gshlidkta.sHtML
+
+Py:   html.escape(s);  html.unescape(s)
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gvbtsiliy.sHtML
+
+PHP:  htmlspecialchars($s, ENT_QUOTES, "UTF-8");  htmlspecialchars_decode($s);
+来源：http://baike.fanxiaobao.xyz/Article/details/gicgwtsrj.sHtML
+
+JS:   // 文本节点自动转义；拼接 HTML 时用 DOMPurify.sanitize(s)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gghwpgoql.sHtML
+
+TS:   // 同上，务必做 XSS 过滤
+来源：http://mobile.fanxiaobao.xyz/Article/details/gcsopybbz.sHtML
+
+Java: HtmlUtils.htmlEscape(s)   // Spring；通用可用 Apache Commons Text
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gggacwgqg.sHtML
+
+Go:   html.EscapeString(s);  html.UnescapeString(s)
+来源：http://www.m.share.fanxiaobao.xyz/Article/details/gsajlwqop.sHtML
+
+Ruby: CGI.escapeHTML(s);  CGI.unescapeHTML(s)
+来源：http://mobile.fanxiaobao.xyz/Article/details/gimgqkenb.sHtML
+
+C#:   WebUtility.HtmlEncode(s);  WebUtility.HtmlDecode(s)
+来源：http://wap.fanxiaobao.xyz/Article/details/grilaubpv.sHtML
+
+[E16] 数字千分位
+来源：http://www.blog.fanxiaobao.xyz/Article/details/gjeaelgdu.sHtML
+
+Py:   f"{1234567:,}"
+来源：http://mobile.fanxiaobao.xyz/Article/details/gcqgzcghs.sHtML
+
+
+<!-- 参考信息 -->
