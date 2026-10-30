@@ -1,0 +1,904 @@
+代发 wailian999
+
+Ruby: d.each { |k, v| puts "#{k}=#{v}" }
+来源：http://baike.zdbjq.cn/Article/details/gzbzslkji.sHtML
+
+C#:   foreach (var (k, v) in dict) { Console.WriteLine($"{k}={v}"); }
+来源：http://mobile.zdbjq.cn/Article/details/gjckvgoko.sHtML
+
+[B07] while 循环
+来源：http://3g.hesvh.cn/Article/details/gmjcgmuis.sHtML
+
+Py:   while i < 10: i += 1
+来源：http://www.share.fehbvm.com/Article/details/gkwzqpyva.sHtML
+
+PHP:  while ($i < 10) { $i++; }
+来源：http://3g.hesvh.cn/Article/details/gumpyztqo.sHtML
+
+JS:   while (i < 10) { i++; }
+来源：http://read.share.hesvh.cn/Article/details/gwrfayuym.sHtML
+
+TS:   while (i < 10) { i++; }
+来源：http://baike.zdbjq.cn/Article/details/grksybcqr.sHtML
+
+Java: while (i < 10) { i++; }
+来源：http://m.share.zdbjq.cn/Article/details/gflswdegk.sHtML
+
+Go:   for i < 10 { i++ }              # Go 没有 while，用单条件 for
+来源：http://wap.fehbvm.com/Article/details/gmictuprk.sHtML
+
+Ruby: while i < 10; i += 1; end
+来源：http://mobile.hesvh.cn/Article/details/gmeveufce.sHtML
+
+C#:   while (i < 10) { i++; }
+来源：http://www.blog.hesvh.cn/Article/details/gjdkkrhqn.sHtML
+
+[B08] do-while（至少执行一次）
+来源：http://wap.fehbvm.com/Article/details/gdqknkofn.sHtML
+
+Py:   # 无 do-while：用 while True + break
+来源：http://baike.fehbvm.com/Article/details/gssdpofph.sHtML
+
+PHP:  do { $i++; } while ($i < 10);
+来源：http://baike.zdbjq.cn/Article/details/gpmfmtvvu.sHtML
+
+JS:   do { i++; } while (i < 10);
+来源：http://www.blog.fehbvm.com/Article/details/gxwjzrsfo.sHtML
+
+TS:   do { i++; } while (i < 10);
+来源：http://blog.hesvh.cn/Article/details/gkgvqfnnm.sHtML
+
+Java: do { i++; } while (i < 10);
+来源：http://baike.hesvh.cn/Article/details/gwwkwnfab.sHtML
+
+Go:   for { i++; if i >= 10 { break } }
+来源：http://www.m.share.fehbvm.com/Article/details/gstwroger.sHtML
+
+Ruby: begin; i += 1; end while i < 10
+来源：http://mobile.zdbjq.cn/Article/details/gvgyrwaux.sHtML
+
+C#:   do { i++; } while (i < 10);
+来源：http://m.share.fehbvm.com/Article/details/ggrzdzbwi.sHtML
+
+[B09] break 与 continue
+来源：http://www.m.share.zdbjq.cn/Article/details/ggnoqotbl.sHtML
+
+Py:   for x in arr: if x < 0: continue     # break 直接退出循环
+来源：http://m.share.hesvh.cn/Article/details/ghidafdkf.sHtML
+
+PHP:  foreach ($arr as $x) { if ($x < 0) continue; if ($x > 9) break; }
+来源：http://www.m.share.zdbjq.cn/Article/details/ggzofwulk.sHtML
+
+JS:   for (const x of arr) { if (x < 0) continue; if (x > 9) break; }
+来源：http://wap.fehbvm.com/Article/details/grmlqdzdm.sHtML
+
+TS:   for (const x of arr) { if (x < 0) continue; if (x > 9) break; }
+来源：http://www.blog.hesvh.cn/Article/details/gncxqbdxi.sHtML
+
+Java: for (int x : arr) { if (x < 0) continue; if (x > 9) break; }
+来源：http://read.share.fehbvm.com/Article/details/grvfkwdsq.sHtML
+
+Go:   for _, x := range arr { if x < 0 { continue }; if x > 9 { break } }
+来源：http://blog.zdbjq.cn/Article/details/gmthlshcc.sHtML
+
+Ruby: arr.each { |x| next if x < 0; break if x > 9 }
+来源：http://wap.fehbvm.com/Article/details/gwuvleenh.sHtML
+
+C#:   foreach (var x in arr) { if (x < 0) continue; if (x > 9) break; }
+来源：http://baike.fehbvm.com/Article/details/gfavvflly.sHtML
+
+[B10] 遍历同时拿索引
+来源：http://wap.zdbjq.cn/Article/details/gorzkaoxq.sHtML
+
+Py:   for i, item in enumerate(arr): print(i, item)
+来源：http://wap.fehbvm.com/Article/details/gzwcwxsrg.sHtML
+
+PHP:  foreach ($arr as $i => $item) { echo "$i: $item"; }
+来源：http://mobile.fehbvm.com/Article/details/gcahptiix.sHtML
+
+JS:   arr.forEach((item, i) => console.log(i, item));
+来源：http://wap.zdbjq.cn/Article/details/gawbcotrr.sHtML
+
+TS:   arr.forEach((item: string, i: number) => console.log(i, item));
+来源：http://www.share.hesvh.cn/Article/details/gpvspjnyq.sHtML
+
+Java: for (int i = 0; i < arr.size(); i++) { System.out.println(i + ":" + arr.get(i)); }
+来源：http://mobile.zdbjq.cn/Article/details/gapxagmws.sHtML
+
+Go:   for i, item := range arr { fmt.Println(i, item) }
+来源：http://www.m.share.fehbvm.com/Article/details/gfpvhwzag.sHtML
+
+Ruby: arr.each_with_index { |item, i| puts "#{i}: #{item}" }
+来源：http://wap.fehbvm.com/Article/details/gqndgogee.sHtML
+
+C#:   for (int i = 0; i < arr.Length; i++) { Console.WriteLine($"{i}:{arr[i]}"); }
+来源：http://m.share.hesvh.cn/Article/details/ghluuccol.sHtML
+
+[B11] 生成数字序列 / 区间
+来源：http://3g.hesvh.cn/Article/details/ghodimvqg.sHtML
+
+Py:   list(range(0, 10, 2))
+来源：http://baike.fehbvm.com/Article/details/gdqwtmbqy.sHtML
+
+PHP:  range(0, 10, 2);
+来源：http://www.share.hesvh.cn/Article/details/gkoobcllr.sHtML
+
+JS:   Array.from({ length: 5 }, (_, i) => i * 2);
+来源：http://www.share.zdbjq.cn/Article/details/ghrfmuloc.sHtML
+
+TS:   Array.from({ length: 5 }, (_, i) => i * 2);
+来源：http://read.share.hesvh.cn/Article/details/gjgukulzt.sHtML
+
+Java: IntStream.range(0, 10).boxed().toList()
+来源：http://www.blog.zdbjq.cn/Article/details/gyqzupcyb.sHtML
+
+Go:   for i := 0; i < 10; i += 2 { }   // 无区间生成器
+来源：http://m.share.hesvh.cn/Article/details/gilgzajjf.sHtML
+
+Ruby: (0...10).step(2).to_a
+来源：http://wap.zdbjq.cn/Article/details/ggkjlsubf.sHtML
+
+C#:   Enumerable.Range(0, 10).Where(i => i % 2 == 0)
+来源：http://wap.hesvh.cn/Article/details/gznhsieqh.sHtML
+
+[B12] 跳出多层循环
+来源：http://www.share.zdbjq.cn/Article/details/gnzrrsxzl.sHtML
+
+Py:   # 无标签跳转：抽成函数用 return
+来源：http://www.m.share.hesvh.cn/Article/details/gcmbzhknz.sHtML
+
+PHP:  # 无标签：用 goto 或函数返回
+来源：http://www.m.share.fehbvm.com/Article/details/gjneewarz.sHtML
+
+JS:   outer: for (...) { for (...) { break outer; } }
+来源：http://read.share.fehbvm.com/Article/details/gehozntsh.sHtML
+
+TS:   outer: for (...) { for (...) { break outer; } }
+来源：http://blog.fehbvm.com/Article/details/gbdhjwjok.sHtML
+
+Java: outer: for (...) { for (...) { break outer; } }
+来源：http://read.share.fehbvm.com/Article/details/guxvvxtzq.sHtML
+
+Go:   # 无标签：用布尔标志或抽成函数
+来源：http://3g.hesvh.cn/Article/details/gpeeszboq.sHtML
+
+Ruby: # 无标签：用 catch/throw 或方法返回
+来源：http://baike.zdbjq.cn/Article/details/gvlatgiaq.sHtML
+
+C#:   # 无标签：用 goto label 或布尔标志
+来源：http://m.share.fehbvm.com/Article/details/gsrpyrbqt.sHtML
+
+[B13] 判断是否为数字
+来源：http://3g.fehbvm.com/Article/details/gfffrjqeh.sHtML
+
+Py:   isinstance(x, (int, float))
+来源：http://baike.hesvh.cn/Article/details/gkijwqwdf.sHtML
+
+PHP:  is_numeric($x)
+来源：http://3g.zdbjq.cn/Article/details/gsueyombz.sHtML
+
+JS:   typeof x === "number" && !Number.isNaN(x)
+来源：http://read.share.fehbvm.com/Article/details/glxzxuuao.sHtML
+
+TS:   typeof x === "number" && !Number.isNaN(x)
+来源：http://m.share.zdbjq.cn/Article/details/gmelzfzkb.sHtML
+
+Java: x instanceof Number
+来源：http://www.m.share.zdbjq.cn/Article/details/gvlmatlah.sHtML
+
+Go:   if _, err := strconv.Atoi(s); err == nil { ok = true }
+来源：http://www.share.hesvh.cn/Article/details/graccvyqo.sHtML
+
+Ruby: x.is_a?(Numeric)
+来源：http://baike.hesvh.cn/Article/details/gezqxapjn.sHtML
+
+C#:   x is int or double or decimal
+来源：http://wap.fehbvm.com/Article/details/ggsqbkita.sHtML
+
+[B14] 判断值是否在集合内
+来源：http://wap.zdbjq.cn/Article/details/gbgjpbmgt.sHtML
+
+Py:   x in [1, 2, 3]; x in {"a", "b"}
+来源：http://m.share.zdbjq.cn/Article/details/givvlqlrd.sHtML
+
+PHP:  in_array($x, [1, 2, 3], true)
+来源：http://www.blog.zdbjq.cn/Article/details/gkveiwhjv.sHtML
+
+JS:   [1, 2, 3].includes(x)
+来源：http://read.share.zdbjq.cn/Article/details/gzwnqqgpi.sHtML
+
+TS:   [1, 2, 3].includes(x)
+来源：http://www.blog.hesvh.cn/Article/details/gpwhwvbdo.sHtML
+
+Java: List.of(1, 2, 3).contains(x)
+来源：http://baike.hesvh.cn/Article/details/ggwqpgleo.sHtML
+
+Go:   slices.Contains([]int{1, 2, 3}, x)
+来源：http://read.share.hesvh.cn/Article/details/gdefxxvjr.sHtML
+
+Ruby: [1, 2, 3].include?(x)
+来源：http://m.share.fehbvm.com/Article/details/ginjwjafv.sHtML
+
+C#:   new[] { 1, 2, 3 }.Contains(x)
+来源：http://mobile.fehbvm.com/Article/details/gzxwpvwiq.sHtML
+
+[B15] 布尔运算与取反
+来源：http://blog.zdbjq.cn/Article/details/gvkenyfsd.sHtML
+
+Py:   a and b or not c
+来源：http://mobile.hesvh.cn/Article/details/ggsqjdgbm.sHtML
+
+PHP:  $a && $b || !$c
+来源：http://m.share.fehbvm.com/Article/details/gwvquiipx.sHtML
+
+JS:   a && b || !c
+来源：http://3g.hesvh.cn/Article/details/gvmctuxgp.sHtML
+
+TS:   a && b || !c
+来源：http://wap.hesvh.cn/Article/details/gluxhbsvz.sHtML
+
+Java: a && b || !c
+来源：http://baike.hesvh.cn/Article/details/gojybpkbd.sHtML
+
+Go:   a && b || !c
+来源：http://www.blog.hesvh.cn/Article/details/gecgfoajv.sHtML
+
+Ruby: a && b || !c
+来源：http://read.share.hesvh.cn/Article/details/gbahbxjko.sHtML
+
+C#:   a && b || !c
+来源：http://mobile.hesvh.cn/Article/details/gkrtpxwca.sHtML
+
+[B16] 卫语句：不满足条件提前返回
+来源：http://m.share.zdbjq.cn/Article/details/gazjsvfka.sHtML
+
+Py:   if not data: return
+来源：http://www.blog.fehbvm.com/Article/details/glxbpasdu.sHtML
+
+PHP:  if (!$data) { return; }
+来源：http://www.share.hesvh.cn/Article/details/gczcwlocd.sHtML
+
+JS:   if (!data) return;
+来源：http://3g.zdbjq.cn/Article/details/grjabomek.sHtML
+
+TS:   if (!data) return;
+来源：http://blog.hesvh.cn/Article/details/gbistbsdn.sHtML
+
+Java: if (data == null) return;
+来源：http://read.share.zdbjq.cn/Article/details/gkwcogmwy.sHtML
+
+Go:   if data == nil { return }
+来源：http://m.share.fehbvm.com/Article/details/gmpdinbfy.sHtML
+
+Ruby: return if data.nil?
+来源：http://read.share.fehbvm.com/Article/details/gfrsvxigc.sHtML
+
+C#:   if (data == null) return;
+来源：http://wap.hesvh.cn/Article/details/gdhjoblhy.sHtML
+
+================================================================================
+来源：http://read.share.hesvh.cn/Article/details/grskzaall.sHtML
+
+C. 函数与作用域
+来源：http://3g.hesvh.cn/Article/details/gibyhecop.sHtML
+
+================================================================================
+来源：http://m.share.zdbjq.cn/Article/details/gfxjuprwm.sHtML
+
+[C01] 定义函数
+来源：http://www.share.zdbjq.cn/Article/details/gzjwgdjbx.sHtML
+
+Py:   def add(a, b): return a + b
+来源：http://mobile.hesvh.cn/Article/details/gvhjctlyv.sHtML
+
+PHP:  function add(int $a, int $b): int { return $a + $b; }
+来源：http://baike.fehbvm.com/Article/details/gzzyuwyws.sHtML
+
+JS:   function add(a, b) { return a + b; }
+来源：http://read.share.hesvh.cn/Article/details/gpaxffkhj.sHtML
+
+TS:   function add(a: number, b: number): number { return a + b; }
+来源：http://blog.fehbvm.com/Article/details/gamltezdl.sHtML
+
+Java: static int add(int a, int b) { return a + b; }
+来源：http://wap.zdbjq.cn/Article/details/gauaycehb.sHtML
+
+Go:   func add(a, b int) int { return a + b }
+来源：http://m.share.fehbvm.com/Article/details/gfnhesdqz.sHtML
+
+Ruby: def add(a, b); a + b; end
+来源：http://www.share.zdbjq.cn/Article/details/grzwnmekg.sHtML
+
+C#:   static int Add(int a, int b) { return a + b; }
+来源：http://mobile.fehbvm.com/Article/details/gnhvvhfuq.sHtML
+
+[C02] 默认参数
+来源：http://mobile.fehbvm.com/Article/details/gfnuzagts.sHtML
+
+Py:   def greet(name="World"): return name
+来源：http://www.share.zdbjq.cn/Article/details/grvybybyk.sHtML
+
+PHP:  function greet($name = "World") { return $name; }
+来源：http://baike.hesvh.cn/Article/details/gczpfacam.sHtML
+
+JS:   function greet(name = "World") { return name; }
+来源：http://3g.zdbjq.cn/Article/details/glbhcbprt.sHtML
+
+TS:   function greet(name: string = "World") { return name; }
+来源：http://read.share.hesvh.cn/Article/details/ghasoisfd.sHtML
+
+Java: // 无默认参数：方法重载或 Optional
+来源：http://www.share.zdbjq.cn/Article/details/gcicrmrhf.sHtML
+
+Go:   // 无默认参数：传零值或另写一个包装函数
+来源：http://www.blog.zdbjq.cn/Article/details/gzbmixput.sHtML
+
+Ruby: def greet(name = "World") = name
+来源：http://baike.fehbvm.com/Article/details/gjcvvlovv.sHtML
+
+C#:   string Greet(string name = "World") => name;
+来源：http://www.blog.hesvh.cn/Article/details/gprdfycxq.sHtML
+
+[C03] 可变参数
+来源：http://baike.hesvh.cn/Article/details/gwpxsamnj.sHtML
+
+Py:   def total(*args): return sum(args)
+来源：http://mobile.fehbvm.com/Article/details/getgtxihu.sHtML
+
+PHP:  function total(...$nums) { return array_sum($nums); }
+来源：http://www.share.zdbjq.cn/Article/details/gwcufhqii.sHtML
+
+JS:   function total(...nums) { return nums.reduce((a, b) => a + b, 0); }
+来源：http://mobile.fehbvm.com/Article/details/gldcbotho.sHtML
+
+TS:   function total(...nums: number[]): number { return nums.reduce((a, b) => a + b, 0); }
+来源：http://blog.zdbjq.cn/Article/details/gnnjwbzxz.sHtML
+
+Java: static int total(int... nums) { return Arrays.stream(nums).sum(); }
+来源：http://www.blog.fehbvm.com/Article/details/gslacxogk.sHtML
+
+Go:   func total(nums ...int) int { s := 0; for _, n := range nums { s += n }; return s }
+来源：http://www.m.share.fehbvm.com/Article/details/gtwiyaisg.sHtML
+
+Ruby: def total(*nums); nums.sum; end
+来源：http://blog.zdbjq.cn/Article/details/gohphtfhj.sHtML
+
+C#:   static int Total(params int[] nums) => nums.Sum();
+来源：http://wap.hesvh.cn/Article/details/geyepjorv.sHtML
+
+[C04] 命名参数 / 关键字参数
+来源：http://read.share.fehbvm.com/Article/details/ggsaywmeg.sHtML
+
+Py:   def f(a, b, *, c=0): ...    # 调用 f(1, 2, c=3)
+来源：http://www.blog.fehbvm.com/Article/details/gqklozegt.sHtML
+
+PHP:  f(a: 1, b: 2)             // PHP 8 命名参数
+来源：http://baike.hesvh.cn/Article/details/gqpafwost.sHtML
+
+JS:   // 无命名参数：传配置对象 function f({ a, b }) {}
+来源：http://baike.hesvh.cn/Article/details/gzrxwvoke.sHtML
+
+TS:   f({ a: 1, b: 2 })          // 同上
+来源：http://blog.zdbjq.cn/Article/details/giihagjba.sHtML
+
+Java: // 无：用 Builder 模式或 record
+来源：http://mobile.fehbvm.com/Article/details/gmsrekxyp.sHtML
+
+Go:   // 无：用配置结构体参数
+来源：http://3g.zdbjq.cn/Article/details/gfyjltlqv.sHtML
+
+Ruby: f(a: 1, b: 2)
+来源：http://www.blog.hesvh.cn/Article/details/gncqlgamb.sHtML
+
+C#:   f(a: 1, b: 2)
+来源：http://baike.hesvh.cn/Article/details/ghnwamacd.sHtML
+
+[C05] 返回多个值
+来源：http://wap.fehbvm.com/Article/details/gmgezilyy.sHtML
+
+Py:   return a, b
+来源：http://www.share.zdbjq.cn/Article/details/gnsghsgnq.sHtML
+
+PHP:  return [$a, $b];
+来源：http://wap.hesvh.cn/Article/details/gzpifpdor.sHtML
+
+JS:   return [a, b];             // 或 return { a, b };
+来源：http://baike.hesvh.cn/Article/details/gsjgarfng.sHtML
+
+TS:   return { a, b };
+来源：http://www.m.share.fehbvm.com/Article/details/ggzpiajgn.sHtML
+
+Java: record Pair(int a, int b) {}  // 或 return new int[]{a, b};
+来源：http://wap.hesvh.cn/Article/details/gxqtdjssy.sHtML
+
+Go:   return a, b
+来源：http://3g.fehbvm.com/Article/details/gtaliuvai.sHtML
+
+Ruby: return a, b
+来源：http://www.m.share.hesvh.cn/Article/details/grihgsmyk.sHtML
+
+C#:   return (a, b);              // ValueTuple
+来源：http://mobile.hesvh.cn/Article/details/ghejtaqrj.sHtML
+
+[C06] 匿名函数 / lambda
+来源：http://mobile.zdbjq.cn/Article/details/gbnsycvld.sHtML
+
+Py:   square = lambda x: x * x
+来源：http://blog.zdbjq.cn/Article/details/gmeoexkac.sHtML
+
+PHP:  $square = fn($x) => $x * $x;
+来源：http://blog.hesvh.cn/Article/details/giixzfqww.sHtML
+
+JS:   const square = x => x * x;
+来源：http://www.blog.hesvh.cn/Article/details/gufodhvlt.sHtML
+
+TS:   const square = (x: number): number => x * x;
+来源：http://wap.zdbjq.cn/Article/details/ghiydgwlr.sHtML
+
+Java: Function<Integer, Integer> sq = x -> x * x;
+来源：http://baike.zdbjq.cn/Article/details/gdewvmwno.sHtML
+
+Go:   sq := func(x int) int { return x * x }
+来源：http://wap.zdbjq.cn/Article/details/gfmotymkm.sHtML
+
+Ruby: square = ->(x) { x * x }
+来源：http://mobile.fehbvm.com/Article/details/gruwcevoz.sHtML
+
+C#:   Func<int, int> square = x => x * x;
+来源：http://www.share.zdbjq.cn/Article/details/gwfuhrzps.sHtML
+
+[C07] 把函数作为参数传入
+来源：http://www.blog.hesvh.cn/Article/details/gorfmfvpi.sHtML
+
+Py:   list(map(str.upper, arr)); sorted(arr, key=len)
+来源：http://blog.zdbjq.cn/Article/details/gfzsdwmum.sHtML
+
+PHP:  array_map("strtoupper", $arr);
+来源：http://baike.fehbvm.com/Article/details/grrncnyyl.sHtML
+
+JS:   arr.map(String).sort((a, b) => a.length - b.length)
+来源：http://baike.hesvh.cn/Article/details/gtngbxnuh.sHtML
+
+TS:   arr.map(String)
+来源：http://read.share.hesvh.cn/Article/details/gsjislkrq.sHtML
+
+Java: arr.stream().map(String::toUpperCase).toList()
+来源：http://wap.hesvh.cn/Article/details/gsmfvqgoy.sHtML
+
+Go:   // 无 map 内置：手写循环或用 golang.org/x/exp/slices
+来源：http://blog.zdbjq.cn/Article/details/gtopskrcc.sHtML
+
+Ruby: arr.map(&:upcase)
+来源：http://www.share.fehbvm.com/Article/details/gqxywxyks.sHtML
+
+C#:   arr.Select(s => s.ToUpper())
+来源：http://baike.fehbvm.com/Article/details/gxzkbvced.sHtML
+
+[C08] 闭包
+来源：http://www.m.share.zdbjq.cn/Article/details/gtrawfhfe.sHtML
+
+Py:   from itertools import count; inc = lambda c=count(1): next(c)   # 计数器
+来源：http://www.m.share.fehbvm.com/Article/details/gqvqplrrl.sHtML
+
+PHP:  function counter() { $n = 0; return function () use (&$n) { return ++$n; }; }
+来源：http://wap.hesvh.cn/Article/details/gxjamlkhg.sHtML
+
+JS:   function counter() { let n = 0; return () => ++n; }
+来源：http://www.m.share.fehbvm.com/Article/details/gdwwybdzx.sHtML
+
+TS:   function counter(): () => number { let n = 0; return () => ++n; }
+来源：http://mobile.hesvh.cn/Article/details/gjlvvrlhi.sHtML
+
+Java: // 只能捕获 effectively final：用 int[] 或 AtomicInteger
+来源：http://read.share.zdbjq.cn/Article/details/gxjghxtum.sHtML
+
+Go:   func counter() func() int { n := 0; return func() int { n++; return n } }
+来源：http://baike.fehbvm.com/Article/details/ggmaqpbiu.sHtML
+
+Ruby: def counter; n = 0; -> { n += 1 }; end
+来源：http://blog.zdbjq.cn/Article/details/gxlsmwdfj.sHtML
+
+C#:   static Func<int> Counter() { int n = 0; return () => ++n; }
+来源：http://read.share.hesvh.cn/Article/details/ggththpnn.sHtML
+
+[C09] 递归
+来源：http://www.blog.zdbjq.cn/Article/details/gqfvnzbov.sHtML
+
+Py:   def fact(n): return 1 if n <= 1 else n * fact(n - 1)
+来源：http://m.share.zdbjq.cn/Article/details/gxmvpmxdb.sHtML
+
+PHP:  function fact(int $n): int { return $n <= 1 ? 1 : $n * fact($n - 1); }
+来源：http://www.blog.fehbvm.com/Article/details/griioxppj.sHtML
+
+JS:   const fact = n => (n <= 1 ? 1 : n * fact(n - 1));
+来源：http://www.share.fehbvm.com/Article/details/ghcpdhvsu.sHtML
+
+TS:   const fact = (n: number): number => (n <= 1 ? 1 : n * fact(n - 1));
+来源：http://baike.hesvh.cn/Article/details/gduzysufw.sHtML
+
+Java: static int fact(int n) { return n <= 1 ? 1 : n * fact(n - 1); }
+来源：http://read.share.fehbvm.com/Article/details/gcykskgtx.sHtML
+
+Go:   func fact(n int) int { if n <= 1 { return 1 }; return n * fact(n-1) }
+来源：http://www.blog.hesvh.cn/Article/details/gsqbyklbp.sHtML
+
+Ruby: def fact(n) = n <= 1 ? 1 : n * fact(n - 1)
+来源：http://wap.fehbvm.com/Article/details/goznixsvg.sHtML
+
+C#:   static int Fact(int n) => n <= 1 ? 1 : n * Fact(n - 1);
+来源：http://baike.hesvh.cn/Article/details/gwuhuixax.sHtML
+
+[C10] 变量作用域
+来源：http://blog.fehbvm.com/Article/details/guhppggbt.sHtML
+
+Py:   函数内赋值即局部；改外层需 global / nonlocal
+来源：http://mobile.zdbjq.cn/Article/details/gyetblccz.sHtML
+
+PHP:  函数内默认看不到外部变量，需 global 或 use
+来源：http://m.share.zdbjq.cn/Article/details/gaykvcdbn.sHtML
+
+JS:   let/const 块级作用域，var 函数级作用域
+来源：http://read.share.fehbvm.com/Article/details/gkwcxlhyf.sHtML
+
+TS:   同 JS
+来源：http://mobile.hesvh.cn/Article/details/gipousmma.sHtML
+
+Java: 方法内为块级作用域
+来源：http://www.m.share.fehbvm.com/Article/details/gkgpkrnrt.sHtML
+
+Go:   花括号块级作用域
+来源：http://read.share.hesvh.cn/Article/details/gsmfhzemg.sHtML
+
+Ruby: 局部变量 / @实例 / @@类 / $全局
+来源：http://blog.hesvh.cn/Article/details/gzhvnvivv.sHtML
+
+C#:   块级作用域
+来源：http://baike.hesvh.cn/Article/details/geujxiyqv.sHtML
+
+[C11] 模块导入与导出
+来源：http://www.blog.fehbvm.com/Article/details/gtzkectou.sHtML
+
+Py:   from module import func
+来源：http://read.share.fehbvm.com/Article/details/gszwbiscd.sHtML
+
+PHP:  require "file.php";  或 use App\Service;
+来源：http://baike.zdbjq.cn/Article/details/gjgvfbqmi.sHtML
+
+JS:   export default function f() {};  import f from "./m.js";
+来源：http://baike.fehbvm.com/Article/details/gkqmwjvsq.sHtML
+
+TS:   export function f(): void {};  import { f } from "./m";
+来源：http://mobile.hesvh.cn/Article/details/gvcfjjdjf.sHtML
+
+Java: import java.util.List;
+来源：http://www.m.share.zdbjq.cn/Article/details/gjhfbikym.sHtML
+
+Go:   import "fmt"          // 之后用 fmt.Println
+来源：http://www.share.hesvh.cn/Article/details/gehecgzpg.sHtML
+
+Ruby: require "json"; require_relative "./util"
+来源：http://wap.hesvh.cn/Article/details/gstdmhznd.sHtML
+
+C#:   using System.Text;
+来源：http://read.share.fehbvm.com/Article/details/gqzywugrc.sHtML
+
+[C12] 立即执行函数 IIFE
+来源：http://m.share.hesvh.cn/Article/details/gsapuvpcs.sHtML
+
+Py:   (lambda: print("run"))()
+来源：http://mobile.fehbvm.com/Article/details/gnqokuocb.sHtML
+
+PHP:  (function () { echo "run"; })();
+来源：http://www.share.hesvh.cn/Article/details/gtvkxkogz.sHtML
+
+JS:   (() => { console.log("run"); })();
+来源：http://read.share.hesvh.cn/Article/details/gfwxtlxck.sHtML
+
+TS:   (() => { console.log("run"); })();
+来源：http://3g.hesvh.cn/Article/details/glwqllmmc.sHtML
+
+Java: // 无 IIFE：用 static { } 静态初始化块
+来源：http://read.share.hesvh.cn/Article/details/grgwjwkhu.sHtML
+
+Go:   func() { fmt.Println("run") }()
+来源：http://m.share.hesvh.cn/Article/details/ghjlcidiw.sHtML
+
+Ruby: -> { puts "run" }.call
+来源：http://read.share.fehbvm.com/Article/details/gxkgumxrh.sHtML
+
+C#:   // 无 IIFE：用静态构造函数
+来源：http://www.share.hesvh.cn/Article/details/glyatlgsr.sHtML
+
+[C13] 类型声明 / 类型注解
+来源：http://baike.zdbjq.cn/Article/details/ghitxbilj.sHtML
+
+Py:   def add(a: int, b: int) -> int: return a + b
+来源：http://read.share.hesvh.cn/Article/details/gbvtcwovy.sHtML
+
+PHP:  function add(int $a, int $b): int { return $a + $b; }
+来源：http://www.blog.zdbjq.cn/Article/details/gfppjgtuc.sHtML
+
+JS:   // 无类型（可用 JSDoc 注释）
+来源：http://3g.hesvh.cn/Article/details/gptxdcbcj.sHtML
+
+TS:   function add(a: number, b: number): number { return a + b; }
+来源：http://www.share.hesvh.cn/Article/details/gpruvrwsl.sHtML
+
+Java: int add(int a, int b) { return a + b; }
+来源：http://3g.hesvh.cn/Article/details/gxznlivnm.sHtML
+
+Go:   func add(a, b int) int
+来源：http://baike.zdbjq.cn/Article/details/gwsscuiam.sHtML
+
+Ruby: # 无类型（可选用 Sorbet / RBS）
+来源：http://www.blog.fehbvm.com/Article/details/gducahgeu.sHtML
+
+C#:   int Add(int a, int b) => a + b;
+来源：http://www.share.hesvh.cn/Article/details/gdpidkrpr.sHtML
+
+[C14] 泛型函数
+来源：http://baike.hesvh.cn/Article/details/gotcehuke.sHtML
+
+Py:   from typing import TypeVar; T = TypeVar("T"); def first(items: list[T]) -> T: ...
+来源：http://baike.hesvh.cn/Article/details/gsktuceni.sHtML
+
+PHP:  // 无泛型
+来源：http://blog.zdbjq.cn/Article/details/giqpiiwee.sHtML
+
+JS:   // 无泛型
+来源：http://blog.zdbjq.cn/Article/details/gpqvtdrvx.sHtML
+
+TS:   function first<T>(items: T[]): T | undefined { return items[0]; }
+来源：http://read.share.zdbjq.cn/Article/details/gywcanutc.sHtML
+
+Java: static <T> T first(List<T> items) { return items.get(0); }
+来源：http://www.share.zdbjq.cn/Article/details/gwatryokg.sHtML
+
+Go:   func First[T any](items []T) T { return items[0] }
+来源：http://blog.zdbjq.cn/Article/details/gjcazotaa.sHtML
+
+Ruby: # 无泛型
+来源：http://read.share.zdbjq.cn/Article/details/gfivmcnmi.sHtML
+
+C#:   static T First<T>(List<T> items) => items[0];
+来源：http://wap.zdbjq.cn/Article/details/gceerlhkg.sHtML
+
+[C15] 解构 / 展开参数
+来源：http://www.blog.hesvh.cn/Article/details/ghqsvijhm.sHtML
+
+Py:   def f(a, b): ...;  f(*[1, 2]);  f(**{"a": 1, "b": 2})
+来源：http://m.share.hesvh.cn/Article/details/goasguxyn.sHtML
+
+PHP:  [$a, $b] = $pair;
+来源：http://www.m.share.fehbvm.com/Article/details/ghbasfefh.sHtML
+
+JS:   const { a, b } = obj;  function f({ a, b }) {}
+来源：http://read.share.zdbjq.cn/Article/details/gsvqslaey.sHtML
+
+TS:   function f({ a, b }: { a: number; b: number }) {}
+来源：http://m.share.zdbjq.cn/Article/details/glsoxoauk.sHtML
+
+Java: // 无解构
+来源：http://www.share.fehbvm.com/Article/details/gelwvmpbv.sHtML
+
+Go:   // 无解构
+来源：http://www.share.hesvh.cn/Article/details/gfduzawji.sHtML
+
+Ruby: a, b = pair
+来源：http://blog.zdbjq.cn/Article/details/gwptvutxq.sHtML
+
+C#:   var (a, b) = pair;
+来源：http://wap.fehbvm.com/Article/details/gnqmwfjhj.sHtML
+
+[C16] 函数 / 方法重载
+来源：http://3g.zdbjq.cn/Article/details/gqmkroeut.sHtML
+
+Py:   # 无重载：用默认参数或 *args 变通
+来源：http://m.share.zdbjq.cn/Article/details/gvvagpxpv.sHtML
+
+PHP:  // 无重载
+来源：http://www.m.share.zdbjq.cn/Article/details/gqwwyuojt.sHtML
+
+JS:   // 无重载：靠 arguments.length 分支
+来源：http://www.m.share.fehbvm.com/Article/details/gputtybal.sHtML
+
+TS:   // 用联合类型或重载签名声明
+来源：http://wap.hesvh.cn/Article/details/gtkbrrlqh.sHtML
+
+Java: void f(int a) {}  void f(String a) {}
+来源：http://www.share.hesvh.cn/Article/details/gnwjzpoci.sHtML
+
+Go:   // 无重载：用不同函数名
+来源：http://read.share.fehbvm.com/Article/details/godqrpqgv.sHtML
+
+Ruby: # 无重载：靠动态参数
+来源：http://3g.zdbjq.cn/Article/details/geqrrxhyz.sHtML
+
+C#:   void F(int a) {}  void F(string a) {}
+来源：http://mobile.hesvh.cn/Article/details/ggbjfippt.sHtML
+
+================================================================================
+来源：http://read.share.fehbvm.com/Article/details/goxdbogof.sHtML
+
+D. 数组 / 列表 / 集合
+来源：http://www.m.share.hesvh.cn/Article/details/gjhetikga.sHtML
+
+================================================================================
+来源：http://blog.zdbjq.cn/Article/details/gbzcrcxwu.sHtML
+
+[D01] 创建数组 / 列表
+来源：http://www.m.share.zdbjq.cn/Article/details/gbdgxnybj.sHtML
+
+Py:   arr = [1, 2, 3];  empty = []
+来源：http://www.blog.fehbvm.com/Article/details/gonvspbnz.sHtML
+
+PHP:  $arr = [1, 2, 3];  $empty = [];
+来源：http://blog.fehbvm.com/Article/details/gxgfdojfn.sHtML
+
+JS:   const arr = [1, 2, 3];  const empty = [];
+来源：http://baike.zdbjq.cn/Article/details/gjnvigiwn.sHtML
+
+TS:   const arr: number[] = [1, 2, 3];
+来源：http://blog.hesvh.cn/Article/details/gigvjuzaa.sHtML
+
+Java: var arr = new int[]{1, 2, 3};  var list = new ArrayList<>(List.of(1, 2, 3));
+来源：http://wap.zdbjq.cn/Article/details/ghuyhsoxj.sHtML
+
+Go:   arr := []int{1, 2, 3}
+来源：http://m.share.zdbjq.cn/Article/details/gavswllef.sHtML
+
+Ruby: arr = [1, 2, 3]
+来源：http://blog.hesvh.cn/Article/details/gowpeearf.sHtML
+
+C#:   var arr = new[] { 1, 2, 3 };  var list = new List<int> { 1, 2, 3 };
+来源：http://mobile.zdbjq.cn/Article/details/gawlxdafj.sHtML
+
+[D02] 追加元素到末尾
+来源：http://read.share.hesvh.cn/Article/details/ghulngidn.sHtML
+
+Py:   arr.append(4); arr.extend([5, 6])
+来源：http://baike.fehbvm.com/Article/details/ghmkgwiae.sHtML
+
+PHP:  $arr[] = 4; array_push($arr, 5);
+来源：http://m.share.hesvh.cn/Article/details/gqkwbyvfa.sHtML
+
+JS:   arr.push(4);
+来源：http://m.share.hesvh.cn/Article/details/gocxlkjmx.sHtML
+
+TS:   arr.push(4);
+来源：http://www.blog.fehbvm.com/Article/details/glzxlixyl.sHtML
+
+Java: list.add(4);
+来源：http://www.blog.fehbvm.com/Article/details/gdgalysht.sHtML
+
+Go:   arr = append(arr, 4)
+来源：http://baike.zdbjq.cn/Article/details/gnygybyys.sHtML
+
+Ruby: arr << 4; arr.push(5)
+来源：http://blog.fehbvm.com/Article/details/gdythrfuz.sHtML
+
+C#:   list.Add(4);
+来源：http://read.share.zdbjq.cn/Article/details/gbkpvgxte.sHtML
+
+[D03] 在指定位置插入元素
+来源：http://www.blog.fehbvm.com/Article/details/gkqcqrzsy.sHtML
+
+Py:   arr.insert(0, 0)
+来源：http://www.blog.fehbvm.com/Article/details/goefanrfg.sHtML
+
+PHP:  array_splice($arr, 0, 0, [0]);
+来源：http://www.share.zdbjq.cn/Article/details/gfrvqxgtc.sHtML
+
+JS:   arr.splice(0, 0, 0);  arr.unshift(0)   // 插到头部
+来源：http://m.share.hesvh.cn/Article/details/gapslcpod.sHtML
+
+TS:   arr.splice(0, 0, 0);
+来源：http://blog.hesvh.cn/Article/details/gdoqxaegi.sHtML
+
+Java: list.add(0, 0);
+来源：http://www.m.share.hesvh.cn/Article/details/gyaanasys.sHtML
+
+Go:   arr = append([]int{0}, arr...)
+来源：http://3g.zdbjq.cn/Article/details/gggyttttz.sHtML
+
+Ruby: arr.insert(0, 0); arr.unshift(0)
+来源：http://m.share.zdbjq.cn/Article/details/gaubpqpgl.sHtML
+
+C#:   list.Insert(0, 0);
+来源：http://wap.hesvh.cn/Article/details/gtragklqw.sHtML
+
+[D04] 删除元素
+来源：http://blog.fehbvm.com/Article/details/grmqmzdvt.sHtML
+
+Py:   del arr[0]; arr.pop(); arr.remove(3)
+来源：http://read.share.zdbjq.cn/Article/details/grcqtrzjd.sHtML
+
+PHP:  array_splice($arr, 0, 1); array_pop($arr);
+来源：http://3g.zdbjq.cn/Article/details/glavbenrf.sHtML
+
+JS:   arr.splice(0, 1); arr.pop(); arr.shift();
+来源：http://mobile.fehbvm.com/Article/details/glaojtafo.sHtML
+
+TS:   arr.splice(0, 1);
+来源：http://baike.hesvh.cn/Article/details/glhdszgjm.sHtML
+
+Java: list.remove(0); list.removeIf(x -> x == 3);
+来源：http://blog.zdbjq.cn/Article/details/gjjqypukc.sHtML
+
+Go:   arr = append(arr[:0], arr[1:]...)
+来源：http://baike.fehbvm.com/Article/details/gejiodrhu.sHtML
+
+Ruby: arr.delete_at(0); arr.delete(3)
+来源：http://read.share.zdbjq.cn/Article/details/gmrkaglmi.sHtML
+
+C#:   list.RemoveAt(0); list.Remove(3);
+来源：http://blog.fehbvm.com/Article/details/gzbpynphd.sHtML
+
+[D05] 访问与修改元素
+来源：http://read.share.hesvh.cn/Article/details/ggmawqjxa.sHtML
+
+Py:   arr[0]; arr[-1]; arr[0] = 9
+来源：http://3g.hesvh.cn/Article/details/gnwrzquza.sHtML
+
+PHP:  $arr[0]; end($arr); $arr[0] = 9;
+来源：http://www.m.share.fehbvm.com/Article/details/ghhrnadtx.sHtML
+
+JS:   arr[0]; arr.at(-1); arr[0] = 9;
+来源：http://blog.fehbvm.com/Article/details/gmeccjqtq.sHtML
+
+TS:   arr[0]; arr.at(-1);
+来源：http://www.blog.hesvh.cn/Article/details/gnzwkiytg.sHtML
+
+Java: list.get(0); list.set(0, 9);
+来源：http://wap.zdbjq.cn/Article/details/ghbeqadnd.sHtML
+
+Go:   arr[0]; arr[0] = 9
+来源：http://wap.fehbvm.com/Article/details/ggumhwazl.sHtML
+
+Ruby: arr[0]; arr[-1]; arr[0] = 9
+来源：http://www.blog.fehbvm.com/Article/details/gsfxvggtw.sHtML
+
+C#:   list[0]; list[^1]; list[0] = 9;
+来源：http://wap.hesvh.cn/Article/details/gsctrhhxa.sHtML
+
+[D06] 数组长度
+来源：http://3g.fehbvm.com/Article/details/gnmbteead.sHtML
+
+Py:   len(arr)
+来源：http://blog.hesvh.cn/Article/details/gfrqjmpxh.sHtML
+
+PHP:  count($arr);
+来源：http://blog.fehbvm.com/Article/details/gjnvasykc.sHtML
+
+JS:   arr.length
+来源：http://mobile.hesvh.cn/Article/details/gqdfdmycs.sHtML
+
+TS:   arr.length
+来源：http://3g.fehbvm.com/Article/details/grnxdhivs.sHtML
+
+Java: list.size();
+来源：http://blog.zdbjq.cn/Article/details/gdxlqgpwh.sHtML
+
+Go:   len(arr)
+来源：http://www.blog.hesvh.cn/Article/details/ghclvnevz.sHtML
+
+Ruby: arr.length; arr.size
+来源：http://www.m.share.zdbjq.cn/Article/details/gplpqppmm.sHtML
+
+C#:   list.Count;
+来源：http://read.share.fehbvm.com/Article/details/gdzofijer.sHtML
+
+[D07] 切片 / 取子数组
+来源：http://www.share.hesvh.cn/Article/details/gwdgocelq.sHtML
+
+Py:   arr[1:4]; arr[:3]; arr[::2]
+来源：http://m.share.fehbvm.com/Article/details/grnihmlzt.sHtML
+
+PHP:  array_slice($arr, 1, 3);
+来源：http://www.share.zdbjq.cn/Article/details/gnuuuymgq.sHtML
+
+JS:   arr.slice(1, 4);
+来源：http://m.share.hesvh.cn/Article/details/ghxeowoqy.sHtML
+
+
+<!-- 参考信息 -->

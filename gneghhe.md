@@ -1,0 +1,904 @@
+代发 wailian999
+
+Go:   // 手写递归
+来源：http://www.share.hesvh.cn/Article/details/gkstzwszn.sHtML
+
+Ruby: def inorder(n) = n ? inorder(n.left) + [n.val] + inorder(n.right) : []
+来源：http://m.share.hesvh.cn/Article/details/gqxpsxsdv.sHtML
+
+C#:   // 手写递归
+来源：http://www.share.zdbjq.cn/Article/details/glryiiqqw.sHtML
+
+[N12] 动态规划：爬楼梯（每次 1 或 2 级）
+来源：http://mobile.zdbjq.cn/Article/details/gfeysougd.sHtML
+
+Py:   from functools import reduce;  climb = lambda n: reduce(lambda p, _: (p[1], p[0] + p[1]), range(n), (1, 1))[0]
+来源：http://m.share.zdbjq.cn/Article/details/gwltgxsmb.sHtML
+
+PHP:  // 递推：$a=1;$b=1;for(...){[$a,$b]=[$b,$a+$b];}
+来源：http://www.m.share.zdbjq.cn/Article/details/grxnpbntr.sHtML
+
+JS:   // 递推：let [a, b] = [1, 1]; for (let i = 0; i < n; i++) [a, b] = [b, a + b];
+来源：http://baike.hesvh.cn/Article/details/gbmtluzxv.sHtML
+
+TS:   let [a, b] = [1, 1]; for (let i = 0; i < n; i++) [a, b] = [b, a + b];
+来源：http://www.m.share.fehbvm.com/Article/details/gctkebfok.sHtML
+
+Java: // 递推：int a = 1, b = 1; 循环更新
+来源：http://baike.fehbvm.com/Article/details/gvuzehgxd.sHtML
+
+Go:   // 递推：a, b := 1, 1; for i := 0; i < n; i++ { a, b = b, a+b }
+来源：http://m.share.fehbvm.com/Article/details/gpqlgumzx.sHtML
+
+Ruby: a, b = 1, 1;  n.times { a, b = b, a + b }
+来源：http://mobile.fehbvm.com/Article/details/gifpiuexn.sHtML
+
+C#:   // 递推：int a = 1, b = 1; 循环更新
+来源：http://3g.fehbvm.com/Article/details/gpkoolglr.sHtML
+
+================================================================================
+来源：http://wap.zdbjq.cn/Article/details/ggetnkojy.sHtML
+
+O. 并发与异步
+来源：http://wap.fehbvm.com/Article/details/gnsxalbyo.sHtML
+
+================================================================================
+来源：http://www.m.share.zdbjq.cn/Article/details/grnbqitkc.sHtML
+
+[O01] 启动一个线程
+来源：http://www.share.hesvh.cn/Article/details/gmezgzfux.sHtML
+
+Py:   threading.Thread(target=f, args=(1,)).start()
+来源：http://mobile.zdbjq.cn/Article/details/gskmwyivp.sHtML
+
+PHP:  // 无原生线程：用 pcntl_fork 或消息队列
+来源：http://m.share.fehbvm.com/Article/details/gnmnbsrlj.sHtML
+
+JS:   // 单线程事件循环：CPU 密集用 worker_threads
+来源：http://www.blog.hesvh.cn/Article/details/gahgewejr.sHtML
+
+TS:   // 同 JS
+来源：http://blog.hesvh.cn/Article/details/gtunahymr.sHtML
+
+Java: new Thread(() -> f()).start()
+来源：http://wap.fehbvm.com/Article/details/gwemyvnee.sHtML
+
+Go:   go f()
+来源：http://baike.hesvh.cn/Article/details/gltjgrtey.sHtML
+
+Ruby: Thread.new { f }
+来源：http://baike.zdbjq.cn/Article/details/gfxmobosk.sHtML
+
+C#:   Task.Run(() => F());
+来源：http://www.blog.fehbvm.com/Article/details/glwdhtnjn.sHtML
+
+[O02] 使用线程池
+来源：http://www.blog.fehbvm.com/Article/details/glmszqdnq.sHtML
+
+Py:   concurrent.futures.ThreadPoolExecutor(max_workers=4)
+来源：http://www.m.share.zdbjq.cn/Article/details/gpjslpshy.sHtML
+
+PHP:  // 用 Swoole / ReactPHP 等扩展实现
+来源：http://read.share.hesvh.cn/Article/details/glyockkgv.sHtML
+
+JS:   // worker_threads 线程池
+来源：http://www.blog.hesvh.cn/Article/details/gedfdbfyl.sHtML
+
+TS:   // worker_threads 线程池
+来源：http://www.share.zdbjq.cn/Article/details/gfepsawtz.sHtML
+
+Java: Executors.newFixedThreadPool(4)
+来源：http://read.share.zdbjq.cn/Article/details/grqmuvvlj.sHtML
+
+Go:   // 协程轻量，无需池；限并发用带缓冲 channel 当信号量
+来源：http://read.share.zdbjq.cn/Article/details/gnxbawieo.sHtML
+
+Ruby: // 用 concurrent-ruby 的 ThreadPool
+来源：http://m.share.zdbjq.cn/Article/details/gnekfpbms.sHtML
+
+C#:   Task.WhenAll(...)  或 Parallel.ForEach
+来源：http://3g.hesvh.cn/Article/details/ghycowhsn.sHtML
+
+[O03] 加锁保护共享数据
+来源：http://m.share.fehbvm.com/Article/details/gxmoqxaaw.sHtML
+
+Py:   with lock: shared += 1
+来源：http://m.share.fehbvm.com/Article/details/gprcgtapg.sHtML
+
+PHP:  // 用 flock() 做文件锁
+来源：http://blog.hesvh.cn/Article/details/gbyoelkma.sHtML
+
+JS:   // 单线程无需锁；跨线程共享内存用 Atomics
+来源：http://blog.fehbvm.com/Article/details/guakssawr.sHtML
+
+TS:   // 同 JS
+来源：http://blog.fehbvm.com/Article/details/gssabjyqy.sHtML
+
+Java: synchronized (this) { shared++; }
+来源：http://wap.zdbjq.cn/Article/details/gxvqjacjj.sHtML
+
+Go:   mu.Lock();  defer mu.Unlock()
+来源：http://3g.hesvh.cn/Article/details/glafxyphe.sHtML
+
+Ruby: mutex.synchronize { shared += 1 }
+来源：http://m.share.fehbvm.com/Article/details/gpusndvmy.sHtML
+
+C#:   lock (gate) { shared++; }
+来源：http://baike.hesvh.cn/Article/details/gxqyijtws.sHtML
+
+[O04] 定义异步函数并等待
+来源：http://baike.zdbjq.cn/Article/details/gytvzrnvo.sHtML
+
+Py:   async def f():⏎    await g()
+来源：http://read.share.zdbjq.cn/Article/details/gruzhrjdp.sHtML
+
+PHP:  // 无原生 async：用 Fiber 或 Swoole
+来源：http://m.share.fehbvm.com/Article/details/gdkfmwapp.sHtML
+
+JS:   async function f() { await g(); }
+来源：http://www.m.share.hesvh.cn/Article/details/goballlzq.sHtML
+
+TS:   async function f(): Promise<void> { await g(); }
+来源：http://blog.zdbjq.cn/Article/details/geatysxmz.sHtML
+
+Java: // 用 CompletableFuture 或虚拟线程
+来源：http://mobile.fehbvm.com/Article/details/gmfkaokdk.sHtML
+
+Go:   // 无 async 关键字：直接 go 调用，用 channel 收结果
+来源：http://read.share.hesvh.cn/Article/details/grgffedzm.sHtML
+
+Ruby: # 用 Fiber 或 async gem
+来源：http://www.m.share.fehbvm.com/Article/details/ggdzvhpej.sHtML
+
+C#:   async Task F() { await G(); }
+来源：http://wap.zdbjq.cn/Article/details/gaatininm.sHtML
+
+[O05] 并发执行并等待全部完成
+来源：http://www.share.hesvh.cn/Article/details/gnudgecvm.sHtML
+
+Py:   asyncio.gather(*tasks)
+来源：http://blog.fehbvm.com/Article/details/gjndlqvlx.sHtML
+
+PHP:  // curl_multi 或 Amp 的 Promise\all
+来源：http://mobile.fehbvm.com/Article/details/gvvftovun.sHtML
+
+JS:   await Promise.all(tasks)
+来源：http://www.blog.hesvh.cn/Article/details/gbicunvjx.sHtML
+
+TS:   await Promise.all(tasks)
+来源：http://3g.fehbvm.com/Article/details/gbkgfazri.sHtML
+
+Java: CompletableFuture.allOf(f1, f2).join()
+来源：http://mobile.hesvh.cn/Article/details/gtwqpktge.sHtML
+
+Go:   sync.WaitGroup 或 errgroup.Wait()
+来源：http://blog.fehbvm.com/Article/details/gribrywet.sHtML
+
+Ruby: threads.map(&:join)
+来源：http://www.m.share.zdbjq.cn/Article/details/gpwvvecjr.sHtML
+
+C#:   await Task.WhenAll(t1, t2)
+来源：http://wap.fehbvm.com/Article/details/gnyulbgpr.sHtML
+
+[O06] 使用进程池
+来源：http://read.share.hesvh.cn/Article/details/gcptmmapm.sHtML
+
+Py:   concurrent.futures.ProcessPoolExecutor()
+来源：http://blog.zdbjq.cn/Article/details/godurszgg.sHtML
+
+PHP:  // pcntl_fork 或多进程队列
+来源：http://read.share.fehbvm.com/Article/details/gdmzqyzxr.sHtML
+
+JS:   // child_process / cluster 模块
+来源：http://www.m.share.zdbjq.cn/Article/details/gfjdbxmyg.sHtML
+
+TS:   // child_process / cluster 模块
+来源：http://www.blog.hesvh.cn/Article/details/gofzgyopw.sHtML
+
+Java: // ForkJoinPool 或 ProcessBuilder
+来源：http://mobile.fehbvm.com/Article/details/gikqrudul.sHtML
+
+Go:   // goroutine 已占用多核，直接并发即可
+来源：http://3g.fehbvm.com/Article/details/ggchhpafp.sHtML
+
+Ruby: // fork 块
+来源：http://mobile.zdbjq.cn/Article/details/gejozmwzz.sHtML
+
+C#:   Parallel.For
+来源：http://www.m.share.fehbvm.com/Article/details/gyzwpmhod.sHtML
+
+================================================================================
+来源：http://www.m.share.zdbjq.cn/Article/details/gxbfedguw.sHtML
+
+P. 常用工具函数
+来源：http://www.m.share.fehbvm.com/Article/details/gsgcirjtn.sHtML
+
+================================================================================
+来源：http://mobile.hesvh.cn/Article/details/gzugtpdjl.sHtML
+
+[P01] 生成 UUID
+来源：http://m.share.fehbvm.com/Article/details/gvrddbghm.sHtML
+
+Py:   str(uuid.uuid4())
+来源：http://www.blog.hesvh.cn/Article/details/gqimwsboz.sHtML
+
+PHP:  bin2hex(random_bytes(16));        // 或 ramsey/uuid
+来源：http://baike.hesvh.cn/Article/details/gpkpzndyr.sHtML
+
+JS:   crypto.randomUUID()
+来源：http://read.share.fehbvm.com/Article/details/gbwwlruon.sHtML
+
+TS:   crypto.randomUUID()
+来源：http://www.m.share.fehbvm.com/Article/details/gdbphirdo.sHtML
+
+Java: UUID.randomUUID().toString()
+来源：http://www.blog.hesvh.cn/Article/details/ggoolkujh.sHtML
+
+Go:   // 用 github.com/google/uuid
+来源：http://read.share.zdbjq.cn/Article/details/gskpugzhe.sHtML
+
+Ruby: SecureRandom.uuid
+来源：http://www.share.zdbjq.cn/Article/details/gnsszuhqp.sHtML
+
+C#:   Guid.NewGuid().ToString()
+来源：http://3g.hesvh.cn/Article/details/gfoxrzwzk.sHtML
+
+[P02] MD5 / SHA256 摘要
+来源：http://blog.fehbvm.com/Article/details/guaksehjl.sHtML
+
+Py:   hashlib.sha256(b).hexdigest();  hashlib.md5(b).hexdigest()
+来源：http://baike.zdbjq.cn/Article/details/grbweuxnu.sHtML
+
+PHP:  hash("sha256", $s);  md5($s);
+来源：http://m.share.hesvh.cn/Article/details/grxxvqpoi.sHtML
+
+JS:   crypto.createHash("sha256").update(s).digest("hex")     // Node
+来源：http://www.share.hesvh.cn/Article/details/gpntabmsm.sHtML
+
+TS:   crypto.createHash("sha256").update(s).digest("hex")
+来源：http://www.blog.fehbvm.com/Article/details/gjdskpipp.sHtML
+
+Java: MessageDigest.getInstance("SHA-256").digest(bytes)
+来源：http://www.share.zdbjq.cn/Article/details/gxzejfovr.sHtML
+
+Go:   fmt.Sprintf("%x", sha256.Sum256([]byte(s)))
+来源：http://wap.hesvh.cn/Article/details/gkhhzrzdd.sHtML
+
+Ruby: Digest::SHA256.hexdigest(s)
+来源：http://m.share.fehbvm.com/Article/details/gilorullg.sHtML
+
+C#:   Convert.ToHexString(SHA256.HashData(bytes))
+来源：http://mobile.fehbvm.com/Article/details/gszsdonty.sHtML
+
+[P03] 生成短随机字符串
+来源：http://mobile.hesvh.cn/Article/details/goutqloni.sHtML
+
+Py:   "".join(random.choices(string.ascii_letters + string.digits, k=16))
+来源：http://m.share.fehbvm.com/Article/details/gipgipsdb.sHtML
+
+PHP:  substr(str_shuffle(str_repeat("abcdefghijklmnopqrstuvwxyz0123456789", 2)), 0, 16);
+来源：http://www.blog.zdbjq.cn/Article/details/gmnnojhri.sHtML
+
+JS:   [...crypto.getRandomValues(new Uint8Array(16))].map(b => (b % 36).toString(36)).join("")
+来源：http://m.share.zdbjq.cn/Article/details/gjkjrvwlk.sHtML
+
+TS:   [...crypto.getRandomValues(new Uint8Array(16))].map(b => (b % 36).toString(36)).join("")
+来源：http://mobile.fehbvm.com/Article/details/grkxzbipm.sHtML
+
+Java: new BigInteger(130, new SecureRandom()).toString(36).substring(0, 16)
+来源：http://www.blog.hesvh.cn/Article/details/gprrbqudz.sHtML
+
+Go:   // crypto/rand 生成随机字节后 base64 或 hex 编码
+来源：http://www.blog.hesvh.cn/Article/details/gudxjgvvm.sHtML
+
+Ruby: SecureRandom.alphanumeric(16)
+来源：http://blog.fehbvm.com/Article/details/ghinecfbs.sHtML
+
+C#:   RandomNumberGenerator.GetHexString(16)     // .NET 8+
+来源：http://www.share.fehbvm.com/Article/details/gsekyirwl.sHtML
+
+[P04] 求长度
+来源：http://m.share.zdbjq.cn/Article/details/gtfgylkqf.sHtML
+
+Py:   len(x)            # 字符串、列表、字典通用
+来源：http://read.share.hesvh.cn/Article/details/gavwqsqwd.sHtML
+
+PHP:  count($arr);  strlen($s);  mb_strlen($s, "UTF-8");
+来源：http://3g.fehbvm.com/Article/details/gwhhdczrc.sHtML
+
+JS:   Array.isArray(x) ? x.length : Object.keys(x).length
+来源：http://mobile.zdbjq.cn/Article/details/gvongcezm.sHtML
+
+TS:   Array.isArray(x) ? x.length : Object.keys(x).length
+来源：http://baike.zdbjq.cn/Article/details/ggsehezxy.sHtML
+
+Java: list.size();  map.size();  s.length()
+来源：http://www.m.share.zdbjq.cn/Article/details/gfbymfbmt.sHtML
+
+Go:   len(arr);  len(m)
+来源：http://baike.hesvh.cn/Article/details/gsgibuacr.sHtML
+
+Ruby: x.length;  x.size
+来源：http://mobile.fehbvm.com/Article/details/gxesgxrpv.sHtML
+
+C#:   list.Count;  dict.Count;  s.Length
+来源：http://www.blog.fehbvm.com/Article/details/gorzriqmi.sHtML
+
+[P05] 判断两个对象内容是否相等
+来源：http://mobile.fehbvm.com/Article/details/gcwsgnjvw.sHtML
+
+Py:   a == b              # 列表与字典递归比较内容
+来源：http://baike.fehbvm.com/Article/details/gkptzroes.sHtML
+
+PHP:  $a == $b            // 值比较；$a === $b 要求顺序与类型一致
+来源：http://www.share.fehbvm.com/Article/details/gwyarjrjo.sHtML
+
+JS:   JSON.stringify(a) === JSON.stringify(b)   // 简单场景；复杂用深比较库
+来源：http://3g.zdbjq.cn/Article/details/gibbymafp.sHtML
+
+TS:   JSON.stringify(a) === JSON.stringify(b)
+来源：http://wap.zdbjq.cn/Article/details/gpopflkvk.sHtML
+
+Java: a.equals(b)         // 需正确实现 equals；数组用 Arrays.equals
+来源：http://baike.fehbvm.com/Article/details/gsqjxbfcy.sHtML
+
+Go:   reflect.DeepEqual(a, b)
+来源：http://www.blog.fehbvm.com/Article/details/gyzfuecmu.sHtML
+
+Ruby: a == b
+来源：http://www.share.hesvh.cn/Article/details/gnxuswhej.sHtML
+
+C#:   Equals(a, b)  或 StructuralComparisons
+来源：http://mobile.hesvh.cn/Article/details/grwiaeopw.sHtML
+
+[P06] 综合判空（null / 空串 / 空集合）
+来源：http://baike.fehbvm.com/Article/details/gstoybkqs.sHtML
+
+Py:   if not x:           # None、""、[]、{}、0 均为假
+来源：http://blog.hesvh.cn/Article/details/gzxkjzfil.sHtML
+
+PHP:  if (empty($x)) {}
+来源：http://www.m.share.zdbjq.cn/Article/details/gdshjyubn.sHtML
+
+JS:   if (x == null) {}    // 同时覆盖 null 与 undefined
+来源：http://m.share.hesvh.cn/Article/details/gdjvoqpng.sHtML
+
+TS:   if (x == null) {}
+来源：http://www.share.fehbvm.com/Article/details/gnrzpkezj.sHtML
+
+Java: if (x == null || x.isEmpty()) {}
+来源：http://www.blog.hesvh.cn/Article/details/gmklezcoe.sHtML
+
+Go:   if x == nil {}
+来源：http://mobile.hesvh.cn/Article/details/glorfajla.sHtML
+
+Ruby: if x.nil? || (x.respond_to?(:empty?) && x.empty?)
+来源：http://blog.fehbvm.com/Article/details/gsewgumxh.sHtML
+
+C#:   if (x is null) {}
+来源：http://m.share.hesvh.cn/Article/details/gstcizsjb.sHtML
+
+[P07] 防抖与节流
+来源：http://www.m.share.hesvh.cn/Article/details/gqtmifsmt.sHtML
+
+Py:   # 用装饰器 + threading.Timer 实现；或 functools.lru_cache 做缓存
+来源：http://www.m.share.hesvh.cn/Article/details/gvgelntvw.sHtML
+
+PHP:  // 手写时间戳比较
+来源：http://read.share.zdbjq.cn/Article/details/gnklclgpf.sHtML
+
+JS:   const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+来源：http://wap.zdbjq.cn/Article/details/ginyogkbj.sHtML
+
+TS:   const debounce = <A extends unknown[]>(fn: (...a: A) => void, ms: number) => { let t: ReturnType<typeof setTimeout>; return (...a: A) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+来源：http://blog.zdbjq.cn/Article/details/gjnyyaimv.sHtML
+
+Java: long last = 0;  if (now - last > ms) { last = now; run(); }
+来源：http://m.share.hesvh.cn/Article/details/gltctdxbu.sHtML
+
+Go:   time.AfterFunc 实现，或用带缓冲 channel 丢弃
+来源：http://read.share.hesvh.cn/Article/details/gbhiynpan.sHtML
+
+Ruby: // 手写闭包 + Time.now 判断
+来源：http://baike.zdbjq.cn/Article/details/gtznenimx.sHtML
+
+C#:   // 用 System.Timers.Timer 重置实现
+来源：http://baike.fehbvm.com/Article/details/gtmqfbask.sHtML
+
+[P08] 处理浮点精度问题
+来源：http://m.share.fehbvm.com/Article/details/gocdijklr.sHtML
+
+Py:   Decimal("0.1") + Decimal("0.2");  round(0.1 + 0.2, 10)
+来源：http://www.share.hesvh.cn/Article/details/gusxusfox.sHtML
+
+PHP:  bcadd("0.1", "0.2", 2);
+来源：http://3g.zdbjq.cn/Article/details/gcbdnmbgu.sHtML
+
+JS:   (0.1 + 0.2).toFixed(2);  Math.round((0.1 + 0.2) * 100) / 100
+来源：http://m.share.fehbvm.com/Article/details/gccdqykxf.sHtML
+
+TS:   (0.1 + 0.2).toFixed(2)
+来源：http://3g.fehbvm.com/Article/details/genruervt.sHtML
+
+Java: BigDecimal.valueOf(0.1).add(BigDecimal.valueOf(0.2))
+来源：http://www.m.share.fehbvm.com/Article/details/gtttjosbt.sHtML
+
+Go:   math/big.Float，或全部换算成整数分再算
+来源：http://www.share.fehbvm.com/Article/details/ggsjrmnvg.sHtML
+
+Ruby: BigDecimal("0.1") + BigDecimal("0.2")
+来源：http://m.share.hesvh.cn/Article/details/gwqlyjudk.sHtML
+
+C#:   decimal d = 0.1m + 0.2m;      // decimal 为精确十进制
+来源：http://wap.hesvh.cn/Article/details/gmxroiozw.sHtML
+
+================================================================================
+来源：http://wap.fehbvm.com/Article/details/ghzdrcdha.sHtML
+
+Q. SQL 专题（以 MySQL 8 为主，附 PostgreSQL 差异）
+来源：http://baike.fehbvm.com/Article/details/gcptsktyy.sHtML
+
+================================================================================
+来源：http://m.share.zdbjq.cn/Article/details/ggpwmvsfk.sHtML
+
+[Q01] 创建表
+来源：http://mobile.hesvh.cn/Article/details/gnqaufonx.sHtML
+
+CREATE TABLE users (
+来源：http://www.m.share.hesvh.cn/Article/details/gyyxsbpco.sHtML
+
+id INT PRIMARY KEY AUTO_INCREMENT,
+来源：http://wap.fehbvm.com/Article/details/gwxduyszt.sHtML
+
+name VARCHAR(50) NOT NULL,
+来源：http://baike.fehbvm.com/Article/details/gmvveztvt.sHtML
+
+email VARCHAR(100) UNIQUE,
+来源：http://wap.hesvh.cn/Article/details/guinymszw.sHtML
+
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+来源：http://m.share.fehbvm.com/Article/details/grueemuzx.sHtML
+
+);
+来源：http://www.share.zdbjq.cn/Article/details/gwnstwxpg.sHtML
+
+[Q02] 创建带外键的表
+来源：http://m.share.fehbvm.com/Article/details/gfoeehzbu.sHtML
+
+CREATE TABLE orders (
+来源：http://read.share.fehbvm.com/Article/details/gkincrzsk.sHtML
+
+id BIGINT PRIMARY KEY AUTO_INCREMENT,
+来源：http://3g.zdbjq.cn/Article/details/gihpapjuh.sHtML
+
+user_id INT NOT NULL,
+来源：http://blog.hesvh.cn/Article/details/gshxkmogh.sHtML
+
+amount DECIMAL(10, 2),
+来源：http://blog.hesvh.cn/Article/details/gevvzqvyz.sHtML
+
+FOREIGN KEY (user_id) REFERENCES users(id)
+来源：http://www.blog.hesvh.cn/Article/details/gxahlrqrm.sHtML
+
+);
+来源：http://blog.fehbvm.com/Article/details/gzolvbbse.sHtML
+
+[Q03] 增加列
+来源：http://www.m.share.hesvh.cn/Article/details/gmpiowhux.sHtML
+
+ALTER TABLE users ADD COLUMN age INT DEFAULT 0;
+来源：http://wap.hesvh.cn/Article/details/ghhefjhey.sHtML
+
+[Q04] 修改列类型
+来源：http://read.share.zdbjq.cn/Article/details/gwvggtvfe.sHtML
+
+ALTER TABLE users MODIFY COLUMN name VARCHAR(100) NOT NULL;
+来源：http://m.share.zdbjq.cn/Article/details/gypskyesm.sHtML
+
+[Q05] 重命名列
+来源：http://baike.fehbvm.com/Article/details/gymlpeekq.sHtML
+
+ALTER TABLE users RENAME COLUMN name TO full_name;
+来源：http://wap.hesvh.cn/Article/details/gzjvrwvsp.sHtML
+
+[Q06] 删除列
+来源：http://www.share.fehbvm.com/Article/details/gcmlehflk.sHtML
+
+ALTER TABLE users DROP COLUMN age;
+来源：http://www.blog.hesvh.cn/Article/details/gqtxkouzl.sHtML
+
+[Q07] 删除表
+来源：http://wap.fehbvm.com/Article/details/gdzjrpeoc.sHtML
+
+DROP TABLE IF EXISTS orders;
+来源：http://read.share.fehbvm.com/Article/details/ggpmjfifw.sHtML
+
+[Q08] 创建普通索引
+来源：http://m.share.zdbjq.cn/Article/details/grwnhhrzq.sHtML
+
+CREATE INDEX idx_users_email ON users(email);
+来源：http://blog.zdbjq.cn/Article/details/gteddxxcf.sHtML
+
+[Q09] 创建唯一索引
+来源：http://www.share.hesvh.cn/Article/details/gzgecnrzw.sHtML
+
+CREATE UNIQUE INDEX uq_users_email ON users(email);
+来源：http://blog.fehbvm.com/Article/details/gvutdsbxt.sHtML
+
+[Q10] 插入单行
+来源：http://www.share.zdbjq.cn/Article/details/gjtdsrcko.sHtML
+
+INSERT INTO users (name, email) VALUES ('Tom', 'tom@a.com');
+来源：http://www.m.share.zdbjq.cn/Article/details/gwwkoqobp.sHtML
+
+[Q11] 一次插入多行
+来源：http://blog.zdbjq.cn/Article/details/goohieqnl.sHtML
+
+INSERT INTO users (name, email) VALUES ('A', 'a@a.com'), ('B', 'b@a.com');
+来源：http://mobile.fehbvm.com/Article/details/gohdhhtad.sHtML
+
+[Q12] 插入后取自增 ID
+来源：http://wap.fehbvm.com/Article/details/gcxtvzjgv.sHtML
+
+INSERT INTO users (name) VALUES ('C');
+来源：http://www.blog.zdbjq.cn/Article/details/gnoybbvhr.sHtML
+
+SELECT LAST_INSERT_ID();          -- PostgreSQL: INSERT ... RETURNING id
+来源：http://blog.zdbjq.cn/Article/details/grrxfibua.sHtML
+
+[Q13] 忽略重复插入
+来源：http://read.share.hesvh.cn/Article/details/ghvicbzhv.sHtML
+
+INSERT IGNORE INTO users (email) VALUES ('a@a.com');
+来源：http://read.share.fehbvm.com/Article/details/gwoflpnfe.sHtML
+
+[Q14] 存在则更新（upsert）
+来源：http://read.share.fehbvm.com/Article/details/giojuwpiy.sHtML
+
+INSERT INTO users (email, name) VALUES ('a@a.com', 'A')
+来源：http://3g.hesvh.cn/Article/details/gfazvovrz.sHtML
+
+ON DUPLICATE KEY UPDATE name = VALUES(name);
+来源：http://m.share.hesvh.cn/Article/details/ghbceagta.sHtML
+
+[Q15] 查询全部
+来源：http://www.share.zdbjq.cn/Article/details/grevknsxw.sHtML
+
+SELECT * FROM users;
+来源：http://baike.hesvh.cn/Article/details/gqbtozthl.sHtML
+
+[Q16] 查询指定列
+来源：http://mobile.hesvh.cn/Article/details/gjeijgsly.sHtML
+
+SELECT id, name FROM users;
+来源：http://www.share.zdbjq.cn/Article/details/guhquiejv.sHtML
+
+[Q17] 条件查询
+来源：http://www.share.zdbjq.cn/Article/details/gasichrlf.sHtML
+
+SELECT * FROM users WHERE age > 18 AND status = 1;
+来源：http://www.share.fehbvm.com/Article/details/goubnazve.sHtML
+
+[Q18] 模糊匹配
+来源：http://mobile.hesvh.cn/Article/details/grydazzjc.sHtML
+
+SELECT * FROM users WHERE name LIKE '张%';
+来源：http://mobile.hesvh.cn/Article/details/gkljfxhdg.sHtML
+
+[Q19] 范围查询
+来源：http://wap.hesvh.cn/Article/details/gpluiwvvd.sHtML
+
+SELECT * FROM users WHERE age BETWEEN 18 AND 30;
+来源：http://m.share.hesvh.cn/Article/details/goyojrkcn.sHtML
+
+[Q20] IN 列表
+来源：http://www.share.zdbjq.cn/Article/details/gygcpnjie.sHtML
+
+SELECT * FROM users WHERE id IN (1, 2, 3);
+来源：http://baike.hesvh.cn/Article/details/gavygvaiq.sHtML
+
+[Q21] 空值判断
+来源：http://read.share.hesvh.cn/Article/details/gnechbsgn.sHtML
+
+SELECT * FROM users WHERE email IS NULL;
+来源：http://baike.hesvh.cn/Article/details/gekptvycv.sHtML
+
+[Q22] 排序
+来源：http://www.m.share.zdbjq.cn/Article/details/gsrmcvcpv.sHtML
+
+SELECT * FROM users ORDER BY age DESC, id ASC;
+来源：http://read.share.zdbjq.cn/Article/details/gajctskuf.sHtML
+
+[Q23] 分页
+来源：http://www.blog.zdbjq.cn/Article/details/guahfztqc.sHtML
+
+SELECT * FROM users ORDER BY id LIMIT 20 OFFSET 40;
+来源：http://www.blog.fehbvm.com/Article/details/gvqzzsoqf.sHtML
+
+[Q24] 去重
+来源：http://blog.hesvh.cn/Article/details/gpecynhel.sHtML
+
+SELECT DISTINCT city FROM users;
+来源：http://www.blog.fehbvm.com/Article/details/glhdawxbb.sHtML
+
+[Q25] 只取前 N 条
+来源：http://baike.zdbjq.cn/Article/details/gliqbjdwa.sHtML
+
+SELECT * FROM users LIMIT 10;      -- SQL Server: SELECT TOP 10 *
+来源：http://baike.fehbvm.com/Article/details/gghbypdun.sHtML
+
+[Q26] 计数
+来源：http://blog.hesvh.cn/Article/details/gsagefnyn.sHtML
+
+SELECT COUNT(*) FROM users;
+来源：http://www.share.hesvh.cn/Article/details/gnmwktqoq.sHtML
+
+[Q27] 条件计数
+来源：http://blog.fehbvm.com/Article/details/gowhikzxr.sHtML
+
+SELECT COUNT(CASE WHEN age > 18 THEN 1 END) AS adults FROM users;
+来源：http://read.share.hesvh.cn/Article/details/gtjijgnyd.sHtML
+
+[Q28] 求和与平均
+来源：http://blog.zdbjq.cn/Article/details/gjzrsiiiw.sHtML
+
+SELECT SUM(amount), AVG(amount) FROM orders;
+来源：http://wap.zdbjq.cn/Article/details/gxepeimsh.sHtML
+
+[Q29] 最大最小值
+来源：http://mobile.zdbjq.cn/Article/details/gsdpoeouk.sHtML
+
+SELECT MAX(age), MIN(age) FROM users;
+来源：http://baike.fehbvm.com/Article/details/ganbaeyha.sHtML
+
+[Q30] 分组统计
+来源：http://www.share.zdbjq.cn/Article/details/gpzzgafkj.sHtML
+
+SELECT city, COUNT(*) FROM users GROUP BY city;
+来源：http://www.share.hesvh.cn/Article/details/gocxfonwq.sHtML
+
+[Q31] 分组后过滤
+来源：http://mobile.fehbvm.com/Article/details/gjxlxkode.sHtML
+
+SELECT city, COUNT(*) AS c FROM users GROUP BY city HAVING c > 10;
+来源：http://blog.hesvh.cn/Article/details/glawgfihj.sHtML
+
+[Q32] 分组拼接字符串
+来源：http://3g.hesvh.cn/Article/details/gbubskvqt.sHtML
+
+SELECT city, GROUP_CONCAT(name) FROM users GROUP BY city;
+来源：http://www.m.share.hesvh.cn/Article/details/gooeghwev.sHtML
+
+-- PostgreSQL: STRING_AGG(name, ',')
+来源：http://www.share.zdbjq.cn/Article/details/gqhkivkms.sHtML
+
+[Q33] 多列分组
+来源：http://baike.fehbvm.com/Article/details/gzqfkkamd.sHtML
+
+SELECT city, gender, COUNT(*) FROM users GROUP BY city, gender;
+来源：http://wap.zdbjq.cn/Article/details/gxrgpztix.sHtML
+
+[Q34] 每组取第一条
+来源：http://blog.hesvh.cn/Article/details/gvuclkyvg.sHtML
+
+SELECT * FROM (
+来源：http://3g.zdbjq.cn/Article/details/girmyhnsx.sHtML
+
+SELECT *, ROW_NUMBER() OVER (PARTITION BY city ORDER BY age DESC) AS rn FROM users
+来源：http://read.share.fehbvm.com/Article/details/gokpmxbdo.sHtML
+
+) t WHERE rn = 1;
+来源：http://m.share.hesvh.cn/Article/details/grryvdkyn.sHtML
+
+[Q35] 内连接
+来源：http://mobile.hesvh.cn/Article/details/ggcsrzeiq.sHtML
+
+SELECT u.name, o.amount FROM users u JOIN orders o ON o.user_id = u.id;
+来源：http://www.m.share.hesvh.cn/Article/details/gksegphbg.sHtML
+
+[Q36] 左连接
+来源：http://blog.hesvh.cn/Article/details/gmikkiuqd.sHtML
+
+SELECT u.name, o.amount FROM users u LEFT JOIN orders o ON o.user_id = u.id;
+来源：http://www.m.share.fehbvm.com/Article/details/gmsefdmtw.sHtML
+
+[Q37] 右连接
+来源：http://3g.zdbjq.cn/Article/details/gtgoynyxs.sHtML
+
+SELECT * FROM orders o RIGHT JOIN users u ON u.id = o.user_id;
+来源：http://baike.hesvh.cn/Article/details/gquwugfks.sHtML
+
+[Q38] 全外连接（PostgreSQL）
+来源：http://www.m.share.fehbvm.com/Article/details/gbizylpti.sHtML
+
+SELECT * FROM a FULL OUTER JOIN b ON a.id = b.a_id;
+来源：http://www.blog.fehbvm.com/Article/details/giafvkmfl.sHtML
+
+[Q39] 自连接（查上下级）
+来源：http://m.share.fehbvm.com/Article/details/gwesatasi.sHtML
+
+SELECT e.name, m.name AS manager FROM employees e
+来源：http://3g.hesvh.cn/Article/details/gnuleapjk.sHtML
+
+LEFT JOIN employees m ON e.manager_id = m.id;
+来源：http://blog.hesvh.cn/Article/details/gzneynsnl.sHtML
+
+[Q40] 交叉连接（笛卡尔积）
+来源：http://blog.fehbvm.com/Article/details/gylebuctc.sHtML
+
+SELECT * FROM colors CROSS JOIN sizes;
+来源：http://3g.zdbjq.cn/Article/details/gczzlcmzx.sHtML
+
+[Q41] 多表连接
+来源：http://wap.hesvh.cn/Article/details/gzhfvpowa.sHtML
+
+SELECT o.id, u.name, p.title FROM orders o
+来源：http://read.share.fehbvm.com/Article/details/gqtzatuai.sHtML
+
+JOIN users u ON u.id = o.user_id
+来源：http://blog.hesvh.cn/Article/details/gzcowvrtf.sHtML
+
+JOIN products p ON p.id = o.product_id;
+来源：http://blog.hesvh.cn/Article/details/gpyymzyvy.sHtML
+
+[Q42] 连接条件附加过滤
+来源：http://blog.zdbjq.cn/Article/details/gxelxptqu.sHtML
+
+SELECT u.name, o.amount FROM users u
+来源：http://m.share.zdbjq.cn/Article/details/gclqvdcyb.sHtML
+
+JOIN orders o ON o.user_id = u.id AND o.amount > 100;
+来源：http://mobile.fehbvm.com/Article/details/ggsoxeuxl.sHtML
+
+[Q43] 标量子查询
+来源：http://www.m.share.zdbjq.cn/Article/details/gdiojmxbm.sHtML
+
+SELECT name, (SELECT COUNT(*) FROM orders o WHERE o.user_id = u.id) AS cnt FROM users u;
+来源：http://blog.hesvh.cn/Article/details/gpuplvbeu.sHtML
+
+[Q44] IN 子查询
+来源：http://3g.fehbvm.com/Article/details/gtoslreqa.sHtML
+
+SELECT * FROM users WHERE id IN (SELECT user_id FROM orders);
+来源：http://www.m.share.fehbvm.com/Article/details/gqdwjfsgk.sHtML
+
+[Q45] EXISTS 判断存在
+来源：http://read.share.zdbjq.cn/Article/details/gwzrayaiw.sHtML
+
+SELECT * FROM users u WHERE EXISTS (SELECT 1 FROM orders o WHERE o.user_id = u.id);
+来源：http://www.m.share.zdbjq.cn/Article/details/gdbxeyysg.sHtML
+
+[Q46] NOT EXISTS 判断不存在
+来源：http://read.share.hesvh.cn/Article/details/grxftbxka.sHtML
+
+SELECT * FROM users u WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.user_id = u.id);
+来源：http://www.blog.fehbvm.com/Article/details/goibezrec.sHtML
+
+[Q47] 与平均值比较
+来源：http://www.blog.hesvh.cn/Article/details/gbeqxjfqc.sHtML
+
+SELECT * FROM users WHERE age > (SELECT AVG(age) FROM users);
+来源：http://m.share.fehbvm.com/Article/details/gspfzcgrm.sHtML
+
+[Q48] CTE 公用表表达式
+来源：http://www.blog.fehbvm.com/Article/details/gztxtwzsq.sHtML
+
+WITH t AS (SELECT city, COUNT(*) AS c FROM users GROUP BY city)
+来源：http://wap.fehbvm.com/Article/details/gdoxlpbuy.sHtML
+
+SELECT * FROM t WHERE c > 5;
+来源：http://3g.hesvh.cn/Article/details/gokmlfgfw.sHtML
+
+[Q49] 更新单行
+来源：http://3g.hesvh.cn/Article/details/ghqxhzsxe.sHtML
+
+UPDATE users SET status = 1 WHERE id = 10;
+来源：http://www.share.zdbjq.cn/Article/details/gayhzokgs.sHtML
+
+[Q50] 批量更新
+来源：http://m.share.hesvh.cn/Article/details/gbooplall.sHtML
+
+UPDATE users SET status = 2 WHERE created_at < '2024-01-01';
+来源：http://mobile.fehbvm.com/Article/details/glpsbxaem.sHtML
+
+[Q51] 用子查询更新
+来源：http://read.share.fehbvm.com/Article/details/glnkwubhp.sHtML
+
+UPDATE users SET age = (SELECT MAX(age) FROM users) WHERE id = 1;
+来源：http://wap.hesvh.cn/Article/details/gqcnimjjl.sHtML
+
+[Q52] 删除指定行
+来源：http://mobile.zdbjq.cn/Article/details/gbksblaio.sHtML
+
+DELETE FROM users WHERE id = 10;
+来源：http://mobile.hesvh.cn/Article/details/gtwawxvcg.sHtML
+
+[Q53] 按条件删除
+来源：http://www.blog.fehbvm.com/Article/details/gfhqoutse.sHtML
+
+DELETE FROM orders WHERE created_at < '2020-01-01';
+来源：http://wap.zdbjq.cn/Article/details/gjuwewtxm.sHtML
+
+[Q54] 清空表
+来源：http://wap.fehbvm.com/Article/details/ghtyivzra.sHtML
+
+TRUNCATE TABLE logs;
+来源：http://m.share.fehbvm.com/Article/details/gvpfthhef.sHtML
+
+[Q55] 排名（并列占位）
+来源：http://m.share.hesvh.cn/Article/details/ggmjbjsbb.sHtML
+
+SELECT name, RANK() OVER (ORDER BY score DESC) AS rk FROM scores;
+来源：http://www.blog.zdbjq.cn/Article/details/ggntdjyhb.sHtML
+
+[Q56] 密集排名（并列不占位）
+来源：http://3g.zdbjq.cn/Article/details/gmakicmkv.sHtML
+
+SELECT name, DENSE_RANK() OVER (ORDER BY score DESC) FROM scores;
+来源：http://blog.hesvh.cn/Article/details/gfsvyqdhz.sHtML
+
+[Q57] 行号
+来源：http://www.m.share.fehbvm.com/Article/details/gdmckekrm.sHtML
+
+SELECT ROW_NUMBER() OVER (ORDER BY id) AS seq FROM users;
+来源：http://3g.zdbjq.cn/Article/details/gvzwyxkvo.sHtML
+
+[Q58] 累计求和
+来源：http://www.blog.hesvh.cn/Article/details/ggacaigbz.sHtML
+
+SELECT id, amount, SUM(amount) OVER (ORDER BY id) AS running FROM orders;
+来源：http://mobile.fehbvm.com/Article/details/gdkoekgph.sHtML
+
+[Q59] 分组内累计
+来源：http://blog.hesvh.cn/Article/details/grgaojuhs.sHtML
+
+SELECT city, id, SUM(amount) OVER (PARTITION BY city ORDER BY id) FROM orders;
+来源：http://3g.zdbjq.cn/Article/details/gnyjryvym.sHtML
+
+[Q60] 取上一行 / 下一行
+来源：http://www.m.share.zdbjq.cn/Article/details/ghdxxefkz.sHtML
+
+SELECT id, LAG(amount) OVER (ORDER BY id) AS prev,
+来源：http://www.m.share.fehbvm.com/Article/details/goiqdkwao.sHtML
+
+LEAD(amount) OVER (ORDER BY id) AS next FROM orders;
+来源：http://3g.hesvh.cn/Article/details/gpouozefz.sHtML
+
+[Q61] 移动平均
+来源：http://wap.zdbjq.cn/Article/details/grvliucui.sHtML
+
+SELECT id, AVG(amount) OVER (ORDER BY id ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) FROM orders;
+来源：http://mobile.fehbvm.com/Article/details/gaykhzyre.sHtML
+
+[Q62] 分组占比
+来源：http://wap.zdbjq.cn/Article/details/gefqiroxz.sHtML
+
+SELECT city, COUNT(*) * 100.0 / SUM(COUNT(*)) OVER () AS pct FROM users GROUP BY city;
+来源：http://baike.fehbvm.com/Article/details/gpkqisozh.sHtML
+
+[Q63] 开启事务
+来源：http://www.share.zdbjq.cn/Article/details/glrehjxsk.sHtML
+
+START TRANSACTION;                -- 或 BEGIN
+来源：http://read.share.fehbvm.com/Article/details/gnetaupwu.sHtML
+
+[Q64] 提交事务
+来源：http://wap.hesvh.cn/Article/details/gyilbflyj.sHtML
+
+COMMIT;
+来源：http://blog.fehbvm.com/Article/details/gjzjnrpra.sHtML
+
+[Q65] 回滚事务
+来源：http://blog.fehbvm.com/Article/details/gumjszzyk.sHtML
+
+ROLLBACK;
+来源：http://3g.hesvh.cn/Article/details/gwetperur.sHtML
+
+[Q66] 行锁查询
+来源：http://mobile.fehbvm.com/Article/details/gofwebwjl.sHtML
+
+SELECT * FROM users WHERE id = 1 FOR UPDATE;
+来源：http://3g.zdbjq.cn/Article/details/ggampihsi.sHtML
+
+
+<!-- 参考信息 -->
