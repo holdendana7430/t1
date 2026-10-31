@@ -1,0 +1,904 @@
+代发 wailian999
+
+Java: class Admin extends User {}
+来源：http://zt.9csxet.cn
+
+Go:   type Admin struct { User }     // 用嵌入代替继承
+来源：http://pe.hahajie.cn
+
+Ruby: class Admin < User; end
+来源：http://ui.bookmarksfly.cn
+
+C#:   class Admin : User {}
+来源：http://ar.szxytkj.cn
+
+[G06] 重写方法
+来源：http://bz.yuntaijiaju.cn
+
+Py:   def greet(self): return "admin"
+来源：http://ut.huanxung.cn
+
+PHP:  public function greet(): string { return "admin"; }
+来源：http://vj.9csxet.cn
+
+JS:   greet() { return "admin"; }
+来源：http://wo.shxzukj.cn
+
+TS:   greet(): string { return "admin"; }
+来源：http://ib.jctech888.com.cn
+
+Java: @Override String greet() { return "admin"; }
+来源：http://mt.haigaiapp.cn
+
+Go:   // 嵌入类型定义同名方法即覆盖
+来源：http://le.jianghongdianzi.cn
+
+Ruby: def greet; "admin"; end
+来源：http://oa.asd995.cn
+
+C#:   public override string Greet() => "admin";
+来源：http://ja.nicolike.cn
+
+[G07] 调用父类方法
+来源：http://jx.hnjuh.cn
+
+Py:   super().greet()
+来源：http://sa.9csxet.cn
+
+PHP:  parent::greet();
+来源：http://aw.bjjhwx.cn
+
+JS:   super.greet();
+来源：http://lu.lnxyls.cn
+
+TS:   super.greet();
+来源：http://fe.szxytkj.cn
+
+Java: super.greet();
+来源：http://do.muxihuayi.cn
+
+Go:   u.User.Greet()               // 显式调用嵌入字段的方法
+来源：http://ef.newstarts.cn
+
+Ruby: super
+来源：http://ft.wgjwhj.cn
+
+C#:   base.Greet();
+来源：http://ds.shxzskj.cn
+
+[G08] 静态方法与属性
+来源：http://uf.shxzukj.cn
+
+Py:   @staticmethod⏎def f(): ...      # 类方法用 @classmethod，首个参数为 cls
+来源：http://ps.wgjwhj.cn
+
+PHP:  public static function f() {}
+来源：http://xi.shxzskj.cn
+
+JS:   static f() {}
+来源：http://xj.nszjky.cn
+
+TS:   static f(): void {}
+来源：http://fw.shxzskj.cn
+
+Java: static void f() {}
+来源：http://ix.muxihuayi.cn
+
+Go:   // 无 static：用包级函数，按包名调用
+来源：http://wv.chemitech.net.cn
+
+Ruby: def self.f; end
+来源：http://lr.521024.cn
+
+C#:   public static void F() {}
+来源：http://xx.yuexingan06.cn
+
+[G09] 接口 / 抽象类
+来源：http://hw.gzmigu.cn
+
+Py:   from abc import ABC, abstractmethod
+来源：http://tc.szsharing.cn
+
+PHP:  interface Shape { public function area(): float; }
+来源：http://wb.hahajie.cn
+
+JS:   // 无接口：靠约定或 JSDoc
+来源：http://ft.panjiajie.cn
+
+TS:   interface Shape { area(): number; }
+来源：http://it.huixiangedu.cn
+
+Java: interface Shape { double area(); }
+来源：http://qv.panjiajie.cn
+
+Go:   type Shape interface { Area() float64 }
+来源：http://qu.muxihuayi.cn
+
+Ruby: # 无接口：用 module 混入或鸭子类型
+来源：http://uw.shxzskj.cn
+
+C#:   interface IShape { double Area(); }
+来源：http://xf.panjiajie.cn
+
+[G10] 访问控制
+来源：http://qc.bookmarksfly.cn
+
+Py:   约定 _protected / __private（不强制）
+来源：http://ru.chemitech.net.cn
+
+PHP:  public / protected / private
+来源：http://vp.521024.cn
+
+JS:   #private 字段；其余公开
+来源：http://yo.yuntaijiaju.cn
+
+TS:   public / protected / private
+来源：http://qe.shtwfgs.cn
+
+Java: public / protected / private / 默认包级
+来源：http://cl.gzmigu.cn
+
+Go:   首字母大写可导出，小写仅包内可见
+来源：http://wz.wgjwhj.cn
+
+Ruby: public / protected / private
+来源：http://ds.hahajie.cn
+
+C#:   public / protected / private / internal
+来源：http://ii.hnjuh.cn
+
+[G11] getter / setter
+来源：http://jn.521024.cn
+
+Py:   @property 与 @x.setter
+来源：http://ce.gzmigu.cn
+
+PHP:  public function getName(): string { return $this->name; }
+来源：http://mo.bookmarksfly.cn
+
+JS:   get name() { return this._name; }
+来源：http://ea.newstarts.cn
+
+TS:   get name(): string { return this._name; }
+来源：http://ry.9csxet.cn
+
+Java: public String getName() { return name; }
+来源：http://bb.chemitech.net.cn
+
+Go:   func (u User) GetName() string { return u.Name }
+来源：http://ib.asd995.cn
+
+Ruby: attr_accessor :name
+来源：http://lg.huixiangedu.cn
+
+C#:   public string Name { get; set; }
+来源：http://eg.haigaiapp.cn
+
+[G12] 对象转字符串
+来源：http://sg.asd995.cn
+
+Py:   def __str__(self): return self.name
+来源：http://xd.gzmigu.cn
+
+PHP:  public function __toString(): string { return $this->name; }
+来源：http://lm.9csxet.cn
+
+JS:   toString() { return this.name; }
+来源：http://ih.521024.cn
+
+TS:   toString(): string { return this.name; }
+来源：http://kq.lnxyls.cn
+
+Java: @Override public String toString() { return name; }
+来源：http://sj.nicolike.cn
+
+Go:   func (u User) String() string { return u.Name }
+来源：http://rx.haigaiapp.cn
+
+Ruby: def to_s; @name; end
+来源：http://qk.hahajie.cn
+
+C#:   public override string ToString() => Name;
+来源：http://jd.yuntaijiaju.cn
+
+[G13] 判断对象类型
+来源：http://dt.huanxung.cn
+
+Py:   isinstance(u, User)
+来源：http://kc.huixinmuqiang.cn
+
+PHP:  $u instanceof User
+来源：http://jm.bookmarksfly.cn
+
+JS:   u instanceof User
+来源：http://fu.asd995.cn
+
+TS:   u instanceof User
+来源：http://ct.hahajie.cn
+
+Java: u instanceof User
+来源：http://bp.chemitech.net.cn
+
+Go:   u, ok := v.(User)            // 类型断言
+来源：http://mr.bjjhwx.cn
+
+Ruby: u.is_a?(User)
+来源：http://bo.jctech888.com.cn
+
+C#:   u is User
+来源：http://zl.hahajie.cn
+
+[G14] 数据类 / record
+来源：http://ad.asd995.cn
+
+Py:   @dataclass⏎class User: name: str; age: int
+来源：http://tg.521024.cn
+
+PHP:  // 用 readonly 属性模拟
+来源：http://lj.gzmigu.cn
+
+JS:   // 无内置：普通类或对象字面量
+来源：http://wl.521024.cn
+
+TS:   type User = { name: string; age: number };
+来源：http://lk.huixinmuqiang.cn
+
+Java: record User(String name, int age) {}
+来源：http://fg.nicolike.cn
+
+Go:   type User struct { Name string; Age int }
+来源：http://ue.shtwfgs.cn
+
+Ruby: User = Struct.new(:name, :age)   # 或 Ruby 3.2+ 的 Data.define
+来源：http://rv.chemitech.net.cn
+
+C#:   record User(string Name, int Age);
+来源：http://mn.wgjwhj.cn
+
+[G15] 枚举
+来源：http://gk.shtwfgs.cn
+
+Py:   from enum import Enum;  class Color(Enum): RED = 1
+来源：http://ju.wgjwhj.cn
+
+PHP:  enum Color: string { case Red = "red"; }
+来源：http://cm.yuntaijiaju.cn
+
+JS:   const Color = Object.freeze({ RED: 1, GREEN: 2 });
+来源：http://ib.hnjuh.cn
+
+TS:   enum Color { Red = 1, Green = 2 }
+来源：http://le.newstarts.cn
+
+Java: enum Color { RED, GREEN }
+来源：http://et.colortex.cn
+
+Go:   type Color int;  const (Red Color = iota; Green)
+来源：http://ls.haigaiapp.cn
+
+Ruby: Color = %i[red green].freeze
+来源：http://mw.bookmarksfly.cn
+
+C#:   enum Color { Red = 1, Green = 2 }
+来源：http://tr.huixinmuqiang.cn
+
+[G16] 对象转数组 / 字典
+来源：http://ts.newstarts.cn
+
+Py:   dataclasses.asdict(obj);  obj.__dict__
+来源：http://rb.gzmigu.cn
+
+PHP:  get_object_vars($obj);
+来源：http://cr.hahajie.cn
+
+JS:   Object.entries(obj)
+来源：http://gp.newstarts.cn
+
+TS:   Object.entries(obj)
+来源：http://cr.szxytkj.cn
+
+Java: // 用 Jackson 等序列化库，或手写 toMap()
+来源：http://ul.wgjwhj.cn
+
+Go:   // 手写转换，或用 mapstructure 库
+来源：http://nd.hnjuh.cn
+
+Ruby: obj.instance_variables
+来源：http://hw.hnjuh.cn
+
+C#:   // 用反射或 System.Text.Json
+来源：http://df.huanxung.cn
+
+================================================================================
+来源：http://rb.9csxet.cn
+
+H. 异常与错误处理
+来源：http://jv.hnjuh.cn
+
+================================================================================
+来源：http://sy.haigaiapp.cn
+
+[H01] try / catch 基础
+来源：http://ma.szxytkj.cn
+
+Py:   try: f()⏎except Exception as e: print(e)
+来源：http://at.colortex.cn
+
+PHP:  try { f(); } catch (Exception $e) { echo $e->getMessage(); }
+来源：http://oo.nszjky.cn
+
+JS:   try { f(); } catch (e) { console.error(e); }
+来源：http://mn.yuntaijiaju.cn
+
+TS:   try { f(); } catch (e: unknown) { console.error(e); }
+来源：http://sl.panjiajie.cn
+
+Java: try { f(); } catch (Exception e) { System.out.println(e.getMessage()); }
+来源：http://cw.shxzskj.cn
+
+Go:   if err := f(); err != nil { log.Println(err) }   // Go 用返回值而非异常
+来源：http://do.newstarts.cn
+
+Ruby: begin; f; rescue => e; puts e.message; end
+来源：http://bz.gzmigu.cn
+
+C#:   try { F(); } catch (Exception e) { Console.WriteLine(e.Message); }
+来源：http://fp.colortex.cn
+
+[H02] finally / ensure 收尾
+来源：http://sp.hahajie.cn
+
+Py:   try: f()⏎finally: cleanup()
+来源：http://gl.shxzukj.cn
+
+PHP:  try { f(); } finally { cleanup(); }
+来源：http://tv.chemitech.net.cn
+
+JS:   try { f(); } finally { cleanup(); }
+来源：http://vc.jianghongdianzi.cn
+
+TS:   try { f(); } finally { cleanup(); }
+来源：http://ah.huixinmuqiang.cn
+
+Java: try { f(); } finally { cleanup(); }
+来源：http://am.asd995.cn
+
+Go:   defer cleanup()             // 函数返回时执行
+来源：http://sn.gzmigu.cn
+
+Ruby: begin; f; ensure; cleanup; end
+来源：http://lj.colortex.cn
+
+C#:   try { F(); } finally { Cleanup(); }
+来源：http://uv.panjiajie.cn
+
+[H03] 主动抛出异常
+来源：http://il.shxzukj.cn
+
+Py:   raise ValueError("错误信息")
+来源：http://lp.yuexingan06.cn
+
+PHP:  throw new InvalidArgumentException("错误信息");
+来源：http://zr.jctech888.com.cn
+
+JS:   throw new Error("错误信息");
+来源：http://vb.hahajie.cn
+
+TS:   throw new Error("错误信息");
+来源：http://tp.bookmarksfly.cn
+
+Java: throw new IllegalArgumentException("错误信息");
+来源：http://lg.9csxet.cn
+
+Go:   return fmt.Errorf("错误信息: %w", err)
+来源：http://rc.521024.cn
+
+Ruby: raise ArgumentError, "错误信息"
+来源：http://jr.huixinmuqiang.cn
+
+C#:   throw new ArgumentException("错误信息");
+来源：http://nu.lnxyls.cn
+
+[H04] 自定义异常类型
+来源：http://vn.shxzskj.cn
+
+Py:   class MyError(Exception): pass
+来源：http://rn.lnxyls.cn
+
+PHP:  class MyError extends RuntimeException {}
+来源：http://fn.9csxet.cn
+
+JS:   class MyError extends Error {}
+来源：http://ch.jianghongdianzi.cn
+
+TS:   class MyError extends Error {}
+来源：http://vj.bjjhwx.cn
+
+Java: class MyException extends RuntimeException {}
+来源：http://rk.newstarts.cn
+
+Go:   type MyError struct{ Msg string };  func (e MyError) Error() string { return e.Msg }
+来源：http://mr.szsharing.cn
+
+Ruby: class MyError < StandardError; end
+来源：http://vm.bookmarksfly.cn
+
+C#:   class MyException : Exception {}
+来源：http://yi.szsharing.cn
+
+[H05] 捕获特定类型
+来源：http://fp.shxzskj.cn
+
+Py:   except ValueError as e:
+来源：http://yq.jctech888.com.cn
+
+PHP:  catch (InvalidArgumentException | RuntimeException $e) {}   // 支持多类型
+来源：http://up.hahajie.cn
+
+JS:   if (e instanceof TypeError) {}
+来源：http://lu.newstarts.cn
+
+TS:   if (e instanceof TypeError) {}
+来源：http://os.shxzukj.cn
+
+Java: catch (IOException | SQLException e) {}
+来源：http://bi.lnxyls.cn
+
+Go:   errors.Is(err, os.ErrNotExist)
+来源：http://gz.nszjky.cn
+
+Ruby: rescue ArgumentError => e
+来源：http://kp.hnjuh.cn
+
+C#:   catch (IOException e) when (e.HResult == -1) {}
+来源：http://gq.asd995.cn
+
+[H06] 可选值 / 空值安全访问
+来源：http://zm.shxzukj.cn
+
+Py:   value = d.get("k") or default
+来源：http://yd.bjjhwx.cn
+
+PHP:  $v = $d["k"] ?? null;
+来源：http://un.haigaiapp.cn
+
+JS:   obj?.a?.b;  d ?? default
+来源：http://wr.newstarts.cn
+
+TS:   obj?.a?.b;  d ?? default
+来源：http://ke.jianghongdianzi.cn
+
+Java: Optional.ofNullable(x).map(...).orElse(default)
+来源：http://vv.yuntaijiaju.cn
+
+Go:   if v, ok := m["k"]; ok { }
+来源：http://gx.bookmarksfly.cn
+
+Ruby: d&.dig(:a, :b)
+来源：http://tb.szsharing.cn
+
+C#:   obj?.A?.B ?? default
+来源：http://rw.jctech888.com.cn
+
+[H07] 断言
+来源：http://mz.chemitech.net.cn
+
+Py:   assert x > 0, "必须为正"
+来源：http://es.newstarts.cn
+
+PHP:  assert($x > 0);
+来源：http://gl.newstarts.cn
+
+JS:   console.assert(x > 0);
+来源：http://dd.shxzskj.cn
+
+TS:   console.assert(x > 0);
+来源：http://la.muxihuayi.cn
+
+Java: assert x > 0 : "必须为正";
+来源：http://qf.panjiajie.cn
+
+Go:   // 无 assert：手写 if 后 panic 或返回错误
+来源：http://pp.bookmarksfly.cn
+
+Ruby: raise "必须为正" unless x > 0
+来源：http://bt.gzmigu.cn
+
+C#:   Debug.Assert(x > 0);
+来源：http://ck.shtwfgs.cn
+
+[H08] 获取错误信息与堆栈
+来源：http://cb.521024.cn
+
+Py:   str(e);  traceback.format_exc()
+来源：http://jq.haigaiapp.cn
+
+PHP:  $e->getMessage();  $e->getTraceAsString();
+来源：http://ft.jctech888.com.cn
+
+JS:   e.message;  e.stack
+来源：http://ei.yuntaijiaju.cn
+
+TS:   e instanceof Error ? e.message : String(e)
+来源：http://eu.shxzukj.cn
+
+Java: e.getMessage();  e.printStackTrace()
+来源：http://tl.asd995.cn
+
+Go:   err.Error()
+来源：http://hi.yuntaijiaju.cn
+
+Ruby: e.message;  e.backtrace
+来源：http://wr.nszjky.cn
+
+C#:   e.Message;  e.StackTrace
+来源：http://ux.yuntaijiaju.cn
+
+[H09] 带错误码的异常
+来源：http://qu.nszjky.cn
+
+Py:   class HttpError(Exception):⏎    def __init__(self, msg, code): self.code = code
+来源：http://jg.bjjhwx.cn
+
+PHP:  throw new RuntimeException("fail", 500);
+来源：http://vh.asd995.cn
+
+JS:   const err = new Error("fail");  err.code = 500;
+来源：http://vg.shtwfgs.cn
+
+TS:   class HttpError extends Error { constructor(public status: number) { super("fail"); } }
+来源：http://sf.huixinmuqiang.cn
+
+Java: class HttpException extends RuntimeException { private final int code; }
+来源：http://pv.jctech888.com.cn
+
+Go:   return fmt.Errorf("%w", ErrNotFound)     // 用 sentinel error 判断
+来源：http://yd.shtwfgs.cn
+
+Ruby: raise MyError.new("fail", 500)
+来源：http://vb.newstarts.cn
+
+C#:   // 自定义异常类中加 Code 属性
+来源：http://xt.yuexingan06.cn
+
+[H10] 资源自动释放
+来源：http://tk.521024.cn
+
+Py:   with open("a.txt") as f: data = f.read()
+来源：http://hi.521024.cn
+
+PHP:  // 无 with：在 finally 里 fclose()
+来源：http://ph.521024.cn
+
+JS:   // 无 with：在 finally 里关闭句柄
+来源：http://sg.muxihuayi.cn
+
+TS:   // 无 with：在 finally 里关闭句柄
+来源：http://yd.yuexingan06.cn
+
+Java: try (var in = new FileInputStream("a")) { }   // try-with-resources
+来源：http://xy.shxzukj.cn
+
+Go:   defer f.Close()
+来源：http://tt.lnxyls.cn
+
+Ruby: File.open("a.txt") { |f| f.read }
+来源：http://mo.nicolike.cn
+
+C#:   using var stream = File.OpenRead("a.txt");
+来源：http://vr.nszjky.cn
+
+================================================================================
+来源：http://ys.jianghongdianzi.cn
+
+I. 正则表达式
+来源：http://dq.muxihuayi.cn
+
+================================================================================
+来源：http://kr.muxihuayi.cn
+
+[I01] 判断是否匹配
+来源：http://ny.bookmarksfly.cn
+
+Py:   re.search(r"\d+", s);  re.fullmatch(r"\d+", s)
+来源：http://nv.colortex.cn
+
+PHP:  preg_match('/\d+/', $s);
+来源：http://kj.jctech888.com.cn
+
+JS:   /\d+/.test(s)
+来源：http://vi.gzmigu.cn
+
+TS:   /\d+/.test(s)
+来源：http://yj.yuexingan06.cn
+
+Java: Pattern.compile("\\d+").matcher(s).find()
+来源：http://eh.asd995.cn
+
+Go:   regexp.MustCompile(`\d+`).MatchString(s)
+来源：http://kt.nszjky.cn
+
+Ruby: s.match?(/\d+/)
+来源：http://pk.shxzukj.cn
+
+C#:   Regex.IsMatch(s, @"\d+")
+来源：http://nc.shxzskj.cn
+
+[I02] 提取所有匹配
+来源：http://oq.huanxung.cn
+
+Py:   re.findall(r"\d+", s)
+来源：http://ys.colortex.cn
+
+PHP:  preg_match_all('/\d+/', $s, $m);  $m[0]
+来源：http://in.asd995.cn
+
+JS:   s.match(/\d+/g);  [...s.matchAll(/\d+/g)]
+来源：http://ab.yuexingan06.cn
+
+TS:   s.match(/\d+/g)
+来源：http://yy.newstarts.cn
+
+Java: Pattern.compile("\\d+").matcher(s).results().toList()
+来源：http://ph.9csxet.cn
+
+Go:   regexp.MustCompile(`\d+`).FindAllString(s, -1)
+来源：http://ga.haigaiapp.cn
+
+Ruby: s.scan(/\d+/)
+来源：http://db.bookmarksfly.cn
+
+C#:   Regex.Matches(s, @"\d+").Select(m => m.Value).ToList()
+来源：http://ze.521024.cn
+
+[I03] 提取捕获分组
+来源：http://pa.nszjky.cn
+
+Py:   m = re.search(r"(\d+)-(\d+)", s);  m.group(1)
+来源：http://qy.hnjuh.cn
+
+PHP:  preg_match('/(\d+)-(\d+)/', $s, $m);  $m[1]
+来源：http://iz.asd995.cn
+
+JS:   const m = s.match(/(\d+)-(\d+)/);  m[1]
+来源：http://nu.shxzukj.cn
+
+TS:   const m = s.match(/(\d+)-(\d+)/);  m?.[1]
+来源：http://vg.jctech888.com.cn
+
+Java: Matcher m = p.matcher(s);  if (m.find()) m.group(1);
+来源：http://of.colortex.cn
+
+Go:   m := re.FindStringSubmatch(s);  m[1]     // [0] 是整段
+来源：http://ki.huanxung.cn
+
+Ruby: s.match(/(\d+)-(\d+)/)[1]
+来源：http://me.yuexingan06.cn
+
+C#:   Regex.Match(s, @"(\d+)-(\d+)").Groups[1].Value
+来源：http://wl.haigaiapp.cn
+
+[I04] 正则替换
+来源：http://po.colortex.cn
+
+Py:   re.sub(r"\d+", "#", s)
+来源：http://by.huixiangedu.cn
+
+PHP:  preg_replace('/\d+/', '#', $s);
+来源：http://bb.nszjky.cn
+
+JS:   s.replace(/\d+/g, "#")
+来源：http://du.nszjky.cn
+
+TS:   s.replace(/\d+/g, "#")
+来源：http://dp.yuntaijiaju.cn
+
+Java: s.replaceAll("\\d+", "#")
+来源：http://rw.colortex.cn
+
+Go:   re.ReplaceAllString(s, "#")
+来源：http://fx.jctech888.com.cn
+
+Ruby: s.gsub(/\d+/, "#")
+来源：http://qh.chemitech.net.cn
+
+C#:   Regex.Replace(s, @"\d+", "#")
+来源：http://wm.yuexingan06.cn
+
+[I05] 按正则拆分
+来源：http://du.lnxyls.cn
+
+Py:   re.split(r"\s*,\s*", s)
+来源：http://vk.yuexingan06.cn
+
+PHP:  preg_split('/\s*,\s*/', $s);
+来源：http://yz.huixinmuqiang.cn
+
+JS:   s.split(/\s*,\s*/)
+来源：http://rd.shtwfgs.cn
+
+TS:   s.split(/\s*,\s*/)
+来源：http://en.yuexingan06.cn
+
+Java: s.split("\\s*,\\s*")
+来源：http://ju.colortex.cn
+
+Go:   regexp.MustCompile(`\s*,\s*`).Split(s, -1)
+来源：http://hb.wgjwhj.cn
+
+Ruby: s.split(/\s*,\s*/)
+来源：http://sk.hahajie.cn
+
+C#:   Regex.Split(s, @"\s*,\s*")
+来源：http://vx.lnxyls.cn
+
+[I06] 常用校验模式（邮箱 / 手机号）
+来源：http://oh.haigaiapp.cn
+
+Py:   r"[^@]+@[^@]+\.[^@]+"；r"^1[3-9]\d{9}$"
+来源：http://mp.nszjky.cn
+
+PHP:  '/^[^\s@]+@[^\s@]+\.[^\s@]+$/'；'/^1[3-9]\d{9}$/'
+来源：http://xv.panjiajie.cn
+
+JS:   /^[^\s@]+@[^\s@]+\.[^\s@]+$/；/^1[3-9]\d{9}$/
+来源：http://pb.nszjky.cn
+
+TS:   /^[^\s@]+@[^\s@]+\.[^\s@]+$/；/^1[3-9]\d{9}$/
+来源：http://do.shxzskj.cn
+
+Java: "^[\\w.+-]+@[\\w-]+\\.[\\w.]+$"；"^1[3-9]\\d{9}$"
+来源：http://vt.panjiajie.cn
+
+Go:   `^[\w.+-]+@[\w-]+\.[\w.]+$`   // RE2 不支持反向引用与前瞻
+来源：http://cd.chemitech.net.cn
+
+Ruby: /\A[\w.+-]+@[\w-]+\.[\w.]+\z/；/\A1[3-9]\d{9}\z/
+来源：http://sk.bookmarksfly.cn
+
+C#:   @"^[\w.+-]+@[\w-]+\.[\w.]+$"；@"^1[3-9]\d{9}$"
+来源：http://qp.wgjwhj.cn
+
+[I07] 忽略大小写与多行模式
+来源：http://xl.shxzukj.cn
+
+Py:   re.findall(r"error", s, re.I | re.M)
+来源：http://fo.hahajie.cn
+
+PHP:  preg_match_all('/error/im', $s, $m);
+来源：http://fg.szsharing.cn
+
+JS:   /error/gim；new RegExp("error", "gim")
+来源：http://rq.yuexingan06.cn
+
+TS:   /error/gim
+来源：http://lw.huixinmuqiang.cn
+
+Java: Pattern.compile("error", Pattern.CASE_INSENSITIVE | Pattern.MULTILINE)
+来源：http://pq.szxytkj.cn
+
+Go:   regexp.MustCompile(`(?im)error`)
+来源：http://na.lnxyls.cn
+
+Ruby: s.scan(/error/i)
+来源：http://gn.bjjhwx.cn
+
+C#:   Regex.Match(s, "error", RegexOptions.IgnoreCase | RegexOptions.Multiline)
+来源：http://ve.huixiangedu.cn
+
+[I08] 贪婪与非贪婪匹配
+来源：http://ti.muxihuayi.cn
+
+Py:   re.findall(r"<b>.*?</b>", s)       # 加 ? 变非贪婪
+来源：http://nr.bookmarksfly.cn
+
+PHP:  preg_match_all('/<b>.*?<\/b>/', $s, $m);
+来源：http://cw.bookmarksfly.cn
+
+JS:   s.match(/<b>.*?<\/b>/g)
+来源：http://dm.shtwfgs.cn
+
+TS:   s.match(/<b>.*?<\/b>/g)
+来源：http://ib.521024.cn
+
+Java: Pattern.compile("<b>.*?</b>")
+来源：http://hv.muxihuayi.cn
+
+Go:   `<b>.*?</b>`                      # RE2 默认贪婪，同样用 ? 抑制
+来源：http://ti.9csxet.cn
+
+Ruby: s.scan(/<b>.*?<\/b>/)
+来源：http://vb.jctech888.com.cn
+
+C#:   Regex.Matches(s, @"<b>.*?</b>")
+来源：http://gl.shxzskj.cn
+
+================================================================================
+来源：http://df.newstarts.cn
+
+J. 日期与时间
+来源：http://mn.shxzskj.cn
+
+================================================================================
+来源：http://uf.yuexingan06.cn
+
+[J01] 获取当前时间
+来源：http://ne.chemitech.net.cn
+
+Py:   datetime.now();  datetime.now(UTC)
+来源：http://gd.bookmarksfly.cn
+
+PHP:  new DateTimeImmutable();  date("Y-m-d H:i:s");
+来源：http://ii.huixiangedu.cn
+
+JS:   new Date();  Date.now()
+来源：http://hb.9csxet.cn
+
+TS:   new Date();  Date.now()
+来源：http://bs.nicolike.cn
+
+Java: LocalDateTime.now();  Instant.now()
+来源：http://sx.hnjuh.cn
+
+Go:   time.Now()
+来源：http://mw.huixinmuqiang.cn
+
+Ruby: Time.now
+来源：http://ws.shxzukj.cn
+
+C#:   DateTime.Now;  DateTime.UtcNow
+来源：http://eh.521024.cn
+
+[J02] 格式化输出
+来源：http://un.bookmarksfly.cn
+
+Py:   now.strftime("%Y-%m-%d %H:%M:%S")
+来源：http://tv.9csxet.cn
+
+PHP:  (new DateTime())->format("Y-m-d H:i:s");
+来源：http://wd.haigaiapp.cn
+
+JS:   d.toISOString();  d.toLocaleString("zh-CN")
+来源：http://dc.asd995.cn
+
+TS:   d.toISOString()
+来源：http://yw.nszjky.cn
+
+Java: DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(LocalDateTime.now())
+来源：http://db.huixiangedu.cn
+
+Go:   time.Now().Format("2006-01-02 15:04:05")     // Go 用参考时间做格式
+来源：http://ge.asd995.cn
+
+Ruby: Time.now.strftime("%Y-%m-%d %H:%M:%S")
+来源：http://yl.jctech888.com.cn
+
+C#:   DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+来源：http://nv.huixinmuqiang.cn
+
+[J03] 字符串解析为日期
+来源：http://hs.9csxet.cn
+
+Py:   datetime.strptime("2024-01-02", "%Y-%m-%d")
+来源：http://fk.newstarts.cn
+
+PHP:  DateTimeImmutable::createFromFormat("Y-m-d", "2024-01-02");
+来源：http://nx.shxzukj.cn
+
+JS:   new Date("2024-01-02")
+来源：http://eu.jianghongdianzi.cn
+
+TS:   new Date("2024-01-02")
+来源：http://lj.chemitech.net.cn
+
+Java: LocalDate.parse("2024-01-02")
+来源：http://in.hnjuh.cn
+
+Go:   time.Parse("2006-01-02", "2024-01-02")
+来源：http://ph.shxzukj.cn
+
+Ruby: Date.parse("2024-01-02")
+来源：http://ei.shtwfgs.cn
+
+
+<!-- 参考信息 -->
